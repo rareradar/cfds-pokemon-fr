@@ -27,7 +27,7 @@ permalink: /about/
       </p>
     </header>
 
-    <div class="prose measure">
+    <div class="prose">
 
 <h2>La ligne éditoriale</h2>
 

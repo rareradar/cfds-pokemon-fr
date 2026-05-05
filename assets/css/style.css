@@ -755,8 +755,6 @@ a {
   padding-bottom: 2.4rem;
   margin-bottom: 3.2rem;
   position: relative;
-  max-width: var(--measure);
-  margin-inline: auto;
 }
 .article__eyebrow {
   display: flex;
@@ -779,10 +777,6 @@ a {
 .article__dek {
   margin-top: 1.6rem;
   max-width: 56ch;
-}
-.article__cover {
-  max-width: var(--measure);
-  margin-inline: auto;
 }
 .article__meta {
   display: flex;
@@ -815,12 +809,60 @@ a {
   -webkit-hyphens: auto;
   hyphenate-limit-chars: 8 4 4;
 }
-.prose > * { max-width: var(--measure); margin-inline: auto; }
+.prose > * { margin-inline: 0; }
 /* Pas de justify sur les blocs où ça crée des trous moches */
-.prose ul, .prose ol, .prose blockquote, .prose h2, .prose h3, .prose .comparison, .prose .callout-affiliate, .prose .stats-rpg, .prose figure, .prose .faq {
+.prose ul, .prose ol, .prose blockquote, .prose h2, .prose h3, .prose table, .prose .comparison, .prose .callout-affiliate, .prose .stats-rpg, .prose figure, .prose .faq, .prose .illustration {
   text-align: left;
   hyphens: manual;
 }
+.prose table th, .prose table td {
+  text-align: left;
+  hyphens: manual;
+}
+
+/* ─── Tables Markdown bruts (sans wrapper .comparison) ─── */
+.prose table {
+  width: 100%;
+  margin: 2.4rem 0;
+  border: 2px solid var(--rule);
+  background: var(--bg-pop);
+  border-collapse: collapse;
+  font-size: 0.97rem;
+  display: block;
+  overflow-x: auto;
+}
+.prose table thead {
+  background: var(--steel);
+}
+.prose table thead th {
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono-xs);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--bg);
+  font-weight: 700;
+  border-bottom: 2px solid var(--rule);
+  padding: 0.95rem 1.1rem;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.prose table tbody td,
+.prose table tbody th {
+  padding: 0.85rem 1.1rem;
+  border-bottom: 1.5px solid var(--rule-soft);
+  vertical-align: top;
+  white-space: normal;
+}
+.prose table tbody tr:last-child td,
+.prose table tbody tr:last-child th { border-bottom: 0; }
+.prose table tbody tr:hover { background: var(--bg-2); }
+.prose table tbody td:first-child {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--ink);
+  font-variation-settings: "wght" 700, "wdth" 90;
+}
+.prose table tbody td strong { color: var(--accent); }
 
 .prose > h2,
 .prose > h3 {
