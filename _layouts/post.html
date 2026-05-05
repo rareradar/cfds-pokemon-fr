@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<article class="article">
+  <div class="shell">
+
+    {% if page.cover_image %}
+      <figure class="article__cover">
+        <img src="{{ page.cover_image | relative_url }}"
+             alt="{{ page.title | escape }}"
+             loading="eager" decoding="async">
+      </figure>
+    {% endif %}
+
+    <header class="article__head">
+      <div class="article__eyebrow">
+        {% include rarity-badge.html rarity=page.rarity %}
+        <span class="eyebrow">{{ page.date | date: "%d %B %Y" }}</span>
+        {% if page.read_time %}
+          <span class="eyebrow">{{ page.read_time }} min de lecture</span>
+        {% endif %}
+      </div>
+
+      <h1 class="article__title h-1">{{ page.title }}</h1>
+
+      {% if page.dek or page.description %}
+        <p class="article__dek lede">{{ page.dek | default: page.description }}</p>
+      {% endif %}
+
+      <div class="article__meta">
+        <span><strong>Par</strong> {{ page.author | default: 'rareradar' }}</span>
+        {% if page.tags and page.tags.size > 0 %}
+          <span>
+            <strong>Tags</strong>
+            {% for tag in page.tags limit: 5 %}#{{ tag }}{% unless forloop.last %} · {% endunless %}{% endfor %}
+          </span>
+        {% endif %}
+      </div>
+    </header>
+
+    <div class="prose measure">
+      {{ content }}
+    </div>
+
+  </div>
+</article>
+
+<section class="shell" style="margin-top: 4rem;">
+  <header class="section-head">
+    <h2 class="section-head__title h-2">À lire aussi</h2>
+  </header>
+  <div class="card-grid">
+    {% assign others = site.posts | where_exp: "p", "p.url != page.url" | slice: 0, 3 %}
+    {% for post in others %}
+      {% include article-card.html post=post %}
+    {% endfor %}
+  </div>
+</section>

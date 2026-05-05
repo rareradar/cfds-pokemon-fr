@@ -1,0 +1,72 @@
+{% comment %}
+  Composant card-preview pour la liste articles.
+  Param : post (un objet Jekyll post)
+  Variations grille gérées par CSS (article-card:nth-child).
+  Hero placeholder : SVG géométrique généré par hash du slug.
+{% endcomment %}
+{% assign hash = post.slug | default: post.title | slice: 0, 8 | size %}
+{% assign rarity_key = post.rarity | default: 'common' %}
+{% assign r = site.data.rarity[rarity_key] %}
+
+<article class="article-card fade-in" data-delay="{{ forloop.index | modulo: 6 }}">
+  <div class="article-card__hero" aria-hidden="true">
+    {% if post.cover_image %}
+      <img src="{{ post.cover_image | relative_url }}"
+           alt="" loading="lazy" decoding="async"
+           class="article-card__cover">
+    {% else %}
+      <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="g{{ forloop.index }}" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%"  stop-color="hsl({{ r.hue }}, 28%, 16%)"/>
+            <stop offset="100%" stop-color="hsl({{ r.hue }}, 22%, 9%)"/>
+          </linearGradient>
+          <pattern id="dots{{ forloop.index }}" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.7" fill="hsl({{ r.hue }}, 50%, 70%)" opacity="0.32"/>
+          </pattern>
+        </defs>
+        <rect width="320" height="180" fill="url(#g{{ forloop.index }})"/>
+        <rect width="320" height="180" fill="url(#dots{{ forloop.index }})"/>
+        <g stroke="hsl({{ r.hue }}, 60%, 75%)" stroke-width="1" fill="none" opacity="0.72">
+          <rect x="120" y="38" width="80" height="104" rx="2"/>
+          <rect x="126" y="44" width="68" height="50" rx="1"/>
+          <line x1="126" y1="106" x2="194" y2="106"/>
+          <line x1="126" y1="116" x2="170" y2="116"/>
+          <line x1="126" y1="124" x2="180" y2="124"/>
+          <circle cx="186" cy="130" r="5" fill="hsl({{ r.hue }}, 70%, 60%)" stroke="none"/>
+        </g>
+        <text x="14" y="170" font-family="JetBrains Mono, monospace"
+              font-size="10" font-weight="700" fill="hsl({{ r.hue }}, 40%, 80%)" letter-spacing="1.2" opacity="0.85">
+          N° {{ forloop.index | prepend: '00' | slice: -3, 3 }} / {{ r.label | upcase }}
+        </text>
+      </svg>
+    {% endif %}
+  </div>
+
+  <div class="article-card__meta">
+    <span class="article-card__date">
+      {{ post.date | date: "%d %b %Y" }}
+    </span>
+    {% include rarity-badge.html rarity=rarity_key %}
+  </div>
+
+  <h2 class="article-card__title">
+    <a href="{{ post.url | relative_url }}" class="article-card__link">
+      {{ post.title }}
+    </a>
+  </h2>
+
+  {% if post.description %}
+    <p class="article-card__excerpt">{{ post.description }}</p>
+  {% else %}
+    <p class="article-card__excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+  {% endif %}
+
+  {% if post.tags and post.tags.size > 0 %}
+    <div class="article-card__tags">
+      {% for tag in post.tags limit: 4 %}
+        <span class="article-card__tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+</article>

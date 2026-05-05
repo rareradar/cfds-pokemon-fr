@@ -1,0 +1,8 @@
+{% comment %} Param : rarity (string clé dans _data/rarity.yml) {% endcomment %}
+{% assign rk = include.rarity | default: 'common' %}
+{% assign r  = site.data.rarity[rk] %}
+<span class="rarity" data-rarity="{{ rk }}" style="--rarity-hue: {{ r.hue }};"
+      title="{{ r.description }}">
+  <span class="rarity__symbol" aria-hidden="true">{{ r.symbol }}</span>
+  <span>{{ r.label }}</span>
+</span>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'fr' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0d1018">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 fill=%22%230d1018%22/><circle cx=%2216%22 cy=%2216%22 r=%226%22 fill=%22%23ff3a1d%22/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&family=Public+Sans:ital,wght@0,300..700;1,300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  {% seo %}
+  {% feed_meta %}
+</head>
+<body>
+
+<div class="ambient-grid" aria-hidden="true"></div>
+<div class="ambient-glow" aria-hidden="true"></div>
+<div class="ambient-radar" aria-hidden="true"></div>
+<div class="ambient-particles" aria-hidden="true"></div>
+
+{% include header.html %}
+
+<div class="statusbar">
+  <div class="shell statusbar__inner">
+    <div class="statusbar__group">
+      <span class="statusbar__pulse">Live</span>
+      <span>Reviews & guides · relecture humaine</span>
+    </div>
+    <div class="statusbar__group">
+      <span>{{ site.posts.size | prepend: '00' | slice: -3, 3 }} articles</span>
+      {% if site.posts.first %}
+      <span>Dernière publi · {{ site.posts.first.date | date: "%d %b %Y" }}</span>
+      {% endif %}
+      <span>FR · curated</span>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+  {{ content }}
+</main>
+
+{% include footer.html %}
+
+</body>
+</html>

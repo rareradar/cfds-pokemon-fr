@@ -1,0 +1,58 @@
+title: rareradar
+tagline: "Cartes Pokémon TCG — reviews, guides, lab"
+description: >-
+  Reviews et guides éditoriaux sur les cartes Pokémon TCG pour collectionneurs
+  francophones adultes. Focus accessoires, conservation, grading PSA / CGC / BGS,
+  analyse de sets.
+url: "https://rareradar.github.io"
+baseurl: "/cfds-pokemon-fr"
+lang: fr
+locale: fr_FR
+author:
+  name: rareradar
+  email: ""
+twitter:
+  username: ""
+  card: summary_large_image
+permalink: /:year/:slug/
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  toc_levels: 2..3
+highlighter: rouge
+
+# Theme : NONE (custom layouts intégraux dans _layouts/)
+# theme: minima  ← retiré, on a notre propre design
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: rareradar
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .gitignore
+  - cfds-internal
+  - node_modules
+
+# Front matter cfds custom (pour rarity badges, auteur, etc.)
+collections: []

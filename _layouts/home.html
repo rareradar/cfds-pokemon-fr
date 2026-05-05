@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="shell">
+    <div class="hero__eyebrow">
+      <span class="eyebrow">N° {{ site.posts.size | prepend: '00' | slice: -3, 3 }}</span>
+      <span class="eyebrow">Lab éditorial · cartes Pokémon FR</span>
+    </div>
+
+    <h1 class="hero__title h-display">
+      Lire avant<br>de <span class="underline">collectionner</span><em>.</em>
+    </h1>
+
+    <p class="hero__lede">
+      Reviews longues, comparatifs honnêtes, méthodes de conservation et grading.
+      Pour les collectionneurs adultes qui veulent autre chose que des unboxings
+      criards et des affiliations déguisées.
+    </p>
+
+    <div class="hero__meta">
+      <div class="hero__meta-item">
+        <span class="eyebrow">Articles</span>
+        <strong>{{ site.posts.size }}</strong>
+      </div>
+      <div class="hero__meta-item">
+        <span class="eyebrow">Cadence</span>
+        <strong>1 / jour</strong>
+      </div>
+      <div class="hero__meta-item">
+        <span class="eyebrow">Affiliation</span>
+        <strong>Amazon FR</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="shell">
+  <header class="section-head">
+    <h2 class="section-head__title h-2">Derniers articles</h2>
+    <span class="section-head__count">
+      {{ site.posts.size | prepend: '00' | slice: -3, 3 }} / curated
+    </span>
+  </header>
+
+  <div class="card-grid">
+    {% for post in site.posts %}
+      {% include article-card.html post=post %}
+    {% endfor %}
+  </div>
+</section>
+
+{{ content }}

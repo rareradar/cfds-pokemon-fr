@@ -1,0 +1,28 @@
+# Système de "rareté" éditoriale — métaphore TCG appliquée au contenu :
+#  - common      : guide quick / liste rapide / news courte
+#  - uncommon    : review approfondie d'un produit, comparatif limité
+#  - holo_rare   : analyse longue / dossier / deep dive (≥ 1500 mots, données chiffrées)
+#  - secret_rare : exclu signé "lab" (test long terme, expertise pure)
+#
+# Sert à filtrer côté lecteur (mode skim vs deep) et signaler la profondeur.
+
+common:
+  label: Common
+  symbol: "●"
+  hue: 220        # bleu froid neutre
+  description: "Note rapide, ≤ 600 mots"
+uncommon:
+  label: Uncommon
+  symbol: "◆"
+  hue: 145        # vert sage
+  description: "Review ou comparatif, 600–1200 mots"
+holo_rare:
+  label: Holo Rare
+  symbol: "✦"
+  hue: 42         # or chaud (référence holo)
+  description: "Dossier, 1200–2000 mots, données chiffrées"
+secret_rare:
+  label: Secret Rare
+  symbol: "◈"
+  hue: 320        # magenta sombre
+  description: "Test long terme, signature lab"
