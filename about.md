@@ -7,6 +7,13 @@ permalink: /about/
 
 <div class="shell">
   <section class="article">
+
+    <figure class="article__cover">
+      <img src="{{ '/assets/images/about/cover.png' | relative_url }}"
+           alt="rareradar — note méta À propos"
+           loading="eager" decoding="async">
+    </figure>
+
     <header class="article__head">
       <div class="article__eyebrow">
         <span class="eyebrow">Note</span>
