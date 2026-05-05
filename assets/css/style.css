@@ -963,6 +963,17 @@ a {
   .share-btn { padding: 0.65rem 0.8rem; }
 }
 
+/* Variante compacte (haut d'article) : icônes only, plus discret */
+.share--compact {
+  margin: 1.6rem 0 2.4rem;
+  padding: 0.9rem 0 0.85rem;
+  border-top: 1.5px solid var(--rule-soft);
+  border-bottom: 1.5px solid var(--rule-soft);
+}
+.share--compact .share__buttons { gap: 0.4rem; }
+.share--compact .share-btn { padding: 0.55rem; }
+.share--compact .share-btn span { display: none; }
+
 .prose > h2,
 .prose > h3 {
   color: var(--ink);

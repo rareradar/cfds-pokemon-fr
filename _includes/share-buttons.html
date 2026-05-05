@@ -6,14 +6,15 @@
   Toutes URL passent par url_encode pour éviter l'injection.
 {%- endcomment -%}
 
+{%- assign compact = include.compact | default: false -%}
 {%- assign share_url = page.url | absolute_url -%}
 {%- assign share_url_enc = share_url | url_encode -%}
 {%- assign share_title_enc = page.title | url_encode -%}
 {%- assign share_text_raw = page.description | default: page.dek | default: page.title -%}
 {%- assign share_text_enc = share_text_raw | url_encode -%}
 
-<aside class="share" aria-label="Partager cet article">
-  <h3 class="share__title">Partager · {{ page.title | truncate: 40 }}</h3>
+<aside class="share{% if compact %} share--compact{% endif %}" aria-label="Partager cet article">
+  {% unless compact %}<h3 class="share__title">Partager · {{ page.title | truncate: 40 }}</h3>{% endunless %}
   <div class="share__buttons">
 
     <a class="share-btn" target="_blank" rel="noopener"
