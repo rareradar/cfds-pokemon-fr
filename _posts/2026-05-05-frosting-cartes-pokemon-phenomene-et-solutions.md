@@ -13,10 +13,10 @@ tags:
   - classeurs
   - humidité
   - frosting
-author: rareradar
+author: RareRadar
 _cfds:
   generated_by: mistral_119b_local
-  reviewed_by: rareradar (claude-edit pass)
+  reviewed_by: RareRadar (claude-edit pass)
   generated_at: "2026-05-05T17:55:13.675721+00:00"
   amazon_tag: rareradar-21
   review_status: pending
@@ -46,6 +46,39 @@ J'ai commencé à voir ce phénomène apparaître sur une partie de mes Reverse 
 de la série Soleil & Lune, après huit mois passés dans un classeur basique de
 papeterie générique. Pas d'inondation, pas de tasse de café renversée : juste
 une pièce de vie ordinaire, avec une humidité que je n'avais jamais mesurée.
+
+<figure class="illustration">
+  <svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Plage d'humidité relative recommandée pour la conservation des cartes">
+    <defs>
+      <linearGradient id="rh-gradient" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%"   stop-color="#7a2d24"/>
+        <stop offset="22%"  stop-color="#7a2d24"/>
+        <stop offset="30%"  stop-color="#4d6b3d"/>
+        <stop offset="50%"  stop-color="#4d6b3d"/>
+        <stop offset="60%"  stop-color="#9c8454"/>
+        <stop offset="80%"  stop-color="#d97246"/>
+        <stop offset="100%" stop-color="#d97246"/>
+      </linearGradient>
+    </defs>
+    <text x="20" y="40" font-family="JetBrains Mono, monospace" font-size="11" fill="#9b9789" letter-spacing="2">HUMIDITÉ RELATIVE — CIBLE COLLECTION</text>
+    <rect x="20" y="70" width="560" height="36" fill="url(#rh-gradient)" stroke="#f2eee2" stroke-width="1.5"/>
+    <line x1="188" y1="60" x2="188" y2="116" stroke="#f2eee2" stroke-width="2" stroke-dasharray="4 3"/>
+    <line x1="300" y1="60" x2="300" y2="116" stroke="#f2eee2" stroke-width="2" stroke-dasharray="4 3"/>
+    <text x="20"  y="135" font-family="JetBrains Mono, monospace" font-size="11" fill="#f2eee2">0%</text>
+    <text x="183" y="135" font-family="JetBrains Mono, monospace" font-size="11" fill="#f2eee2" font-weight="700">30%</text>
+    <text x="295" y="135" font-family="JetBrains Mono, monospace" font-size="11" fill="#f2eee2" font-weight="700">50%</text>
+    <text x="555" y="135" font-family="JetBrains Mono, monospace" font-size="11" fill="#f2eee2">100%</text>
+    <text x="50"  y="170" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#7a2d24" font-weight="700">trop sec</text>
+    <text x="50"  y="188" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#9b9789">vernis cassant</text>
+    <text x="200" y="170" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#4d6b3d" font-weight="700">cible 30–50 %</text>
+    <text x="200" y="188" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#9b9789">stabilité long terme</text>
+    <text x="370" y="170" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#d97246" font-weight="700">trop humide</text>
+    <text x="370" y="188" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#9b9789">frosting en 4–8 mois</text>
+  </svg>
+  <figcaption class="illustration__caption">
+    <strong>Plage cible</strong> selon les guides muséographiques · 30–50 % HR à 18–22 °C
+  </figcaption>
+</figure>
 
 ## Les trois causes qui couvrent 90 % des cas
 
@@ -126,6 +159,26 @@ collectionneurs adultes pour les cartes au-delà de 30-50 € :
 3. **Toploader rigide 35pt.** Pour les cartes qu'on transporte ou qu'on
    manipule en deck box. Inutile à l'intérieur d'un classeur si la page
    est en polypropylène et que les cartes ne bougent pas.
+
+<figure class="illustration">
+  <svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stack de protection 3 couches : Perfect Fit, sleeve standard, toploader">
+    <text x="300" y="32" font-family="JetBrains Mono, monospace" font-size="11" fill="#9b9789" letter-spacing="2" text-anchor="middle">STACK 3 COUCHES — VUE EN COUPE</text>
+    <rect x="180" y="58" width="240" height="170" fill="none" stroke="#d97246" stroke-width="2.5" rx="3"/>
+    <text x="430" y="78" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="#d97246" font-weight="700">3. Toploader 35pt</text>
+    <text x="430" y="95" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#9b9789">PET / polystyrène rigide</text>
+    <rect x="200" y="76" width="200" height="140" fill="none" stroke="#f2eee2" stroke-width="2" rx="2"/>
+    <text x="430" y="125" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="#f2eee2" font-weight="700">2. Sleeve standard</text>
+    <text x="430" y="142" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#9b9789">66 × 91 mm, polypropylène</text>
+    <rect x="218" y="93" width="164" height="106" fill="none" stroke="#6f7a8c" stroke-width="2" rx="1.5"/>
+    <text x="430" y="172" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="#6f7a8c" font-weight="700">1. Perfect Fit</text>
+    <text x="430" y="189" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#9b9789">64 × 89 mm, contact direct</text>
+    <rect x="232" y="106" width="135" height="80" fill="#1c2030" stroke="#9c8454" stroke-width="1.5" rx="1"/>
+    <text x="299" y="151" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#9c8454" text-anchor="middle" font-weight="600">carte</text>
+  </svg>
+  <figcaption class="illustration__caption">
+    <strong>Combo recommandé</strong> pour cartes &gt; 30–50 € · Perfect Fit (contact direct) → sleeve 66×91 → toploader
+  </figcaption>
+</figure>
 
 [**dragon shield perfect fit** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=dragon+shield+perfect+fit&tag=rareradar-21)
 

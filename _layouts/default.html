@@ -27,7 +27,7 @@
     "inLanguage": "fr-FR",
     "publisher": {
       "@type": "Organization",
-      "name": "rareradar",
+      "name": "RareRadar",
       "url": {{ site.url | append: site.baseurl | jsonify }}
     },
     "potentialAction": {
@@ -48,11 +48,11 @@
     "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
     "author": {
       "@type": "Organization",
-      "name": {{ page.author | default: site.author.name | default: "rareradar" | jsonify }}
+      "name": {{ page.author | default: site.author.name | default: "RareRadar" | jsonify }}
     },
     "publisher": {
       "@type": "Organization",
-      "name": "rareradar",
+      "name": "RareRadar",
       "url": {{ site.url | append: site.baseurl | jsonify }}
     }
     {%- if page.cover_image -%}

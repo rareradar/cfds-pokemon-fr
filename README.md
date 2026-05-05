@@ -1,6 +1,6 @@
 # cfds-pokemon-fr
 
-Site Jekyll de **rareradar** — reviews et guides éditoriaux sur les cartes
+Site Jekyll de **RareRadar** — reviews et guides éditoriaux sur les cartes
 Pokémon TCG pour collectionneurs francophones adultes.
 
 Production déployée sur **GitHub Pages** + custom domain OVH : <https://rareradar.fr>

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Lancement de rareradar — la ligne éditoriale"
+title: "Lancement de RareRadar — la ligne éditoriale"
 description: "Première note du blog : ce qu'on couvre, comment on écrit, et pourquoi les liens d'affiliation sont signalés en clair."
 date: 2026-05-05 09:00:00 +0200
 slug: lancement-rareradar
-author: rareradar
+author: RareRadar
 rarity: common
 read_time: 4
 cover_image: /assets/images/posts/lancement-rareradar.png
@@ -21,7 +21,7 @@ place dans les semaines à venir.
 
 ## La ligne éditoriale, en deux phrases
 
-rareradar publie des reviews et des guides éditoriaux sur les cartes
+RareRadar publie des reviews et des guides éditoriaux sur les cartes
 Pokémon TCG : accessoires de conservation, classeurs, sleeves,
 toploaders, méthodes de grading, analyse de sets récents. Le ton est
 posé, factuel, et destiné aux collectionneurs adultes qui veulent

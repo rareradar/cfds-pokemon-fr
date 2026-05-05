@@ -1,7 +1,7 @@
 ---
 layout: default
 title: À propos
-description: rareradar — reviews et guides éditoriaux indépendants sur les cartes Pokémon TCG, pour collectionneurs francophones adultes.
+description: RareRadar — reviews et guides éditoriaux indépendants sur les cartes Pokémon TCG, pour collectionneurs francophones adultes.
 permalink: /about/
 ---
 
@@ -10,7 +10,7 @@ permalink: /about/
 
     <figure class="article__cover">
       <img src="{{ '/assets/images/about/cover.png' | relative_url }}"
-           alt="rareradar — note méta À propos"
+           alt="RareRadar — note méta À propos"
            loading="eager" decoding="async">
     </figure>
 
@@ -31,7 +31,7 @@ permalink: /about/
 
 <h2>La ligne éditoriale</h2>
 
-<p>rareradar s'adresse aux collectionneurs francophones adultes qui prennent
+<p>RareRadar s'adresse aux collectionneurs francophones adultes qui prennent
 le hobby au sérieux : conservation longue durée, grading, accessoires fiables,
 analyse des sets récents et des classiques. Pas de hype d'unboxing, pas de
 rip-and-flip, pas de "10 cartes les plus chères 2026" recyclées d'une vidéo
@@ -60,7 +60,7 @@ remonter — c'est explicitement souhaité.</p>
 
 <p>Quand un article recommande un produit, le bouton "Voir sur Amazon"
 associé est un lien partenaire&nbsp;: si vous l'utilisez et que vous
-achetez quelque chose, rareradar touche une petite commission. Aucun
+achetez quelque chose, RareRadar touche une petite commission. Aucun
 surcoût pour vous, le prix Amazon est identique.</p>
 
 <p>C'est ce mécanisme qui finance le site&nbsp;: tester du matériel,
@@ -92,7 +92,7 @@ diagonale et un dossier de fond.</p>
 
 <h2>Indépendance</h2>
 
-<p>Aucun contenu de rareradar n'est commandité. Les marques mentionnées
+<p>Aucun contenu de RareRadar n'est commandité. Les marques mentionnées
 (Ultra Pro, Vault X, Dragon Shield, etc.) ne paient pas pour apparaître ;
 elles sont citées parce qu'elles dominent les catégories qu'on couvre.
 Le seul levier économique du site est l'affiliation, signalée en clair sur

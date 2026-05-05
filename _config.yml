@@ -1,4 +1,4 @@
-title: rareradar
+title: RareRadar
 tagline: "Cartes Pokémon TCG — reviews, guides, lab"
 description: >-
   Reviews et guides éditoriaux sur les cartes Pokémon TCG pour collectionneurs
@@ -9,7 +9,7 @@ baseurl: ""
 lang: fr
 locale: fr_FR
 author:
-  name: rareradar
+  name: RareRadar
   email: ""
 twitter:
   username: ""
@@ -35,7 +35,7 @@ defaults:
       type: posts
     values:
       layout: post
-      author: rareradar
+      author: RareRadar
   - scope:
       path: ""
       type: pages
