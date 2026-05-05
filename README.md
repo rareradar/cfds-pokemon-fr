@@ -3,7 +3,7 @@
 Site Jekyll de **rareradar** — reviews et guides éditoriaux sur les cartes
 Pokémon TCG pour collectionneurs francophones adultes.
 
-Production déployée sur **GitHub Pages** : <https://rareradar.github.io/cfds-pokemon-fr/>
+Production déployée sur **GitHub Pages** + custom domain OVH : <https://rareradar.fr>
 
 ---
 
@@ -43,7 +43,7 @@ tags: [accessoires, classeurs]
 ```bash
 bundle install
 bundle exec jekyll serve
-# → http://127.0.0.1:4000/cfds-pokemon-fr/
+# → http://127.0.0.1:4000/
 ```
 
 ## Build & déploiement

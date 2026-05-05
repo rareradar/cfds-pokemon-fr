@@ -4,8 +4,8 @@ description: >-
   Reviews et guides éditoriaux sur les cartes Pokémon TCG pour collectionneurs
   francophones adultes. Focus accessoires, conservation, grading PSA / CGC / BGS,
   analyse de sets.
-url: "https://rareradar.github.io"
-baseurl: "/cfds-pokemon-fr"
+url: "https://rareradar.fr"
+baseurl: ""
 lang: fr
 locale: fr_FR
 author:
