@@ -1,0 +1,82 @@
+# robots.txt rareradar.fr — politique de crawl
+# Adopté suite au verdict conseil M007 (3/3 sur blocage scrapers IA training).
+# https://rareradar.fr/sitemap.xml
+
+# ───────────────────────────────────────────────────────
+# Crawlers de moteurs de recherche : autorisés
+# ───────────────────────────────────────────────────────
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Qwantify
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# ───────────────────────────────────────────────────────
+# Scrapers IA training : bloqués
+# Justification : éviter la dilution du contenu éditorial dans
+# des modèles tiers sans contrepartie. Citation OK via index moteurs.
+# ───────────────────────────────────────────────────────
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+# ───────────────────────────────────────────────────────
+# Default — tout autre crawler : autorisé sur le contenu public
+# ───────────────────────────────────────────────────────
+
+User-agent: *
+Allow: /
+Disallow: /_drafts/
+Disallow: /_site/
+Disallow: /draft/
+
+Sitemap: https://rareradar.fr/sitemap.xml
