@@ -97,7 +97,7 @@
 {% include footer.html %}
 
 <script>
-  /* Hero scanner — compteur DETECTING (Q1-E motion M005, conseil 3/3 approve) */
+  /* Hero scanner — compteur DETECTING (Q1-E motion M005) */
   (function () {
     var el = document.querySelector('.hero__detect-count');
     if (!el) return;
@@ -112,6 +112,96 @@
     }
     tick();
     setInterval(tick, 320);
+  }());
+
+  /* Articles search + filter + sort (vanilla, no framework) */
+  (function () {
+    var grid = document.getElementById('article-grid');
+    var search = document.getElementById('article-search');
+    var sortSel = document.getElementById('article-sort');
+    var chips = document.querySelectorAll('[data-tag-filter]');
+    var resetBtn = document.getElementById('article-reset');
+    var emptyMsg = document.querySelector('.article-controls__empty');
+    var counter = document.querySelector('[data-articles-visible]');
+    if (!grid) return;
+
+    var state = { q: '', tag: '', sort: 'date_desc' };
+    var rarityRank = { common: 1, uncommon: 2, holo_rare: 3, secret_rare: 4 };
+
+    function getCards() { return Array.prototype.slice.call(grid.querySelectorAll('.article-card')); }
+
+    function matches(card) {
+      var q = state.q.trim();
+      if (q) {
+        var hay = (card.dataset.title || '') + ' ' + (card.dataset.description || '') + ' ' + (card.dataset.tags || '');
+        if (hay.indexOf(q) === -1) return false;
+      }
+      if (state.tag) {
+        var tags = (card.dataset.tags || '').split(',');
+        if (tags.indexOf(state.tag) === -1) return false;
+      }
+      return true;
+    }
+
+    function sortCards(cards) {
+      var sorted = cards.slice();
+      sorted.sort(function (a, b) {
+        switch (state.sort) {
+          case 'date_asc':   return (+a.dataset.date) - (+b.dataset.date);
+          case 'title_asc':  return (a.dataset.title || '').localeCompare(b.dataset.title || '', 'fr');
+          case 'rarity_desc':return (rarityRank[b.dataset.rarity] || 0) - (rarityRank[a.dataset.rarity] || 0);
+          case 'date_desc':
+          default:           return (+b.dataset.date) - (+a.dataset.date);
+        }
+      });
+      return sorted;
+    }
+
+    function render() {
+      var all = getCards();
+      var visible = 0;
+      all.forEach(function (c) {
+        if (matches(c)) { c.hidden = false; visible++; }
+        else { c.hidden = true; }
+      });
+      var sorted = sortCards(all);
+      sorted.forEach(function (c) { grid.appendChild(c); });
+      if (counter) counter.textContent = String(visible).padStart(3, '0');
+      if (emptyMsg) emptyMsg.hidden = visible !== 0;
+    }
+
+    if (search) {
+      search.addEventListener('input', function (e) {
+        state.q = (e.target.value || '').toLowerCase();
+        render();
+      });
+    }
+    if (sortSel) {
+      sortSel.addEventListener('change', function (e) {
+        state.sort = e.target.value;
+        render();
+      });
+    }
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        chips.forEach(function (c) { c.classList.remove('chip--active'); });
+        chip.classList.add('chip--active');
+        state.tag = chip.dataset.tagFilter || '';
+        render();
+      });
+    });
+    if (resetBtn) {
+      resetBtn.addEventListener('click', function () {
+        state = { q: '', tag: '', sort: 'date_desc' };
+        if (search) search.value = '';
+        if (sortSel) sortSel.value = 'date_desc';
+        chips.forEach(function (c) { c.classList.remove('chip--active'); });
+        var defaultChip = document.querySelector('[data-tag-filter=""]');
+        if (defaultChip) defaultChip.classList.add('chip--active');
+        render();
+      });
+    }
+    render();
   }());
 </script>
 

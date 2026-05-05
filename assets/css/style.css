@@ -1263,6 +1263,108 @@ a {
 }
 
 /* ============================================================================
+   18b. ARTICLE CONTROLS (search + tag filters + sort)
+   ============================================================================ */
+.article-controls {
+  margin-bottom: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.article-controls__row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.8rem;
+  align-items: stretch;
+}
+@media (max-width: 600px) {
+  .article-controls__row { grid-template-columns: 1fr; }
+}
+.article-controls__search input,
+.article-controls__sort select {
+  width: 100%;
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0.7rem 1rem 0.65rem;
+  background: var(--bg-2);
+  color: var(--ink);
+  border: 1.5px solid var(--rule-soft);
+  outline: none;
+  transition: border-color var(--dur-fast) var(--ease-out),
+              background var(--dur-fast) var(--ease-out);
+}
+.article-controls__search input::placeholder { color: var(--ink-mute); }
+.article-controls__search input:focus,
+.article-controls__sort select:focus {
+  border-color: var(--accent);
+  background: var(--bg-pop);
+}
+.article-controls__sort select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink-soft) 50%),
+                    linear-gradient(135deg, var(--ink-soft) 50%, transparent 50%);
+  background-position: calc(100% - 18px) center, calc(100% - 13px) center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 2.4rem;
+  cursor: pointer;
+  min-width: 180px;
+}
+
+.article-controls__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.chip {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  padding: 0.42rem 0.85rem 0.38rem;
+  background: transparent;
+  color: var(--ink-soft);
+  border: 1.5px solid var(--rule-soft);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color var(--dur-fast) var(--ease-out),
+              border-color var(--dur-fast) var(--ease-out),
+              background var(--dur-fast) var(--ease-out);
+}
+.chip:hover {
+  color: var(--ink);
+  border-color: var(--ink-2);
+}
+.chip--active {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.article-controls__empty {
+  padding: 3rem 1rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+.link-reset {
+  background: transparent;
+  border: 0;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 0;
+}
+.article-card[hidden] { display: none !important; }
+
+/* ============================================================================
    19. STATS RPG (Q1-B, conseil M005)
    Wrapper visuel décoratif AU-DESSUS d'un tableau HTML accessible. Inspiré
    stats cartes Pokémon (HP/ATK/DEF/SPD) avec barres horizontales animées.

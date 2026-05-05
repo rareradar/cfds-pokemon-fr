@@ -8,7 +8,13 @@
 {% assign rarity_key = post.rarity | default: 'common' %}
 {% assign r = site.data.rarity[rarity_key] %}
 
-<article class="article-card fade-in" data-delay="{{ forloop.index | modulo: 6 }}">
+<article class="article-card fade-in"
+         data-delay="{{ forloop.index | modulo: 6 }}"
+         data-title="{{ post.title | downcase | escape }}"
+         data-description="{{ post.description | default: post.excerpt | strip_html | downcase | escape | truncate: 200 }}"
+         data-tags="{{ post.tags | join: ',' | downcase }}"
+         data-rarity="{{ rarity_key }}"
+         data-date="{{ post.date | date: '%s' }}">
   <div class="article-card__hero" aria-hidden="true">
     {% if post.cover_image %}
       <img src="{{ post.cover_image | relative_url }}"
