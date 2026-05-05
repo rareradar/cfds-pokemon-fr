@@ -49,18 +49,23 @@ d'apparition, distinctions entre sets). Rien ne part en ligne sans avoir
 travers les mailles. Le RSS et le canal contact (à venir) servent à les
 remonter — c'est explicitement souhaité.</p>
 
-<h2>Liens partenaires</h2>
+<h2>Comment le site est financé</h2>
 
-<p>Certains liens vers Amazon présents sur le site sont des liens
-partenaires, signalés en clair sur chaque article concerné. Ils ne
-modifient ni le prix ni les conditions d'achat pour vous, et n'influencent
-pas les recommandations éditoriales : si une référence est moins bonne
-qu'une autre, c'est écrit, qu'elle soit affiliée ou non.</p>
+<p>Quand un article recommande un produit, le bouton "Voir sur Amazon"
+associé est un lien partenaire&nbsp;: si vous l'utilisez et que vous
+achetez quelque chose, rareradar touche une petite commission. Aucun
+surcoût pour vous, le prix Amazon est identique.</p>
+
+<p>C'est ce mécanisme qui finance le site&nbsp;: tester du matériel,
+écrire des articles longs, garder l'espace sans pub intrusive ni
+newsletter forcée. En échange, la règle est simple — si une référence
+est moins bonne qu'une autre, c'est écrit, qu'elle rapporte une
+commission ou non. On n'invente pas une recommandation pour 80 centimes.</p>
 
 <p>Quand une catégorie est mieux servie ailleurs (Cardmarket, eBay,
-boutiques spécialisées), on dirige vers ces sources sans aucun bénéfice
-pour le site. La règle est simple&nbsp;: on ne recommande pas une
-mauvaise référence parce qu'elle paye mieux.</p>
+boutiques spécialisées), on dirige vers ces sources sans bénéfice pour
+le site. C'est la condition pour que les recommandations restent
+utiles.</p>
 
 <h2>Système de "rareté" éditoriale</h2>
 

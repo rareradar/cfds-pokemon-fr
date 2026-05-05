@@ -41,13 +41,18 @@ Concrètement, rien ne sort en ligne tant que ça n'a pas été lu et
 validé. Si vous trouvez une erreur factuelle, c'est qu'elle est passée
 à travers les mailles — c'est explicitement souhaité qu'on les remonte.
 
-## Liens partenaires
+## Comment le site est financé
 
-Certains liens vers Amazon présents dans les articles sont des liens
-partenaires, signalés en clair sur chaque article concerné. Ils ne
-modifient pas le prix pour vous, et n'influencent pas les recommandations
-— quand une référence est moins bonne qu'une autre, c'est écrit, qu'elle
-rapporte quelque chose au site ou non.
+Quand un article recommande un produit, le lien "Voir sur Amazon" associé
+est un lien partenaire&nbsp;: si vous l'utilisez et que vous achetez quelque
+chose, on touche une petite commission qui finance le site. Aucun surcoût
+pour vous, prix Amazon identique.
+
+C'est ce qui permet de tester du matériel, d'écrire des articles longs et
+de garder le site sans pub intrusive ni newsletter forcée. En échange, la
+règle est simple&nbsp;: si une référence est moins bonne qu'une autre,
+c'est écrit — qu'elle rapporte une commission ou non. On n'invente pas une
+recommandation pour 80 centimes.
 
 <div class="callout-affiliate">
   <span class="callout-affiliate__label">Sujet récurrent</span>
@@ -60,7 +65,9 @@ rapporte quelque chose au site ou non.
   <a class="callout-affiliate__cta" href="https://www.amazon.fr/s?k=ultra+pro+penny+sleeves+pokemon&tag=rareradar-21" rel="sponsored noopener" target="_blank">
     Voir sur Amazon
   </a>
-  <small class="callout-affiliate__disclosure">Lien partenaire</small>
+  <small class="callout-affiliate__disclosure">
+    Lien partenaire — un achat via ce lien finance le site, sans surcoût pour vous.
+  </small>
 </div>
 
 ## Système de rareté
