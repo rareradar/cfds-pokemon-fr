@@ -916,6 +916,87 @@ a {
   color: var(--accent);
   border-bottom-color: var(--ink);
 }
+
+/* ─── Liens affiliés Amazon : CTA visible inline ─── */
+.prose a[href*="tag=rareradar-21"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--bg-pop);
+  border: 1.5px solid var(--accent);
+  border-bottom: 1.5px solid var(--accent);
+  padding: 0.6rem 0.95rem 0.55rem;
+  margin: 0.5em 0;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.96rem;
+  line-height: 1.35;
+  max-width: 100%;
+  text-decoration: none;
+  transition: background var(--dur-fast) var(--ease-out),
+              color var(--dur-fast) var(--ease-out),
+              transform var(--dur-fast) var(--ease-out);
+}
+.prose a[href*="tag=rareradar-21"]:hover {
+  background: var(--accent);
+  color: var(--bg);
+  border-bottom-color: var(--accent);
+  transform: translateY(-1px);
+}
+.prose a[href*="tag=rareradar-21"]::before {
+  content: "▸";
+  font-weight: 800;
+  color: var(--accent);
+  flex-shrink: 0;
+  font-size: 0.95em;
+  transition: color var(--dur-fast) var(--ease-out),
+              transform var(--dur-fast) var(--ease-out);
+}
+.prose a[href*="tag=rareradar-21"]:hover::before {
+  color: var(--bg);
+  transform: translateX(3px);
+}
+.prose a[href*="tag=rareradar-21"]::after {
+  content: "AMAZON · AFFILIÉ";
+  margin-left: auto;
+  padding-left: 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-caps);
+  color: var(--ink-soft);
+  flex-shrink: 0;
+  border-left: 1.5px solid var(--rule-soft);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.prose a[href*="tag=rareradar-21"]:hover::after {
+  color: var(--bg);
+  border-left-color: var(--bg);
+}
+.prose a[href*="tag=rareradar-21"] strong {
+  color: inherit;
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  .prose a[href*="tag=rareradar-21"]::after { display: none; }
+}
+
+/* Liens dans cellules de tableau : pas de transformation CTA, garder inline */
+.prose table a[href*="tag=rareradar-21"] {
+  display: inline;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--accent);
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  transform: none !important;
+  font-size: inherit;
+}
+.prose table a[href*="tag=rareradar-21"]::before,
+.prose table a[href*="tag=rareradar-21"]::after { content: none; }
+.prose table a[href*="tag=rareradar-21"]:hover { background: transparent; color: var(--accent); }
 .prose ul, .prose ol { padding-left: 1.4em; margin-block: 1.1em; }
 .prose li { margin-block: 0.45em; }
 .prose ul li::marker { color: var(--fire); content: "▸ "; }
