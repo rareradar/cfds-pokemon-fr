@@ -51,8 +51,8 @@ layout: default
     <h2 class="section-head__title h-2">À lire aussi</h2>
   </header>
   <div class="card-grid">
-    {% assign others = site.posts | where_exp: "p", "p.url != page.url" | slice: 0, 3 %}
-    {% for post in others %}
+    {% assign others = site.posts | where_exp: "p", "p.url != page.url" %}
+    {% for post in others limit: 3 %}
       {% include article-card.html post=post %}
     {% endfor %}
   </div>
