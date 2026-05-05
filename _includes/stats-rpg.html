@@ -1,0 +1,53 @@
+{%- comment -%}
+  stats-rpg.html — composant comparatif visuel inspiré stats Pokémon TCG.
+  Le tableau HTML reste source de vérité (a11y), les barres sont décoratives.
+
+  Usage dans un article (markdown autorise HTML brut) :
+
+  {% include stats-rpg.html
+     contenders="Ultra Pro Eclipse|Dragon Shield Perfect Fit|Vault X Premium"
+     stats="HP:80|55|70||ATK:65|85|60||DEF:90|70|85||SPD:55|50|75"
+     verdict_index="0" %}
+
+  - contenders : 2-4 noms séparés par |
+  - stats : "STAT_NAME:val1|val2|val3" séparés par || (val 0-100)
+  - verdict_index : index 0-based du gagnant (badge ★)
+{%- endcomment -%}
+
+{%- assign contenders_arr = include.contenders | split: "|" -%}
+{%- assign stats_blocks = include.stats | split: "||" -%}
+{%- assign winner_idx = include.verdict_index | default: -1 | plus: 0 -%}
+
+<div class="stats-rpg" role="region" aria-label="Comparatif stats">
+  <div class="stats-rpg__grid">
+    {%- for contender in contenders_arr -%}
+      {%- assign idx = forloop.index0 -%}
+      <div class="stats-rpg__card{% if idx == winner_idx %} stats-rpg__card--winner{% endif %}">
+        <header class="stats-rpg__card-head">
+          {%- if idx == winner_idx -%}
+            <span class="stats-rpg__crown" aria-label="Choix éditorial">★</span>
+          {%- endif -%}
+          <h4 class="stats-rpg__name">{{ contender | strip }}</h4>
+        </header>
+        <dl class="stats-rpg__stats">
+          {%- for block in stats_blocks -%}
+            {%- assign parts = block | split: ":" -%}
+            {%- assign label = parts[0] | strip -%}
+            {%- assign vals = parts[1] | split: "|" -%}
+            {%- assign val = vals[idx] | strip | plus: 0 -%}
+            <div class="stats-rpg__row">
+              <dt class="stats-rpg__label">{{ label }}</dt>
+              <dd class="stats-rpg__value">
+                <span class="stats-rpg__bar" style="--val: {{ val }};">
+                  <span class="stats-rpg__bar-fill"></span>
+                </span>
+                <span class="stats-rpg__num">{{ val }}</span>
+              </dd>
+            </div>
+          {%- endfor -%}
+        </dl>
+      </div>
+    {%- endfor -%}
+  </div>
+  <p class="stats-rpg__caption mono">Lecture comparative — détails dans le tableau ci-dessous</p>
+</div>

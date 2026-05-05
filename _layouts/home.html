@@ -2,9 +2,15 @@
 layout: default
 ---
 
-<section class="hero">
+<section class="hero hero--scanner">
+  <div class="hero__scanline" aria-hidden="true"></div>
   <div class="shell">
     <div class="hero__eyebrow">
+      <span class="eyebrow eyebrow--detect">
+        <span class="dot-pulse" aria-hidden="true"></span>
+        DETECTING
+        <span class="hero__detect-count" aria-hidden="true"></span>
+      </span>
       <span class="eyebrow">N° {{ site.posts.size | prepend: '00' | slice: -3, 3 }}</span>
       <span class="eyebrow">Lab éditorial · cartes Pokémon FR</span>
     </div>

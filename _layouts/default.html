@@ -96,5 +96,24 @@
 
 {% include footer.html %}
 
+<script>
+  /* Hero scanner — compteur DETECTING (Q1-E motion M005, conseil 3/3 approve) */
+  (function () {
+    var el = document.querySelector('.hero__detect-count');
+    if (!el) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      el.setAttribute('data-val', '042');
+      return;
+    }
+    var n = 0;
+    function tick() {
+      n = (n + 1) % 1000;
+      el.setAttribute('data-val', String(n).padStart(3, '0'));
+    }
+    tick();
+    setInterval(tick, 320);
+  }());
+</script>
+
 </body>
 </html>

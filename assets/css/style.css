@@ -1171,3 +1171,233 @@ a {
   background: var(--electric);
   color: var(--ink);
 }
+
+/* ============================================================================
+   18. HERO SCANNER (Q1-E, conseil M005)
+   Dose "axe geek" localisée au header/hero uniquement. Scan-line lente +
+   indicateur DETECTING dans l'eyebrow.
+   ============================================================================ */
+.hero--scanner {
+  /* on garde le hero existant, on ajoute juste les overlays scan */
+  isolation: isolate;
+}
+
+.hero__scanline {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.hero__scanline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(217, 114, 70, 0.45) 30%,
+    rgba(242, 238, 226, 0.65) 50%,
+    rgba(217, 114, 70, 0.45) 70%,
+    transparent 100%
+  );
+  box-shadow: 0 0 18px rgba(217, 114, 70, 0.35);
+  animation: scan-down 5.4s linear infinite;
+  will-change: transform;
+}
+@keyframes scan-down {
+  0%   { transform: translateY(0); opacity: 0; }
+  6%   { opacity: 1; }
+  94%  { opacity: 1; }
+  100% { transform: translateY(420px); opacity: 0; }
+}
+
+.eyebrow--detect {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.32rem 0.7rem;
+  border: 1px solid var(--accent);
+  background: rgba(217, 114, 70, 0.06);
+  color: var(--accent);
+  font-weight: 700;
+}
+.dot-pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: inline-block;
+  animation: dot-pulse 1.6s ease-in-out infinite;
+  flex-shrink: 0;
+}
+@keyframes dot-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.35; transform: scale(0.7); }
+}
+.hero__detect-count {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.05em;
+  min-width: 4ch;
+  display: inline-block;
+}
+.hero__detect-count::after {
+  content: attr(data-val);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__scanline::before,
+  .dot-pulse { animation: none; }
+  .hero__scanline::before { display: none; }
+}
+
+/* ============================================================================
+   19. STATS RPG (Q1-B, conseil M005)
+   Wrapper visuel décoratif AU-DESSUS d'un tableau HTML accessible. Inspiré
+   stats cartes Pokémon (HP/ATK/DEF/SPD) avec barres horizontales animées.
+   ============================================================================ */
+.stats-rpg {
+  margin: 2.6rem auto;
+  border: 2px solid var(--rule);
+  background: var(--bg-pop);
+  padding: 1.6rem;
+  position: relative;
+}
+.stats-rpg::before {
+  content: "STATS";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: var(--tracking-caps);
+  color: var(--ink);
+  background: var(--accent);
+  padding: 0.4rem 0.85rem 0.36rem;
+  border: 2px solid var(--rule);
+  border-top: 0;
+  border-left: 0;
+}
+.stats-rpg__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.6rem;
+}
+.stats-rpg__card {
+  background: var(--bg-2);
+  border: 1.5px solid var(--rule-soft);
+  padding: 1.1rem 1rem 1.2rem;
+  position: relative;
+  transition: border-color var(--dur-base) var(--ease-out),
+              transform var(--dur-base) var(--ease-out);
+}
+.stats-rpg__card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+.stats-rpg__card--winner {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent), 0 8px 24px -10px rgba(217, 114, 70, 0.4);
+}
+.stats-rpg__card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.9rem;
+  border-bottom: 1.5px solid var(--rule-soft);
+}
+.stats-rpg__crown {
+  font-size: 1rem;
+  color: var(--accent);
+  font-weight: 900;
+}
+.stats-rpg__name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  font-variation-settings: "wght" 700, "wdth" 90;
+  color: var(--ink);
+}
+.stats-rpg__stats {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.stats-rpg__row {
+  display: grid;
+  grid-template-columns: 3.2rem 1fr;
+  align-items: center;
+  gap: 0.7rem;
+}
+.stats-rpg__label {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.stats-rpg__value {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 2.4rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+.stats-rpg__bar {
+  height: 9px;
+  background: var(--bg-pop);
+  border: 1px solid var(--rule-soft);
+  position: relative;
+  overflow: hidden;
+  border-radius: 1px;
+}
+.stats-rpg__bar-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: calc(var(--val, 0) * 1%);
+  background: linear-gradient(
+    to right,
+    var(--steel) 0%,
+    var(--brass) 60%,
+    var(--accent) 100%
+  );
+  transform-origin: left center;
+  animation: bar-grow 0.9s var(--ease-back) both;
+}
+@keyframes bar-grow {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+.stats-rpg__num {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.stats-rpg__caption {
+  margin: 1.4rem 0 0;
+  font-size: 0.7rem;
+  color: var(--ink-mute);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  text-align: right;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stats-rpg__bar-fill,
+  .stats-rpg__card { animation: none; transition: none; }
+}
