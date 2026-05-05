@@ -15,6 +15,55 @@
 
   {% seo %}
   {% feed_meta %}
+
+  {%- comment -%} Schema.org JSON-LD : WebSite global + Article si page post {%- endcomment -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | append: site.baseurl | jsonify }},
+    "description": {{ site.description | strip_newlines | jsonify }},
+    "inLanguage": "fr-FR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "rareradar",
+      "url": {{ site.url | append: site.baseurl | jsonify }}
+    },
+    "potentialAction": {
+      "@type": "SubscribeAction",
+      "target": {{ site.url | append: site.baseurl | append: "/feed.xml" | jsonify }}
+    }
+  }
+  </script>
+  {%- if page.layout == "post" -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},
+    "headline": {{ page.title | jsonify }},
+    "description": {{ page.description | default: page.dek | strip_newlines | jsonify }},
+    "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+    "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+    "author": {
+      "@type": "Organization",
+      "name": {{ page.author | default: site.author.name | default: "rareradar" | jsonify }}
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "rareradar",
+      "url": {{ site.url | append: site.baseurl | jsonify }}
+    }
+    {%- if page.cover_image -%}
+    ,"image": {{ page.cover_image | absolute_url | jsonify }}
+    {%- endif -%}
+    {%- if page.tags and page.tags.size > 0 -%}
+    ,"keywords": {{ page.tags | join: ", " | jsonify }}
+    {%- endif -%}
+  }
+  </script>
+  {%- endif -%}
 </head>
 <body>
 
