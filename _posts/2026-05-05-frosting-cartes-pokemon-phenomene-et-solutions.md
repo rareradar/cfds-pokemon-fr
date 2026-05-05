@@ -220,6 +220,7 @@ en boîte étanche compartimentée dès qu'ils détectent un début.
 
 ## Tableau comparatif des supports
 
+<div class="table-wrap">
 <table>
 <thead>
 <tr>
@@ -232,49 +233,49 @@ en boîte étanche compartimentée dès qu'ils détectent un début.
 </thead>
 <tbody>
 <tr class="row--avoid">
-  <td><span class="medal medal--avoid">à éviter</span> Classeur générique papeterie</td>
+  <td><span class="mark mark--avoid"></span>Classeur générique papeterie</td>
   <td>PVC + carton</td>
   <td>Faible</td>
   <td>Moyenne</td>
   <td>5–15 €</td>
 </tr>
-<tr class="row--top">
-  <td><span class="medal medal--top">top choix</span> <a class="product-link" href="https://www.amazon.fr/s?k=vault+x+binder&tag=rareradar-21">Classeur Vault X / UniKeep</a></td>
+<tr>
+  <td><span class="mark mark--top"></span><a class="product-link" href="https://www.amazon.fr/s?k=vault+x+binder&tag=rareradar-21">Classeur Vault X / UniKeep</a></td>
   <td>Polypropylène</td>
   <td>Bonne</td>
   <td>Élevée</td>
   <td>25–45 €</td>
 </tr>
 <tr>
-  <td><span class="medal medal--ok">alternatif</span> <a class="product-link" href="https://www.amazon.fr/s?k=ultra+pro+pro+binder&tag=rareradar-21">Classeur Ultra Pro PRO-Binder</a></td>
+  <td><a class="product-link" href="https://www.amazon.fr/s?k=ultra+pro+pro+binder&tag=rareradar-21">Classeur Ultra Pro PRO-Binder</a></td>
   <td>Polypropylène</td>
   <td>Bonne</td>
   <td>Élevée</td>
   <td>30–50 €</td>
 </tr>
 <tr class="row--avoid">
-  <td><span class="medal medal--avoid">à éviter</span> Penny sleeve générique</td>
+  <td><span class="mark mark--avoid"></span>Penny sleeve générique</td>
   <td>PVC</td>
   <td>Faible</td>
   <td>Faible</td>
   <td>0,01 €/u</td>
 </tr>
-<tr class="row--top">
-  <td><span class="medal medal--top">top choix</span> <a class="product-link" href="https://www.amazon.fr/s?k=ultra+pro+penny+sleeves&tag=rareradar-21">Penny sleeve Ultra Pro / KMC</a></td>
+<tr>
+  <td><span class="mark mark--top"></span><a class="product-link" href="https://www.amazon.fr/s?k=ultra+pro+penny+sleeves&tag=rareradar-21">Penny sleeve Ultra Pro / KMC</a></td>
   <td>Polypropylène</td>
   <td>Bonne</td>
   <td>Bonne</td>
   <td>0,03 €/u</td>
 </tr>
-<tr class="row--top">
-  <td><span class="medal medal--top">top choix</span> <a class="product-link" href="https://www.amazon.fr/s?k=dragon+shield+outer+sleeve&tag=rareradar-21">Outer sleeve Dragon Shield</a></td>
+<tr>
+  <td><span class="mark mark--top"></span><a class="product-link" href="https://www.amazon.fr/s?k=dragon+shield+outer+sleeve&tag=rareradar-21">Outer sleeve Dragon Shield</a></td>
   <td>Polyéthylène</td>
   <td>Très bonne</td>
   <td>Élevée</td>
   <td>0,08 €/u</td>
 </tr>
-<tr class="row--top">
-  <td><span class="medal medal--top">top choix</span> <a class="product-link" href="https://www.amazon.fr/s?k=ultra+pro+toploader+35pt&tag=rareradar-21">Toploader 35pt</a></td>
+<tr>
+  <td><span class="mark mark--top"></span><a class="product-link" href="https://www.amazon.fr/s?k=ultra+pro+toploader+35pt&tag=rareradar-21">Toploader 35pt</a></td>
   <td>Polystyrène / PET</td>
   <td>Très bonne</td>
   <td>Très élevée</td>
@@ -282,6 +283,7 @@ en boîte étanche compartimentée dès qu'ils détectent un début.
 </tr>
 </tbody>
 </table>
+</div>
 
 Le ★ va à la combinaison **penny sleeve PP + toploader 35pt + classeur
 polypropylène stocké à 35-45 % HR** pour les cartes à valeur < 100 €. Au-delà,
