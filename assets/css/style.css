@@ -755,6 +755,8 @@ a {
   padding-bottom: 2.4rem;
   margin-bottom: 3.2rem;
   position: relative;
+  max-width: var(--measure);
+  margin-inline: auto;
 }
 .article__eyebrow {
   display: flex;
@@ -766,10 +768,21 @@ a {
 .article__title {
   margin: 0;
   max-width: 22ch;
+  /* Override .h-1 : un H1 d'article doit rester sous le hero, pas le concurrencer */
+  font-size: clamp(2.2rem, 4.5vw + 0.4rem, 4rem);
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-tight);
+  font-variation-settings: "wght" 700, "wdth" 85, "opsz" 36;
 }
 .article__dek {
   margin-top: 1.6rem;
   max-width: 56ch;
+}
+.article__cover {
+  max-width: var(--measure);
+  margin-inline: auto;
 }
 .article__meta {
   display: flex;
