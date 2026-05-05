@@ -220,15 +220,68 @@ en boîte étanche compartimentée dès qu'ils détectent un début.
 
 ## Tableau comparatif des supports
 
-| Support | Matériau | Protection humidité | Durabilité | Prix indicatif |
-|---|---|---|---|---|
-| Classeur générique papeterie | PVC + carton | Faible | Moyenne | 5-15 € |
-| Classeur Vault X / UniKeep | Polypropylène | Bonne | Élevée | 25-45 € |
-| Classeur Ultra Pro PRO-Binder | Polypropylène | Bonne | Élevée | 30-50 € |
-| Penny sleeve générique | PVC | Faible | Faible | 0,01 €/u |
-| Penny sleeve Ultra Pro / KMC | Polypropylène | Bonne | Bonne | 0,03 €/u |
-| Outer sleeve Dragon Shield | Polyéthylène | Très bonne | Élevée | 0,08 €/u |
-| Toploader 35pt | Polystyrène / PET | Très bonne | Très élevée | 0,15 €/u |
+<table>
+<thead>
+<tr>
+  <th>Support</th>
+  <th>Matériau</th>
+  <th>Protection humidité</th>
+  <th>Durabilité</th>
+  <th>Prix indicatif</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row--avoid">
+  <td><span class="medal medal--avoid">à éviter</span> Classeur générique papeterie</td>
+  <td>PVC + carton</td>
+  <td>Faible</td>
+  <td>Moyenne</td>
+  <td>5–15 €</td>
+</tr>
+<tr class="row--top">
+  <td><span class="medal medal--top">top choix</span> <a class="product-link" href="https://www.amazon.fr/s?k=vault+x+binder&tag=rareradar-21">Classeur Vault X / UniKeep</a></td>
+  <td>Polypropylène</td>
+  <td>Bonne</td>
+  <td>Élevée</td>
+  <td>25–45 €</td>
+</tr>
+<tr>
+  <td><span class="medal medal--ok">alternatif</span> <a class="product-link" href="https://www.amazon.fr/s?k=ultra+pro+pro+binder&tag=rareradar-21">Classeur Ultra Pro PRO-Binder</a></td>
+  <td>Polypropylène</td>
+  <td>Bonne</td>
+  <td>Élevée</td>
+  <td>30–50 €</td>
+</tr>
+<tr class="row--avoid">
+  <td><span class="medal medal--avoid">à éviter</span> Penny sleeve générique</td>
+  <td>PVC</td>
+  <td>Faible</td>
+  <td>Faible</td>
+  <td>0,01 €/u</td>
+</tr>
+<tr class="row--top">
+  <td><span class="medal medal--top">top choix</span> <a class="product-link" href="https://www.amazon.fr/s?k=ultra+pro+penny+sleeves&tag=rareradar-21">Penny sleeve Ultra Pro / KMC</a></td>
+  <td>Polypropylène</td>
+  <td>Bonne</td>
+  <td>Bonne</td>
+  <td>0,03 €/u</td>
+</tr>
+<tr class="row--top">
+  <td><span class="medal medal--top">top choix</span> <a class="product-link" href="https://www.amazon.fr/s?k=dragon+shield+outer+sleeve&tag=rareradar-21">Outer sleeve Dragon Shield</a></td>
+  <td>Polyéthylène</td>
+  <td>Très bonne</td>
+  <td>Élevée</td>
+  <td>0,08 €/u</td>
+</tr>
+<tr class="row--top">
+  <td><span class="medal medal--top">top choix</span> <a class="product-link" href="https://www.amazon.fr/s?k=ultra+pro+toploader+35pt&tag=rareradar-21">Toploader 35pt</a></td>
+  <td>Polystyrène / PET</td>
+  <td>Très bonne</td>
+  <td>Très élevée</td>
+  <td>0,15 €/u</td>
+</tr>
+</tbody>
+</table>
 
 Le ★ va à la combinaison **penny sleeve PP + toploader 35pt + classeur
 polypropylène stocké à 35-45 % HR** pour les cartes à valeur < 100 €. Au-delà,
