@@ -584,15 +584,13 @@ a {
   border: 1px solid var(--rule-soft);
   position: relative;
   isolation: isolate;
+  height: 100%;
 }
-.article-card:nth-child(3n+1) { grid-column: span 7; }
-.article-card:nth-child(3n+2) { grid-column: span 5; }
-.article-card:nth-child(3n)   { grid-column: span 12; }
 @media (max-width: 900px) {
-  .article-card,
-  .article-card:nth-child(3n+1),
-  .article-card:nth-child(3n+2),
-  .article-card:nth-child(3n)   { grid-column: span 12; }
+  .article-card { grid-column: span 12; }
+}
+.card-grid {
+  align-items: stretch;
 }
 
 /* Hover : glow doux + lift subtile (remplace l'holo cone agressif v5) */
