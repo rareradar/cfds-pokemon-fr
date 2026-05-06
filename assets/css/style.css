@@ -950,6 +950,55 @@ a {
   transform: translateY(-2px);
 }
 
+/* Tooltip "Partager sur XXX" — CSS pur, devices avec hover seulement */
+@media (hover: hover) and (pointer: fine) {
+  .share-btn[data-tooltip] { position: relative; }
+  .share-btn[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: var(--tracking-caps);
+    text-transform: uppercase;
+    color: var(--bg);
+    background: var(--ink);
+    padding: 0.42rem 0.75rem 0.38rem;
+    border-radius: 2px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 160ms var(--ease-out),
+                transform 160ms var(--ease-out);
+  }
+  .share-btn[data-tooltip]::before {
+    content: "";
+    position: absolute;
+    bottom: calc(100% + 4px);
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: var(--ink);
+    pointer-events: none;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 160ms var(--ease-out);
+  }
+  .share-btn[data-tooltip]:hover::after,
+  .share-btn[data-tooltip]:focus-visible::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  .share-btn[data-tooltip]:hover::before,
+  .share-btn[data-tooltip]:focus-visible::before {
+    opacity: 1;
+  }
+}
+
 /* Hover par réseau : couleurs de marque pour reconnaissance immédiate */
 .share-btn[href*="reddit.com"]:hover {
   background: #ff4500;
