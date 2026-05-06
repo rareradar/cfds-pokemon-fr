@@ -32,6 +32,84 @@ visible sous un certain angle ou lumière rasante. En français, on parle aussi 
 perd de sa brillance, ses parties holographiques deviennent ternes, et la valeur
 sur Cardmarket en pâtit immédiatement (entre −15 % et −40 % suivant la sévérité).
 
+<figure class="illustration">
+  <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparaison carte saine vs carte avec frosting (voile blanc et perte de brillance)">
+    <defs>
+      <linearGradient id="card-clean" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%"  stop-color="#1c2030"/>
+        <stop offset="100%" stop-color="#0d1018"/>
+      </linearGradient>
+      <linearGradient id="card-frost" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%"   stop-color="#1c2030"/>
+        <stop offset="40%"  stop-color="#3a3f50"/>
+        <stop offset="100%" stop-color="#5d6376"/>
+      </linearGradient>
+      <radialGradient id="holo-clean" cx="50%" cy="35%" r="40%">
+        <stop offset="0%"  stop-color="#d97246" stop-opacity="0.85"/>
+        <stop offset="60%" stop-color="#9c8454" stop-opacity="0.55"/>
+        <stop offset="100%" stop-color="#1c2030" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="holo-frost" cx="50%" cy="35%" r="40%">
+        <stop offset="0%"  stop-color="#9c8454" stop-opacity="0.25"/>
+        <stop offset="100%" stop-color="#1c2030" stop-opacity="0"/>
+      </radialGradient>
+      <pattern id="frost-texture" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse">
+        <circle cx="1" cy="1" r="0.7" fill="#f2eee2" opacity="0.18"/>
+        <circle cx="4" cy="3" r="0.5" fill="#f2eee2" opacity="0.12"/>
+        <circle cx="2" cy="5" r="0.4" fill="#f2eee2" opacity="0.10"/>
+      </pattern>
+    </defs>
+
+    <!-- Carte SAINE à gauche -->
+    <text x="115" y="32" font-family="JetBrains Mono, monospace" font-size="11" fill="#9b9789" letter-spacing="2" text-anchor="middle">CARTE SAINE</text>
+    <rect x="50" y="50" width="130" height="180" rx="6" fill="url(#card-clean)" stroke="#9c8454" stroke-width="2"/>
+    <rect x="58" y="62" width="114" height="78" rx="3" fill="url(#holo-clean)" stroke="#9c8454" stroke-width="1" opacity="0.95"/>
+    <rect x="58" y="148" width="114" height="3" fill="#d97246"/>
+    <rect x="58" y="156" width="92" height="2" fill="#9c8454" opacity="0.7"/>
+    <rect x="58" y="162" width="100" height="2" fill="#9c8454" opacity="0.5"/>
+    <rect x="58" y="168" width="80" height="2" fill="#9c8454" opacity="0.5"/>
+    <rect x="58" y="180" width="114" height="3" fill="#9c8454" opacity="0.4"/>
+    <rect x="58" y="189" width="60" height="2" fill="#9c8454" opacity="0.4"/>
+    <rect x="58" y="195" width="78" height="2" fill="#9c8454" opacity="0.4"/>
+    <text x="115" y="252" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#4d6b3d" font-weight="700" text-anchor="middle">vernis intact</text>
+    <text x="115" y="268" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#9b9789" text-anchor="middle">surface lisse</text>
+    <text x="115" y="282" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#9b9789" text-anchor="middle">brillance holographique</text>
+
+    <!-- Flèche au milieu -->
+    <text x="300" y="135" font-family="JetBrains Mono, monospace" font-size="14" fill="#d97246" font-weight="800" text-anchor="middle">→</text>
+    <text x="300" y="155" font-family="JetBrains Mono, monospace" font-size="9" fill="#d97246" letter-spacing="2" text-anchor="middle">6 MOIS</text>
+    <text x="300" y="170" font-family="JetBrains Mono, monospace" font-size="9" fill="#9b9789" letter-spacing="2" text-anchor="middle">HUMIDITÉ 65%</text>
+
+    <!-- Carte FROSTÉE à droite -->
+    <text x="485" y="32" font-family="JetBrains Mono, monospace" font-size="11" fill="#9b9789" letter-spacing="2" text-anchor="middle">CARTE FROSTÉE</text>
+    <rect x="420" y="50" width="130" height="180" rx="6" fill="url(#card-frost)" stroke="#6f7a8c" stroke-width="2"/>
+    <rect x="428" y="62" width="114" height="78" rx="3" fill="url(#holo-frost)" stroke="#6f7a8c" stroke-width="1"/>
+    <rect x="428" y="62" width="114" height="78" rx="3" fill="url(#frost-texture)"/>
+    <rect x="428" y="148" width="114" height="3" fill="#6f7a8c"/>
+    <rect x="428" y="156" width="92" height="2" fill="#6f7a8c" opacity="0.55"/>
+    <rect x="428" y="162" width="100" height="2" fill="#6f7a8c" opacity="0.4"/>
+    <rect x="428" y="168" width="80" height="2" fill="#6f7a8c" opacity="0.4"/>
+    <rect x="428" y="180" width="114" height="3" fill="#6f7a8c" opacity="0.3"/>
+    <rect x="428" y="189" width="60" height="2" fill="#6f7a8c" opacity="0.3"/>
+    <rect x="428" y="195" width="78" height="2" fill="#6f7a8c" opacity="0.3"/>
+    <!-- Voile blanc dégradé sur les bords -->
+    <rect x="420" y="50" width="130" height="180" rx="6" fill="url(#frost-texture)" opacity="0.6"/>
+    <ellipse cx="485" cy="140" rx="80" ry="100" fill="#f2eee2" opacity="0.12"/>
+    <ellipse cx="438" cy="80" rx="22" ry="30" fill="#f2eee2" opacity="0.22"/>
+    <ellipse cx="538" cy="200" rx="20" ry="25" fill="#f2eee2" opacity="0.18"/>
+    <text x="485" y="252" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#7a2d24" font-weight="700" text-anchor="middle">voile blanc visible</text>
+    <text x="485" y="268" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#9b9789" text-anchor="middle">texture granuleuse</text>
+    <text x="485" y="282" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#9b9789" text-anchor="middle">brillance perdue</text>
+
+    <!-- Lignes annotation pointant les zones critiques -->
+    <line x1="438" y1="80" x2="395" y2="65" stroke="#f2eee2" stroke-width="1" stroke-dasharray="2 2" opacity="0.5"/>
+    <line x1="538" y1="200" x2="565" y2="220" stroke="#f2eee2" stroke-width="1" stroke-dasharray="2 2" opacity="0.5"/>
+  </svg>
+  <figcaption class="illustration__caption">
+    <strong>Comparaison</strong> · même carte, à 6 mois d'écart, dans deux environnements différents
+  </figcaption>
+</figure>
+
 Contrairement à une croyance répandue, **les cartes Pokémon ne sont pas en
 PVC**. La structure standard est un carton multi-couches (deux feuilles de
 papier liées par une couche de noir d'aluminium, recouvertes d'un vernis ou
