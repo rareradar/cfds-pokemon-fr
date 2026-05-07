@@ -407,13 +407,15 @@ a {
   margin-left: 0.4rem;
 }
 .site-mark__logo {
-  height: 44px;
+  height: 60px;
   width: auto;
   display: block;
   object-fit: contain;
+  /* le PNG a maintenant fond transparent, plus de boîte gris foncé visible */
 }
 @media (max-width: 540px) {
-  .site-mark__logo { height: 36px; }
+  .site-mark__logo { height: 44px; }
+  .site-mark__lab { display: none; }   /* gain de place mobile */
 }
 
 .site-nav {
