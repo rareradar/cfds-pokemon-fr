@@ -9,3 +9,6 @@ node_modules/
 .claude-flow/
 .claude/
 *.log
+
+# Samples non-utilisés en production (à déplacer dans assets/images/posts/ si besoin)
+/images/
