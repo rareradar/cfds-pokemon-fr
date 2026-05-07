@@ -1870,3 +1870,150 @@ a {
   text-align: center;
 }
 .illustration__caption strong { color: var(--ink); font-weight: 700; }
+
+/* ============================================================================
+   Newsletter opt-in CTA — Brevo double opt-in
+   Utilisable en fin d'article et sur la page dédiée /newsletter/
+   ============================================================================ */
+.newsletter-cta {
+  margin: 3rem 0 2rem;
+  padding: 2rem 1.6rem;
+  background: var(--bg-2);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+}
+.newsletter-cta__inner { max-width: 640px; margin: 0 auto; }
+.newsletter-cta__eyebrow {
+  margin: 0 0 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: var(--tracking-mono);
+  color: var(--accent);
+  text-transform: uppercase;
+}
+.newsletter-cta__title {
+  margin: 0 0 0.6rem;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  color: var(--ink);
+  font-weight: 700;
+}
+.newsletter-cta__lede {
+  margin: 0 0 1.4rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.newsletter-cta__form { display: flex; flex-direction: column; gap: 0.7rem; }
+.newsletter-cta__label {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: var(--tracking-mono);
+  color: var(--ink-soft);
+  text-transform: uppercase;
+}
+.newsletter-cta__row {
+  display: flex; gap: 0.6rem; flex-wrap: wrap;
+}
+.newsletter-cta__input {
+  flex: 1 1 220px;
+  padding: 0.75rem 0.95rem;
+  background: var(--bg-pop);
+  border: 1px solid var(--rule-soft);
+  border-radius: 3px;
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color .15s ease;
+}
+.newsletter-cta__input::placeholder { color: var(--ink-mute); }
+.newsletter-cta__input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: var(--bg-deep, var(--bg));
+}
+.newsletter-cta__button {
+  padding: 0.75rem 1.4rem;
+  background: var(--accent);
+  color: var(--bg);
+  border: 0;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color .15s ease, transform .1s ease;
+}
+.newsletter-cta__button:hover { background: var(--accent-soft); }
+.newsletter-cta__button:active { transform: translateY(1px); }
+.newsletter-cta__optin {
+  display: flex; align-items: flex-start; gap: 0.55rem;
+  margin: 0.4rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.newsletter-cta__optin-input {
+  flex: 0 0 auto;
+  margin-top: 0.18rem;
+  accent-color: var(--accent);
+}
+.newsletter-cta__optin a { color: var(--ink-2); text-decoration: underline; }
+.newsletter-cta__optin a:hover { color: var(--accent); }
+.newsletter-cta__honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none;
+}
+/* Messages succès / erreur Brevo (toggled par main.js Brevo) */
+.newsletter-cta__msg {
+  display: none;
+  margin: 0 0 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+.newsletter-cta__msg--error {
+  background: rgba(217, 114, 70, 0.1);
+  border: 1px solid var(--accent);
+  color: var(--ink);
+}
+.newsletter-cta__msg--success {
+  background: rgba(19, 206, 102, 0.08);
+  border: 1px solid #13ce66;
+  color: var(--ink);
+}
+/* Responsive */
+@media (max-width: 540px) {
+  .newsletter-cta { padding: 1.5rem 1.1rem; }
+  .newsletter-cta__row { flex-direction: column; }
+  .newsletter-cta__button { width: 100%; }
+}
+
+/* Page dédiée /newsletter/ */
+.newsletter-page { max-width: 720px; margin: 4rem auto 5rem; }
+.newsletter-page__intro { text-align: center; margin: 0 0 2.5rem; }
+.newsletter-page__intro h1 {
+  margin: 0.4rem 0 1rem;
+  font-size: 2.1rem;
+  line-height: 1.15;
+  color: var(--ink);
+}
+.newsletter-page__intro .lede {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+.newsletter-page__form-wrap { margin: 0 auto 3rem; }
+.newsletter-page__faq { margin: 3rem 0 0; }
+.newsletter-page__faq h2 {
+  margin: 2rem 0 0.8rem;
+  font-size: 1.25rem;
+  color: var(--ink);
+}
+.newsletter-page__faq ul { padding-left: 1.4rem; line-height: 1.7; color: var(--ink-2); }
+.newsletter-page__faq p { color: var(--ink-2); line-height: 1.7; }

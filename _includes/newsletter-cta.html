@@ -1,0 +1,112 @@
+{%- comment -%}
+  Newsletter opt-in CTA — Brevo double opt-in (formulaire d'inscription)
+  À placer en fin d'article (et page dédiée /newsletter/).
+
+  Statut : configuré 2026-05-07 avec URL d'action Brevo réelle.
+  Champs requis Brevo : EMAIL (input), ACCEPT (checkbox consentement RGPD),
+  email_address_check (honeypot anti-bot, doit rester vide), locale=fr.
+
+  L'ID `sib-form` + classes `sib-*` doivent être conservés : le script Brevo
+  (main.js) scrape ces sélecteurs pour intercepter le submit, valider, et faire
+  l'AJAX vers leur backend. La même main.js gère aussi le double opt-in et
+  l'affichage des messages succès/erreur (#success-message / #error-message).
+
+  Note : ce snippet inclut le main.js Brevo une seule fois par page. Si plusieurs
+  newsletters-cta apparaissent sur la même page, retirer le bloc <script> en bas
+  et le déclarer dans default.html à la place.
+
+  Style : cohérent design rareradar (charcoal #0d1018, copper #d97246, off-white #f2eee2)
+  CSS : voir assets/css/style.css section .newsletter-cta
+{%- endcomment -%}
+
+<aside class="newsletter-cta" aria-labelledby="newsletter-cta-title">
+  <div class="newsletter-cta__inner">
+    <p class="newsletter-cta__eyebrow">📬 Newsletter RareRadar</p>
+    <h3 id="newsletter-cta-title" class="newsletter-cta__title">
+      Les cotes de la semaine, dans ta boîte
+    </h3>
+    <p class="newsletter-cta__lede">
+      Chaque samedi : les mouvements de cote Mega ex notables sur Cardmarket,
+      une astuce de collectionneur, et les sorties de set à surveiller. Une seule
+      newsletter, pas de spam, désinscription en 1 clic.
+    </p>
+
+    {%- comment -%} Messages succès / erreur Brevo (IDs requis par main.js) {%- endcomment -%}
+    <div id="error-message" class="sib-form-message-panel newsletter-cta__msg newsletter-cta__msg--error" role="alert">
+      <span class="sib-form-message-panel__inner-text">
+        Inscription impossible. Réessaie ou contacte-moi.
+      </span>
+    </div>
+    <div id="success-message" class="sib-form-message-panel newsletter-cta__msg newsletter-cta__msg--success" role="status">
+      <span class="sib-form-message-panel__inner-text">
+        Inscription enregistrée. Vérifie ta boîte pour confirmer (double opt-in).
+      </span>
+    </div>
+
+    <form id="sib-form"
+          class="newsletter-cta__form"
+          method="POST"
+          action="https://fd58a431.sibforms.com/serve/MUIFAERokBb6hcLuwMf2JcPXrdLQnREIMb5iYhoCOsiFFSf9QAUaZobboqB_WhiYXLjfRCp0tOCEhRXZOdkgHgoGhqYLzgixbiuQq6Pyayj43cocAT7wW5yxER5c-82KZYp9o0VQk-xsLSFhmsLKAMed5bGCB0rGAa4yWo3p2QoyIxReSoLP-9hGaEpFgzd9fUdn8BbH2lwK1sB21w=="
+          data-type="subscription"
+          novalidate>
+
+      <label class="newsletter-cta__label" for="EMAIL">Ton email</label>
+      <div class="newsletter-cta__row">
+        <input type="email"
+               id="EMAIL"
+               name="EMAIL"
+               class="newsletter-cta__input input"
+               placeholder="ton@email.fr"
+               required
+               autocomplete="email"
+               data-required="true">
+        <button type="submit" class="newsletter-cta__button sib-form-block__button">
+          Je m'inscris
+        </button>
+      </div>
+
+      <label class="newsletter-cta__optin">
+        <input type="checkbox"
+               id="ACCEPT"
+               name="ACCEPT"
+               value="1"
+               required
+               class="newsletter-cta__optin-input">
+        <span>J'accepte de recevoir la newsletter RareRadar et j'ai pris connaissance de la <a href="{{ '/about/' | relative_url }}">politique de confidentialité</a>. Désinscription en un clic.</span>
+      </label>
+
+      {%- comment -%} Honeypot anti-bot — laisser vide, masqué visuellement {%- endcomment -%}
+      <input type="text"
+             name="email_address_check"
+             value=""
+             class="newsletter-cta__honeypot"
+             tabindex="-1"
+             autocomplete="off"
+             aria-hidden="true">
+
+      <input type="hidden" name="locale" value="fr">
+    </form>
+  </div>
+</aside>
+
+{%- comment -%} Brevo subscription form runtime — chargé une seule fois en bas de page {%- endcomment -%}
+<script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Veuillez choisir un code pays';
+  window.LOCALE = 'fr';
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "Format d'email invalide. Vérifie et réessaie.";
+  window.REQUIRED_ERROR_MESSAGE = "Champ requis.";
+  window.GENERIC_INVALID_MESSAGE = "Format invalide. Vérifie le champ et réessaie.";
+  window.INVALID_NUMBER = "Format invalide.";
+  window.INVALID_DATE = "Date invalide.";
+  window.REQUIRED_MULTISELECT_MESSAGE = 'Choisis au moins une option.';
+  window.translation = {
+    common: {
+      selectedList: '{quantity} liste sélectionnée',
+      selectedLists: '{quantity} listes sélectionnées',
+      selectedOption: '{quantity} sélectionné',
+      selectedOptions: '{quantity} sélectionnés'
+    }
+  };
+  var AUTOHIDE = Boolean(0);
+</script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
