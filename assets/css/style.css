@@ -423,6 +423,23 @@ a {
   gap: 2rem;
   align-items: center;
 }
+@media (max-width: 700px) {
+  .site-header__inner {
+    gap: 1rem;
+    padding-block: 0.9rem;
+  }
+  .site-nav { gap: 1rem; }
+  .site-nav a {
+    font-size: 0.82rem;
+    padding-block: 0.3rem;
+  }
+}
+@media (max-width: 480px) {
+  .site-nav { gap: 0.7rem; }
+  .site-nav a { font-size: 0.75rem; }
+  /* Sur très petit écran, masque RSS (les fils sont accessibles via about) */
+  .site-nav a[rel="alternate"] { display: none; }
+}
 .site-nav a {
   font-family: var(--font-body);
   font-size: 0.95rem;
