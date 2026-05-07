@@ -220,7 +220,16 @@ peuvent stabiliser, mais pas effacer.
 
 ## La routine de conservation qui fonctionne
 
-### Le combo pour les gros hits (ex / V / VMAX, Reverse Holo de valeur)
+### Le combo pour les gros hits (AR, FA, ALT, Reverse Holo de valeur)
+
+Petit rappel pour les lecteurs qui débutent : sur l'ère Méga actuelle
+(qui reprend le principe instauré par Écarlate & Violet), les hits qui
+pèsent vraiment sur Cardmarket sont les **AR (Art Rare)** illustration
+pleine avec fond pattern, les **FA (Full Art)** illustration pleine page,
+et les **ALT (Alternative Art)** version artistique d'une carte régulière.
+Les anciennes raretés V / VMAX restent côtées sur les sets antérieurs
+(Épée & Bouclier surtout), mais l'essentiel des nouveaux hits passe par
+AR / FA / ALT.
 
 Trois couches, dans cet ordre, c'est le standard adopté par la plupart des
 collectionneurs adultes pour les cartes au-delà de 30-50 € :
@@ -293,7 +302,7 @@ souvent en PVC.
 Les cartes à valeur > 50 € méritent un coup d'œil mensuel sous lumière
 rasante. C'est cinq minutes par mois pour repérer un voile naissant et
 intervenir avant qu'il ne progresse. Beaucoup de collectionneurs sortent
-leurs Reverse Holo et leurs ex/V/VMAX de leur classeur pour les passer
+leurs Reverse Holo et leurs AR/FA/ALT de leur classeur pour les passer
 en boîte étanche compartimentée dès qu'ils détectent un début.
 
 ## Tableau comparatif des supports
@@ -399,7 +408,7 @@ l'humidité (35-45 % HR), le matériau de la sleeve en contact direct (PP ou
 PET, jamais PVC) et la stabilité thermique du lieu de stockage. Le coût
 d'une routine correcte est inférieur à 100 € pour une collection de 500
 cartes, ce qui reste très en dessous de la perte de valeur potentielle sur
-une seule carte ex / V / VMAX qui aurait pris un voile.
+une seule carte AR, FA ou ALT qui aurait pris un voile.
 
 ---
 
