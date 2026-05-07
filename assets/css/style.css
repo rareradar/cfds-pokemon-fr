@@ -406,6 +406,15 @@ a {
   font-weight: 600;
   margin-left: 0.4rem;
 }
+.site-mark__logo {
+  height: 44px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+@media (max-width: 540px) {
+  .site-mark__logo { height: 36px; }
+}
 
 .site-nav {
   display: flex;
