@@ -8,6 +8,7 @@ author: RareRadar
 rarity: common
 read_time: 4
 cover_image: /assets/images/posts/lancement-rareradar.png
+theme_image: /assets/images/themes/launch.png
 tags:
   - meta
   - lancement

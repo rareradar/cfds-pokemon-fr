@@ -7,6 +7,7 @@ slug: frosting-cartes-pokemon-phenomene-et-solutions
 rarity: holo_rare
 read_time: 9
 cover_image: /assets/images/posts/frosting-cartes-pokemon-phenomene-et-solutions.png
+theme_image: /assets/images/themes/frosting.png
 tags:
   - conservation
   - sleeves
