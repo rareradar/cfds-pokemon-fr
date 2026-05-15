@@ -6,7 +6,7 @@ date: 2026-05-05 19:55:13 +0200
 slug: frosting-cartes-pokemon-phenomene-et-solutions
 rarity: holo_rare
 read_time: 9
-cover_image: /assets/images/posts/frosting-cartes-pokemon-phenomene-et-solutions.png
+cover_image: /assets/images/posts/frosting-cartes-pokemon-phenomene-et-solutions-v2.png
 theme_image: /assets/images/themes/frosting.png
 tags:
   - conservation
@@ -188,6 +188,66 @@ La parade est simple : éviter le PVC, choisir des sleeves en **polypropylène
 ne migrent pas. Ultra Pro, Dragon Shield et KMC commercialisent leurs penny
 sleeves dans ces matériaux ; c'est indiqué sur le packaging.
 
+<figure class="illustration">
+  <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparatif matériaux sleeves : PVC migrant vs polypropylène PP inerte vs polyester PET inerte, impact sur le frosting.">
+    <defs>
+      <linearGradient id="mat-bg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%"  stop-color="#1c2030"/>
+        <stop offset="100%" stop-color="#0d1018"/>
+      </linearGradient>
+      <pattern id="mat-frost" x="0" y="0" width="5" height="5" patternUnits="userSpaceOnUse">
+        <circle cx="1" cy="1" r="0.6" fill="#f2eee2" opacity="0.22"/>
+        <circle cx="3.5" cy="3" r="0.4" fill="#f2eee2" opacity="0.15"/>
+      </pattern>
+    </defs>
+    <rect x="0" y="0" width="600" height="320" fill="url(#mat-bg)"/>
+    <text x="300" y="32" font-family="JetBrains Mono, monospace" font-size="11" fill="#9b9789" letter-spacing="2" text-anchor="middle">MATÉRIAU SLEEVE · MIGRATION VS INERTIE</text>
+
+    <!-- Colonne PVC -->
+    <g transform="translate(40,60)">
+      <rect x="0" y="0" width="160" height="220" rx="8" fill="#1c2030" stroke="#7a2d24" stroke-width="2"/>
+      <text x="80" y="26" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#7a2d24" font-weight="700" text-anchor="middle">PVC souple</text>
+      <text x="80" y="44" font-family="JetBrains Mono, monospace" font-size="9" fill="#9b9789" letter-spacing="1.5" text-anchor="middle">PENNY GÉNÉRIQUE</text>
+      <rect x="40" y="60" width="80" height="100" rx="3" fill="#3a3f50" stroke="#7a2d24" stroke-width="1.5"/>
+      <rect x="40" y="60" width="80" height="100" rx="3" fill="url(#mat-frost)"/>
+      <!-- flèches migration -->
+      <text x="80" y="115" font-family="JetBrains Mono, monospace" font-size="14" fill="#d97246" font-weight="800" text-anchor="middle">↓↓↓</text>
+      <text x="80" y="180" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#d97246" font-weight="700" text-anchor="middle">phtalates / DEHP</text>
+      <text x="80" y="196" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#9b9789" text-anchor="middle">migration lente</text>
+      <text x="80" y="212" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#9b9789" text-anchor="middle">vers le vernis</text>
+    </g>
+
+    <!-- Colonne PP -->
+    <g transform="translate(220,60)">
+      <rect x="0" y="0" width="160" height="220" rx="8" fill="#1c2030" stroke="#4d6b3d" stroke-width="2"/>
+      <text x="80" y="26" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#4d6b3d" font-weight="700" text-anchor="middle">Polypropylène</text>
+      <text x="80" y="44" font-family="JetBrains Mono, monospace" font-size="9" fill="#9b9789" letter-spacing="1.5" text-anchor="middle">ULTRA PRO · KMC</text>
+      <rect x="40" y="60" width="80" height="100" rx="3" fill="#1c2030" stroke="#4d6b3d" stroke-width="1.5"/>
+      <text x="80" y="115" font-family="JetBrains Mono, monospace" font-size="14" fill="#4d6b3d" font-weight="800" text-anchor="middle">— —</text>
+      <text x="80" y="180" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#4d6b3d" font-weight="700" text-anchor="middle">inerte</text>
+      <text x="80" y="196" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#9b9789" text-anchor="middle">aucune migration</text>
+      <text x="80" y="212" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#9b9789" text-anchor="middle">archive-safe</text>
+    </g>
+
+    <!-- Colonne PET -->
+    <g transform="translate(400,60)">
+      <rect x="0" y="0" width="160" height="220" rx="8" fill="#1c2030" stroke="#4d6b3d" stroke-width="2"/>
+      <text x="80" y="26" font-family="Plus Jakarta Sans, sans-serif" font-size="13" fill="#4d6b3d" font-weight="700" text-anchor="middle">Polyester PET</text>
+      <text x="80" y="44" font-family="JetBrains Mono, monospace" font-size="9" fill="#9b9789" letter-spacing="1.5" text-anchor="middle">TOPLOADER 35PT</text>
+      <rect x="40" y="60" width="80" height="100" rx="3" fill="#1c2030" stroke="#9c8454" stroke-width="2"/>
+      <text x="80" y="115" font-family="JetBrains Mono, monospace" font-size="14" fill="#4d6b3d" font-weight="800" text-anchor="middle">— —</text>
+      <text x="80" y="180" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#4d6b3d" font-weight="700" text-anchor="middle">inerte + rigide</text>
+      <text x="80" y="196" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#9b9789" text-anchor="middle">référence muséo</text>
+      <text x="80" y="212" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#9b9789" text-anchor="middle">long terme</text>
+    </g>
+
+    <text x="300" y="305" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#9b9789" text-anchor="middle" font-style="italic">seul le PVC contient des plastifiants qui migrent · PP et PET sont neutres au contact prolongé</text>
+  </svg>
+  <figcaption class="illustration__caption">
+    <strong>Matériaux sleeves</strong> · le PVC souple migre vers le vernis, PP et PET sont chimiquement inertes
+  </figcaption>
+</figure>
+
 [**ultra pro penny sleeves** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+penny+sleeves&tag=rareradar-21)
 
 ### Les variations brusques de température
@@ -211,6 +271,58 @@ correctement isolée.
 - **Perte de brillance** sur les Reverse Holo et les patterns spécifiques
   (galaxie, cosmos, rainbow).
 - **Aspect "pâteux"** sur le contour quand on regarde de profil.
+
+<figure class="illustration">
+  <svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline progression du frosting mois 0 à mois 12 selon les conditions de stockage (PVC + humidité 65% vs PP + humidité 40%).">
+    <defs>
+      <linearGradient id="tl-bg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%"  stop-color="#1c2030"/>
+        <stop offset="100%" stop-color="#0d1018"/>
+      </linearGradient>
+      <linearGradient id="tl-bad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%"   stop-color="#4d6b3d"/>
+        <stop offset="35%"  stop-color="#9c8454"/>
+        <stop offset="65%"  stop-color="#d97246"/>
+        <stop offset="100%" stop-color="#7a2d24"/>
+      </linearGradient>
+      <linearGradient id="tl-good" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%"   stop-color="#4d6b3d"/>
+        <stop offset="100%" stop-color="#4d6b3d"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="600" height="280" fill="url(#tl-bg)"/>
+    <text x="300" y="30" font-family="JetBrains Mono, monospace" font-size="11" fill="#9b9789" letter-spacing="2" text-anchor="middle">PROGRESSION FROSTING · 0 → 12 MOIS</text>
+
+    <!-- Axis -->
+    <line x1="60" y1="240" x2="560" y2="240" stroke="#6f7a8c" stroke-width="1"/>
+    <text x="60"  y="258" font-family="JetBrains Mono, monospace" font-size="10" fill="#9b9789" text-anchor="middle">M0</text>
+    <text x="185" y="258" font-family="JetBrains Mono, monospace" font-size="10" fill="#9b9789" text-anchor="middle">M3</text>
+    <text x="310" y="258" font-family="JetBrains Mono, monospace" font-size="10" fill="#9b9789" text-anchor="middle">M6</text>
+    <text x="435" y="258" font-family="JetBrains Mono, monospace" font-size="10" fill="#9b9789" text-anchor="middle">M9</text>
+    <text x="560" y="258" font-family="JetBrains Mono, monospace" font-size="10" fill="#9b9789" text-anchor="middle">M12</text>
+
+    <!-- Bande conditions défavorables -->
+    <text x="60" y="80" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#d97246" font-weight="700">PVC + 65% HR</text>
+    <rect x="60" y="92" width="500" height="22" fill="url(#tl-bad)" stroke="#f2eee2" stroke-width="0.5"/>
+    <line x1="185" y1="86" x2="185" y2="120" stroke="#f2eee2" stroke-width="1" stroke-dasharray="2 2" opacity="0.4"/>
+    <line x1="310" y1="86" x2="310" y2="120" stroke="#f2eee2" stroke-width="1" stroke-dasharray="2 2" opacity="0.4"/>
+    <line x1="435" y1="86" x2="435" y2="120" stroke="#f2eee2" stroke-width="1" stroke-dasharray="2 2" opacity="0.4"/>
+    <text x="122" y="135" font-family="Plus Jakarta Sans, sans-serif" font-size="9" fill="#9b9789" text-anchor="middle">surface ok</text>
+    <text x="247" y="135" font-family="Plus Jakarta Sans, sans-serif" font-size="9" fill="#9c8454" text-anchor="middle">brillance perd 10%</text>
+    <text x="372" y="135" font-family="Plus Jakarta Sans, sans-serif" font-size="9" fill="#d97246" text-anchor="middle">voile détectable</text>
+    <text x="497" y="135" font-family="Plus Jakarta Sans, sans-serif" font-size="9" fill="#7a2d24" text-anchor="middle">frosting installé</text>
+
+    <!-- Bande conditions favorables -->
+    <text x="60" y="180" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#4d6b3d" font-weight="700">PP + 40% HR</text>
+    <rect x="60" y="192" width="500" height="22" fill="url(#tl-good)" stroke="#f2eee2" stroke-width="0.5"/>
+    <text x="310" y="227" font-family="Plus Jakarta Sans, sans-serif" font-size="9" fill="#4d6b3d" text-anchor="middle">aucune dégradation visible · stable au-delà de 10 ans</text>
+
+    <text x="300" y="55" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#9b9789" text-anchor="middle" font-style="italic">même carte, deux environnements · différentiel observé sur Reverse Holo Soleil &amp; Lune</text>
+  </svg>
+  <figcaption class="illustration__caption">
+    <strong>Timeline</strong> · 4–8 mois suffisent pour qu'un voile détectable apparaisse en conditions défavorables
+  </figcaption>
+</figure>
 
 Le frosting n'est **pas** réversible. Une fois qu'il est installé, on peut au
 mieux ralentir sa progression en sortant la carte du classeur et en la

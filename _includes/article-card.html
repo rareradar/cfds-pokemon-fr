@@ -7,6 +7,8 @@
 {% assign hash = post.slug | default: post.title | slice: 0, 8 | size %}
 {% assign rarity_key = post.rarity | default: 'common' %}
 {% assign r = site.data.rarity[rarity_key] %}
+{%- assign article_number = site.posts.size | minus: forloop.index | plus: 1 -%}
+{%- assign article_number_padded = article_number | prepend: '00' | slice: -3, 3 -%}
 
 <article class="article-card fade-in"
          data-delay="{{ forloop.index | modulo: 6 }}"
@@ -15,9 +17,13 @@
          data-tags="{{ post.tags | join: ',' | downcase }}"
          data-rarity="{{ rarity_key }}"
          data-date="{{ post.date | date: '%s' }}">
-  <div class="article-card__hero" aria-hidden="true">
+  <div class="article-card__hero" aria-hidden="true" style="position: relative;">
+    <span class="article-card__number"
+          style="position:absolute; top:8px; right:10px; z-index:2; font-family:'JetBrains Mono', monospace; font-size:10px; font-weight:700; letter-spacing:1.5px; color:#f2eee2; background:rgba(13,16,24,0.72); padding:3px 8px; border-radius:3px; backdrop-filter:blur(4px);">
+      N° {{ article_number_padded }}
+    </span>
     {% if post.cover_image %}
-      <img src="{{ post.cover_image | relative_url }}"
+      <img src="{{ post.cover_image | relative_url }}?v={{ site.time | date: '%s' }}"
            alt="" loading="lazy" decoding="async"
            class="article-card__cover">
     {% else %}
@@ -43,7 +49,7 @@
         </g>
         <text x="14" y="170" font-family="JetBrains Mono, monospace"
               font-size="10" font-weight="700" fill="hsl({{ r.hue }}, 40%, 80%)" letter-spacing="1.2" opacity="0.85">
-          N° {{ forloop.index | prepend: '00' | slice: -3, 3 }} / {{ r.label | upcase }}
+          N° {{ article_number_padded }} / {{ r.label | upcase }}
         </text>
       </svg>
     {% endif %}

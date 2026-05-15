@@ -7,14 +7,23 @@ layout: default
 
     {% if page.cover_image %}
       <figure class="article__cover">
-        <img src="{{ page.cover_image | relative_url }}"
+        <img src="{{ page.cover_image | relative_url }}?v={{ site.time | date: '%s' }}"
              alt="{{ page.title | escape }}"
              loading="eager" decoding="async">
       </figure>
     {% endif %}
 
+    {%- assign article_number = 0 -%}
+    {%- for p in site.posts -%}
+      {%- if p.url == page.url -%}
+        {%- assign article_number = site.posts.size | minus: forloop.index | plus: 1 -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- assign article_number_padded = article_number | prepend: '00' | slice: -3, 3 -%}
+
     <header class="article__head">
       <div class="article__eyebrow">
+        <span class="eyebrow" style="font-family:'JetBrains Mono', monospace; letter-spacing:1.5px;">N° {{ article_number_padded }}</span>
         {% include rarity-badge.html rarity=page.rarity %}
         <span class="eyebrow">{{ page.date | date: "%d %B %Y" }}</span>
         {% if page.read_time %}

@@ -2,17 +2,11 @@
 layout: default
 ---
 
-<section class="hero hero--scanner">
-  <div class="hero__scanline" aria-hidden="true"></div>
+<section class="hero hero--scanner" style="border-bottom: 1px solid var(--rule-soft);">
   <div class="shell">
     <div class="hero__eyebrow">
-      <span class="eyebrow eyebrow--detect">
-        <span class="dot-pulse" aria-hidden="true"></span>
-        DETECTING
-        <span class="hero__detect-count" aria-hidden="true"></span>
-      </span>
-      <span class="eyebrow">N° {{ site.posts.size | prepend: '00' | slice: -3, 3 }}</span>
       <span class="eyebrow">Lab éditorial · TCG Pokémon</span>
+      <span class="eyebrow">{{ site.posts.size }} article{% if site.posts.size != 1 %}s{% endif %} publié{% if site.posts.size != 1 %}s{% endif %}</span>
     </div>
 
     <h1 class="hero__title h-1">
@@ -24,22 +18,12 @@ layout: default
       Pour les collectionneurs adultes qui veulent autre chose que des unboxings
       criards et des affiliations déguisées.
     </p>
-
-    <div class="hero__meta">
-      <div class="hero__meta-item">
-        <span class="eyebrow">Articles</span>
-        <strong>{{ site.posts.size }}</strong>
-      </div>
-    </div>
   </div>
 </section>
 
 <section class="shell">
-  <header class="section-head">
+  <header class="section-head" style="border-bottom: none; padding-bottom: 0.5rem;">
     <h2 class="section-head__title h-2">Derniers articles</h2>
-    <span class="section-head__count">
-      <span data-articles-visible>{{ site.posts.size | prepend: '00' | slice: -3, 3 }}</span> / {{ site.posts.size | prepend: '00' | slice: -3, 3 }} curated
-    </span>
   </header>
 
   {%- comment -%} Collecte de tous les tags uniques du corpus {%- endcomment -%}
@@ -70,12 +54,54 @@ layout: default
       </label>
     </div>
     {% if unique_tags.size > 0 %}
+    {%- comment -%} Compter chaque tag puis trier par fréquence décroissante {%- endcomment -%}
+    {%- assign tag_freq = "" | split: "" -%}
+    {%- for tag in unique_tags -%}
+      {%- assign cnt = 0 -%}
+      {%- for post in site.posts -%}
+        {%- if post.tags contains tag -%}{%- assign cnt = cnt | plus: 1 -%}{%- endif -%}
+      {%- endfor -%}
+      {%- capture entry -%}{{ cnt | prepend: '000' | slice: -3, 3 }}|{{ tag }}{%- endcapture -%}
+      {%- assign tag_freq = tag_freq | push: entry -%}
+    {%- endfor -%}
+    {%- assign tag_freq_sorted = tag_freq | sort | reverse -%}
+    {%- assign solo_count = 0 -%}
+    {%- for entry in tag_freq_sorted -%}
+      {%- assign parts = entry | split: "|" -%}
+      {%- assign cnt_num = parts[0] | plus: 0 -%}
+      {%- if cnt_num < 2 -%}{%- assign solo_count = solo_count | plus: 1 -%}{%- endif -%}
+    {%- endfor -%}
+
     <div class="article-controls__chips" role="group" aria-label="Filtrer par tag">
       <button type="button" class="chip chip--active" data-tag-filter="">Tous</button>
-      {% for tag in unique_tags %}
-        <button type="button" class="chip" data-tag-filter="{{ tag | downcase }}">#{{ tag }}</button>
+      {% for entry in tag_freq_sorted %}
+        {%- assign parts = entry | split: "|" -%}
+        {%- assign cnt_num = parts[0] | plus: 0 -%}
+        {%- assign tag = parts[1] -%}
+        {% if cnt_num >= 2 %}
+          <button type="button" class="chip" data-tag-filter="{{ tag | downcase }}">#{{ tag }}<small style="opacity:.45; margin-left:0.35em;">{{ cnt_num }}</small></button>
+        {% else %}
+          <button type="button" class="chip chip--solo" data-tag-filter="{{ tag | downcase }}" hidden>#{{ tag }}</button>
+        {% endif %}
       {% endfor %}
+      {% if solo_count > 0 %}
+        <button type="button" class="chip chip--more" id="reveal-solo-tags" aria-expanded="false">
+          + {{ solo_count }} tag{% if solo_count > 1 %}s{% endif %} spécifique{% if solo_count > 1 %}s{% endif %}
+        </button>
+      {% endif %}
     </div>
+
+    <script>
+      (function() {
+        var btn = document.getElementById('reveal-solo-tags');
+        if (!btn) return;
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.chip--solo').forEach(function(el) { el.removeAttribute('hidden'); });
+          btn.setAttribute('aria-expanded', 'true');
+          btn.remove();
+        });
+      })();
+    </script>
     {% endif %}
   </div>
 
@@ -86,6 +112,10 @@ layout: default
   </div>
 
   <p class="article-controls__empty" hidden>Aucun article ne correspond. <button type="button" class="link-reset" id="article-reset">Réinitialiser les filtres</button></p>
+</section>
+
+<section class="shell" style="margin-top: 4rem;">
+  {% include newsletter-cta.html %}
 </section>
 
 {{ content }}

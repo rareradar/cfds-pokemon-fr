@@ -15,7 +15,7 @@ Production déployée sur **GitHub Pages** + custom domain OVH : <https://rarera
 - Layouts : `_layouts/{default,home,post}.html`
 - Includes : `_includes/{header,footer,article-card,rarity-badge}.html`
 - Données : `_data/rarity.yml` (système de "rareté éditoriale")
-- Covers articles : générées via `scripts/cfds_generate_cover.py` (PIL),
+- Covers articles : générées via `src/rareradar/scripts/rareradar_generate_cover.py` (PIL),
   stockées dans `assets/images/posts/<slug>.png`, référencées via
   front matter `cover_image:`
 
@@ -55,15 +55,15 @@ GitHub Actions à configurer.
 
 ```bash
 # Depuis un post existant (slug + rarity lus dans le front matter)
-python3 scripts/cfds_generate_cover.py --from-post cfds-site/_posts/<file>.md \
+python3 src/rareradar/scripts/rareradar_generate_cover.py --from-post rareradar-site/_posts/<file>.md \
   --number 001 --tag "META · LANCEMENT"
 
 # Manuellement
-python3 scripts/cfds_generate_cover.py mon-slug \
+python3 src/rareradar/scripts/rareradar_generate_cover.py mon-slug \
   --rarity holo_rare --number 042 --title "Titre court" --tag "DOSSIER"
 ```
 
-Sortie : 1200×675 PNG dans `cfds-site/assets/images/posts/<slug>.png`.
+Sortie : 1200×675 PNG dans `rareradar-site/assets/images/posts/<slug>.png`.
 
 ---
 
