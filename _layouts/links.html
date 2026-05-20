@@ -234,71 +234,65 @@
       dd { font-size: 0.9rem; }
     }
 
-    /* === En-tête mémo officiel (impl Léa v2 itération clarté) === */
+    /* === En-tête mémo officiel (fix CSS Léa itération 3) === */
     .memo-official-header {
         font-family: system-ui, -apple-system, sans-serif;
         color: #111;
         background: #fff;
-        padding: 24px 0 16px 0;
+        padding: 24px 20px;
         margin-bottom: 24px;
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
     }
-
     .memo-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 16px;
-        margin-bottom: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 20px;
     }
-
-    @media (max-width: 767px) {
+    @media (max-width: 380px) {
         .memo-grid {
             grid-template-columns: 1fr;
+            gap: 12px;
         }
     }
-
-    .memo-field {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-    }
-
+    .memo-field { display: flex; flex-direction: column; gap: 4px; }
     .memo-field dt {
         font-family: 'Courier New', Courier, monospace;
         font-weight: 700;
         color: #b91c1c;
         text-transform: uppercase;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         letter-spacing: 0.05em;
         margin: 0;
+        line-height: 1.2;
     }
-
     .memo-field dd {
         margin: 0;
-        font-size: 0.95rem;
-        line-height: 1.4;
+        font-size: 0.9rem;
+        line-height: 1.45;
         color: #111;
+        overflow-wrap: break-word;
     }
-
     .memo-separator {
         border: none;
-        border-top: 1px solid #d1d5db;
-        margin: 24px 0;
+        border-top: 2px dashed #d1d5db;
+        margin: 20px 0;
+        opacity: 0.6;
     }
-
     .memo-title {
         font-family: 'Courier New', Courier, monospace;
         font-weight: 700;
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: #b91c1c;
         margin: 0 0 12px 0;
         letter-spacing: 0.02em;
+        line-height: 1.35;
     }
-
     .memo-intro {
         margin: 0;
-        font-size: 0.95rem;
-        line-height: 1.5;
-        color: #111;
+        font-size: 0.9rem;
+        line-height: 1.55;
+        color: #374151;
     }
   </style>
 
