@@ -18,7 +18,7 @@
   <!-- OpenGraph pour partage sur réseaux -->
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:description" content="{{ page.description }}">
-  <meta property="og:image" content="{{ '/assets/marie/avatar.png' | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/marie/avatar.webp' | absolute_url }}">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
 
@@ -172,9 +172,14 @@
     footer a { color: var(--accent); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
 
-    /* Reduced motion */
+    /* Reduced motion — global override (Léa audit 2026-05-20) */
     @media (prefers-reduced-motion: reduce) {
-      .link-card { transition: none; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
     }
   </style>
 
