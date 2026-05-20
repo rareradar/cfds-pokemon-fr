@@ -233,6 +233,73 @@
       dt { font-size: 0.9rem; }
       dd { font-size: 0.9rem; }
     }
+
+    /* === En-tête mémo officiel (impl Léa v2 itération clarté) === */
+    .memo-official-header {
+        font-family: system-ui, -apple-system, sans-serif;
+        color: #111;
+        background: #fff;
+        padding: 24px 0 16px 0;
+        margin-bottom: 24px;
+    }
+
+    .memo-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 767px) {
+        .memo-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .memo-field {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .memo-field dt {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 700;
+        color: #b91c1c;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 0.05em;
+        margin: 0;
+    }
+
+    .memo-field dd {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.4;
+        color: #111;
+    }
+
+    .memo-separator {
+        border: none;
+        border-top: 1px solid #d1d5db;
+        margin: 24px 0;
+    }
+
+    .memo-title {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #b91c1c;
+        margin: 0 0 12px 0;
+        letter-spacing: 0.02em;
+    }
+
+    .memo-intro {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: #111;
+    }
   </style>
 
   <!-- Cloudflare Web Analytics (cohérence avec rareradar principal) -->
