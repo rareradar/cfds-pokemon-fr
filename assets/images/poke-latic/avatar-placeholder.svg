@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="r" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#FFD43B"/>
+      <stop offset="55%" stop-color="#E63946"/>
+      <stop offset="100%" stop-color="#9F1B2C"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="url(#r)" stroke="#1A1320" stroke-width="3"/>
+  <!-- Pokéball -->
+  <circle cx="100" cy="100" r="58" fill="#FFFFFF" stroke="#1A1320" stroke-width="4"/>
+  <path d="M 42 100 A 58 58 0 0 1 158 100 Z" fill="#E63946" stroke="#1A1320" stroke-width="4"/>
+  <rect x="42" y="94" width="116" height="12" fill="#1A1320"/>
+  <circle cx="100" cy="100" r="14" fill="#FFFFFF" stroke="#1A1320" stroke-width="4"/>
+  <circle cx="100" cy="100" r="6" fill="#FFFFFF" stroke="#1A1320" stroke-width="3"/>
+</svg>
