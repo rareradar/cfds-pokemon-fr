@@ -1,84 +1,45 @@
 {% comment %}
-  Composant card-preview pour la liste articles.
+  Composant card-preview pour la liste articles — v6 portrait holo (2026-06-08).
+  Utilise cover_image_portrait 5:7 généré par PIL + sweep CSS diagonal par tier.
+  Fallback : cover_image 16:9 si pas de portrait dispo.
+
   Param : post (un objet Jekyll post)
-  Variations grille gérées par CSS (article-card:nth-child).
-  Hero placeholder : SVG géométrique généré par hash du slug.
 {% endcomment %}
-{% assign hash = post.slug | default: post.title | slice: 0, 8 | size %}
-{% assign rarity_key = post.rarity | default: 'common' %}
+{% assign rarity_key = post.rarity | default: 'commun' %}
 {% assign r = site.data.rarity[rarity_key] %}
 {%- assign article_number = site.posts.size | minus: forloop.index | plus: 1 -%}
 {%- assign article_number_padded = article_number | prepend: '00' | slice: -3, 3 -%}
 
+{%- comment -%} Mapping rareté → 5 tiers couleur (gris/vert/bleu/violet/orange) {%- endcomment -%}
+{%- assign tier = 1 -%}
+{%- if rarity_key == 'uncommon' or rarity_key == 'reverse' or rarity_key == 'unco' %}{% assign tier = 2 %}{% endif -%}
+{%- if rarity_key == 'rare' or rarity_key == 'ar' or rarity_key == 'holo' %}{% assign tier = 3 %}{% endif -%}
+{%- if rarity_key == 'holo_rare' or rarity_key == 'art_rare' or rarity_key == 'full_art' or rarity_key == 'fa' %}{% assign tier = 4 %}{% endif -%}
+{%- if rarity_key == 'alternative' or rarity_key == 'alt' or rarity_key == 'secret_rare' or rarity_key == 'gold' %}{% assign tier = 5 %}{% endif -%}
+
+{%- assign n_value = post.n | default: 999 -%}
 <article class="article-card fade-in"
          data-delay="{{ forloop.index | modulo: 6 }}"
          data-title="{{ post.title | downcase | escape }}"
          data-description="{{ post.description | default: post.excerpt | strip_html | downcase | escape | truncate: 200 }}"
          data-tags="{{ post.tags | join: ',' | downcase }}"
          data-rarity="{{ rarity_key }}"
+         data-n="{{ n_value }}"
          data-date="{{ post.date | date: '%s' }}">
-  <div class="article-card__hero" aria-hidden="true" style="position: relative;">
-    <span class="article-card__number"
-          style="position:absolute; top:8px; right:10px; z-index:2; font-family:'JetBrains Mono', monospace; font-size:10px; font-weight:700; letter-spacing:1.5px; color:#f2eee2; background:rgba(13,16,24,0.72); padding:3px 8px; border-radius:3px; backdrop-filter:blur(4px);">
-      N° {{ article_number_padded }}
-    </span>
-    {% if post.cover_image %}
-      <img src="{{ post.cover_image | relative_url }}?v={{ site.time | date: '%s' }}"
-           alt="" loading="lazy" decoding="async"
-           class="article-card__cover">
+
+  <a href="{{ post.url | relative_url }}" class="holo-card cardp cardp--native r-{{ rarity_key }} tier-{{ tier }}" data-holo>
+    {% if post.cover_image_portrait %}
+      <img class="cardp__native-img"
+           src="{{ post.cover_image_portrait | relative_url }}?v={{ site.time | date: '%s' }}"
+           alt="{{ post.title | escape }}"
+           loading="lazy" decoding="async">
+    {% elsif post.cover_image %}
+      <img class="cardp__native-img"
+           src="{{ post.cover_image | relative_url }}?v={{ site.time | date: '%s' }}"
+           alt="{{ post.title | escape }}"
+           loading="lazy" decoding="async">
     {% else %}
-      <svg viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice">
-        <defs>
-          <linearGradient id="g{{ forloop.index }}" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%"  stop-color="hsl({{ r.hue }}, 28%, 16%)"/>
-            <stop offset="100%" stop-color="hsl({{ r.hue }}, 22%, 9%)"/>
-          </linearGradient>
-          <pattern id="dots{{ forloop.index }}" x="0" y="0" width="14" height="14" patternUnits="userSpaceOnUse">
-            <circle cx="1" cy="1" r="0.7" fill="hsl({{ r.hue }}, 50%, 70%)" opacity="0.32"/>
-          </pattern>
-        </defs>
-        <rect width="320" height="180" fill="url(#g{{ forloop.index }})"/>
-        <rect width="320" height="180" fill="url(#dots{{ forloop.index }})"/>
-        <g stroke="hsl({{ r.hue }}, 60%, 75%)" stroke-width="1" fill="none" opacity="0.72">
-          <rect x="120" y="38" width="80" height="104" rx="2"/>
-          <rect x="126" y="44" width="68" height="50" rx="1"/>
-          <line x1="126" y1="106" x2="194" y2="106"/>
-          <line x1="126" y1="116" x2="170" y2="116"/>
-          <line x1="126" y1="124" x2="180" y2="124"/>
-          <circle cx="186" cy="130" r="5" fill="hsl({{ r.hue }}, 70%, 60%)" stroke="none"/>
-        </g>
-        <text x="14" y="170" font-family="JetBrains Mono, monospace"
-              font-size="10" font-weight="700" fill="hsl({{ r.hue }}, 40%, 80%)" letter-spacing="1.2" opacity="0.85">
-          N° {{ article_number_padded }} / {{ r.label | upcase }}
-        </text>
-      </svg>
+      <span class="cardp__illu-fallback" aria-hidden="true"></span>
     {% endif %}
-  </div>
-
-  <div class="article-card__meta">
-    <span class="article-card__date">
-      {{ post.date | date: "%d %b %Y" }}
-    </span>
-    {% include rarity-badge.html rarity=rarity_key %}
-  </div>
-
-  <h2 class="article-card__title">
-    <a href="{{ post.url | relative_url }}" class="article-card__link">
-      {{ post.title }}
-    </a>
-  </h2>
-
-  {% if post.description %}
-    <p class="article-card__excerpt">{{ post.description }}</p>
-  {% else %}
-    <p class="article-card__excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>
-  {% endif %}
-
-  {% if post.tags and post.tags.size > 0 %}
-    <div class="article-card__tags">
-      {% for tag in post.tags limit: 4 %}
-        <span class="article-card__tag">{{ tag }}</span>
-      {% endfor %}
-    </div>
-  {% endif %}
+  </a>
 </article>

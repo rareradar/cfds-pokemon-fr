@@ -1,0 +1,108 @@
+{%- comment -%}
+  Include : carte portrait "vraie carte Pokémon" stylisée.
+  Décision conseil 2/3 (art-director + trend-watcher) — option C "SVG modulaire inline".
+  Arguments clés :
+    · A (frame CSS) ne résout pas le visuel "Lab radar" illisible à l'intérieur
+    · B (regen PNG portrait Flux2) casse l'effet holo interactif (CSS sur DOM)
+    · C garde le tilt 3D + reflet conique existants, abstrait la logique
+      "carte officielle" sans skeumorphisme cliché.
+  Garde-fou trend-watcher : abstraire, ne pas copier. Bordure cuivre 1.5-2px stroke,
+  PAS le double-liner jaune Pokémon Company. Frame lisible à 60px.
+  Garde-fou art-director : ratio illustration 65% / nameplate 27%, set symbol RareRadar
+  custom (pas Pokémon officiel).
+
+  Params :
+    include.post     — l'objet post Jekyll
+    include.index    — numéro de carte (pour N° XXX), optionnel
+    include.size     — "mini" | "small" — taille de la carte (défaut "mini")
+{%- endcomment -%}
+
+{%- assign post = include.post -%}
+{%- assign size = include.size | default: "mini" -%}
+{%- assign rar = post.rarity | default: "rare" -%}
+{%- assign rlabel = "Rare" -%}
+{%- if rar == 'common' %}{% assign rlabel = "Commune" %}{% endif -%}
+{%- if rar == 'uncommon' %}{% assign rlabel = "Peu commune" %}{% endif -%}
+{%- if rar == 'holo_rare' %}{% assign rlabel = "Holo Rare" %}{% endif -%}
+{%- if rar == 'secret_rare' %}{% assign rlabel = "Secret Rare" %}{% endif -%}
+{%- assign reading = post.content | number_of_words | divided_by: 220 | plus: 1 -%}
+{%- comment -%} Mapping rareté → tier 1-5 (cohérent avec PIL _LEGACY_TIER_MAP) {%- endcomment -%}
+{%- assign tier = 1 -%}
+{%- if rar == 'uncommon' or rar == 'peu_commune' or rar == 'reverse' or rar == 'unco' -%}{% assign tier = 2 %}{%- endif -%}
+{%- if rar == 'rare' or rar == 'ar' or rar == 'holo' -%}{% assign tier = 3 %}{%- endif -%}
+{%- if rar == 'holo_rare' or rar == 'art_rare' or rar == 'full_art' or rar == 'fa' -%}{% assign tier = 4 %}{%- endif -%}
+{%- if rar == 'alternative' or rar == 'alt' or rar == 'secret_rare' or rar == 'gold' -%}{% assign tier = 5 %}{%- endif -%}
+{%- assign idx = include.index -%}
+{%- if idx -%}{%- assign idx_padded = idx | prepend: '00' | slice: -3, 3 -%}{%- else -%}{%- assign idx_padded = "" -%}{%- endif -%}
+{%- assign focus = post.cover_focus | default: "50% 50%" -%}
+{%- assign cat = "Dossier" -%}
+{%- if post.tags and post.tags.size > 0 -%}{%- assign cat = post.tags.first -%}{%- endif -%}
+
+{%- if post.cover_image_portrait -%}
+  {%- comment -%}
+    Cover portrait NATIVE existante : on affiche le PNG tel quel (frame +
+    texte gravés dans l'image par PIL). Le wrapper porte juste l'effet
+    holo CSS (tilt 3D + reflet conique au pointeur).
+  {%- endcomment -%}
+{%- assign portrait_path = post.cover_image_portrait | relative_url -%}
+{%- assign portrait_webp = portrait_path | replace: "/portrait/", "/portrait/webp/" | replace: ".png", ".webp" -%}
+{%- assign cb = site.time | date: '%s' -%}
+<a href="{{ post.url | relative_url }}" class="holo-card holo-card--mini cardp cardp--native r-{{ rar }} tier-{{ tier }}" data-holo>
+  <picture>
+    <source srcset="{{ portrait_webp }}?v={{ cb }}" type="image/webp">
+    <img class="cardp__native-img"
+         src="{{ portrait_path }}?v={{ cb }}"
+         alt="{{ post.title | escape }}"
+         width="720" height="1008"
+         loading="lazy" decoding="async">
+  </picture>
+</a>
+{%- else -%}
+<a href="{{ post.url | relative_url }}" class="holo-card holo-card--mini cardp cardp--{{ size }} r-{{ rar }}" data-holo>
+  <span class="cardp__frame" aria-hidden="true"></span>
+
+  <span class="cardp__strip">
+    <span class="cardp__rar">{{ rlabel }}</span>
+    {%- if idx_padded != "" -%}
+      <span class="cardp__num">N° {{ idx_padded }}</span>
+    {%- else -%}
+      <span class="cardp__num">{{ post.date | date: "%d.%m" }}</span>
+    {%- endif -%}
+  </span>
+
+  <span class="cardp__illu" aria-hidden="true">
+    {% if post.cover_image %}
+      <img class="cardp__illu-img"
+           src="{{ post.cover_image | relative_url }}"
+           alt=""
+           loading="lazy"
+           style="object-position: {{ focus }};">
+    {% else %}
+      <span class="cardp__illu-fallback"></span>
+    {% endif %}
+    <span class="cardp__illu-vignette"></span>
+  </span>
+
+  <span class="cardp__plate">
+    <span class="cardp__plate-row">
+      <span class="cardp__set" title="RareRadar">
+        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="10" cy="10" r="8.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <circle cx="10" cy="10" r="4.5" fill="none" stroke="currentColor" stroke-width="0.8" opacity="0.55"/>
+          <circle cx="10" cy="10" r="1.8" fill="currentColor"/>
+          <path d="M10 1.5 L10 3.5 M10 16.5 L10 18.5 M1.5 10 L3.5 10 M16.5 10 L18.5 10"
+                stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="cardp__cat">{{ cat }}</span>
+      <span class="cardp__min">{{ reading }} MIN</span>
+    </span>
+    <h3 class="cardp__title">{{ post.title }}</h3>
+  </span>
+
+  {%- comment -%}
+    Le reflet conique + sparkle + tilt 3D sont gérés par .holo-card (CSS existant).
+    Les pseudo ::before/::after de .holo-card s'appliquent par-dessus le frame.
+  {%- endcomment -%}
+</a>
+{%- endif -%}

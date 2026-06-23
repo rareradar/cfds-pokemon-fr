@@ -56,3 +56,6 @@ exclude:
 
 # Front matter cfds custom (pour rarity badges, auteur, etc.)
 collections: []
+
+# Drafts (2026-06-10) — Articles validés mais sans slot publi placés dans _drafts/.
+# Doivent apparaître dans site.posts au build pour figurer dans la home v6.

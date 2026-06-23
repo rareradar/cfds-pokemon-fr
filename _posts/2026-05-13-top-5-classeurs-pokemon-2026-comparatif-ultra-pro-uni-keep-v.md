@@ -3,10 +3,12 @@ layout: post
 title: "Top 5 classeurs Pokémon TCG en 2026 : Ultra Pro vs UniKeep vs Vault X"
 description: "Comparatif détaillé des meilleurs classeurs pour cartes Pokémon TCG en 2026 : Ultra Pro, UniKeep et Vault X. Critères de choix, avantages et inconvénients pour collectionneurs adultes."
 date: 2026-05-13 12:48:38 +0200
+n: 3
 slug: top-5-classeurs-pokemon-2026-comparatif-ultra-pro-uni-keep-v
-rarity: holo_rare
+rarity: unco
 read_time: 9
 cover_image: /assets/images/posts/top-5-classeurs-pokemon-2026-comparatif-ultra-pro-uni-keep-v-v2.png
+cover_image_portrait: /assets/images/posts/portrait/top-5-classeurs-pokemon-2026-comparatif-ultra-pro-uni-keep-v.png
 theme_image: /assets/images/themes/classeurs.png
 tags:
   - classeurs
@@ -16,6 +18,7 @@ tags:
   - protection cartes
   - organisation collection
 author: RareRadar
+byline_kind: tested
 _cfds:
   generated_by: mistral_119b_local
   reviewed_by: RareRadar (claude-edit pass)

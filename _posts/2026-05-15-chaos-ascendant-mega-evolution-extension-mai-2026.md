@@ -3,10 +3,12 @@ layout: post
 title: "Mega Evolution — Chaos Ascendant : ce qu'on sait de la prochaine extension Pokémon TCG"
 description: "Chaos Ascendant (Mega Evolution — Chaos Rising en VO) sort le 22 mai 2026 : 122 cartes, 5 nouveaux Méga Pokémon ex, produits annoncés, et que faire en attendant la sortie."
 date: 2026-05-15 09:00:00 +0200
+n: 4
 slug: chaos-ascendant-mega-evolution-extension-mai-2026
-rarity: uncommon
+rarity: unco
 read_time: 6
 cover_image: /assets/images/posts/chaos-ascendant-mega-evolution-extension-mai-2026-v2.png
+cover_image_portrait: /assets/images/posts/portrait/chaos-ascendant-mega-evolution-extension-mai-2026.png
 theme_image: /assets/images/themes/chaos-ascendant.png
 tags:
   - Chaos Ascendant
@@ -27,6 +29,7 @@ _cfds:
     - "https://www.pokemon.com/us/pokemon-news/the-pokemon-tcg-mega-evolution-chaos-rising-expansion-arrives-on-may-22-2026"
     - "https://bulbapedia.bulbagarden.net/wiki/Chaos_Rising_(TCG)"
     - "https://www.pokebeach.com/2026/03/chaos-rising-set-and-product-lineup-revealed-yet-another-small-english-set"
+byline_kind: data
 ---
 
 L'ère Méga Évolution continue de se déployer. Le 22 mai 2026, **Mega Evolution — Chaos Ascendant** (titre VO : *Chaos Rising*) débarque dans toutes les boutiques, et c'est la quatrième extension du bloc. Cinq nouveaux Méga Pokémon ex, 122 cartes au total, et une carte d'illustration signature par carte. Voici le résumé factuel — sans hype, sans pull à 5 000 €, juste ce qu'il faut savoir avant d'aller acheter (ou pas).
@@ -110,7 +113,7 @@ Le set est basé sur l'extension japonaise *Ninja Spinner* et s'inscrit dans le 
   </figcaption>
 </figure>
 
-C'est un set anglais de taille réduite (l'équivalent du *Ninja Spinner* japonais, environ deux tiers d'un set principal classique). Bonne nouvelle pour qui veut compléter : moins de cartes, moins de chasse. Moins bonne pour qui cherche un display "tout le set" — la rareté des six *Special Illustration Rares* va peser sur le secondaire dès le mois suivant la sortie.
+C'est un set anglais de taille réduite (l'équivalent du *Ninja Spinner* japonais, environ deux tiers d'un set principal classique). Bonne nouvelle pour qui veut compléter : moins de cartes, moins de chasse. Moins bonne pour qui cherche une display "tout le set" — la rareté des six *Special Illustration Rares* va peser sur le secondaire dès le mois suivant la sortie.
 
 ## Les Méga Pokémon ex à surveiller
 
@@ -205,9 +208,9 @@ R : *Mega Evolution — Chaos Ascendant*. La VO anglaise est *Chaos Rising*. Le 
 
 R : 10 cartes par booster anglais, avec garantie d'au moins une rare. Les boosters Chaos Ascendant respectent ce standard. Les ratios pulls exacts (Méga ex, Illustration Rare, Special Illustration Rare) n'ont pas encore été stabilisés par les premiers retours pré-release au moment de la rédaction.
 
-**Q : Vaut-il mieux acheter un display ou des boosters individuels ?**
+**Q : Vaut-il mieux acheter une display ou des boosters individuels ?**
 
-R : Pour ce set, le display (36 boosters) est rentable si vous voulez compléter les Méga ex de base. Pour les six *Special Illustration Rares*, statistiquement il faudrait ouvrir 4 à 6 displays pour avoir une chance solide d'en pull une — l'achat à l'unité sur Cardmarket reste généralement moins cher si vous chassez une carte précise.
+R : Pour ce set, la display (36 boosters) est rentable si vous voulez compléter les Méga ex de base. Pour les six *Special Illustration Rares*, statistiquement il faudrait ouvrir 4 à 6 displays pour avoir une chance solide d'en pull une — l'achat à l'unité sur Cardmarket reste généralement moins cher si vous chassez une carte précise.
 
 **Q : Est-ce qu'il y a une Elite Trainer Box "spéciale" ?**
 

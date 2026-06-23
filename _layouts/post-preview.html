@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{ page.title | default: "Article — preview" }} · RareRadar</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#14110e">
+  <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ '/assets/css/edito-preview.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+</head>
+<body class="edito-body">
+
+  <div class="preview-bar">
+    <div class="preview-bar__inner">
+      <span>Preview article — format carte portrait</span>
+      <span><a href="{{ '/preview-edito/' | relative_url }}">← retour à la home preview</a></span>
+    </div>
+  </div>
+
+  {%- comment -%} Pour la page preview-article.md on lit le post featured ; sinon on prend le post courant {%- endcomment -%}
+  {%- if page.demo_post -%}
+    {%- assign post = site.posts.first -%}
+    {%- assign post_content = post.content -%}
+  {%- else -%}
+    {%- assign post = page -%}
+    {%- assign post_content = content -%}
+  {%- endif -%}
+
+  {%- assign rar = post.rarity | default: "rare" -%}
+  {%- assign rlabel = "Rare" -%}
+  {%- if rar == 'common' %}{% assign rlabel = "Commune" %}{% endif -%}
+  {%- if rar == 'uncommon' %}{% assign rlabel = "Peu commune" %}{% endif -%}
+  {%- if rar == 'holo_rare' %}{% assign rlabel = "Holo Rare" %}{% endif -%}
+  {%- if rar == 'secret_rare' %}{% assign rlabel = "Secret Rare" %}{% endif -%}
+  {%- assign reading = post_content | number_of_words | divided_by: 220 | plus: 1 -%}
+
+  <header class="edito">
+    <nav class="nav">
+      <div class="nav__brand"><a href="{{ '/preview-edito/' | relative_url }}">RareRadar</a></div>
+      <div class="nav__links">
+        <a href="{{ '/preview-edito/#drops' | relative_url }}">Cette semaine</a>
+        <a href="{{ '/preview-edito/#gear' | relative_url }}">Gear</a>
+        <a href="{{ '/preview-edito/#reviews' | relative_url }}">Le fond</a>
+        <a href="{{ '/newsletter/' | relative_url }}">Newsletter</a>
+      </div>
+    </nav>
+
+    <div class="visitcard">
+      <div class="visitcard__inner">
+        <span>Tenu par Clément</span>
+        <span>1 247 cartes catalogués</span>
+        <span>FR depuis 2023</span>
+        <a href="{{ '/about/' | relative_url }}" class="visitcard__info" title="À propos">i</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="edito">
+
+    {% comment %} ─── HERO portrait — carte verticale cover_image_portrait + texte à côté ─── {% endcomment %}
+    {%- comment -%} Mapping rareté → tier (cohérent avec card-portrait.html) {%- endcomment -%}
+    {%- assign tier = 1 -%}
+    {%- if rar == 'uncommon' or rar == 'reverse' or rar == 'unco' %}{% assign tier = 2 %}{% endif -%}
+    {%- if rar == 'rare' or rar == 'ar' or rar == 'holo' %}{% assign tier = 3 %}{% endif -%}
+    {%- if rar == 'holo_rare' or rar == 'art_rare' or rar == 'full_art' or rar == 'fa' %}{% assign tier = 4 %}{% endif -%}
+    {%- if rar == 'alternative' or rar == 'alt' or rar == 'secret_rare' or rar == 'gold' %}{% assign tier = 5 %}{% endif -%}
+
+    <section class="article-hero article-hero--split">
+      <div class="article-hero__card">
+        <a class="holo-card cardp cardp--native r-{{ rar }} tier-{{ tier }}" data-holo>
+          {% if post.cover_image_portrait %}
+            <img class="cardp__native-img" src="{{ post.cover_image_portrait | relative_url }}" alt="">
+          {% elsif post.cover_image %}
+            <img class="cardp__native-img" src="{{ post.cover_image | relative_url }}" alt="">
+          {% else %}
+            <div style="position:absolute;inset:0;background:linear-gradient(135deg,#2a1f18,#14110e);"></div>
+          {% endif %}
+        </a>
+      </div>
+
+      <div class="article-hero__copy">
+        <span class="article-hero__kicker">Dossier {{ post.date | date: "%d.%m.%Y" }}</span>
+        <h1 class="article-hero__title">{{ post.title }}</h1>
+        {% if post.description %}
+          <p class="article-hero__lede">{{ post.description }}</p>
+        {% endif %}
+
+        <div class="article-hero__meta">
+          <span>Rareté <strong class="r-{{ rar }}">{{ rlabel }}</strong></span>
+          <span class="hsep"></span>
+          <span>Lecture <strong>{{ reading }} MIN</strong></span>
+          <span class="hsep"></span>
+          <span>Testé en main <strong>J+12</strong></span>
+        </div>
+      </div>
+    </section>
+
+    {% comment %} ─── Corps article — colonne lisible 62ch ─── {% endcomment %}
+    <article class="article-body">
+      {{ post_content }}
+    </article>
+
+    {% comment %} ─── Disclosure article ─── {% endcomment %}
+    <aside class="article-disclosure">
+      <strong>Note transparence.</strong>
+      Cet article peut contenir des liens affiliés (Amazon FR · eBay).
+      RareRadar touche 3 à 8 % de commission sans surcoût pour vous.
+      Les verdicts restent éditorialement indépendants.
+    </aside>
+
+    {% comment %} ─── Related — 3 mini-cartes ─── {% endcomment %}
+    {%- assign related = site.posts | where_exp: "p", "p.url != post.url" | slice: 0, 3 -%}
+    {% if related.size > 0 %}
+    <section class="article-related">
+      <header class="s-head">
+        <h2 class="s-head__title">À lire ensuite</h2>
+        <span class="s-head__count">3 dossiers liés</span>
+      </header>
+      <div class="cards-grid cards-grid--week">
+        {% for p in related %}
+        <article class="card-tile">
+          {% include card-portrait.html post=p index=forloop.index size="small" %}
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    <footer class="foot">
+      <div><span class="foot__brand">RareRadar.</span> Pokémon TCG · FR · {{ site.time | date: "%Y" }}</div>
+      <div><a href="{{ '/preview-edito/' | relative_url }}">Home preview</a> · <a href="{{ '/' | relative_url }}">Site actuel</a></div>
+    </footer>
+
+  </main>
+
+  <script>
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var cards = document.querySelectorAll('[data-holo], [data-holo-flat]');
+    if (!cards.length) return;
+    cards.forEach(function (card) {
+      var isFlat = card.hasAttribute('data-holo-flat');
+      var isMini = card.classList.contains('holo-card--mini');
+      var maxTilt = isFlat ? 5 : (isMini ? 10 : 14);
+      var maxLift = isFlat ? 4 : (isMini ? 7 : 10);
+      var rect, raf;
+      function update(e) {
+        if (!rect) rect = card.getBoundingClientRect();
+        var x = (e.clientX - rect.left) / rect.width;
+        var y = (e.clientY - rect.top)  / rect.height;
+        if (raf) cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(function () {
+          var rx = (x - 0.5) * maxTilt;
+          var ry = (0.5 - y) * maxLift;
+          card.style.setProperty('--mx', (x * 100) + '%');
+          card.style.setProperty('--my', (y * 100) + '%');
+          card.style.setProperty('--rx', rx + 'deg');
+          card.style.setProperty('--ry', ry + 'deg');
+          card.style.setProperty('--holo-strength', '1');
+        });
+      }
+      function reset() {
+        rect = null;
+        card.style.setProperty('--rx', '0deg');
+        card.style.setProperty('--ry', '0deg');
+        card.style.setProperty('--holo-strength', '0');
+      }
+      card.addEventListener('mouseenter', function () { rect = card.getBoundingClientRect(); });
+      card.addEventListener('mousemove', update);
+      card.addEventListener('mouseleave', reset);
+      card.addEventListener('touchmove', function (e) {
+        if (e.touches.length) update(e.touches[0]);
+      }, { passive: true });
+      card.addEventListener('touchend', reset);
+    });
+  })();
+  </script>
+</body>
+</html>

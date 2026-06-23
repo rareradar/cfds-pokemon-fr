@@ -603,19 +603,13 @@ a {
 @media (max-width: 900px) { .card-grid { gap: 1.4rem; } }
 
 .article-card {
-  grid-column: span 6;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1.6rem;
-  background: var(--bg-pop);
-  border: 1px solid var(--rule-soft);
+  background: transparent;
   position: relative;
   isolation: isolate;
   height: 100%;
-}
-@media (max-width: 900px) {
-  .article-card { grid-column: span 12; }
 }
 .card-grid {
   align-items: stretch;
@@ -630,10 +624,6 @@ a {
 }
 .article-card:hover {
   transform: translateY(-3px);
-  border-color: var(--accent);
-  box-shadow:
-    0 12px 40px -12px rgba(217, 114, 70, 0.35),
-    0 0 0 1px rgba(217, 114, 70, 0.15);
 }
 .article-card:hover .article-card__title { color: var(--accent); }
 .article-card .article-card__title {
@@ -776,10 +766,12 @@ a {
   border: 2px solid var(--ink);
 }
 .rarity__symbol { font-size: 0.85rem; line-height: 1; }
-.rarity[data-rarity="common"]      { background: var(--bg-pop); color: var(--ink); }
-.rarity[data-rarity="uncommon"]    { background: var(--grass); color: var(--bg); border-color: var(--ink); }
-.rarity[data-rarity="holo_rare"]   { background: var(--electric); color: var(--ink); border-color: var(--ink); }
-.rarity[data-rarity="secret_rare"] { background: var(--fire); color: var(--bg); border-color: var(--ink); }
+/* Badges rareté canoniques 5-tier (2026-06) — voir _includes/rarity_legend.html */
+.rarity[data-rarity="commun"] { background: #2a2826; color: var(--ink); border-color: #000000; }
+.rarity[data-rarity="unco"]   { background: #4d6b3d;     color: var(--ink); border-color: #000000; }
+.rarity[data-rarity="ar"]     { background: var(--brass); color: var(--bg);  border-color: #D4AF37; }
+.rarity[data-rarity="fa"]     { background: #1c2030;     color: var(--ink); border-color: #C0C0C0; }
+.rarity[data-rarity="alt"]    { background: linear-gradient(135deg, #1c2030 55%, #8B2230 80%, #D4AF37 100%); color: var(--ink); border-color: #D4AF37; font-weight: 800; }
 
 /* ──────────────── 9. article single ──────────────── */
 .article {
@@ -2054,3 +2046,1209 @@ a {
 }
 .newsletter-page__faq ul { padding-left: 1.4rem; line-height: 1.7; color: var(--ink-2); }
 .newsletter-page__faq p { color: var(--ink-2); line-height: 1.7; }
+
+/* ==========================================================================
+   DESIGNER/MIA — Aération & Hiérarchie Visuelle (Patch v1 — 2026-05-24)
+   Objectif: réduire densité perçue, isoler éléments clés, fluidifier lecture
+   sur fond sombre animé. Cible la zone article rendue (.prose).
+   ========================================================================== */
+
+/* 1. Paragraphes : plus d'air entre les lignes */
+.prose p {
+  margin-bottom: 1.5rem;
+  line-height: 1.75;
+}
+
+/* 2. Blockquotes : callout cards visuels */
+.prose blockquote {
+  margin: 2.5rem 0;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-2);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: var(--ink);
+}
+
+.prose blockquote p {
+  margin-bottom: 0;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+
+/* 3. Tables : respiration + lisibilité */
+.prose table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--bg-2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.prose th {
+  background: var(--bg-pop);
+  color: var(--ink);
+  font-weight: 600;
+  text-align: left;
+  padding: 1rem 1.25rem;
+  border-bottom: 2px solid var(--rule-soft);
+}
+
+.prose td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--rule-quiet);
+  color: var(--ink-2);
+}
+
+.prose tr:last-child td {
+  border-bottom: none;
+}
+
+/* 4. Images & légendes */
+.prose figure {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.prose figcaption {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: var(--fs-mono-s);
+  color: var(--ink-soft);
+  letter-spacing: var(--tracking-mono);
+  text-align: center;
+}
+
+/* 5. Espacement vertical des titres */
+.prose h2,
+.prose h3 {
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose h3 {
+  margin-top: 2.5rem;
+}
+
+/* 6. Liens Amazon : distinction subtile */
+.prose a[href*="amazon"] {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background: var(--bg-pop);
+  border: 1px solid var(--rule-soft);
+  border-radius: 6px;
+  color: var(--accent);
+  font-weight: 600;
+  transition: all var(--dur-fast) var(--ease-out);
+  text-decoration: none;
+}
+
+.prose a[href*="amazon"]:hover {
+  background: var(--accent-deep);
+  color: var(--ink);
+  border-color: var(--accent-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(217, 114, 70, 0.2);
+}
+
+
+/* ==========================================================================
+   RARETÉ — variants visuels sur .article__cover par data-rarity
+   Chaque rareté = teinte scanline + border-color cover distincts.
+   2026-05-24
+   ========================================================================== */
+
+/* Default scanline conservée (cf. règle de base sur .article__cover). */
+
+/* ── 5 tiers canoniques (2026-06) appliqués à .article__cover ── */
+
+/* COMMUN — neutre, bord standard */
+.article[data-rarity="commun"] .article__cover {
+  border-color: var(--rule);
+  background: #2a2826;
+}
+
+/* UNCO — vert herbe */
+.article[data-rarity="unco"] .article__cover {
+  border-color: #4d6b3d;
+  background: #4d6b3d;
+  box-shadow: 0 0 0 1px rgba(77, 107, 61, 0.3) inset;
+}
+
+/* AR — Art Rare, or doré + scanline dorée */
+.article[data-rarity="ar"] .article__cover {
+  border-color: #D4AF37;
+  background: var(--brass);
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+}
+.article[data-rarity="ar"] .article__cover::after {
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(212, 175, 55, 0.10) 0,
+    rgba(212, 175, 55, 0.10) 1px,
+    transparent 1px,
+    transparent 3px
+  ),
+  linear-gradient(135deg, transparent 30%, rgba(212, 175, 55, 0.14) 50%, transparent 70%);
+}
+
+/* FA — Full Art, argent + glow + scanline diagonale */
+.article[data-rarity="fa"] .article__cover {
+  border: 1px solid #C0C0C0;
+  background: #1c2030;
+  box-shadow: 0 0 16px rgba(192, 192, 192, 0.6);
+}
+.article[data-rarity="fa"] .article__cover::after {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(192, 192, 192, 0.16) 0,
+    rgba(192, 192, 192, 0.16) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+}
+
+/* ALT — Alternate Art, or premium, double-bord + glow max */
+.article[data-rarity="alt"] .article__cover {
+  border: 1px solid #D4AF37;
+  background: linear-gradient(135deg, #1c2030 55%, #8B2230 80%, #D4AF37 100%);
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.45) inset,
+    0 0 20px rgba(139, 34, 48, 0.55),
+    0 0 40px rgba(212, 175, 55, 0.35);
+}
+.article[data-rarity="alt"] .article__cover::after {
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(212, 175, 55, 0.12) 0,
+    rgba(212, 175, 55, 0.12) 1px,
+    transparent 1px,
+    transparent 4px
+  ),
+  linear-gradient(120deg,
+    rgba(212, 175, 55, 0.10) 0%,
+    rgba(255, 215, 110, 0.12) 50%,
+    rgba(212, 175, 55, 0.10) 100%);
+}
+
+/* ==========================================================================
+   RARETÉ — variants visuels sur .article-card (home cards / liste)
+   5 tiers officiels rareradar 2026-06 : commun | unco | ar | fa | alt
+   Principe hiérarchique : commun = neutre → unco = pop discret →
+   ar = doré scanline → fa = argent glow → alt = or max + effet premium
+   ========================================================================== */
+
+/* COMMUN — bord standard, aucun effet */
+.article-card[data-rarity="commun"] .article-card__hero {
+  border-color: var(--rule-soft);
+}
+
+/* UNCO — bord vert sage, glow intérieur très discret */
+.article-card[data-rarity="unco"] .article-card__hero {
+  border-color: var(--grass);
+}
+.article-card[data-rarity="unco"] {
+  box-shadow: 0 0 0 1px rgba(77, 107, 61, 0.25);
+}
+
+/* AR (Art Rare) — bord or canonique #D4AF37 + glow doré */
+.article-card[data-rarity="ar"] .article-card__hero {
+  border-color: #D4AF37;
+}
+.article-card[data-rarity="ar"] {
+  box-shadow: 0 0 28px -10px rgba(212, 175, 55, 0.50);
+}
+
+/* FA (Full Art) — bord argent canonique #C0C0C0 + glow argent/blanc */
+.article-card[data-rarity="fa"] .article-card__hero {
+  border-color: #C0C0C0;
+}
+.article-card[data-rarity="fa"] {
+  box-shadow:
+    0 0 28px -10px rgba(192, 192, 192, 0.60),
+    0 0 0 1px rgba(192, 192, 192, 0.18);
+}
+
+/* ALT (Alt Art) — bord or canonique #D4AF37 + glow max, double-bord premium */
+.article-card[data-rarity="alt"] .article-card__hero {
+  border: 3px solid;
+  border-image: linear-gradient(135deg, #D4AF37, #f0c97a, #9c8454, #D4AF37) 1;
+}
+.article-card[data-rarity="alt"] {
+  box-shadow:
+    0 0 36px rgba(139, 34, 48, 0.55),
+    0 0 48px -8px rgba(212, 175, 55, 0.45),
+    0 0 32px -16px rgba(212, 175, 55, 0.25);
+}
+
+/* Assure que l'image cover passe au-dessus du ::before des effets */
+.article-card__hero img,
+.article-card__hero svg {
+  position: relative;
+  z-index: 0;
+}
+
+/* ==========================================================================
+   FIX MOITIÉ BLANCHE — 2026-05-24
+   Force aspect-ratio 16/9 sur .article-card__hero pour qu'il ne s'étire
+   pas au-delà de la hauteur de l'image (cause: align-items stretch du grid
+   exposait le background --bg-2 en dessous de l'image).
+   ========================================================================== */
+.article-card__hero {
+  aspect-ratio: 16 / 9;
+}
+
+.article-card__hero img,
+.article-card__cover {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+/* ════════════════════════════════════════════════════════════════════════════
+   v6 REFONTE HOLO-CARD PORTRAIT (2026-06-08)
+   Promotion preview rareradar → vrai site local.
+   - Cover portrait 5:7 PNG (cover_image_portrait) avec design Lab radar gravé
+   - 5 raretés simplifiées (commun/unco/ar/fa/alt → tier-1 à tier-5)
+   - Sweep CSS diagonal au hover différencié par tier (AR gris, FA pailleté, ALT arc-en-ciel)
+   - Hero article split : carte verticale + texte
+   ════════════════════════════════════════════════════════════════════════════ */
+
+/* ──────────────── Vars holo couleurs ──────────────── */
+:root {
+  --holo-1: #ff6ec7;
+  --holo-2: #fde68a;
+  --holo-3: #6ee7f9;
+  --holo-4: #b69dff;
+  --holo-5: #7ee787;
+  --copper-glow-hc: rgba(184, 115, 51, 0.32);
+}
+
+/* ──────────────── Holo card portrait 5:7 (article-card list) ──────────────── */
+.holo-card.cardp.cardp--native {
+  position: relative;
+  display: block;
+  aspect-ratio: 5/7;
+  width: 100%;
+  background: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  isolation: isolate;
+  cursor: pointer;
+  box-shadow:
+    0 16px 36px -16px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+    0 0 24px -8px var(--copper-glow-hc);
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.holo-card.cardp.cardp--native:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 24px 48px -16px rgba(0, 0, 0, 0.85),
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+    0 0 40px -10px var(--copper-glow-hc);
+}
+.holo-card.cardp.cardp--native .cardp__native-img,
+.holo-card.cardp.cardp--native > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.holo-card.cardp.cardp--native .cardp__illu-fallback {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #2a1f18, #14110e);
+}
+
+/* Override de l'ancien .article-card pour s'adapter à la holo-card portrait */
+.article-card .holo-card.cardp.cardp--native {
+  margin: 0;
+}
+
+/* Keyframes scintillement (pulse opacité pour effet "champ stellaire") */
+@keyframes sparkle-pulse-v6 {
+  0%, 100% { opacity: 1; }
+  15% { opacity: 0.35; }
+  30% { opacity: 0.9; }
+  45% { opacity: 0.5; }
+  60% { opacity: 1; }
+  75% { opacity: 0.4; }
+  90% { opacity: 0.85; }
+}
+
+/* ──────────────── Tier 1-2 : aucun reflet (commun/unco) ──────────────── */
+.holo-card.cardp.cardp--native.tier-1::after,
+.holo-card.cardp.cardp--native.tier-1::before,
+.holo-card.cardp.cardp--native.tier-2::after,
+.holo-card.cardp.cardp--native.tier-2::before { display: none !important; }
+
+/* ──────────────── Tier 1 COMMUN : gris charcoal mat (2026-06-10, bordure solide 2026-06-12)
+   Différenciation visuelle vs tier-4 FA argent. PAS de foil, PAS de sparkle,
+   PAS de sweep. Background charcoal + BORDURE SOLIDE gris chaud visible. ──────────────── */
+.holo-card.cardp.cardp--native.tier-1 {
+  background: #2a2826;
+  border: 1px solid #5a5550;
+  box-shadow:
+    0 16px 36px -16px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(160, 152, 140, 0.20) inset,
+    0 0 18px -10px rgba(42, 40, 38, 0.50);
+}
+.holo-card.cardp.cardp--native.tier-1:hover {
+  border-color: #6a6560;
+  box-shadow:
+    0 24px 48px -16px rgba(0, 0, 0, 0.85),
+    0 0 0 1px rgba(160, 152, 140, 0.32) inset,
+    0 0 28px -12px rgba(42, 40, 38, 0.65);
+}
+
+/* TIER-5 ALT — Or + halo carmin brand + BORDURE SOLIDE or/carmin (différencie AR or sobre, 2026-06-12) */
+.holo-card.cardp.cardp--native.tier-5 {
+  background: linear-gradient(135deg, #1c2030 55%, #8B2230 80%, #D4AF37 100%);
+  border: 2px solid #D4AF37;
+  outline: 1px solid #8B2230;
+  outline-offset: 2px;
+  box-shadow:
+    0 20px 48px -16px rgba(0, 0, 0, 0.85),
+    0 0 0 1px rgba(212, 175, 55, 0.45) inset,
+    0 0 24px rgba(139, 34, 48, 0.65),
+    0 0 40px rgba(212, 175, 55, 0.50);
+}
+.holo-card.cardp.cardp--native.tier-5:hover {
+  outline-offset: 3px;
+  box-shadow:
+    0 28px 60px -16px rgba(0, 0, 0, 0.95),
+    0 0 0 1px rgba(212, 175, 55, 0.60) inset,
+    0 0 36px rgba(139, 34, 48, 0.80),
+    0 0 56px rgba(212, 175, 55, 0.60);
+}
+
+/* ──────────────── Tier 3 AR : bande gris simple diagonale ──────────────── */
+.holo-card.cardp.cardp--native.tier-3::before { display: none; }
+.holo-card.cardp.cardp--native.tier-3::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 50%; height: 220%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(230, 230, 240, 0.35) 30%,
+    rgba(255, 255, 255, 0.95) 50%,
+    rgba(230, 230, 240, 0.35) 70%,
+    transparent 100%
+  );
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(-220%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 4;
+  transition: transform 0s;
+}
+.holo-card.cardp.cardp--native.tier-3:hover::after {
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(220%);
+  transition: transform 1100ms ease-in-out;
+}
+
+/* ──────────────── Tier 4 FA : bande gris pailleté + 35 sparkles ──────────────── */
+.holo-card.cardp.cardp--native.tier-4::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 55%; height: 220%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(210, 210, 240, 0.40) 28%,
+    rgba(255, 255, 255, 0.95) 50%,
+    rgba(210, 210, 240, 0.40) 72%,
+    transparent 100%
+  );
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(-220%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 4;
+  transition: transform 0s;
+}
+.holo-card.cardp.cardp--native.tier-4:hover::after {
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(220%);
+  transition: transform 1100ms ease-in-out;
+}
+.holo-card.cardp.cardp--native.tier-4::before {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 55%; height: 220%;
+  background-image:
+    radial-gradient(circle at 12% 4%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 28% 7%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 50% 6%, white 0.25px, transparent 0.6px),
+    radial-gradient(circle at 72% 9%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 88% 5%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 18% 14%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 38% 17%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 60% 18%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 82% 21%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 8% 24%, white 0.25px, transparent 0.6px),
+    radial-gradient(circle at 30% 28%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 55% 30%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 78% 33%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 95% 35%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 14% 40%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 42% 42%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 66% 45%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 22% 50%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 50% 52%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 74% 56%, white 0.25px, transparent 0.6px),
+    radial-gradient(circle at 90% 58%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 10% 62%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 32% 66%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 58% 68%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 80% 72%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 16% 76%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 44% 78%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 68% 82%, white 0.25px, transparent 0.6px),
+    radial-gradient(circle at 92% 86%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 6% 88%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 28% 90%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 52% 93%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 76% 95%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 36% 98%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 86% 97%, white 0.4px, transparent 0.9px);
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(-220%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 5;
+  transition: transform 0s;
+}
+.holo-card.cardp.cardp--native.tier-4:hover::before {
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(220%);
+  animation: sparkle-pulse-v6 280ms infinite;
+  transition: transform 1100ms ease-in-out;
+}
+
+/* ──────────────── Tier 5 ALT : bande arc-en-ciel + 61 sparkles ──────────────── */
+.holo-card.cardp.cardp--native.tier-5::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 60%; height: 220%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 80, 80, 0.65) 15%,
+    rgba(255, 200, 0, 0.80) 30%,
+    rgba(80, 220, 80, 0.75) 45%,
+    rgba(80, 160, 255, 0.80) 60%,
+    rgba(200, 80, 255, 0.75) 75%,
+    rgba(255, 80, 80, 0.65) 88%,
+    transparent 100%
+  );
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(-220%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 4;
+  transition: transform 0s;
+}
+.holo-card.cardp.cardp--native.tier-5:hover::after {
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(220%);
+  transition: transform 1100ms ease-in-out;
+}
+.holo-card.cardp.cardp--native.tier-5::before {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 60%; height: 220%;
+  background-image:
+    radial-gradient(circle at 8% 3%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 22% 5%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 38% 4%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 54% 7%, white 0.25px, transparent 0.6px),
+    radial-gradient(circle at 70% 5%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 86% 8%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 14% 12%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 30% 14%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 46% 11%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 62% 13%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 78% 15%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 92% 12%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 6% 20%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 24% 22%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 42% 19%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 58% 23%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 74% 21%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 90% 24%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 12% 30%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 28% 32%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 44% 28%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 60% 31%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 76% 34%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 92% 32%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 8% 40%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 24% 42%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 40% 38%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 56% 41%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 72% 44%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 88% 42%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 16% 50%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 32% 52%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 48% 48%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 64% 51%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 80% 54%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 96% 52%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 10% 60%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 26% 62%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 42% 58%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 58% 61%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 74% 64%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 90% 62%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 18% 70%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 34% 72%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 50% 68%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 66% 71%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 82% 74%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 4% 78%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 20% 80%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 36% 76%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 52% 79%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 68% 82%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 84% 84%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 12% 88%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 28% 90%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 44% 87%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 60% 89%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 76% 92%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 92% 94%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 30% 96%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 64% 97%, white 0.45px, transparent 1px);
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(-220%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 5;
+  transition: transform 0s;
+}
+.holo-card.cardp.cardp--native.tier-5:hover::before {
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(220%);
+  animation: sparkle-pulse-v6 240ms infinite;
+  transition: transform 1100ms ease-in-out;
+}
+
+/* ──────────────── Article hero split — carte verticale + texte à côté ──────────────── */
+.article-hero.article-hero--split {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  padding: clamp(1.4rem, 3vw, 2.4rem) 0;
+  margin-bottom: 2rem;
+}
+.article-hero--split .article-hero__card {
+  width: 100%;
+  max-width: 360px;
+  position: relative;
+  z-index: 1;
+}
+.article-hero--split .article-hero__card .holo-card {
+  position: relative;
+  display: block;
+  aspect-ratio: 5/7;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  isolation: isolate;
+  box-shadow:
+    0 24px 60px -18px rgba(0, 0, 0, 0.75),
+    0 0 50px -16px var(--copper-glow-hc);
+  cursor: pointer;
+  animation: hero-card-float-v6 6s ease-in-out infinite alternate;
+}
+@keyframes hero-card-float-v6 {
+  from { transform: perspective(900px) translateY(0) rotateX(1.5deg); }
+  to   { transform: perspective(900px) translateY(-10px) rotateX(-1.5deg); }
+}
+.article-hero--split .article-hero__card .holo-card:hover {
+  animation: none;
+}
+.article-hero--split .article-hero__copy { max-width: 36rem; }
+
+@media (max-width: 800px) {
+  .article-hero.article-hero--split {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  .article-hero--split .article-hero__card { max-width: 280px; margin: 0 auto; }
+}
+
+/* Réduire éventuelles transitions globales sur .article-card en gardant le reveal */
+.article-card .holo-card.cardp.cardp--native { display: block; }
+
+/* prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .article-hero--split .article-hero__card .holo-card { animation: none; }
+  .holo-card.cardp.cardp--native::after,
+  .holo-card.cardp.cardp--native::before {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* ──────────────── v6 OVERRIDE — neutraliser cadre .article-card ancien ────────────────
+   La holo-card portrait prend toute la place du wrapper article-card ; pas de cadre
+   externe ni padding. Hover effets gérés directement par la holo-card.
+*/
+.card-grid .article-card {
+  padding: 0;
+  background: none;
+  border: none;
+  gap: 0;
+  height: auto;
+  isolation: auto;
+}
+.card-grid .article-card:hover {
+  transform: none;
+}
+.card-grid .article-card .holo-card.cardp.cardp--native {
+  width: 100%;
+  height: auto;
+}
+
+/* ──────────────── v6 grid 3 colonnes (2026-06-08) ──────────────── */
+.card-grid .article-card {
+  grid-column: span 4;  /* 3 par ligne (12/4) sur desktop */
+}
+@media (max-width: 1100px) {
+  .card-grid .article-card { grid-column: span 6; }  /* 2 par ligne tablette */
+}
+@media (max-width: 700px) {
+  .card-grid .article-card { grid-column: span 12; } /* 1 par ligne mobile */
+}
+/* article-card s'ajuste à la carte holo : pas de hauteur fixe forcée */
+.card-grid .article-card {
+  height: auto;
+  display: block;
+  width: 100%;
+}
+.card-grid .article-card .holo-card.cardp.cardp--native {
+  display: block;
+  width: 100%;
+  aspect-ratio: 5/7;  /* la carte définit sa hauteur */
+}
+
+/* Sweep plus marqué (user "pas des masses") — opacités boostées */
+.holo-card.cardp.cardp--native.tier-3:hover::after,
+.holo-card.cardp.cardp--native.tier-4:hover::after,
+.holo-card.cardp.cardp--native.tier-5:hover::after {
+  filter: brightness(1.15) contrast(1.05);
+}
+
+/* ──────────────── v6 fix hover + espacement (2026-06-08) ──────────────── */
+.card-grid {
+  gap: 2.5rem !important;
+}
+@media (max-width: 900px) { .card-grid { gap: 2rem !important; } }
+@media (max-width: 700px) { .card-grid { gap: 1.6rem !important; } }
+
+/* Désactiver effets hover hérités .article-card ancien */
+.card-grid .article-card:hover,
+.card-grid .article-card:hover * {
+  transform: none !important;
+}
+.card-grid .article-card:hover .article-card__hero,
+.card-grid .article-card:hover .article-card__cover {
+  transform: none !important;
+}
+
+/* Retirer le lift de la holo-card — seul sweep + sparkles + box-shadow font le feedback */
+.card-grid .article-card .holo-card.cardp.cardp--native {
+  transform: none !important;
+  transition: box-shadow 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card-grid .article-card .holo-card.cardp.cardp--native:hover {
+  transform: none !important;
+  box-shadow:
+    0 24px 48px -16px rgba(0, 0, 0, 0.85),
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+    0 0 40px -10px var(--copper-glow-hc);
+}
+
+/* ════════════════════════════════════════════════════════════════════════════
+   v6 HOME — sections promues depuis preview-edito (2026-06-08)
+   Scope `.home-v6` pour ne pas casser autres pages.
+   ════════════════════════════════════════════════════════════════════════════ */
+
+.home-v6 {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 clamp(1.2rem, 4vw, 2.6rem);
+}
+
+/* ──────────────── Hero featured (carte holo + texte split) ──────────────── */
+.home-v6 .hero.hero--featured {
+  background: none;
+  border: none;
+  padding: clamp(1.5rem, 4vw, 3rem) 0;
+}
+.home-v6 .hero--featured .hero__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+@media (min-width: 880px) {
+  .home-v6 .hero--featured .hero__grid {
+    grid-template-columns: minmax(280px, 380px) 1fr;
+  }
+}
+.home-v6 .hero__card {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 5/7;
+  border-radius: 10px; /* aligné sur cardp standard */
+  overflow: hidden;
+  isolation: isolate;
+  /* Borderless 2026-06-10 — héritage strict cardp standard, AUCUN override
+     de box-shadow, border, outline ni animation float. Le hero doit avoir
+     EXACTEMENT le même rendu visuel qu'une card-tile (modulo la taille). */
+  border: none;
+  outline: none;
+  /* box-shadow hérité de .holo-card.cardp.cardp--native (lignes 2340-2343) */
+}
+.home-v6 .hero__copy {
+  max-width: 36rem;
+  text-align: left;
+}
+.home-v6 .hero__kicker {
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent, #d97246);
+  margin-bottom: 1.2rem;
+}
+.home-v6 .hero__title {
+  font-family: var(--font-display, "Bricolage Grotesque");
+  font-size: clamp(2rem, 4.6vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  margin: 0 0 1.2rem;
+  color: var(--ink, #f2eee2);
+  font-weight: 700;
+}
+.home-v6 .hero__lede {
+  font-size: 1.08rem;
+  line-height: 1.55;
+  color: var(--ink-2, #d5d1c4);
+  margin: 0 0 1.8rem;
+  max-width: 32rem;
+}
+.home-v6 a.hero__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 24px;
+  background: var(--ink, #f2eee2);
+  color: var(--bg, #0d1018);
+  border-radius: 2px;
+  font-family: var(--font-body, "Public Sans");
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.005em;
+  text-decoration: none;
+  transition: all 240ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.home-v6 a.hero__cta:hover {
+  background: var(--accent, #d97246);
+  color: var(--ink, #f2eee2);
+}
+.home-v6 a.hero__cta__arrow,
+.home-v6 .hero__cta__arrow {
+  display: inline-block;
+  transition: transform 240ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.home-v6 a.hero__cta:hover .hero__cta__arrow { transform: translateX(4px); }
+
+/* ──────────────── Section header (s-head) ──────────────── */
+.home-v6 .s-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 4rem 0 1.6rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--rule-soft, rgba(242, 238, 226, 0.12));
+}
+.home-v6 .s-head__title {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--ink, #f2eee2);
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.home-v6 .s-head__title::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent, #d97246);
+}
+.home-v6 .s-head__count {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft, #9b9789);
+}
+
+/* ──────────────── Cards-grid "Cette semaine" (3 col) ──────────────── */
+.home-v6 .cards-grid {
+  display: grid;
+  gap: 1.6rem 1.4rem;
+}
+.home-v6 .cards-grid--week {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .home-v6 .cards-grid--week { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .home-v6 .cards-grid--week { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ──────────────── Cards-grid "Le fond" (ladder 4→3→2→1) ──────────────── */
+.home-v6 .cards-grid--bottom {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 640px)  { .home-v6 .cards-grid--bottom { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 980px)  { .home-v6 .cards-grid--bottom { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 480px)  { .home-v6 .cards-grid--bottom { grid-template-columns: repeat(1, 1fr); } }
+
+.home-v6 .card-tile {
+  display: block;
+  width: 100%;
+}
+.home-v6 .card-tile .holo-card.cardp.cardp--native {
+  display: block;
+  width: 100%;
+  aspect-ratio: 5/7;
+}
+
+/* ──────────────── GEAR block (3 picks affiliés) ──────────────── */
+.home-v6 .gear {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.4rem;
+}
+@media (min-width: 640px) {
+  .home-v6 .gear { grid-template-columns: repeat(3, 1fr); }
+}
+.home-v6 a.gear-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-2, #161a26);
+  border: 1px solid var(--copper-deep, #704a1f);
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 280ms cubic-bezier(0.65, 0, 0.35, 1),
+              border-color 280ms cubic-bezier(0.65, 0, 0.35, 1);
+  isolation: isolate;
+}
+.home-v6 a.gear-item:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent, #d97246);
+}
+.home-v6 .gear-item__badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--bg, #0d1018);
+  background: var(--accent, #d97246);
+  padding: 4px 9px;
+  border-radius: 2px;
+  transform: rotate(-3deg);
+  font-weight: 700;
+}
+.home-v6 .gear-item__cover {
+  aspect-ratio: 1 / 1;
+  background: var(--bg-pop, #1c2030);
+  border-bottom: 1px solid var(--copper-deep, #704a1f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-v6 .gear-item__cover svg,
+.home-v6 .gear-item__cover object,
+.home-v6 .gear-item__cover img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+.home-v6 .gear-item__body {
+  padding: 16px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+.home-v6 .gear-item__cat {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent, #d97246);
+}
+.home-v6 .gear-item__name {
+  font-family: var(--font-display, "Bricolage Grotesque");
+  font-weight: 500;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  margin: 0;
+  color: var(--ink, #f2eee2);
+}
+.home-v6 .gear-item__verdict {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--ink-soft, #9b9789);
+  margin: 4px 0 0;
+  font-style: italic;
+}
+.home-v6 .gear-item__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule-soft, rgba(242, 238, 226, 0.08));
+}
+.home-v6 .gear-item__price {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink, #f2eee2);
+  font-variant-numeric: tabular-nums;
+}
+.home-v6 .gear-item__price small {
+  font-size: 9px;
+  color: var(--ink-soft, #9b9789);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-left: 4px;
+  font-weight: 400;
+}
+.home-v6 .gear-item__cta {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  color: var(--accent, #d97246);
+  transition: transform 240ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+.home-v6 a.gear-item:hover .gear-item__cta {
+  transform: translateX(4px);
+}
+
+.home-v6 .gear-disclosure {
+  margin: 1.4rem 0 0;
+  padding: 0.8rem 1.2rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--ink-soft, #9b9789);
+  background: var(--bg-2, #161a26);
+  border-left: 2px solid var(--accent, #d97246);
+}
+.home-v6 .gear-disclosure strong { color: var(--ink, #f2eee2); }
+.home-v6 .gear-disclosure code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  color: var(--accent, #d97246);
+  background: rgba(217, 114, 70, 0.08);
+  padding: 1px 5px;
+  border-radius: 2px;
+}
+
+/* Article-controls dans "Le fond" : layout flex aligné s-head */
+.home-v6 .s-head--reviews { flex-wrap: wrap; }
+
+/* ──────────────── v6 home fix hover + collision sweep (2026-06-08) ──────────────── */
+.home-v6 .card-tile .holo-card.cardp.cardp--native,
+.home-v6 .card-tile .holo-card.cardp.cardp--native:hover,
+.home-v6 .hero__card.holo-card.cardp.cardp--native:hover {
+  transform: none !important;
+}
+.home-v6 .card-tile .holo-card.cardp.cardp--native {
+  transition: box-shadow 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.home-v6 .card-tile .holo-card.cardp.cardp--native:hover {
+  box-shadow:
+    0 24px 48px -16px rgba(0, 0, 0, 0.85),
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset,
+    0 0 40px -10px var(--copper-glow-hc, rgba(184, 115, 51, 0.32));
+}
+.home-v6 .hero__card.holo-card.cardp.cardp--native {
+  /* Borderless 2026-06-10 : pas de float, pas d'override hero spécifique.
+     Comportement identique aux card-tile (héritage strict cardp standard). */
+  animation: none;
+}
+.home-v6 .hero__card.holo-card.cardp.cardp--native:hover,
+.home-v6 .hero__card.holo-card.cardp.cardp--native:focus-within {
+  animation: none;
+}
+.home-v6 .cards-grid { gap: 2rem !important; }
+@media (max-width: 700px) { .home-v6 .cards-grid { gap: 1.4rem !important; } }
+
+/* ──────────────── v6 home — RESTORE preview behavior (2026-06-08, fix override) ──────────────── */
+/* Restaure EXACTEMENT le hover de la preview-edito :
+   - card lift translateY(-3px) au hover
+   - sweep ::after qui glisse en diagonale
+   - sparkles ::before qui scintillent dans la bande
+   Les règles ci-dessous ANNULENT les `transform: none !important` précédents. */
+
+.home-v6 .card-tile .holo-card.cardp.cardp--native,
+.home-v6 .hero__card.holo-card.cardp.cardp--native {
+  transform: translateY(0) !important;
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 320ms cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+.home-v6 .card-tile .holo-card.cardp.cardp--native:hover {
+  transform: translateY(-4px) !important;
+}
+
+/* Hero featured : borderless 2026-06-10 — hover identique à card-tile (lift -4px) */
+.home-v6 .hero__card.holo-card.cardp.cardp--native:hover {
+  transform: translateY(-4px) !important;
+  animation: none !important;
+}
+
+/* Les pseudo-elements ::after / ::before des tiers DOIVENT bien s'afficher :
+   forcer le z-index et display pour qu'aucun ancienne règle ne masque */
+.home-v6 .holo-card.cardp.cardp--native.tier-3::after,
+.home-v6 .holo-card.cardp.cardp--native.tier-4::after,
+.home-v6 .holo-card.cardp.cardp--native.tier-5::after {
+  display: block !important;
+  z-index: 4 !important;
+  pointer-events: none !important;
+}
+.home-v6 .holo-card.cardp.cardp--native.tier-4::before,
+.home-v6 .holo-card.cardp.cardp--native.tier-5::before {
+  display: block !important;
+  z-index: 5 !important;
+  pointer-events: none !important;
+}
+
+/* ──────────────── v6 home — tilt 3D au pointeur (vrai effet preview) ──────────────── */
+.home-v6 .holo-card.cardp.cardp--native {
+  transform: perspective(900px) rotateX(var(--ry, 0deg)) rotateY(var(--rx, 0deg)) !important;
+  transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1) !important;
+  transform-style: flat;
+}
+.home-v6 .holo-card.cardp.cardp--native:hover,
+.home-v6 .holo-card.cardp.cardp--native:focus-within {
+  transform: perspective(900px) rotateX(var(--ry, 0deg)) rotateY(var(--rx, 0deg)) !important;
+}
+.home-v6 .hero__card.holo-card.cardp.cardp--native {
+  /* Borderless 2026-06-10 : kill animation float définitivement */
+  animation: none !important;
+}
+
+/* ──────────────── v6 home — FORCE tilt 3D specificity 0,5,1 (égale aux overrides) ──────────────── */
+.home-v6 .card-tile .holo-card.cardp.cardp--native,
+.home-v6 .card-tile .holo-card.cardp.cardp--native:hover,
+.home-v6 .card-tile .holo-card.cardp.cardp--native:focus-within,
+.home-v6 .hero__card.holo-card.cardp.cardp--native,
+.home-v6 .hero__card.holo-card.cardp.cardp--native:hover,
+.home-v6 .hero__card.holo-card.cardp.cardp--native:focus-within {
+  transform: perspective(900px) rotateX(var(--ry, 0deg)) rotateY(var(--rx, 0deg)) !important;
+  transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1) !important;
+  animation: none !important;
+}
+
+/* ──────────────── v6 fix hero carte portrait forcé (2026-06-09) ──────────────── */
+/* TODO refonte : forcer le ratio 5:7 sur tous les hero__card / article-hero__card,
+   override absolu pour empêcher le rendu paysage. */
+.home-v6 .hero__card.holo-card.cardp.cardp--native,
+.article-hero--split .article-hero__card .holo-card.cardp.cardp--native {
+  aspect-ratio: 5/7 !important;
+  width: 100% !important;
+  max-width: 380px !important;
+  height: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.home-v6 .hero--featured .hero__grid {
+  grid-template-columns: minmax(280px, 380px) 1fr !important;
+  align-items: center !important;
+}
+@media (max-width: 880px) {
+  .home-v6 .hero--featured .hero__grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ==========================================================================
+   .r-glyph — glyphes raretés inline pour _includes/rarity_legend.html
+   Couleurs canoniques 5-tier (2026-06).
+   ========================================================================== */
+.rarity-legend {
+  border: 1px solid var(--rule-soft);
+  border-radius: 6px;
+  padding: 1.2rem 1.4rem;
+  margin: 2rem 0;
+  background: var(--bg-2);
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+.rarity-legend p { margin: 0 0 0.6rem; }
+.rarity-legend ul { list-style: none; padding: 0; margin: 0.4rem 0 0.8rem; }
+.rarity-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.25rem 0;
+}
+.rarity-legend .muted {
+  font-size: 0.86rem;
+  color: var(--ink-soft);
+  margin-top: 0.6rem;
+}
+.r-glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.8rem;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.r-commun { color: #000000; text-shadow: 0 0 1px var(--ink-soft); }
+.r-unco   { color: #000000; text-shadow: 0 0 1px var(--ink-soft); }
+.r-ar     { color: #D4AF37; }
+.r-fa     { color: #C0C0C0; letter-spacing: -1px; }
+.r-alt    { color: #D4AF37; letter-spacing: -1px; }
+/* Décalage diagonal TPC officiel : 1re étoile légèrement plus haute pour fa/alt */
+.r-fa::first-letter,
+.r-alt::first-letter { vertical-align: 0.18em; }
+
+/* Garantir que .cardp / .holo-card sont positionnés (utile pour effets pseudo) */
+.holo-card, .cardp { position: relative; }

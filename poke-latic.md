@@ -3,6 +3,7 @@ layout: poke-latic
 title: Poke Latic — TikTok, setup TCG & partenaires
 description: Page officielle du compte TikTok @poke_latic — déballages multi-TCG, multi-langues, père-fille. Notre setup, nos partenaires, et les produits qu'on ouvre.
 permalink: /poke-latic/
+sitemap: false
 ---
 
 <div class="pl-page">

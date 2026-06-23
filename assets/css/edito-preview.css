@@ -1,0 +1,1730 @@
+/* ==========================================================================
+   rareradar — PREVIEW v5 : "DROP GALLERY"
+   ──────────────────────────────────────────────────────────────────────────
+   Bannis (les 4 dernières itérations ont prouvé que rien de ça ne marche) :
+     · Magazine / presse / italique serif / drop-cap / byline / "N° XXX"
+     · Aurora gradient SaaS / glassmorphism pill / gradient text
+     · Cadres or hairline / étiquettes slab PSA
+     · Inter Tight / Geist (tells v0/Vercel)
+   Direction :
+     · Univers Pokémon TCG Live × StockX × Hodinkee — moderne, visuel,
+       photo dominante, structure minimale.
+     · Dark métal mat neutre (pas dark SaaS bleuté, pas dark édito chaud).
+     · Carte holo XL signature (gardée). Photo cover dominante du hero.
+     · UN seul accent = cuivre brûlé (référence contour foil Mega ex).
+     · Sans-serif Space Grotesk (caractère grotesque, pas Inter neutre).
+     · Animations = carte holo + hover crisp + reveal drop subtil.
+   ========================================================================== */
+
+:root {
+  /* v5.1 — charbon organique chaud (cuir/bois/atelier), pas noir digital froid.
+     Référence trend-watcher : 032c, Heritage Auctions, Mast Chocolate. */
+  --bg:           #14110e;
+  --bg-elev:      #1c1814;
+  --bg-card:      #221d18;
+  --bg-line:      rgba(232, 220, 200, 0.08);
+  --bg-line-2:    rgba(232, 220, 200, 0.16);
+
+  --ink:          #f0ebde;
+  --ink-2:        #c8c0ad;
+  --ink-soft:     #8c8473;
+  --ink-quiet:    #5a5447;
+
+  /* Cuivre antique oxydé — pas "energie drink premium" #c8835e */
+  --copper:       #b87333;
+  --copper-deep:  #704a1f;
+  --copper-glow:  rgba(184, 115, 51, 0.32);
+
+  --holo-1:       #ff6ec7;
+  --holo-2:       #fde68a;
+  --holo-3:       #6ee7f9;
+  --holo-4:       #b69dff;
+  --holo-5:       #7ee787;
+
+  --font-body:    "Space Grotesk", "Helvetica Neue", system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+
+  --gutter:       clamp(1.2rem, 4vw, 2.6rem);
+  --max-content:  1280px;
+
+  --ease-out:     cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-crisp:   cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body.edito-body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  font-feature-settings: "kern", "liga", "ss01", "ss02", "ss05";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Texture métal mat — grain très subtil immobile, pas d'aurora animé */
+body.edito-body::before {
+  content: "";
+  position: fixed; inset: 0; z-index: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  opacity: 0.6;
+}
+
+.edito {
+  position: relative; z-index: 2;
+  max-width: var(--max-content);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.edito a { color: inherit; text-decoration: none; transition: color 200ms var(--ease-out); }
+
+/* ──────────────── Preview bar ──────────────── */
+.preview-bar {
+  position: relative; z-index: 10;
+  background: var(--bg-elev);
+  border-bottom: 1px solid var(--bg-line);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  padding: 9px 0;
+}
+.preview-bar__inner {
+  max-width: var(--max-content); margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 1rem; flex-wrap: wrap;
+}
+.preview-bar a {
+  color: var(--copper);
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+}
+
+/* ──────────────── Nav minimal ──────────────── */
+.nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 2rem 0;
+  position: relative;
+  z-index: 5;
+}
+.nav__brand {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+  display: flex; align-items: center; gap: 10px;
+}
+.nav__brand::before {
+  content: "";
+  width: 7px; height: 7px;
+  background: var(--copper);
+  border-radius: 1px;
+  transform: rotate(45deg);
+  box-shadow: 0 0 8px var(--copper-glow);
+}
+.nav__links {
+  display: flex; gap: 1.8rem;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+}
+.nav__links a {
+  position: relative;
+  padding-bottom: 4px;
+}
+.nav__links a::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  background: var(--copper);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 240ms var(--ease-crisp);
+}
+.nav__links a:hover { color: var(--ink); }
+.nav__links a:hover::after { transform: scaleX(1); }
+
+/* ──────────────── Bande carte-de-visite (signal humain factuel, anti-IA) ──────────────── */
+.visitcard {
+  border-top: 1px solid var(--bg-line);
+  border-bottom: 1px solid var(--bg-line);
+  padding: 11px 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--copper);
+  opacity: 0.85;
+}
+.visitcard__inner {
+  display: flex; flex-wrap: wrap;
+  gap: 8px 18px;
+  align-items: center;
+}
+.visitcard__inner span { display: inline-flex; align-items: center; gap: 18px; }
+.visitcard__inner span::after {
+  content: "·";
+  color: var(--ink-quiet);
+  margin-left: 8px;
+}
+.visitcard__inner span:last-child::after { display: none; }
+.visitcard__info {
+  margin-left: auto;
+  color: var(--ink-soft);
+  border: 1px solid var(--bg-line-2);
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 10px;
+  transition: all 200ms var(--ease-crisp);
+}
+.visitcard__info:hover { color: var(--copper); border-color: var(--copper); }
+
+/* ──────────────── SITE INTRO — pitch court au-dessus du hero (explique le site) ──────────────── */
+/* Choix design (panel graphiste 2026-06-09) : UNE SEULE signature cuivre via border-left,
+   pas de gradient (double accent rejeté), mobile colle au hero sans gap mort. */
+.site-intro {
+  margin: 1.4rem auto 0;
+  padding: 0.75rem clamp(1rem, 3vw, 1.4rem);
+  border: 1px solid var(--bg-line-2);
+  border-left: 3px solid var(--copper);
+  background: none;
+  border-radius: 3px;
+}
+.site-intro__line {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: clamp(0.92rem, 1.4vw, 1.02rem);
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+.site-intro__brand {
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+}
+.site-intro__sep {
+  color: var(--copper);
+  margin: 0 0.45em;
+}
+.site-intro__text { color: var(--ink-soft); }
+
+@media (max-width: 880px) {
+  .site-intro {
+    margin-bottom: 0;
+    border-left-width: 2px;
+  }
+}
+
+/* ──────────────── HERO — carte holo seule pièce visuelle (vitrine de musée) ──────────────── */
+.hero {
+  position: relative;
+  margin: 2rem 0 0;
+  padding: clamp(1.5rem, 4vw, 3rem) 0;
+  min-height: clamp(380px, 56vh, 560px);
+  display: flex;
+  align-items: center;
+}
+
+/* Halo radial très subtil dérivé du cuivre — donne un peu de profondeur sans amalgame */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(ellipse at 30% 50%, rgba(184, 115, 51, 0.07), transparent 55%);
+  pointer-events: none;
+}
+
+.hero__grid {
+  position: relative; z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  width: 100%;
+}
+@media (min-width: 880px) {
+  .hero__grid { grid-template-columns: minmax(280px, 0.85fr) 1.15fr; }
+}
+
+.hero__copy { max-width: 36rem; }
+.hero__kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--copper);
+  text-transform: uppercase;
+  margin-bottom: 1.3rem;
+}
+.hero__kicker::before {
+  content: "";
+  width: 24px;
+  height: 1px;
+  background: var(--copper);
+  display: block;
+}
+.hero__title {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: clamp(2rem, 4.6vw, 3.6rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  margin: 0 0 1.2rem;
+  color: var(--ink);
+}
+.hero__title b {
+  font-weight: 700;
+  color: var(--ink);
+}
+.hero__lede {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--ink-2);
+  margin: 0 0 1.8rem;
+  max-width: 30rem;
+}
+.hero__meta {
+  display: flex; gap: 1.4rem; flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+}
+.hero__meta strong { color: var(--copper); font-weight: 400; }
+.hero__meta__sep {
+  width: 1px;
+  background: var(--bg-line);
+}
+/* Spécificité augmentée à `a.hero__cta` pour battre `.edito a { color: inherit }` */
+a.hero__cta {
+  display: inline-flex; align-items: center; gap: 12px;
+  margin-top: 1.6rem;
+  padding: 13px 22px;
+  background: var(--ink);
+  color: var(--bg);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.005em;
+  border-radius: 2px;
+  transition: all 240ms var(--ease-crisp);
+}
+a.hero__cta:hover {
+  background: var(--copper);
+  color: var(--bg);
+  letter-spacing: 0.005em;
+}
+.hero__cta__arrow { display: inline-block; transition: transform 240ms var(--ease-crisp); }
+.hero__cta:hover .hero__cta__arrow { transform: translateX(4px); }
+
+/* ──────────────── HOLO CARD (logique inchangée) ──────────────── */
+.holo-card {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  aspect-ratio: 5/7;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  isolation: isolate;
+  transform-style: preserve-3d;
+  transform: perspective(900px) rotateX(var(--ry, 0deg)) rotateY(var(--rx, 0deg));
+  transition: transform 600ms var(--ease-out);
+  box-shadow:
+    0 30px 70px -20px rgba(0,0,0,0.85),
+    0 0 0 1px rgba(255,255,255,0.06) inset,
+    0 0 60px -10px var(--copper-glow);
+}
+/* Compositing : image 16:9 réadaptée dans une carte 5:7 sans crop violent.
+   Pattern Spotify/Apple Music : fond flou + image entière contain devant. */
+.holo-card__img { position: absolute; inset: 0; z-index: 1; overflow: hidden; }
+.holo-card__img__bg {
+  position: absolute; inset: -12%;
+  width: 124%; height: 124%;
+  object-fit: cover;
+  filter: blur(36px) brightness(0.55) saturate(1.5);
+  transform: scale(1.05);
+  z-index: 1;
+}
+.holo-card__img__fg {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: contain;
+  padding: 8% 7% 22% 7%;
+  box-sizing: border-box;
+  filter: contrast(1.05) saturate(1.06) drop-shadow(0 8px 22px rgba(0,0,0,0.45));
+  z-index: 2;
+}
+/* Encadrement subtil pour donner la sensation de carte montée */
+.holo-card__img::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(20,17,14,0.35) 0%, transparent 25%, transparent 70%, rgba(20,17,14,0.85) 100%);
+  z-index: 3;
+  pointer-events: none;
+}
+.holo-card::before {
+  content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.5) 0.5px, transparent 1px),
+    radial-gradient(circle at 70% 60%, rgba(255,255,255,0.4) 0.5px, transparent 1px),
+    radial-gradient(circle at 40% 80%, rgba(255,255,255,0.3) 0.5px, transparent 1px),
+    radial-gradient(circle at 85% 20%, rgba(255,255,255,0.4) 0.5px, transparent 1px),
+    radial-gradient(circle at 55% 45%, rgba(255,255,255,0.35) 0.5px, transparent 1px);
+  background-size: 80px 80px, 65px 65px, 95px 95px, 75px 75px, 110px 110px;
+  mix-blend-mode: color-dodge;
+  opacity: calc(0.4 + var(--holo-strength, 0) * 0.6);
+  transition: opacity 240ms;
+}
+.holo-card::after {
+  content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none;
+  background: conic-gradient(
+    from calc(var(--mx, 50) * 1deg) at var(--mx, 50%) var(--my, 50%),
+    var(--holo-1), var(--holo-2), var(--holo-5),
+    var(--holo-3), var(--holo-4), var(--holo-1)
+  );
+  mix-blend-mode: color-dodge;
+  opacity: calc(var(--holo-strength, 0) * 0.5);
+  transition: opacity 320ms;
+  mask-image: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), black 0%, rgba(0,0,0,0.4) 50%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), black 0%, rgba(0,0,0,0.4) 50%, transparent 80%);
+}
+/* ──────────────── Sweep CSS au hover par tier (2026-06-08, verdict trend-watcher) ────────────────
+   Pattern : linear-gradient 30° + background-position animée 600ms ease-in-out.
+   Référence : ibelick.com shine effect + simeydotme/pokemon-cards-css.
+   Angle 30° = fidèle aux vraies cartes Reverse Holo / SIR sous lumière directe.
+   - Tier 1-2 (COMMUN/UNCO) : aucun reflet
+   - Tier 3 (AR)  : bande gris simple, opacité pic 0.30
+   - Tier 4 (FA)  : bande gris pailleté + sparkles blancs hover
+   - Tier 5 (ALT) : bande arc-en-ciel pailleté + sparkles boostés
+*/
+
+/* Tier 1-2 : aucun effet de reflet ni sparkles */
+.holo-card.tier-1::after, .holo-card.tier-1::before,
+.holo-card.tier-2::after, .holo-card.tier-2::before { display: none !important; }
+
+/* Keyframes scintillement — pulse opacité pour effet "champ stellaire" qui clignote */
+@keyframes sparkle-pulse {
+  0%, 100% { opacity: 1; }
+  15% { opacity: 0.35; }
+  30% { opacity: 0.9; }
+  45% { opacity: 0.5; }
+  60% { opacity: 1; }
+  75% { opacity: 0.4; }
+  90% { opacity: 0.85; }
+}
+
+/* Sweep DIAGONAL — rectangle rotaté qui traverse de coin à coin
+   (transform: rotate + translateX) au lieu de background-position X seulement.
+   Effet "rayon lumineux" qui entre par pointe haute et sort par pointe basse. */
+
+/* ===== TIER 3 AR : rectangle gris incliné qui traverse diagonalement ===== */
+.holo-card.tier-3::before { display: none; }
+.holo-card.tier-3::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 50%; height: 220%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(230, 230, 240, 0.35) 30%,
+    rgba(255, 255, 255, 0.95) 50%,
+    rgba(230, 230, 240, 0.35) 70%,
+    transparent 100%
+  );
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(-220%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 4;
+  transition: transform 0s;
+}
+.holo-card.tier-3:hover::after {
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(220%);
+  transition: transform 1100ms ease-in-out;
+}
+
+/* ===== TIER 4 FA : rectangle gris incliné + sparkles dedans qui scintillent ===== */
+.holo-card.tier-4::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 55%; height: 220%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(210, 210, 240, 0.40) 28%,
+    rgba(255, 255, 255, 0.95) 50%,
+    rgba(210, 210, 240, 0.40) 72%,
+    transparent 100%
+  );
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(-220%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 4;
+  transition: transform 0s;
+}
+.holo-card.tier-4:hover::after {
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(220%);
+  transition: transform 1100ms ease-in-out;
+}
+/* Sparkles DANS le rectangle rotaté — DOUBLÉS (35) et plus petits (0.25-0.4px) */
+.holo-card.tier-4::before {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 55%; height: 220%;
+  background-image:
+    radial-gradient(circle at 12% 4%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 28% 7%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 50% 6%, white 0.25px, transparent 0.6px),
+    radial-gradient(circle at 72% 9%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 88% 5%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 18% 14%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 38% 17%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 60% 18%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 82% 21%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 8% 24%, white 0.25px, transparent 0.6px),
+    radial-gradient(circle at 30% 28%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 55% 30%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 78% 33%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 95% 35%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 14% 40%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 42% 42%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 66% 45%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 22% 50%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 50% 52%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 74% 56%, white 0.25px, transparent 0.6px),
+    radial-gradient(circle at 90% 58%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 10% 62%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 32% 66%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 58% 68%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 80% 72%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 16% 76%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 44% 78%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 68% 82%, white 0.25px, transparent 0.6px),
+    radial-gradient(circle at 92% 86%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 6% 88%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 28% 90%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 52% 93%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 76% 95%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 36% 98%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 86% 97%, white 0.4px, transparent 0.9px);
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(-220%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 5;
+  transition: transform 0s;
+}
+.holo-card.tier-4:hover::before {
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(220%);
+  animation: sparkle-pulse 280ms infinite;
+  transition: transform 1100ms ease-in-out;
+}
+
+/* ===== TIER 5 ALT : rectangle arc-en-ciel incliné + sparkles denses ===== */
+.holo-card.tier-5::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 60%; height: 220%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 80, 80, 0.65) 15%,
+    rgba(255, 200, 0, 0.80) 30%,
+    rgba(80, 220, 80, 0.75) 45%,
+    rgba(80, 160, 255, 0.80) 60%,
+    rgba(200, 80, 255, 0.75) 75%,
+    rgba(255, 80, 80, 0.65) 88%,
+    transparent 100%
+  );
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(-220%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 4;
+  transition: transform 0s;
+}
+.holo-card.tier-5:hover::after {
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(220%);
+  transition: transform 1100ms ease-in-out;
+}
+/* Sparkles ALT — DOUBLÉS (45) et plus petits (0.25-0.45px) — champ stellaire dense */
+.holo-card.tier-5::before {
+  content: "";
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 60%; height: 220%;
+  background-image:
+    radial-gradient(circle at 8% 3%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 22% 5%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 38% 4%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 54% 7%, white 0.25px, transparent 0.6px),
+    radial-gradient(circle at 70% 5%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 86% 8%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 14% 12%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 30% 14%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 46% 11%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 62% 13%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 78% 15%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 92% 12%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 6% 20%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 24% 22%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 42% 19%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 58% 23%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 74% 21%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 90% 24%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 12% 30%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 28% 32%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 44% 28%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 60% 31%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 76% 34%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 92% 32%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 8% 40%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 24% 42%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 40% 38%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 56% 41%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 72% 44%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 88% 42%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 16% 50%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 32% 52%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 48% 48%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 64% 51%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 80% 54%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 96% 52%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 10% 60%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 26% 62%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 42% 58%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 58% 61%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 74% 64%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 90% 62%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 18% 70%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 34% 72%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 50% 68%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 66% 71%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 82% 74%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 4% 78%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 20% 80%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 36% 76%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 52% 79%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 68% 82%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 84% 84%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 12% 88%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 28% 90%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 44% 87%, white 0.45px, transparent 1px),
+    radial-gradient(circle at 60% 89%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 76% 92%, white 0.35px, transparent 0.8px),
+    radial-gradient(circle at 92% 94%, white 0.4px, transparent 0.9px),
+    radial-gradient(circle at 30% 96%, white 0.3px, transparent 0.7px),
+    radial-gradient(circle at 64% 97%, white 0.45px, transparent 1px);
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(-220%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  z-index: 5;
+  transition: transform 0s;
+}
+.holo-card.tier-5:hover::before {
+  transform: translate(-50%, -50%) rotate(-25deg) translateX(220%);
+  animation: sparkle-pulse 240ms infinite;
+  transition: transform 1100ms ease-in-out;
+}
+
+/* Float anim UNIQUEMENT sur le hero (.holo-card sans modifier).
+   Les mini-cartes (grilles "Cette semaine" / "Le fond") restent statiques au repos
+   pour éviter 12 cartes qui flottent en même temps = pollution visuelle. */
+.holo-card:not(.holo-card--mini) { animation: float-card 6s ease-in-out infinite alternate; }
+@keyframes float-card {
+  from { transform: perspective(900px) translateY(0) rotateX(2deg); }
+  to   { transform: perspective(900px) translateY(-12px) rotateX(-2deg); }
+}
+.holo-card:hover, .holo-card:focus-within { animation: none; }
+
+/* ──────────────── Card portrait (vraie carte Pokémon abstraite) ────────────────
+   Décision conseil 2/3 (art-director + trend-watcher) — option C SVG modulaire.
+   Ratio illustration 65% / nameplate 27% / strip 8%, bordure cuivre dégradée.
+   ──────────────────────────────────────────────────────────────────────────── */
+
+.cardp {
+  position: relative;
+  display: block;
+  aspect-ratio: 5/7;
+  background: var(--bg);
+  isolation: isolate;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Cover portrait NATIVE (PNG généré par PIL avec frame+texte gravés) */
+.cardp--native {
+  background: transparent;
+  overflow: hidden;
+  border-radius: 9px;
+}
+.cardp--native .cardp__native-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Bordure cuivre dégradée 1.5px — référence trend-watcher (abstraction, pas le
+   double-liner jaune Pokémon Company). Utilise border-image gradient. */
+.cardp__frame {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(135deg, var(--copper), var(--gold-soft, #d4a437), var(--copper)) border-box,
+    var(--bg) padding-box;
+  border: 1.5px solid transparent;
+  pointer-events: none;
+}
+/* Bordure intérieure fine, offset 4px, façon "rebord carte" */
+.cardp__frame::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(184, 115, 51, 0.25);
+  border-radius: calc(var(--cardp-radius, 8px) - 4px);
+  pointer-events: none;
+}
+
+/* Strip haute (chip rareté + N°) — fond très léger cuivre */
+.cardp__strip {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 14px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.cardp__rar {
+  color: var(--copper);
+  background: rgba(184, 115, 51, 0.14);
+  border: 1px solid rgba(184, 115, 51, 0.32);
+  border-radius: 3px;
+  padding: 2px 7px;
+}
+.cardp__num {
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Rareté holo / secret → strip plus marquée (or saturé) */
+.cardp.r-holo_rare .cardp__rar,
+.cardp.r-secret_rare .cardp__rar {
+  background: rgba(212, 164, 55, 0.18);
+  border-color: rgba(212, 164, 55, 0.45);
+  color: var(--gold-soft, #d4a437);
+}
+
+/* Zone illustration — 65% hauteur, cropping center par défaut, override
+   par cover_focus frontmatter (recommandation art-director risque #2) */
+.cardp__illu {
+  position: absolute;
+  top: 8%; left: 4%; right: 4%;
+  height: 64%;
+  z-index: 1;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--bg-elev);
+}
+.cardp__illu-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  display: block;
+  filter: contrast(1.06) saturate(1.12);
+  transition: transform 700ms var(--ease-out);
+}
+.cardp:hover .cardp__illu-img { transform: scale(1.04); }
+.cardp__illu-fallback {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, #2a1f18, #14110e);
+}
+/* Vignette douce sur les bords de l'illustration (lisibilité bordures) */
+.cardp__illu-vignette {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at center, transparent 55%, rgba(20, 17, 14, 0.55) 100%);
+  pointer-events: none;
+}
+
+/* Nameplate basse (27%) — séparateur cuivre puis fond gradient */
+.cardp__plate {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  z-index: 3;
+  padding: 12px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background:
+    linear-gradient(to top,
+      var(--bg) 0%,
+      var(--bg) 55%,
+      rgba(20, 17, 14, 0.92) 85%,
+      rgba(20, 17, 14, 0) 100%);
+}
+/* Séparateur cuivre hairline juste sous l'illustration */
+.cardp__plate::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 14px; right: 14px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--copper), transparent);
+  opacity: 0.5;
+}
+
+.cardp__plate-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.cardp__set {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px; height: 16px;
+  color: var(--copper);
+  flex-shrink: 0;
+}
+.cardp__set svg { width: 100%; height: 100%; }
+.cardp__cat {
+  color: var(--copper);
+}
+.cardp__min {
+  margin-left: auto;
+  color: var(--ink-soft);
+}
+
+.cardp__title {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.22;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.cardp:hover .cardp__title { color: var(--copper); }
+
+/* Le compositing image bg+fg (img__bg + img__fg) n'est PAS utilisé par .cardp
+   — l'illustration est rendue directement dans .cardp__illu */
+
+/* Petite taille (utilisée en related, plus serrée) */
+.cardp--small .cardp__title { font-size: 12px; }
+.cardp--small .cardp__strip { padding: 10px 12px; font-size: 8px; }
+.cardp--small .cardp__plate { padding: 10px 12px 12px; }
+.cardp--small .cardp__plate-row { font-size: 8px; }
+
+/* L'effet holo (tilt 3D + reflet conique + sparkle) reste géré par .holo-card.
+   Les ::before/::after de .holo-card s'appliquent par-dessus la carte. */
+
+/* ──────────────── Mini-cartes holo (articles deck) ──────────────── */
+.holo-card--mini {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 9px;
+  box-shadow:
+    0 16px 36px -16px rgba(0,0,0,0.7),
+    0 0 0 1px rgba(255,255,255,0.04) inset,
+    0 0 24px -8px var(--copper-glow);
+}
+.holo-card--mini .holo-card__chip {
+  bottom: 10px; left: 10px;
+  padding: 4px 9px 4px 7px;
+  font-size: 9px;
+  letter-spacing: 0.10em;
+}
+.holo-card--mini .holo-card__chip::before { width: 6px; height: 6px; }
+.holo-card--mini .holo-card__img__fg { padding: 7% 6% 18% 6%; }
+
+/* ──────────────── Grille de cartes article (deck) + meta sous ──────────────── */
+.cards-grid {
+  display: grid;
+  gap: 1.6rem 1.4rem;
+}
+.cards-grid--week {
+  grid-template-columns: repeat(2, 1fr);
+}
+.cards-grid--bottom {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 640px) {
+  .cards-grid--week   { grid-template-columns: repeat(3, 1fr); }
+  .cards-grid--bottom { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 980px) {
+  .cards-grid--bottom { grid-template-columns: repeat(4, 1fr); }
+}
+
+.card-tile {
+  display: flex; flex-direction: column;
+  align-items: stretch;
+}
+.cards-grid--week .card-tile { max-width: 280px; margin: 0 auto; width: 100%; }
+.cards-grid--bottom .card-tile { max-width: 240px; margin: 0 auto; width: 100%; }
+
+.card-meta {
+  text-align: left;
+  margin-top: 12px;
+  padding: 0 2px;
+}
+.card-meta__title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.96rem;
+  line-height: 1.28;
+  letter-spacing: -0.014em;
+  color: var(--ink);
+  margin: 0 0 5px;
+  transition: color 240ms var(--ease-crisp);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-tile:hover .card-meta__title { color: var(--copper); }
+.card-meta__sub {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  display: inline-flex; align-items: center; gap: 7px;
+}
+.card-meta__sub strong { color: var(--copper); font-weight: 400; }
+.card-meta__sub::before {
+  content: "";
+  width: 14px; height: 1px;
+  background: var(--copper);
+  display: inline-block;
+  opacity: 0.6;
+}
+
+.cards-grid--bottom .card-meta__title { font-size: 0.88rem; }
+.cards-grid--bottom .card-meta__sub { font-size: 9px; }
+
+/* ──────────────── Section header simple ──────────────── */
+.s-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 1rem;
+  margin: 4.5rem 0 1.8rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--bg-line);
+}
+.s-head__title {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0;
+  display: flex; align-items: center; gap: 10px;
+  font-weight: 500;
+}
+.s-head__title::before {
+  content: "";
+  width: 6px; height: 6px;
+  background: var(--copper);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--copper-glow);
+}
+.s-head__count {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+
+/* ──────────────── DROPS — 3 cards horizontales avec photo dominante ──────────────── */
+.drops {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+}
+@media (min-width: 640px) { .drops { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 980px) { .drops { grid-template-columns: repeat(3, 1fr); } }
+
+.drop {
+  position: relative;
+  background: var(--bg-card);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 360ms var(--ease-crisp);
+  display: flex; flex-direction: column;
+  isolation: isolate;
+}
+.drop:hover { transform: translateY(-3px); }
+.drop::after {
+  content: "";
+  position: absolute; inset: 0;
+  border-radius: 6px;
+  border: 1px solid var(--bg-line);
+  pointer-events: none;
+  transition: border-color 360ms var(--ease-crisp);
+}
+.drop:hover::after { border-color: var(--copper); }
+
+.drop__cover {
+  position: relative;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  background: var(--bg-elev);
+}
+.drop__cover img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: contrast(1.04) saturate(1.02);
+  transition: transform 700ms var(--ease-out);
+}
+.drop:hover .drop__cover img { transform: scale(1.04); }
+
+.drop__tag {
+  position: absolute; top: 12px; left: 12px;
+  z-index: 2;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--ink);
+  text-transform: uppercase;
+  padding: 5px 9px;
+  background: rgba(10, 10, 12, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-left: 2px solid var(--copper);
+}
+
+.drop__body {
+  padding: 18px 20px 20px;
+  display: flex; flex-direction: column; gap: 8px;
+  flex: 1;
+}
+.drop__title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1.08rem;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  margin: 0;
+  color: var(--ink);
+}
+.drop:hover .drop__title { color: var(--copper); }
+
+.drop__meta {
+  display: flex; gap: 10px; align-items: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--bg-line);
+}
+.drop__meta strong {
+  color: var(--copper);
+  font-weight: 400;
+}
+
+/* ──────────────── GEAR — 3 picks affiliés, format carré, anti-magazine ──────────────── */
+.gear {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.4rem;
+}
+@media (min-width: 640px) { .gear { grid-template-columns: repeat(3, 1fr); } }
+
+.gear-item {
+  position: relative;
+  display: flex; flex-direction: column;
+  border: 1px solid var(--copper-deep);
+  background: var(--bg);
+  transition: all 320ms var(--ease-crisp);
+  isolation: isolate;
+}
+.gear-item:hover { border-color: var(--copper); transform: translateY(-2px); }
+.gear-item:hover::before { opacity: 1; }
+.gear-item::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: radial-gradient(circle at 50% 0%, var(--copper-glow), transparent 60%);
+  opacity: 0;
+  transition: opacity 360ms var(--ease-crisp);
+  pointer-events: none;
+}
+
+.gear-item__cover {
+  aspect-ratio: 1 / 1;
+  background: var(--bg-elev);
+  display: flex; align-items: center; justify-content: center;
+  border-bottom: 1px solid var(--copper-deep);
+  position: relative;
+  overflow: hidden;
+}
+.gear-item__cover svg, .gear-item__cover img {
+  width: 60%; height: 60%; object-fit: contain;
+  transition: transform 600ms var(--ease-out);
+}
+.gear-item:hover .gear-item__cover svg,
+.gear-item:hover .gear-item__cover img { transform: scale(1.05); }
+
+.gear-item__body {
+  padding: 16px 18px 18px;
+  display: flex; flex-direction: column; gap: 6px;
+  flex: 1;
+}
+.gear-item__cat {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--copper);
+}
+.gear-item__name {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.98rem;
+  line-height: 1.25;
+  letter-spacing: -0.012em;
+  margin: 0;
+  color: var(--ink);
+}
+.gear-item__row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--bg-line);
+}
+.gear-item__price {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+.gear-item__price small {
+  font-size: 9px;
+  color: var(--ink-soft);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-left: 4px;
+  font-weight: 400;
+}
+.gear-item__cta {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--copper);
+  transition: transform 240ms var(--ease-crisp);
+}
+.gear-item:hover .gear-item__cta { transform: translateX(4px); }
+
+/* ──────────────── REVIEWS — liste verticale avec thumbnail ──────────────── */
+.reviews {
+  display: flex; flex-direction: column;
+  border-top: 1px solid var(--bg-line);
+}
+
+.review {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 1.4rem;
+  align-items: center;
+  padding: 16px 8px;
+  border-bottom: 1px solid var(--bg-line);
+  transition: background 240ms var(--ease-crisp), padding 240ms var(--ease-crisp);
+}
+.review:hover { background: var(--bg-card); padding-left: 18px; padding-right: 18px; }
+
+.review__thumb {
+  position: relative;
+  width: 120px;
+  aspect-ratio: 4/3;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--bg-elev);
+}
+.review__thumb img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: contrast(1.03) saturate(1.02);
+  transition: transform 600ms var(--ease-out);
+}
+.review:hover .review__thumb img { transform: scale(1.06); }
+
+.review__body { min-width: 0; }
+.review__tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--copper);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  display: block;
+}
+.review__title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1.12rem;
+  line-height: 1.25;
+  letter-spacing: -0.018em;
+  margin: 0 0 4px;
+  color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.review:hover .review__title { color: var(--copper); }
+.review__excerpt {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  max-width: 50ch;
+}
+
+.review__meta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.review__meta strong { color: var(--copper); font-weight: 400; }
+.review__meta__arrow {
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--ink-quiet);
+  transition: all 240ms var(--ease-crisp);
+}
+.review:hover .review__meta__arrow { color: var(--copper); transform: translateX(4px); }
+
+/* ──────────────── Article hero SPLIT — carte verticale + texte à côté (2026-06-08) ──────────────── */
+.article-hero.article-hero--split {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  padding: clamp(1.4rem, 3vw, 2.4rem) 0;
+  text-align: left;
+}
+.article-hero--split .article-hero__card {
+  width: 100%;
+  max-width: 360px;
+  position: relative;
+  z-index: 1;
+}
+.article-hero--split .article-hero__card .holo-card {
+  position: relative;
+  display: block;
+  aspect-ratio: 5/7;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg-elev, #1c1814);
+  text-decoration: none;
+  isolation: isolate;
+  box-shadow:
+    0 24px 60px -18px rgba(0,0,0,0.75),
+    0 0 50px -16px var(--copper-glow, rgba(184, 115, 51, 0.32));
+  cursor: pointer;
+  /* Float anim subtile pour signaler que la carte est "vivante" */
+  animation: hero-card-float 6s ease-in-out infinite alternate;
+}
+@keyframes hero-card-float {
+  from { transform: perspective(900px) translateY(0) rotateX(1.5deg); }
+  to   { transform: perspective(900px) translateY(-10px) rotateX(-1.5deg); }
+}
+.article-hero--split .holo-card:hover,
+.article-hero--split .holo-card:focus-within { animation: none; }
+.article-hero--split .article-hero__copy {
+  max-width: 36rem;
+}
+.article-hero--split .article-hero__title {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+.article-hero--split .article-hero__lede {
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+.article-hero--split .article-hero__meta {
+  margin-left: 0;
+}
+
+@media (max-width: 800px) {
+  .article-hero.article-hero--split {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem;
+  }
+  .article-hero--split .article-hero__card { max-width: 280px; margin: 0 auto; }
+  .article-hero--split .article-hero__copy { max-width: 100%; margin: 0 auto; }
+  .article-hero--split .article-hero__title,
+  .article-hero--split .article-hero__lede { text-align: center; }
+  .article-hero--split .article-hero__meta { justify-content: center; }
+}
+
+/* ──────────────── PAGE ARTICLE — header HORIZONTAL bandeau cinéma ──────────────── */
+
+/* Hero article : cover 16:9 full-bleed centré + texte SOUS la cover */
+.article-hero {
+  display: flex; flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: clamp(1.4rem, 3vw, 2.4rem) 0 clamp(1.6rem, 3vw, 2.4rem);
+  position: relative;
+}
+.article-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(184, 115, 51, 0.08), transparent 50%);
+  pointer-events: none;
+}
+
+/* Cover horizontale 16:9 plein bandeau, tilt 3D pointeur subtil sur axe Y */
+.article-hero__cover {
+  position: relative;
+  width: 100%;
+  max-width: 1040px;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  overflow: hidden;
+  isolation: isolate;
+  margin: 0 auto;
+  z-index: 1;
+  cursor: pointer;
+  box-shadow:
+    0 28px 70px -22px rgba(0,0,0,0.8),
+    0 0 0 1px rgba(255,255,255,0.04) inset,
+    0 0 50px -16px var(--copper-glow);
+  transform-style: preserve-3d;
+  transform: perspective(1200px) rotateX(var(--ry, 0deg)) rotateY(var(--rx, 0deg));
+  transition: transform 600ms var(--ease-out);
+}
+.article-hero__cover img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: contrast(1.04) saturate(1.04);
+}
+/* Sparkle subtil sur la cover horizontale */
+.article-hero__cover::before {
+  content: "";
+  position: absolute; inset: 0;
+  z-index: 2; pointer-events: none;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.32) 0.5px, transparent 1px),
+    radial-gradient(circle at 70% 60%, rgba(255,255,255,0.28) 0.5px, transparent 1px),
+    radial-gradient(circle at 40% 80%, rgba(255,255,255,0.22) 0.5px, transparent 1px),
+    radial-gradient(circle at 85% 20%, rgba(255,255,255,0.28) 0.5px, transparent 1px);
+  background-size: 100px 100px, 80px 80px, 120px 120px, 95px 95px;
+  mix-blend-mode: color-dodge;
+  opacity: calc(0.18 + var(--holo-strength, 0) * 0.55);
+  transition: opacity 240ms;
+}
+/* Reflet conique suivant pointeur (plus discret qu'une carte holo verticale) */
+.article-hero__cover::after {
+  content: "";
+  position: absolute; inset: 0;
+  z-index: 3; pointer-events: none;
+  background: conic-gradient(
+    from calc(var(--mx, 50) * 1deg) at var(--mx, 50%) var(--my, 50%),
+    var(--holo-1), var(--holo-2), var(--holo-5),
+    var(--holo-3), var(--holo-4), var(--holo-1)
+  );
+  mix-blend-mode: color-dodge;
+  opacity: calc(var(--holo-strength, 0) * 0.35);
+  transition: opacity 320ms;
+  mask-image: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), black 0%, rgba(0,0,0,0.3) 45%, transparent 75%);
+  -webkit-mask-image: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), black 0%, rgba(0,0,0,0.3) 45%, transparent 75%);
+}
+/* Vignette du bandeau pour ancrer la chip rareté */
+.article-hero__cover .article-hero__chip {
+  position: absolute;
+  bottom: 14px; left: 14px;
+  z-index: 5;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 13px 6px 10px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: rgba(20, 17, 14, 0.78);
+  backdrop-filter: blur(10px) saturate(160%);
+  -webkit-backdrop-filter: blur(10px) saturate(160%);
+}
+.article-hero__cover .article-hero__chip::before {
+  content: "";
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--holo-1), var(--holo-4));
+  box-shadow: 0 0 6px var(--holo-4);
+}
+
+.article-hero__copy {
+  max-width: 720px;
+  position: relative;
+  z-index: 1;
+  margin-top: 2.2rem;
+}
+
+.article-hero__kicker {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--copper);
+  text-transform: uppercase;
+  margin: 2rem 0 1.2rem;
+}
+.article-hero__kicker::before {
+  content: "";
+  width: 24px; height: 1px;
+  background: var(--copper);
+  display: block;
+}
+
+.article-hero__title {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: clamp(2rem, 4.4vw, 3.4rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  margin: 0 0 1.3rem;
+  color: var(--ink);
+  max-width: 22ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article-hero__lede {
+  font-size: 1.12rem;
+  line-height: 1.55;
+  color: var(--ink-2);
+  margin: 0 auto 1.6rem;
+  max-width: 50ch;
+}
+
+.article-hero__meta {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 22px;
+  border-top: 1px solid var(--bg-line);
+  border-bottom: 1px solid var(--bg-line);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.article-hero__meta strong { color: var(--copper); font-weight: 400; }
+.article-hero__meta .hsep {
+  width: 1px; height: 14px;
+  background: var(--bg-line-2);
+  display: inline-block;
+}
+
+/* Corps article — colonne lisible 62ch centrée */
+.article-body {
+  max-width: 64ch;
+  margin: 3.5rem auto 4rem;
+  padding: 0 4px;
+  font-family: var(--font-body);
+  font-size: 1.06rem;
+  line-height: 1.72;
+  color: var(--ink-2);
+}
+.article-body > * { max-width: 100%; }
+.article-body h1, .article-body h2, .article-body h3, .article-body h4 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.022em;
+  line-height: 1.18;
+}
+.article-body h2 {
+  font-size: clamp(1.5rem, 2.4vw, 1.9rem);
+  margin: 3rem 0 1rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--bg-line);
+}
+.article-body h3 {
+  font-size: 1.28rem;
+  margin: 2.2rem 0 0.8rem;
+}
+.article-body h4 {
+  font-size: 1.08rem;
+  margin: 1.6rem 0 0.6rem;
+  color: var(--copper);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.article-body p { margin: 0 0 1.3rem; }
+.article-body strong { color: var(--ink); font-weight: 600; }
+.article-body em { color: var(--ink); font-style: italic; }
+.article-body a {
+  color: var(--copper);
+  border-bottom: 1px solid currentColor;
+  transition: all 200ms var(--ease-crisp);
+}
+.article-body a:hover { color: var(--ink); background: rgba(184,115,51,0.08); }
+.article-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 6px;
+  box-shadow: 0 12px 30px -12px rgba(0,0,0,0.5);
+}
+.article-body blockquote {
+  border-left: 2px solid var(--copper);
+  padding: 4px 0 4px 1.4rem;
+  margin: 2rem 0;
+  color: var(--ink-soft);
+  font-style: italic;
+  font-size: 1.05rem;
+}
+.article-body code {
+  background: var(--bg-elev);
+  color: var(--copper);
+  padding: 2px 7px;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  border: 1px solid var(--bg-line);
+}
+.article-body pre {
+  background: var(--bg-elev);
+  padding: 1.2rem 1.4rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  border: 1px solid var(--bg-line);
+  margin: 1.5rem 0;
+}
+.article-body pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: var(--ink-2);
+}
+.article-body ul, .article-body ol {
+  margin: 0 0 1.4rem;
+  padding-left: 1.5rem;
+}
+.article-body ul li::marker { color: var(--copper); }
+.article-body ol li::marker { color: var(--copper); font-family: var(--font-mono); font-weight: 700; }
+.article-body li { margin-bottom: 0.6rem; }
+.article-body hr {
+  border: none;
+  border-top: 1px solid var(--bg-line-2);
+  margin: 3rem auto;
+  width: 40%;
+}
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.8rem 0;
+  font-size: 0.95rem;
+}
+.article-body th, .article-body td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--bg-line);
+}
+.article-body th {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--copper);
+  font-weight: 400;
+  border-bottom: 1px solid var(--copper-deep);
+}
+
+/* Disclosure article (after body) */
+.article-disclosure {
+  max-width: 64ch;
+  margin: 2rem auto 0;
+  padding: 1.2rem 1.4rem;
+  background: var(--bg-elev);
+  border: 1px dashed var(--bg-line-2);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+.article-disclosure strong { color: var(--ink); }
+
+/* Section related (3 mini-cards under article) */
+.article-related {
+  max-width: var(--max-content);
+  margin: 4rem 0 2rem;
+}
+
+@media (max-width: 720px) {
+  .article-hero__card { width: 70vw; max-width: 280px; }
+  .article-hero__meta { gap: 0.8rem; padding: 11px 14px; }
+  .article-hero__meta .hsep { display: none; }
+  .article-body { font-size: 1rem; line-height: 1.65; }
+}
+
+/* ──────────────── Footer minimal ──────────────── */
+.foot {
+  margin-top: 4rem;
+  padding: 1.8rem 0 2rem;
+  border-top: 1px solid var(--bg-line);
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+.foot__brand { color: var(--ink); font-weight: 500; }
+.foot a { color: var(--copper); border-bottom: 1px solid currentColor; padding-bottom: 1px; }
+
+/* ──────────────── Responsive ──────────────── */
+@media (max-width: 720px) {
+  .nav__links { gap: 1rem; font-size: 11px; }
+  .nav__links a:not(:first-child):not(:last-child) { display: none; }
+  .hero { min-height: 540px; }
+  .holo-card { max-width: 260px; }
+  .review { grid-template-columns: 80px 1fr; gap: 1rem; }
+  .review__thumb { width: 80px; }
+  .review__meta { display: none; }
+  .review__excerpt { display: none; }
+  .s-head { margin-top: 3rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  .holo-card { animation: none; }
+}
+
+/* ──────────────── BYLINE AUTEUR — alias éditorial "RareRadar Lab" (panel 2026-06-09) ──────────────── */
+/* Pictogramme cible cuivre 8×8 + strong --ink/500 (panel graphiste).
+   Affiché dans .article__meta sous le titre — distinct de .article-byline (pied d'article, sources). */
+.article-author {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--ink-soft, rgba(232,228,220,0.55));
+}
+.article-author .byline-mark {
+  color: var(--copper, #c08855);
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+.article-author strong {
+  color: var(--ink, #e8e4dc);
+  font-weight: 500;
+  letter-spacing: -0.003em;
+}
+
+/* Chapô source pour articles DATA (compliance Amazon §5 — panel affiliate) */
+.article-source-chip {
+  max-width: 64ch;
+  margin: 1.4rem auto 0;
+  padding: 0.65rem 1rem;
+  border-left: 2px solid var(--copper, #c08855);
+  background: var(--bg-elev, rgba(255,255,255,0.025));
+  font-family: var(--font-mono, "JetBrains Mono", monospace);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft, rgba(232,228,220,0.6));
+  line-height: 1.55;
+  border-radius: 2px;
+}
+
+/* Mobile : compresser article__meta — masquer tags si trop long */
+@media (max-width: 599px) {
+  .article__meta { gap: 0.5rem 0.8rem; font-size: 11px; }
+  .article__meta span:nth-child(2) { display: none; } /* masque "Tags" sous 600px */
+}
+
+/* Byline E-E-A-T sobre (Sprint 1 trust 2026-06-08) — pied d'article */
+.article-byline {
+  max-width: 64ch;
+  margin: 2.4rem auto 1.6rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--bg-line-2, rgba(255,255,255,0.08));
+  font-family: var(--font-mono, "JetBrains Mono", monospace);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft, rgba(232,228,220,0.55));
+  line-height: 1.6;
+  text-align: left;
+}
+.article-byline a {
+  color: var(--copper, #c08855);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+.article-byline a:hover { color: var(--ink, #e8e4dc); }

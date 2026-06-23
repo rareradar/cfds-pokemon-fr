@@ -3,16 +3,19 @@ layout: post
 title: "Lancement de RareRadar — la ligne éditoriale"
 description: "Première note du blog : ce qu'on couvre, comment on écrit, et pourquoi les liens d'affiliation sont signalés en clair."
 date: 2026-05-05 09:00:00 +0200
+n: 1
 slug: lancement-rareradar
 author: RareRadar
-rarity: common
+rarity: commun
 read_time: 4
 cover_image: /assets/images/posts/lancement-rareradar-v2.png
+cover_image_portrait: /assets/images/posts/portrait/rareradar-launch.png
 theme_image: /assets/images/themes/launch.png
 tags:
   - meta
   - lancement
   - methode
+byline_kind: data
 ---
 
 C'est la première note. Plutôt que de simuler dix ans d'expertise dès le

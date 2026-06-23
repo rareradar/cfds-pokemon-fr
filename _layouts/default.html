@@ -15,11 +15,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&family=Public+Sans:ital,wght@0,300..700;1,300..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  {%- comment -%} v6 refonte holo-card portrait — chargé après style.css pour override (2026-06-08) {%- endcomment -%}
+  <link rel="stylesheet" href="{{ '/assets/css/edito-preview.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
   {% seo %}
   {% feed_meta %}
 
-  {%- comment -%} Schema.org JSON-LD : WebSite global + Article si page post {%- endcomment -%}
+  {%- comment -%} Tâche 4 — Link RSS alternate explicite (après feed_meta) {%- endcomment -%}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} u00b7 RSS" href="{{ '/feed.xml' | absolute_url }}">
+
+  {%- comment -%} Tâche 3 — OG + Twitter Card améliorés (APRÈS {% seo %} pour surcharger jekyll-seo-tag) {%- endcomment -%}
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  <meta property="og:locale" content="fr_FR">
+
+  {%- comment -%}
+    Schema.org JSON-LD — refonte alias éditorial 2026-06-09 (panel 5 agents + content-team).
+    Triple bloc : Organization (entité éditrice "RareRadar Lab") + WebSite (marque) + Article si post.
+  {%- endcomment -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "RareRadar Lab",
+    "alternateName": "RareRadar",
+    "url": {{ site.url | append: site.baseurl | jsonify }},
+    "description": "Guides et reviews indépendants sur les cartes Pokémon TCG : raretés, cotes de revente, accessoires, conservation, grading.",
+    "knowsAbout": ["Pokémon TCG", "cartes à collectionner", "grading PSA", "raretés Méga", "Pokécardex", "TCGdex"]
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,7 +54,7 @@
     "inLanguage": "fr-FR",
     "publisher": {
       "@type": "Organization",
-      "name": "RareRadar",
+      "name": "RareRadar Lab",
       "url": {{ site.url | append: site.baseurl | jsonify }}
     },
     "potentialAction": {
@@ -50,12 +74,16 @@
     "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
     "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
     "author": {
-      "@type": "Organization",
-      "name": {{ page.author | default: site.author.name | default: "RareRadar" | jsonify }}
+      "@type": "Person",
+      "name": "RareRadar Lab — Rédaction",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "RareRadar Lab"
+      }
     },
     "publisher": {
       "@type": "Organization",
-      "name": "RareRadar",
+      "name": "RareRadar Lab",
       "url": {{ site.url | append: site.baseurl | jsonify }}
     }
     {%- if page.cover_image -%}
@@ -66,6 +94,67 @@
     {%- endif -%}
   }
   </script>
+  {%- endif -%}
+
+  {%- comment -%} Schema.org JSON-LD : Product + Review si tags produits {%- endcomment -%}
+  {%- if page.layout == "post" and page.tags -%}
+    {%- assign product_tags = "sleeve,classeur,toploader,grade_psa,grade_cgc,ultra_pro,dragon_box,pokemon_center,kaiju,collector_cube,manga,booster_box" | split: "," -%}
+    {%- assign is_product = false -%}
+    {%- for tag in page.tags -%}
+      {%- assign tag_trimmed = tag | strip -%}
+      {%- for pt in product_tags -%}
+        {%- if tag_trimmed == pt -%}
+          {%- assign is_product = true -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+    {%- if is_product -%}
+      {%- assign rating_value = '3.0' -%}
+      {%- case page.rarity -%}
+        {%- when 'uncommon' -%}{%- assign rating_value = '3.5' -%}
+        {%- when 'holo_rare' -%}{%- assign rating_value = '4.0' -%}
+        {%- when 'secret_rare' -%}{%- assign rating_value = '4.5' -%}
+      {%- endcase -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Product", "Review"],
+    "name": {{ page.title | jsonify }},
+    "description": {{ page.description | default: page.dek | strip_newlines | jsonify }},
+    "url": {{ page.url | absolute_url | jsonify }},
+    "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+    "author": {
+      "@type": "Organization",
+      "name": "RareRadar Lab"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "worstRating": 1,
+        "ratingValue": {{ rating_value }}
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "RareRadar Lab"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "RareRadar Lab",
+      "url": {{ site.url | append: site.baseurl | jsonify }}
+    }
+    {%- if page.content contains 'amazon' -%}
+    ,"offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    }
+    {%- endif -%}
+  }
+  </script>
+    {%- endif -%}
   {%- endif -%}
 </head>
 <body>
@@ -81,7 +170,7 @@
   <div class="shell statusbar__inner">
     <div class="statusbar__group">
       <span class="statusbar__pulse">Live</span>
-      <span>Reviews & guides · relecture humaine</span>
+      <span>Reviews & guides · indépendant · sources vérifiées</span>
     </div>
     <div class="statusbar__group">
       <span>{{ site.posts.size | prepend: '00' | slice: -3, 3 }} articles</span>
@@ -128,8 +217,15 @@
     var counter = document.querySelector('[data-articles-visible]');
     if (!grid) return;
 
-    var state = { q: '', tag: '', sort: 'date_desc' };
-    var rarityRank = { common: 1, uncommon: 2, holo_rare: 3, secret_rare: 4 };
+    var state = { q: '', tag: '', sort: 'n_desc' };
+    // n_desc: 20 → 1 (plus récent en haut à gauche, plus vieux en bas à droite)
+    var rarityRank = {
+      commun: 1, common: 1,
+      unco: 2, uncommon: 2,
+      ar: 3, rare: 3, holo: 3,
+      fa: 4, full_art: 4, holo_rare: 4,
+      alt: 5, alternative: 5, secret_rare: 5, gold: 5
+    };
 
     function getCards() { return Array.prototype.slice.call(grid.querySelectorAll('.article-card')); }
 
@@ -150,11 +246,13 @@
       var sorted = cards.slice();
       sorted.sort(function (a, b) {
         switch (state.sort) {
+          case 'n_asc':      return (+a.dataset.n || 999) - (+b.dataset.n || 999);
+          case 'n_desc':     return (+b.dataset.n || 0) - (+a.dataset.n || 0);
           case 'date_asc':   return (+a.dataset.date) - (+b.dataset.date);
           case 'title_asc':  return (a.dataset.title || '').localeCompare(b.dataset.title || '', 'fr');
           case 'rarity_desc':return (rarityRank[b.dataset.rarity] || 0) - (rarityRank[a.dataset.rarity] || 0);
-          case 'date_desc':
-          default:           return (+b.dataset.date) - (+a.dataset.date);
+          case 'date_desc':  return (+b.dataset.date) - (+a.dataset.date);
+          default:           return (+b.dataset.n || 0) - (+a.dataset.n || 0);
         }
       });
       return sorted;
@@ -195,9 +293,9 @@
     });
     if (resetBtn) {
       resetBtn.addEventListener('click', function () {
-        state = { q: '', tag: '', sort: 'date_desc' };
+        state = { q: '', tag: '', sort: 'n_desc' };
         if (search) search.value = '';
-        if (sortSel) sortSel.value = 'date_desc';
+        if (sortSel) sortSel.value = 'n_asc';
         chips.forEach(function (c) { c.classList.remove('chip--active'); });
         var defaultChip = document.querySelector('[data-tag-filter=""]');
         if (defaultChip) defaultChip.classList.add('chip--active');
@@ -269,6 +367,9 @@
     });
   }());
 </script>
+
+<!-- Holo card tilt 3D + reflet pointeur (v6 2026-06-08) -->
+<script src="{{ '/assets/js/holo-card.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 
 <!-- Cloudflare Web Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js'

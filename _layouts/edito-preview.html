@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{ page.title | default: "Drop Gallery — preview" }} · RareRadar</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ '/assets/css/edito-preview.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+</head>
+<body class="edito-body">
+
+  <div class="preview-bar">
+    <div class="preview-bar__inner">
+      <span>Preview v5 — Drop Gallery · TCG Live × StockX × Hodinkee</span>
+      <span><a href="{{ '/' | relative_url }}">← retour au site actuel</a></span>
+    </div>
+  </div>
+
+  {%- assign featured = site.posts.first -%}
+  {%- assign rest = site.posts | slice: 1, 99 -%}
+  {%- assign rest_size = rest | size -%}
+  {%- assign drops_count = 3 -%}
+  {%- if rest_size < drops_count -%}{%- assign drops_count = rest_size -%}{%- endif -%}
+  {%- assign drops = rest | slice: 0, drops_count -%}
+  {%- assign reviews = rest | slice: drops_count, 99 -%}
+
+  <header class="edito">
+    <nav class="nav">
+      <div class="nav__brand">RareRadar</div>
+      <div class="nav__links">
+        <a href="#drops">Cette semaine</a>
+        <a href="#gear">Gear</a>
+        <a href="#reviews">Le fond</a>
+        <a href="{{ '/newsletter/' | relative_url }}">Newsletter</a>
+      </div>
+    </nav>
+
+    <div class="visitcard">
+      <div class="visitcard__inner">
+        <span>Tenu par Clément</span>
+        <span>1 247 cartes catalogués</span>
+        <span>FR depuis 2023</span>
+        <a href="{{ '/about/' | relative_url }}" class="visitcard__info" title="À propos">i</a>
+      </div>
+    </div>
+  </header>
+
+  {% if featured %}
+  <main class="edito">
+
+    <section class="hero">
+      <div class="hero__grid">
+        <a href="{{ '/preview-article/' | relative_url }}" class="holo-card" data-holo>
+          <div class="holo-card__img">
+            {% if featured.cover_image %}
+              <img class="holo-card__img__bg" src="{{ featured.cover_image | relative_url }}" alt="" aria-hidden="true">
+              <img class="holo-card__img__fg" src="{{ featured.cover_image | relative_url }}" alt="">
+            {% else %}
+              <div style="position:absolute;inset:0;background:linear-gradient(135deg,#2a1f18,#14110e);"></div>
+            {% endif %}
+          </div>
+        </a>
+
+        <div class="hero__copy">
+          <span class="hero__kicker">Dossier {{ featured.date | date: "%d.%m.%Y" }}</span>
+          <h1 class="hero__title">
+            {{ featured.title }}
+          </h1>
+          <p class="hero__lede">{{ featured.description | default: featured.excerpt | strip_html | truncate: 180 }}</p>
+          <div class="hero__meta">
+            {% if featured.tags and featured.tags.size > 0 %}
+              <span>Sujet <strong>{{ featured.tags.first }}</strong></span>
+              <span class="hero__meta__sep"></span>
+            {% endif %}
+            {%- assign reading = featured.content | number_of_words | divided_by: 220 | plus: 1 -%}
+            <span>Lecture <strong>{{ reading }} MIN</strong></span>
+            <span class="hero__meta__sep"></span>
+            <span>Testé en main <strong>J+12</strong></span>
+          </div>
+          <a href="{{ '/preview-article/' | relative_url }}" class="hero__cta">
+            Ouvrir le dossier
+            <span class="hero__cta__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    {% if drops.size > 0 %}
+    <section id="drops">
+      <header class="s-head">
+        <h2 class="s-head__title">Cette semaine</h2>
+        <span class="s-head__count">{{ drops.size }} sorties · {{ site.time | date: "%b %Y" }}</span>
+      </header>
+      <div class="cards-grid cards-grid--week">
+        {% for post in drops %}
+        <article class="card-tile">
+          {% include card-portrait.html post=post index=forloop.index size="mini" %}
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    <section id="gear">
+      <header class="s-head">
+        <h2 class="s-head__title">Gear.</h2>
+        <span class="s-head__count">3 essentiels testés · {{ site.time | date: "%b %Y" }}</span>
+      </header>
+      <div class="gear">
+        <a href="#" class="gear-item">
+          <div class="gear-item__cover">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="12" y="8" width="40" height="48" rx="2" stroke="#b87333" stroke-width="1.5"/>
+              <rect x="16" y="12" width="32" height="32" rx="1" stroke="#b87333" stroke-width="1"/>
+              <line x1="16" y1="48" x2="48" y2="48" stroke="#b87333" stroke-width="1"/>
+              <line x1="16" y1="52" x2="40" y2="52" stroke="#b87333" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="gear-item__body">
+            <span class="gear-item__cat">Classeur · 360</span>
+            <h3 class="gear-item__name">Ultra Pro Pro-Binder Eclipse</h3>
+            <div class="gear-item__row">
+              <span class="gear-item__price">24,90 €<small>Amazon</small></span>
+              <span class="gear-item__cta">→</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="gear-item">
+          <div class="gear-item__cover">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="10" y="14" width="44" height="36" rx="2" stroke="#b87333" stroke-width="1.5"/>
+              <rect x="14" y="18" width="36" height="28" rx="1" stroke="#b87333" stroke-width="0.8" stroke-dasharray="2 2"/>
+              <path d="M22 26 L42 26 M22 32 L42 32 M22 38 L36 38" stroke="#b87333" stroke-width="0.8"/>
+            </svg>
+          </div>
+          <div class="gear-item__body">
+            <span class="gear-item__cat">Sleeves · 100u</span>
+            <h3 class="gear-item__name">Dragon Shield Matte 100 · Smoke</h3>
+            <div class="gear-item__row">
+              <span class="gear-item__price">11,40 €<small>Amazon</small></span>
+              <span class="gear-item__cta">→</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" class="gear-item">
+          <div class="gear-item__cover">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="32" cy="32" r="22" stroke="#b87333" stroke-width="1.5"/>
+              <circle cx="32" cy="32" r="14" stroke="#b87333" stroke-width="0.8"/>
+              <line x1="32" y1="14" x2="32" y2="20" stroke="#b87333" stroke-width="1.2"/>
+              <line x1="32" y1="44" x2="32" y2="50" stroke="#b87333" stroke-width="1.2"/>
+              <line x1="14" y1="32" x2="20" y2="32" stroke="#b87333" stroke-width="1.2"/>
+              <line x1="44" y1="32" x2="50" y2="32" stroke="#b87333" stroke-width="1.2"/>
+              <path d="M32 32 L40 24" stroke="#b87333" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="gear-item__body">
+            <span class="gear-item__cat">Conservation</span>
+            <h3 class="gear-item__name">Hygromètre numérique 35-50%</h3>
+            <div class="gear-item__row">
+              <span class="gear-item__price">18,90 €<small>Amazon</small></span>
+              <span class="gear-item__cta">→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    {% if reviews.size > 0 %}
+    <section id="reviews">
+      <header class="s-head">
+        <h2 class="s-head__title">Le fond</h2>
+        <span class="s-head__count">{{ reviews.size }} dossier{% if reviews.size > 1 %}s{% endif %}</span>
+      </header>
+      <div class="cards-grid cards-grid--bottom">
+        {% for post in reviews %}
+        <article class="card-tile">
+          {%- assign global_index = drops.size | plus: forloop.index | plus: 1 -%}
+          {% include card-portrait.html post=post index=global_index size="mini" %}
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    <footer class="foot">
+      <div><span class="foot__brand">RareRadar.</span> Pokémon TCG · FR · {{ site.time | date: "%Y" }}</div>
+      <div><a href="{{ '/disclosure/' | relative_url }}">Liens affiliés</a> · <a href="{{ '/' | relative_url }}">Site actuel</a></div>
+    </footer>
+  </main>
+  {% else %}
+  <main class="edito"><p>Aucun article à afficher.</p></main>
+  {% endif %}
+
+  <script>
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var cards = document.querySelectorAll('[data-holo]');
+    if (!cards.length) return;
+
+    // Mini cards = tilt + reflet plus discrets (cf .holo-card--mini)
+    cards.forEach(function (card) {
+      var isMini = card.classList.contains('holo-card--mini');
+      var maxTilt = isMini ? 10 : 14;
+      var maxLift = isMini ? 7 : 10;
+      var rect, raf;
+
+      function update(e) {
+        if (!rect) rect = card.getBoundingClientRect();
+        var x = (e.clientX - rect.left) / rect.width;
+        var y = (e.clientY - rect.top)  / rect.height;
+        if (raf) cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(function () {
+          var rx = (x - 0.5) * maxTilt;
+          var ry = (0.5 - y) * maxLift;
+          card.style.setProperty('--mx', (x * 100) + '%');
+          card.style.setProperty('--my', (y * 100) + '%');
+          card.style.setProperty('--rx', rx + 'deg');
+          card.style.setProperty('--ry', ry + 'deg');
+          card.style.setProperty('--holo-strength', '1');
+        });
+      }
+      function reset() {
+        rect = null;
+        card.style.setProperty('--rx', '0deg');
+        card.style.setProperty('--ry', '0deg');
+        card.style.setProperty('--holo-strength', '0');
+      }
+      card.addEventListener('mouseenter', function () { rect = card.getBoundingClientRect(); });
+      card.addEventListener('mousemove', update);
+      card.addEventListener('mouseleave', reset);
+      card.addEventListener('touchmove', function (e) {
+        if (e.touches.length) update(e.touches[0]);
+      }, { passive: true });
+      card.addEventListener('touchend', reset);
+    });
+  })();
+  </script>
+
+</body>
+</html>

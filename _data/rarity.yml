@@ -1,28 +1,52 @@
-# Système de "rareté" éditoriale — métaphore TCG appliquée au contenu :
-#  - common      : guide quick / liste rapide / news courte
-#  - uncommon    : review approfondie d'un produit, comparatif limité
-#  - holo_rare   : analyse longue / dossier / deep dive (≥ 1500 mots, données chiffrées)
-#  - secret_rare : exclu signé "lab" (test long terme, expertise pure)
+# Système de "rareté" éditoriale — métaphore TCG Pokémon ère Méga 2026.
+# Ordre croissant : common → uncommon → reverse → holo → art_rare → full_art → alternative → gold
 #
-# Sert à filtrer côté lecteur (mode skim vs deep) et signaler la profondeur.
+# Cohérent avec le guide-raretés (article ultra-rare du blog).
 
 common:
   label: Common
   symbol: "●"
   hue: 220        # bleu froid neutre
   description: "Note rapide, ≤ 600 mots"
+
 uncommon:
   label: Uncommon
   symbol: "◆"
   hue: 145        # vert sage
-  description: "Review ou comparatif, 600–1200 mots"
-holo_rare:
+  description: "Review courte ou comparatif limité, 600–1200 mots"
+
+reverse:
+  label: Reverse Holo
+  symbol: "⟁"
+  hue: 200        # bleu acier
+  description: "Comparatif standard, format reverse holo (bordure brillante, fond mat)"
+
+holo:
   label: Holo Rare
   symbol: "✦"
-  hue: 42         # or chaud (référence holo)
+  hue: 42         # or chaud (référence holo classique Base Set 1999)
   description: "Dossier, 1200–2000 mots, données chiffrées"
-secret_rare:
-  label: Secret Rare
-  symbol: "◈"
-  hue: 320        # magenta sombre
-  description: "Test long terme, signature lab"
+
+art_rare:
+  label: Art Rare
+  symbol: "✺"
+  hue: 280        # violet lavande
+  description: "Article à angle artistique, illustration full-page mat ou semi-holo"
+
+full_art:
+  label: Full Art
+  symbol: "▣"
+  hue: 320        # magenta
+  description: "Article visuel dominant, sujet illustré pleine page"
+
+alternative:
+  label: Alt Art
+  symbol: "✷"
+  hue: 175        # cyan turquoise
+  description: "Article méthode contre-intuitive ou angle alternatif rare"
+
+gold:
+  label: Gold
+  symbol: "★"
+  hue: 38         # or cuivré (gold/rainbow rare, ultra rare)
+  description: "Article phare, méta-référence du blog (>2500 mots, expertise pure)"

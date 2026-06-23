@@ -57,11 +57,10 @@ permalink: /disclosure/
 
       <h2>Le cas Poké Korean</h2>
       <p>
-        Poké Korean est un partenaire éditorial du compte vidéo @poke_latic, géré par un ami de
-        l'éditeur. Ce partenariat <strong>n'est pas monétisé</strong>&nbsp;: aucune commission,
-        aucun reversement, aucun contrat. Les liens vers
+        Poké Korean apparaît dans nos contenus comme référence boutique non monétisée&nbsp;:
+        <strong>aucune commission, aucun reversement, aucun contrat d'affiliation</strong>. Les liens vers
         <a href="https://poke-korean.fr" rel="noopener">poke-korean.fr</a> sont des références
-        éditoriales, pas des liens d'affiliation.
+        éditoriales informant le lecteur, pas des liens publicitaires.
       </p>
 
       <h2>Vérifier un lien</h2>

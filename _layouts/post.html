@@ -2,16 +2,8 @@
 layout: default
 ---
 
-<article class="article">
+<article class="article" data-rarity="{{ page.rarity | default: 'common' }}">
   <div class="shell">
-
-    {% if page.cover_image %}
-      <figure class="article__cover">
-        <img src="{{ page.cover_image | relative_url }}?v={{ site.time | date: '%s' }}"
-             alt="{{ page.title | escape }}"
-             loading="eager" decoding="async">
-      </figure>
-    {% endif %}
 
     {%- assign article_number = 0 -%}
     {%- for p in site.posts -%}
@@ -21,38 +13,103 @@ layout: default
     {%- endfor -%}
     {%- assign article_number_padded = article_number | prepend: '00' | slice: -3, 3 -%}
 
-    <header class="article__head">
-      <div class="article__eyebrow">
-        <span class="eyebrow" style="font-family:'JetBrains Mono', monospace; letter-spacing:1.5px;">N° {{ article_number_padded }}</span>
-        {% include rarity-badge.html rarity=page.rarity %}
-        <span class="eyebrow">{{ page.date | date: "%d %B %Y" }}</span>
-        {% if page.read_time %}
-          <span class="eyebrow">{{ page.read_time }} min de lecture</span>
-        {% endif %}
+    {%- comment -%} Mapping rareté → 5 tiers couleur (cohérent avec article-card) {%- endcomment -%}
+    {%- assign rar = page.rarity | default: 'common' -%}
+    {%- assign tier = 1 -%}
+    {%- if rar == 'uncommon' or rar == 'reverse' or rar == 'unco' %}{% assign tier = 2 %}{% endif -%}
+    {%- if rar == 'rare' or rar == 'ar' or rar == 'holo' %}{% assign tier = 3 %}{% endif -%}
+    {%- if rar == 'holo_rare' or rar == 'art_rare' or rar == 'full_art' or rar == 'fa' %}{% assign tier = 4 %}{% endif -%}
+    {%- if rar == 'alternative' or rar == 'alt' or rar == 'secret_rare' or rar == 'gold' %}{% assign tier = 5 %}{% endif -%}
+
+    <section class="article-hero article-hero--split">
+      <div class="article-hero__card">
+        <a class="holo-card cardp cardp--native r-{{ rar }} tier-{{ tier }}" data-holo
+           aria-label="{{ page.title | escape }}">
+          {% if page.cover_image_portrait %}
+            {%- assign post_portrait = page.cover_image_portrait | relative_url -%}
+            {%- assign post_webp = post_portrait | replace: "/portrait/", "/portrait/webp/" | replace: ".png", ".webp" -%}
+            {%- assign cb = site.time | date: '%s' -%}
+            <picture>
+              <source srcset="{{ post_webp }}?v={{ cb }}" type="image/webp">
+              <img class="cardp__native-img"
+                   src="{{ post_portrait }}?v={{ cb }}"
+                   alt="{{ page.title | escape }}"
+                   width="720" height="1008"
+                   loading="eager" decoding="async" fetchpriority="high">
+            </picture>
+          {% elsif page.cover_image %}
+            <img class="cardp__native-img"
+                 src="{{ page.cover_image | relative_url }}"
+                 alt="{{ page.title | escape }}"
+                 loading="eager" decoding="async" fetchpriority="high">
+          {% endif %}
+        </a>
       </div>
 
-      <h1 class="article__title h-1">{{ page.title }}</h1>
+      <header class="article-hero__copy article__head">
+        <div class="article__eyebrow">
+          <span class="eyebrow" style="font-family:'JetBrains Mono', monospace; letter-spacing:1.5px;">N° {{ article_number_padded }}</span>
+          {% include rarity-badge.html rarity=page.rarity %}
+          <span class="eyebrow">{{ page.date | date: "%d %B %Y" }}</span>
+          {% if page.read_time %}
+            <span class="eyebrow">{{ page.read_time }} min de lecture</span>
+          {% endif %}
+        </div>
 
-      {% if page.dek or page.description %}
-        <p class="article__dek lede">{{ page.dek | default: page.description }}</p>
-      {% endif %}
+        <h1 class="article__title h-1">{{ page.title }}</h1>
 
-      <div class="article__meta">
-        <span><strong>Par</strong> {{ page.author | default: 'RareRadar' }}</span>
-        {% if page.tags and page.tags.size > 0 %}
-          <span>
-            <strong>Tags</strong>
-            {% for tag in page.tags limit: 5 %}#{{ tag }}{% unless forloop.last %} · {% endunless %}{% endfor %}
+        {% if page.dek or page.description %}
+          <p class="article__dek lede">{{ page.dek | default: page.description }}</p>
+        {% endif %}
+
+        {%- comment -%}
+          Byline duale (panel affiliate 2026-06-09) :
+          - tested = "RareRadar Lab" (article testé en main)
+          - data   = "RareRadar Lab — Rédaction" (compilation sources publiques)
+          Pictogramme cible cuivre 8×8 (panel graphiste).
+        {%- endcomment -%}
+        {%- assign byline_name = "RareRadar Lab" -%}
+        {%- if page.byline_kind == "data" -%}{%- assign byline_name = "RareRadar Lab — Rédaction" -%}{%- endif -%}
+        <div class="article__meta">
+          <span class="article-author">
+            <svg class="byline-mark" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true" focusable="false">
+              <circle cx="4" cy="4" r="3" fill="none" stroke="currentColor" stroke-width="1"/>
+              <circle cx="4" cy="4" r="1" fill="currentColor"/>
+            </svg>
+            par <strong>{{ byline_name }}</strong>
           </span>
-        {% endif %}
-      </div>
-    </header>
+          {% if page.tags and page.tags.size > 0 %}
+            <span>
+              <strong>Tags</strong>
+              {% for tag in page.tags limit: 5 %}#{{ tag }}{% unless forloop.last %} · {% endunless %}{% endfor %}
+            </span>
+          {% endif %}
+        </div>
+      </header>
+    </section>
 
     {% include share-buttons.html compact=true %}
+
+    {%- comment -%}
+      Chapô source pour articles DATA (panel affiliate 2026-06-09) :
+      compliance Amazon §5 — pas de claim test implicite sur articles compilation.
+    {%- endcomment -%}
+    {% if page.byline_kind == "data" %}
+    <p class="article-source-chip">Article basé sur sources publiques (TCGdex, Pokécardex, sites officiels), sans manipulation produit.</p>
+    {% endif %}
 
     <div class="prose">
       {{ content }}
     </div>
+
+    {%- comment -%}
+      Byline E-E-A-T (Sprint 1 trust 2026-06-08) — tag sobre méthode après contenu.
+      Recommandation panel SEO : sources visibles + lien /methode/ pour le détail.
+      Schema author Organization déjà présent dans default.html (l.62).
+    {%- endcomment -%}
+    <p class="article-byline">
+      Sources&nbsp;: Cardmarket (médiane 30&nbsp;j) · TCGPlayer · PSA pop report · achats personnels testés · <a href="{{ '/methode/' | relative_url }}">méthode complète</a>
+    </p>
 
     {% include newsletter-cta.html %}
 
@@ -61,13 +118,43 @@ layout: default
   </div>
 </article>
 
+{% assign common_tags = page.tags | default: '' %}
+{% assign related_by_tag = "" | split: "," %}
+
+{%- for post in site.posts -%}
+  {%- if post.url != page.url -%}
+    {%- for tag in common_tags -%}
+      {%- if post.tags contains tag -%}
+        {%- assign related_by_tag = related_by_tag | push: post -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{% assign related_count = related_by_tag.size %}
+{% assign remaining_needed = 2 | minus: related_count %}
+{% if remaining_needed < 0 %}{% assign remaining_needed = 0 %}{% endif %}
+
+{% assign remaining_posts = "" | split: "," %}
+{%- for post in site.posts -%}
+  {%- assign is_related = false -%}
+  {%- for rp in related_by_tag -%}
+    {%- if post.url == rp.url -%}{%- assign is_related = true -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if post.url != page.url and is_related == false -%}
+    {%- assign remaining_posts = remaining_posts | push: post -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{% assign final_related = related_by_tag | concat: remaining_posts | slice: 0, 2 %}
+
 <section class="shell" style="margin-top: 4rem;">
   <header class="section-head">
     <h2 class="section-head__title h-2">À lire aussi</h2>
   </header>
   <div class="card-grid">
-    {% assign others = site.posts | where_exp: "p", "p.url != page.url" %}
-    {% for post in others limit: 3 %}
+    {% for post in final_related %}
       {% include article-card.html post=post %}
     {% endfor %}
   </div>

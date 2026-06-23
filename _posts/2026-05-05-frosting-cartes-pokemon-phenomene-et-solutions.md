@@ -3,10 +3,12 @@ layout: post
 title: "Frosting des cartes Pokémon : pourquoi ça arrive et comment l'éviter"
 description: "Voile blanc, texture granuleuse, perte de brillance : qu'est-ce que le frosting des cartes Pokémon, ce que disent les guides de conservation, et la routine concrète pour préserver une collection."
 date: 2026-05-05 19:55:13 +0200
+n: 2
 slug: frosting-cartes-pokemon-phenomene-et-solutions
-rarity: holo_rare
+rarity: ar
 read_time: 9
 cover_image: /assets/images/posts/frosting-cartes-pokemon-phenomene-et-solutions-v2.png
+cover_image_portrait: /assets/images/posts/portrait/frosting-cartes-pokemon-phenomene-et-solutions.png
 theme_image: /assets/images/themes/frosting.png
 tags:
   - conservation
@@ -15,6 +17,7 @@ tags:
   - humidité
   - frosting
 author: RareRadar
+byline_kind: data
 _cfds:
   generated_by: mistral_119b_local
   reviewed_by: RareRadar (claude-edit pass)

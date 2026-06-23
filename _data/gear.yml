@@ -1,0 +1,34 @@
+# Bloc GEAR home — 3 picks affiliés (2026-06-08)
+# Source ASINs : page /poke-latic/ (déjà actifs avec tag rareradar-21)
+# Disclosure obligatoire DGCCRF : "Liens affiliés Amazon FR — commission sans surcoût"
+
+picks:
+  - slot: editorial
+    badge: "Choix éditorial"
+    category: "Sleeves · 100u"
+    asin: B085DSTKWG
+    title: "Ultra Pro Sleeves standard"
+    verdict: "Le standard pro stable depuis 10 ans. Pour Mega ex en double sleeve avec inner perfect fit."
+    price_eur: 9.90
+    image: /assets/images/gear/ultra-pro-sleeves.jpg
+    ascsubtag: gear-home-sleeves
+
+  - slot: value
+    badge: "Meilleur rapport"
+    category: "Classeur · 360 cartes"
+    asin: B009VEI2T2
+    title: "Ultimate Guard FlexXfolio 9-pocket"
+    verdict: "9-pocket souple Allemand. Cartes maintenues sans pression, side-loading, finitions cuir."
+    price_eur: 24.90
+    image: /assets/images/gear/ultimate-guard-flexxfolio.jpg
+    ascsubtag: gear-home-classeur
+
+  - slot: investment
+    badge: "Investissement"
+    category: "Conservation · toplo."
+    asin: B0812Z3RPY
+    title: "Toploaders rigides Ultra Pro"
+    verdict: "Le rangement long terme des Mega ex graded et SAR. 35pt épaisseur, transparent total."
+    price_eur: 12.50
+    image: /assets/images/gear/ultra-pro-toploaders.jpg
+    ascsubtag: gear-home-toploaders
