@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Mega Evolution — Chaos Ascendant : ce qu'on sait de la prochaine extension Pokémon TCG"
-description: "Chaos Ascendant (Mega Evolution — Chaos Rising en VO) sort le 22 mai 2026 : 122 cartes, 5 nouveaux Méga Pokémon ex, produits annoncés, et que faire en attendant la sortie."
+title: "Chaos Ascendant : extension Pokémon TCG Méga (mai 2026)"
+description: "Chaos Ascendant (Mega Evolution) sort le 22 mai 2026 : 122 cartes, 5 nouveaux Méga ex, produits annoncés et que faire avant la sortie."
 date: 2026-05-15 09:00:00 +0200
 n: 4
 slug: chaos-ascendant-mega-evolution-extension-mai-2026
@@ -14,10 +14,8 @@ tags:
   - Chaos Ascendant
   - Méga Évolution
   - extension 2026
-  - pré-release
   - Méga ex
-  - Greninja
-  - Floette
+  - pokemon
 author: RareRadar
 _cfds:
   generated_by: rareradar-editorial
@@ -177,7 +175,7 @@ Côté Pokémon ex réguliers (sans Méga) : Dardargnan, Banshitrouye, Crocoribl
 
 La **Build & Battle Box est l'unique produit accessible avant la sortie générale** : disponible chez les boutiques participantes pendant la fenêtre pré-release (9-17 mai), puis plus largement à partir du 22 mai. Le reste de la gamme arrive en bloc le 22 mai 2026. Les prix FR boutique spécialisée vont s'aligner sur ces fourchettes dans les premières semaines. Comme à chaque sortie, attendre 4 à 6 semaines stabilise généralement le prix display de 5 à 15 % à la baisse — sauf rupture distributeur.
 
-[**Voir les boosters Pokémon TCG sur Amazon** (lien partenaire)](https://www.amazon.fr/s?k=pokemon+booster+chaos+rising&tag=rareradar-21)
+[**Voir les boosters Pokémon TCG sur Amazon** (lien partenaire)](https://www.amazon.fr/s?k=pokemon+chaos+ascendant+ETB+display&tag=rareradar-21&ascsubtag=rr-chaos)
 
 ## En attendant la sortie
 
@@ -186,17 +184,17 @@ Sept jours, c'est court. Mais si vous voulez rester actif côté collection sans
 **Les derniers sets Écarlate & Violet**
 Les dernières extensions du bloc E&V — notamment *Étincelles Déferlantes*, *Couronne Zénith*, *Black Bolt* et *White Flare* (les deux derniers à clôturer le bloc) — restent largement disponibles en boosters, ETB et displays. Bon ratio cartes intéressantes / prix, et idéal pour découvrir la mécanique Téracristal (qui disparaît avec l'arrivée de Méga). À privilégier pour qui débute une collection moderne.
 
-[**Boosters Écarlate & Violet** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=pokemon+ecarlate+violet+booster&tag=rareradar-21)
+[**Boosters Écarlate & Violet** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=pokemon+ecarlate+violet+display+booster&tag=rareradar-21&ascsubtag=rr-chaos)
 
 **Les premiers sets de la série Méga (avant Chaos Ascendant)**
 La série Méga compte déjà trois extensions principales en 2026 avant l'arrivée de *Chaos Ascendant* (ME04) : **Méga Évolution** (ME01, set d'ouverture), **Phantasmal Flames** (ME02), et **Perfect Order** (ME03) — plus un set spécial intermédiaire **Ascended Heroes** (ME2.5). Les noms FR officiels suivent au fur et à mesure des sorties France. Si vous suivez la mécanique Méga depuis le début de l'année, ces trois sets sont la base à compléter avant Chaos Ascendant : c'est là qu'on trouve les premiers Méga Pokémon ex qui tournent déjà en méta compétitive.
 
-[**Boosters Mega Evolution** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=pokemon+mega+evolution+booster&tag=rareradar-21)
+[**Boosters Mega Evolution** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=pokemon+evolution+mega+display+booster+fr&tag=rareradar-21&ascsubtag=rr-chaos)
 
 **Accessoires de conservation**
 Si vous prévoyez de pull du Special Illustration Rare le 22 mai, le combo *penny sleeve + outer Ultra Pro + classeur ou toploader* reste la base. C'est l'investissement qui rend tout le reste durable.
 
-[**Sleeves Ultra Pro + protections** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+penny+sleeves+pokemon&tag=rareradar-21)
+[**Sleeves Ultra Pro + protections** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+penny+sleeves+standard+100&tag=rareradar-21&ascsubtag=rr-chaos)
 
 ## FAQ
 

@@ -18,13 +18,30 @@
   {%- comment -%} v6 refonte holo-card portrait — chargé après style.css pour override (2026-06-08) {%- endcomment -%}
   <link rel="stylesheet" href="{{ '/assets/css/edito-preview.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
+  {%- comment -%}
+    og:image + twitter:card — AVANT {% seo %} pour que notre twitter:card soit lue en premier.
+    jekyll-seo-tag produit twitter:card=summary (pas d'image détectée via page.image).
+    Les crawlers Twitter/X lisent la première occurrence : la nôtre (summary_large_image) prime.
+    Fallback : rareradar-logo-2.png (835×212) en attendant un asset OG 1200×630 dédié.
+  {%- endcomment -%}
+  {%- if page.cover_image -%}
+    {%- assign _og_image = page.cover_image | absolute_url -%}
+  {%- elsif site.logo -%}
+    {%- assign _og_image = site.logo | absolute_url -%}
+  {%- else -%}
+    {%- assign _og_image = "/assets/images/rareradar-logo-2.png" | absolute_url -%}
+  {%- endif -%}
+  <meta property="og:image" content="{{ _og_image }}">
+  <meta name="twitter:image" content="{{ _og_image }}">
+  <meta name="twitter:card" content="summary_large_image">
+
   {% seo %}
   {% feed_meta %}
 
   {%- comment -%} Tâche 4 — Link RSS alternate explicite (après feed_meta) {%- endcomment -%}
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} u00b7 RSS" href="{{ '/feed.xml' | absolute_url }}">
 
-  {%- comment -%} Tâche 3 — OG + Twitter Card améliorés (APRÈS {% seo %} pour surcharger jekyll-seo-tag) {%- endcomment -%}
+  {%- comment -%} Tâche 3 — OG + Twitter Card améliorés — surcharge og:type/locale après seo-tag {%- endcomment -%}
   <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
   <meta property="og:locale" content="fr_FR">
@@ -170,14 +187,14 @@
   <div class="shell statusbar__inner">
     <div class="statusbar__group">
       <span class="statusbar__pulse">Live</span>
-      <span>Reviews & guides · indépendant · sources vérifiées</span>
+      <span>Sources vérifiées</span>
     </div>
     <div class="statusbar__group">
       <span>{{ site.posts.size | prepend: '00' | slice: -3, 3 }} articles</span>
       {% if site.posts.first %}
       <span>Dernière publi · {{ site.posts.first.date | date: "%d %b %Y" }}</span>
       {% endif %}
-      <span>FR · curated</span>
+      <span>FR</span>
     </div>
   </div>
 </div>
@@ -295,7 +312,7 @@
       resetBtn.addEventListener('click', function () {
         state = { q: '', tag: '', sort: 'n_desc' };
         if (search) search.value = '';
-        if (sortSel) sortSel.value = 'n_asc';
+        if (sortSel) sortSel.value = 'n_desc';
         chips.forEach(function (c) { c.classList.remove('chip--active'); });
         var defaultChip = document.querySelector('[data-tag-filter=""]');
         if (defaultChip) defaultChip.classList.add('chip--active');

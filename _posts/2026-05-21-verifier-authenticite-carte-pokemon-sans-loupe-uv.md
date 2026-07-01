@@ -24,13 +24,11 @@ _cfds:
   last_pass: "2026-06-17 condensation -33% (1426 → ~960 mots), PNG test-pli retirée (SVG suffit)"
 ---
 
-# Comment vérifier l'authenticité d'une carte Pokémon (sans loupe ni UV)
-
 90 % des fakes 2026 se repèrent en moins de cinq minutes, sans loupe ni lampe UV. Six tests, du moins invasif au plus décisif — applicable à toute carte reçue de Vinted, AliExpress ou lot Leboncoin.
 
 ## Test 1 : Le toucher et le carton
 
-Une carte moderne (ères Méga, S&V, S&B) fait **350 µm**, ni molle ni cartonnée. Sur la tranche en lumière franche : **fine ligne sombre centrale** = couche de carton noir interne, standard officiel depuis 1999. Un fake chinois a une tranche blanche ou grise uniforme. Pour les vérifications répétées, une [**balance 0,01 g** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=balance+pr%C3%A9cision+0.01g&tag=rareradar-21) tranche en quelques secondes : commune authentique **1,7-1,8 g**, fake < 1,5 g ou > 2,0 g.
+Une carte moderne (ères Méga, S&V, S&B) fait **350 µm**, ni molle ni cartonnée. Sur la tranche en lumière franche : **fine ligne sombre centrale** = couche de carton noir interne, standard officiel depuis 1999. Un fake chinois a une tranche blanche ou grise uniforme. Pour les vérifications répétées, une [**balance 0,01 g** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=balance+precision+0.01g+bijouterie&tag=rareradar-21&ascsubtag=rr-authent) tranche en quelques secondes : commune authentique **1,7-1,8 g**, fake < 1,5 g ou > 2,0 g.
 
 ## Test 2 : Le test du pli
 
@@ -88,7 +86,7 @@ Une holo officielle (holo, reverse, FA, AR, ALT, SAR ère Méga) est **multidire
 
 **Test tactile critique sur FA / ALT / SR / SAR / IR ère SV** : effleurer l'illustration. Une vraie carte présente un **relief gaufré perceptible** (contour Pokémon, effets, nom). Surface parfaitement lisse = fake — les contrefacteurs ne reproduisent quasiment jamais ce gaufrage.
 
-Pour confirmer, une [**loupe horlogerie 10x** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=loupe+horlogerie+10x&tag=rareradar-21) révèle la trame géométrique régulière de l'holo officielle vs la trame irrégulière des fakes.
+Pour confirmer, une [**loupe horlogerie 10x** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=loupe+horlogerie+10x+grossissement&tag=rareradar-21&ascsubtag=rr-authent) révèle la trame géométrique régulière de l'holo officielle vs la trame irrégulière des fakes.
 
 ## Test 4 : Couleurs, police, alignement
 
@@ -164,11 +162,11 @@ Sur les boosters officiels modernes (ère Méga FR/EN), la **soudure plastique e
 
 ## Quand passer au grader
 
-Doute persistant ou carte > 100 € : le grading est l'arbitre final. PSA / BGS / CGC authentifient avant de noter — un fake repart "Not Authentic" (frais non remboursés mais réponse définitive). **25 à 80 €** par carte selon l'urgence, 3 à 12 mois. Avant envoi : [**sleeves Ultra Pro penny**](https://www.amazon.fr/s?k=sleeves+ultra+pro+penny&tag=rareradar-21) + [**toploader 35 pt rigide**](https://www.amazon.fr/s?k=toploader+35pt+rigide&tag=rareradar-21) (affiliés) pour ne pas perdre des points sur un défaut de transport.
+Doute persistant ou carte > 100 € : le grading est l'arbitre final. PSA / BGS / CGC authentifient avant de noter — un fake repart "Not Authentic" (frais non remboursés mais réponse définitive). **25 à 80 €** par carte selon l'urgence, 3 à 12 mois. Avant envoi : [**sleeves Ultra Pro penny**](https://www.amazon.fr/s?k=ultra+pro+penny+sleeves+standard+100&tag=rareradar-21&ascsubtag=rr-authent) + [**toploader 35 pt rigide**](https://www.amazon.fr/s?k=ultra+pro+toploader+35pt+3x4&tag=rareradar-21&ascsubtag=rr-authent) (affiliés) pour ne pas perdre des points sur un défaut de transport.
 
 ## FAQ
 
-**Faut-il une lampe UV ?** Inutile sur le moderne. Pertinent uniquement sur le vintage Wizards (1999-2003) à fluorescence spécifique — une [**lampe UV 365 nm portable** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=lampe+UV+365nm+portable&tag=rareradar-21) suffit.
+**Faut-il une lampe UV ?** Inutile sur le moderne. Pertinent uniquement sur le vintage Wizards (1999-2003) à fluorescence spécifique — une [**lampe UV 365 nm portable** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=lampe+uv+365nm+portable+poche&tag=rareradar-21&ascsubtag=rr-authent) suffit.
 
 **Une carte Cardmarket peut-elle être un fake ?** Risque faible mais non nul sur les vendeurs récents. Au-dessus de 50 €, privilégier +500 ventes positives et vérifier à réception (tests 1, 3, 5).
 
