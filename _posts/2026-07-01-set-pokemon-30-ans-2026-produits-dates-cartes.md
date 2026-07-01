@@ -304,6 +304,7 @@ R : La liste officielle complète n'est pas encore publiée au 1er juillet 2026.
 ## À lire aussi
 
 - [Chaos Ascendant (mai 2026) : le bilan de l'ère Méga]({% post_url 2026-05-15-chaos-ascendant-mega-evolution-extension-mai-2026 %}) — pour remettre le set 30th Celebration dans le contexte éditorial de l'année
+- [Ouvrir, garder scellé ou grader : que faire de vos 30th Celebration ?](/2026/pokemon-30-ans-ouvrir-garder-scelle-grader/) — le calcul revente, ouverture et grading
 
 ---
 
