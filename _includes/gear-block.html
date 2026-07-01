@@ -16,39 +16,34 @@
 
   <div class="gear">
     {% for pick in picks %}
-      {%- assign img_path = "/assets/images/gear/" | append: pick.image | split: "/" | last -%}
-      {%- assign placeholder_svg = "/assets/images/gear/" -%}
-      {%- if pick.slot == "editorial" %}{% assign placeholder_svg = placeholder_svg | append: "sleeves-placeholder.svg" %}{% endif -%}
-      {%- if pick.slot == "value"     %}{% assign placeholder_svg = placeholder_svg | append: "classeur-placeholder.svg" %}{% endif -%}
-      {%- if pick.slot == "investment"%}{% assign placeholder_svg = placeholder_svg | append: "toploader-placeholder.svg" %}{% endif -%}
       {%- assign ascsub = pick.ascsubtag | default: "gear-home" -%}
       {%- assign href = "https://www.amazon.fr/dp/" | append: pick.asin | append: "?tag=rareradar-21&linkCode=ll1&ascsubtag=" | append: ascsub -%}
 
-      <a class="gear-item"
+      <a class="gear-item{% unless pick.image_ready %} gear-item--nocover{% endunless %}"
          href="{{ href }}"
          target="_blank"
          rel="noopener noreferrer nofollow sponsored"
          aria-label="Voir {{ pick.title | escape }} sur Amazon France (lien affilié)">
         <span class="gear-item__badge">{{ pick.badge }}</span>
+        {%- comment -%}
+          Zone image affichée UNIQUEMENT si une vraie photo produit est prête
+          (pick.image_ready: true dans _data/gear.yml). Sinon → carte texte propre.
+          Les placeholders illustrés ont été retirés (rendu jugé « cassé » après
+          3 itérations — format abandonné, cf. règle stop-rule). Photos maison à venir.
+        {%- endcomment -%}
+        {% if pick.image_ready and pick.image %}
         <div class="gear-item__cover">
-          {%- comment -%} Si pick.image est un JPG réel et accessible, l'utiliser ; sinon fallback SVG {%- endcomment -%}
-          {% capture _img_file %}{{ pick.image | strip }}{% endcapture %}
-          {% if _img_file != "" and _img_file != null %}
-            <img src="{{ pick.image | relative_url }}?v={{ site.time | date: '%s' }}"
-                 alt="{{ pick.title | escape }}"
-                 loading="lazy" decoding="async"
-                 onerror="this.outerHTML='<object data=&quot;{{ placeholder_svg | relative_url }}&quot; type=&quot;image/svg+xml&quot; aria-hidden=&quot;true&quot;></object>'">
-          {% else %}
-            <object data="{{ placeholder_svg | relative_url }}" type="image/svg+xml" aria-hidden="true"></object>
-          {% endif %}
+          <img src="{{ pick.image | relative_url }}?v={{ site.time | date: '%s' }}"
+               alt="{{ pick.title | escape }}" loading="lazy" decoding="async">
         </div>
+        {% endif %}
         <div class="gear-item__body">
           <span class="gear-item__cat">{{ pick.category }}</span>
           <h3 class="gear-item__name">{{ pick.title }}</h3>
           <p class="gear-item__verdict">{{ pick.verdict }}</p>
           <div class="gear-item__row">
-            <span class="gear-item__price">{{ pick.price_eur }} €<small>Amazon FR</small></span>
-            <span class="gear-item__cta" aria-hidden="true">→</span>
+            {%- comment -%} Prix non affiché : CGU Amazon interdisent un prix statique hors API temps réel. {%- endcomment -%}
+            <span class="gear-item__cta-price">Prix à jour sur Amazon&nbsp;FR <span class="gear-item__cta" aria-hidden="true">→</span></span>
           </div>
         </div>
       </a>

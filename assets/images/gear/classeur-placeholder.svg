@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
-  <rect x="20" y="40" width="160" height="120" rx="2" stroke="#c8835e" stroke-width="2"/>
-  <rect x="28" y="48" width="144" height="104" rx="1" stroke="#c8835e" stroke-width="0.8" stroke-dasharray="2 2"/>
-  <line x1="50" y1="70" x2="150" y2="70" stroke="#c8835e" stroke-width="1"/>
-  <line x1="50" y1="90" x2="150" y2="90" stroke="#c8835e" stroke-width="1"/>
-  <line x1="50" y1="110" x2="150" y2="110" stroke="#c8835e" stroke-width="1"/>
-  <line x1="50" y1="130" x2="150" y2="130" stroke="#c8835e" stroke-width="1"/>
-  <text x="100" y="180" font-family="JetBrains Mono, monospace" font-size="9" fill="#c8835e" text-anchor="middle" letter-spacing="0.16em">CLASSEUR 360</text>
-</svg>
