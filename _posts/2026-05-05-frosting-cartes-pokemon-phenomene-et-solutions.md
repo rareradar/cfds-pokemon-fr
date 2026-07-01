@@ -264,7 +264,7 @@ Sur une carte, ce résidu est invisible au début, mais s'accumule sur le vernis
 La règle pratique : **stocker dans un endroit thermiquement stable**, pas dans
 un grenier l'été ni à 50 cm d'un radiateur. La fourchette idéale est 18-22 °C
 constants, ce qui correspond à n'importe quelle pièce d'habitation
-correctement isolée. Le détail des conditions optimales (humidité, lumière, température) est couvert dans le [guide conservation long terme des cartes Pokémon]({% post_url 2026-05-21-conserver-cartes-pokemon-long-terme-humidite-lumiere-tempera %}).
+correctement isolée. Le détail des conditions optimales (humidité, lumière, température) est couvert dans le guide conservation long terme des cartes Pokémon.
 
 ## Comment reconnaître un début de frosting
 
@@ -348,7 +348,7 @@ Les anciennes raretés V / VMAX restent côtées sur les sets antérieurs
 AR / FA / ALT.
 
 Trois couches, dans cet ordre, c'est le standard adopté par la plupart des
-collectionneurs adultes pour les cartes au-delà de 30-50 €. Pour les Mega ex en particulier, la [double sleeve penny + outer]({% post_url 2026-05-21-pourquoi-utiliser-2-sleeves-pokemon-pour-cartes-rare-mega-ex %}) est devenue la base minimale en 2026 :
+collectionneurs adultes pour les cartes au-delà de 30-50 €. Pour les Mega ex en particulier, la double sleeve penny + outer est devenue la base minimale en 2026 :
 
 1. **Perfect Fit en contact direct avec la carte.** La Perfect Fit est une
    sleeve dimensionnée au plus juste (≈ 64×89 mm, vs 66×91 mm pour une

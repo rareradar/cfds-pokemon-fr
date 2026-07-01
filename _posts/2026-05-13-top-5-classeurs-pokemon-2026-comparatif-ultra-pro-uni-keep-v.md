@@ -42,7 +42,7 @@ Avant de se lancer dans un comparatif, il faut savoir **comment choisir un class
 
 - **Capacité de stockage** : 100, 300 ou 500 cartes ? Cela dépend de l'épaisseur de votre collection.
 - **Matériaux** : PVC, polypropylène ou papier ? Certains sont plus résistants que d'autres.
-- **Protection contre l'humidité et la lumière** : indispensable pour éviter les dommages à long terme. Voir aussi le [guide conservation long terme]({% post_url 2026-05-21-conserver-cartes-pokemon-long-terme-humidite-lumiere-tempera %}) pour les seuils d'humidité et de température.
+- **Protection contre l'humidité et la lumière** : indispensable pour éviter les dommages à long terme. Voir aussi le guide conservation long terme pour les seuils d'humidité et de température.
 - **Facilité d'organisation** : système de classement par type, par extension, ou par rareté ?
 - **Portabilité** : poids et taille si vous transportez souvent vos cartes.
 - **Prix** : budget serré ou prêt à investir dans un modèle haut de gamme ?
@@ -221,7 +221,7 @@ J'ai utilisé ce classeur pour organiser mes cartes de l'extension *Écarlate & 
 - **Prix légèrement plus élevé** : comptez entre 25 et 35 € selon le modèle.
 - **Moins de place** : 300 cartes seulement, à réserver aux collections moyennes.
 
-**Pour qui ?** : les collectionneurs qui privilégient la **protection des cartes rares** et un stockage soigné sans manipulation excessive. À compléter avec une [double sleeve penny + outer]({% post_url 2026-05-21-pourquoi-utiliser-2-sleeves-pokemon-pour-cartes-rare-mega-ex %}) pour les Mega ex avant d'insérer en classeur.
+**Pour qui ?** : les collectionneurs qui privilégient la **protection des cartes rares** et un stockage soigné sans manipulation excessive. À compléter avec une double sleeve penny + outer pour les Mega ex avant d'insérer en classeur.
 
 **Comparaison** :
 Contrairement au classeur Ultra Pro, celui-ci est plus léger et donc plus pratique pour les déplacements. J'ai vu un ami l'utiliser pour ses cartes *Shining* et *Secret Rare* : il n'a jamais eu de problème de collage ou de déformation, même après plusieurs années.
@@ -465,7 +465,7 @@ En résumé, le choix d'un classeur dépend avant tout de vos besoins : **portab
 
 [**classeur pour cartes Pokémon rares** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=vault+x+classeur+zip+360+cartes&tag=rareradar-21&ascsubtag=rr-classeurs)
 
-L'organisation de vos cartes Pokémon TCG est un investissement à long terme. En 2026, les solutions Ultra Pro, UniKeep et Vault X offrent des options variées pour protéger vos boosters et vos pièces maîtresses. Le plus important reste de choisir un classeur adapté à votre usage quotidien. Pour les autres accessoires utiles (porte-cartes, toploaders, deck boxes), le [guide accessoires Pokémon]({% post_url 2026-05-21-accessoires-collection-pokemon-porte-cles-porte-cartes-figur %}) fait le tour des produits testés.
+L'organisation de vos cartes Pokémon TCG est un investissement à long terme. En 2026, les solutions Ultra Pro, UniKeep et Vault X offrent des options variées pour protéger vos boosters et vos pièces maîtresses. Le plus important reste de choisir un classeur adapté à votre usage quotidien. Pour les autres accessoires utiles (porte-cartes, toploaders, deck boxes), le guide accessoires Pokémon fait le tour des produits testés.
 
 ---
 
