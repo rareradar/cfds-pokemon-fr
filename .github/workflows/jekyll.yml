@@ -55,3 +55,33 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  indexnow:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resolve IndexNow key
+        id: indexnow
+        run: |
+          KEY_FILE=$(find . -maxdepth 1 -regextype posix-extended -regex './[0-9a-f]{32}\.txt' | head -n1)
+          if [ -z "$KEY_FILE" ]; then
+            echo "No IndexNow key file found at repo root, skipping ping." >&2
+            echo "key=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "key=$(basename "$KEY_FILE" .txt)" >> "$GITHUB_OUTPUT"
+
+      - name: Ping IndexNow (home + sitemap)
+        if: steps.indexnow.outputs.key != ''
+        env:
+          INDEXNOW_KEY: ${{ steps.indexnow.outputs.key }}
+        run: |
+          for URL in "https://rareradar.fr/" "https://rareradar.fr/sitemap.xml"; do
+            curl -s -o /dev/null -w "IndexNow %{http_code} - $URL\n" \
+              --get "https://api.indexnow.org/indexnow" \
+              --data-urlencode "url=$URL" \
+              --data-urlencode "key=$INDEXNOW_KEY"
+          done
