@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url={{ page.redirect_to }}">
+  <link rel="canonical" href="{{ page.redirect_to | absolute_url }}">
+  <meta name="robots" content="noindex">
+  <title>Redirection…</title>
+</head>
+<body>
+  <p>Cette page a déménagé : <a href="{{ page.redirect_to }}">{{ page.redirect_to | absolute_url }}</a>.</p>
+  <script>location.replace("{{ page.redirect_to }}");</script>
+</body>
+</html>
