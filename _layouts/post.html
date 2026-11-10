@@ -5,12 +5,16 @@ layout: default
 <article class="article" data-rarity="{{ page.rarity | default: 'common' }}">
   <div class="shell">
 
-    {%- assign article_number = 0 -%}
-    {%- for p in site.posts -%}
-      {%- if p.url == page.url -%}
-        {%- assign article_number = site.posts.size | minus: forloop.index | plus: 1 -%}
-      {%- endif -%}
-    {%- endfor -%}
+    {%- comment -%} Numéro = champ `n:` du front matter (source unique, stable à la
+        publication). Repli sur le rang chronologique si `n` est absent. {%- endcomment -%}
+    {%- assign article_number = page.n | default: 0 -%}
+    {%- if article_number == 0 -%}
+      {%- for p in site.posts -%}
+        {%- if p.url == page.url -%}
+          {%- assign article_number = site.posts.size | minus: forloop.index | plus: 1 -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
     {%- assign article_number_padded = article_number | prepend: '00' | slice: -3, 3 -%}
 
     {%- comment -%} Mapping rareté → 5 tiers couleur (cohérent avec article-card) {%- endcomment -%}
