@@ -29,6 +29,7 @@ sitemap: false
       "date": {{ post.date | date_to_xmlschema | jsonify }},
       "description": {{ post.description | jsonify }},
       "cover_image": {% if post.cover_image %}{{ post.cover_image | prepend: site.url | jsonify }}{% else %}null{% endif %},
+      "cover_image_portrait": {% if post.cover_image_portrait %}{{ post.cover_image_portrait | prepend: site.url | jsonify }}{% else %}null{% endif %},
       "tags": {{ post.tags | jsonify }},
       "read_time": {{ post.read_time | default: 0 }}
     }{% unless forloop.last %},{% endunless %}
