@@ -15,7 +15,7 @@ theme_image: /assets/images/posts/verifier-authenticite-carte-pokemon-sans-loupe
 last_modified_at: 2026-06-17
 byline_kind: tested
 _cfds:
-  generated_by: claude_main_margaux
+  generated_by: rareradar-editorial
   generated_at: "2026-05-21T11:00:00+02:00"
   conseil_20260521: "fresh_generation"
   amazon_tag: rareradar-21

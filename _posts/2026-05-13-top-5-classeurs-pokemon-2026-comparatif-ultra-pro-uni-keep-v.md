@@ -19,7 +19,7 @@ tags:
 author: RareRadar
 byline_kind: tested
 _cfds:
-  generated_by: mistral_119b_local
+  generated_by: rareradar-editorial
   reviewed_by: RareRadar (claude-edit pass)
   generated_at: "2026-05-13T10:48:38.371735+00:00"
   amazon_tag: rareradar-21

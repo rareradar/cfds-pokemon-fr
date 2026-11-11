@@ -142,7 +142,7 @@ Cinq Méga Évolution font leur entrée. C'est la signature du set, et la princi
     </div>
     <div style="text-align:center;">
       <img src="{{ '/assets/images/posts/chaos-ascendant/mega-dragalge-ex.png' | relative_url }}"
-           alt="Carte Méga Kingdralgue ex de l'extension Chaos Ascendant"
+           alt="Carte Méga Kravarech ex de l'extension Chaos Ascendant"
            loading="lazy" decoding="async"
            style="width:100%; max-width:180px; height:auto; border-radius:6px;">
       <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">MÉGA KINGDRALGUE ex · #65</p>
@@ -158,7 +158,7 @@ Cinq Méga Évolution font leur entrée. C'est la signature du set, et la princi
 
 **Méga Floette ex** est la surprise éditoriale : Floette n'a jamais eu de Méga Évolution officielle en jeu vidéo, c'est une exclusivité TCG. Ce détail à lui seul rendra les versions Special Illustration intéressantes sur le marché secondaire.
 
-**Méga Némélios ex**, **Méga Kingdralgue ex** et **Méga Gallame ex** complètent la sélection — moins iconiques, mais les artworks sont signés *akagi* (artiste japonais récurrent sur les sets Mega Evolution), connu pour des full-arts très lisibles.
+**Méga Némélios ex**, **Méga Kravarech ex** et **Méga Gallame ex** complètent la sélection, moins iconiques que les têtes d'affiche.
 
 Côté Pokémon ex réguliers (sans Méga) : Dardargnan, Banshitrouye, Crocorible, Cobaltium, Pashmilla. Pas de star, mais Dardargnan ex et Pashmilla ex sont les deux qui pourraient s'imposer compétitivement.
 
@@ -167,7 +167,7 @@ Côté Pokémon ex réguliers (sans Méga) : Dardargnan, Banshitrouye, Crocoribl
 | Produit | Sortie | Format | Repère prix FR |
 |---|---|---|---|
 | **Build & Battle Box** | **9 → 17 mai 2026** (pré-release uniquement) | 4 boosters + deck 40 cartes pré-construit + 1 promo foil (parmi 4) | ~25 € |
-| Booster individuel | 22 mai 2026 | 10 cartes, ≥1 rare garantie | 4,99–5,99 € |
+| Booster individuel | 22 mai 2026 | 10 cartes, ≥1 rare garantie | 5,95–6,99 € |
 | Booster Bundle | 22 mai 2026 | 6 boosters scellés | ~30 € |
 | Elite Trainer Box (ETB) | 22 mai 2026 | 9 boosters + 1 promo Feunnec full-art + 65 sleeves + 40 énergies + dés de dégâts | 55–65 € |
 | Collector's Tin | 22 mai 2026 | 4 boosters + 1 carte promo | ~25 € |
