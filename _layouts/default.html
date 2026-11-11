@@ -425,8 +425,8 @@
         a.setAttribute('target', '_blank');
         var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
         var add = ['noopener', 'noreferrer'];
-        /* sponsored uniquement pour liens à commission (Amazon affilié) */
-        if (a.href.indexOf('tag=') !== -1 || a.href.indexOf('amazon.') !== -1) add.push('sponsored');
+        /* sponsored pour les liens à commission (Amazon tag=, eBay Partner Network campid=) */
+        if (a.href.indexOf('tag=') !== -1 || a.href.indexOf('amazon.') !== -1 || a.href.indexOf('campid=') !== -1) add.push('sponsored');
         add.forEach(function (t) { if (rel.indexOf(t) === -1) rel.push(t); });
         a.setAttribute('rel', rel.join(' '));
       });

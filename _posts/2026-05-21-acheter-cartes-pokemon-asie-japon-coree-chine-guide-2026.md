@@ -113,7 +113,7 @@ Côté logistique, deux services dominent : **Buyee** (intermédiaire qui achèt
 
 Bon point pratique pour les FR : le numéro et le sigle de rareté sont imprimés en alphabet latin sur la carte (C, U, R, RR, AR, SR, SAR, UR), même si le texte d'attaque est en japonais. Côté authentification, ce sont les emballages (boosters, displays) qui portent codes-barres et scellés d'origine, pas la carte elle-même, dont le dos est un motif standard. Méfiez-vous d'un vendeur qui ne montre pas l'emballage scellé intact.
 
-Pour transporter vos imports en sécurité dès réception, prévoyez des sleeves importateurs et des toploaders rigides : [pochettes de protection grade premium pour cartes JP/KR sur Amazon](https://www.amazon.fr/s?k=penny+sleeves+pokemon+import&tag=rareradar-21).
+Pour transporter vos imports en sécurité dès réception, prévoyez des sleeves importateurs et des toploaders rigides : [pochettes de protection pour cartes JP/KR sur Amazon (lien affilié)](https://www.amazon.fr/s?k=penny+sleeves+pokemon+import&tag=rareradar-21).
 
 ## Corée : montée en gamme et exclu hardcore
 
@@ -121,7 +121,7 @@ La Corée du Sud est une niche à part. Le set phare estampillé KR, **SV1a Trip
 
 Le marché KR est plus tendu côté offre, avec moins de revendeurs. Là encore, codes-barres et scellés figurent sur les emballages (boosters, displays), pas au dos des cartes : c'est l'intégrité du scellé d'origine qu'il faut inspecter, pas un marquage sur la carte.
 
-Privilégiez SV1a en KR pour l'illustration rare des starters Paldea : en France, la boutique spécialisée [Poké Korean](https://poke-korean.fr/search?q=triplet+beat+sv1a&utm_source=rareradar&utm_medium=article&utm_campaign=affil) en propose boosters et display, ce qui évite l'import et ses frais. Pour des reveals propres après ouverture, [vérifier l'authenticité d'une carte importée](/2026/verifier-authenticite-carte-pokemon-sans-loupe-uv) reste l'étape obligatoire avant tout grading.
+Privilégiez SV1a en KR pour l'illustration rare des starters Paldea. Avant de commander en Asie, regardez aussi les boutiques spécialisées dans les éditions coréennes, comme [Poké Korean](https://poke-korean.fr/?utm_source=rareradar&utm_medium=article&utm_campaign=affil). Pour des reveals propres après ouverture, [vérifier l'authenticité d'une carte importée](/2026/verifier-authenticite-carte-pokemon-sans-loupe-uv) reste l'étape obligatoire avant tout grading.
 
 ## Chine : prix bas mais vigilance
 
@@ -129,7 +129,7 @@ La Chine, c'est le cas le plus délicat. Il y a deux marchés totalement distinc
 
 De l'autre côté, le terrain miné : **AliExpress et Temu sont saturés de cartes "proxy" / "custom" / "fan art"**, c'est-à-dire des reprints non officiels. Visuellement c'est bluffant, à prix dérisoire, mais c'est juridiquement de la contrefaçon. La règle simple : un vendeur chinois qui ne montre pas de boîte scellée d'origine, c'est rouge.
 
-Pour stocker proprement displays CN et JP côte à côte sans déformer le carton, une [boîte de stockage rigide pour displays Pokémon sur Amazon](https://www.amazon.fr/s?k=boite+stockage+display+pokemon&tag=rareradar-21) évite d'écraser les cartons.
+Pour stocker proprement displays CN et JP côte à côte sans déformer le carton, une [boîte de stockage rigide pour displays Pokémon sur Amazon (lien affilié)](https://www.amazon.fr/s?k=boite+stockage+display+pokemon&tag=rareradar-21) évite d'écraser les cartons.
 
 ## Calcul du vrai prix : TVA + douane + envoi
 
