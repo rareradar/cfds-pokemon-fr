@@ -121,7 +121,7 @@ La Corée du Sud est une niche à part. Le set phare estampillé KR, **SV1a Trip
 
 Le marché KR est plus tendu côté offre, avec moins de revendeurs. Là encore, codes-barres et scellés figurent sur les emballages (boosters, displays), pas au dos des cartes : c'est l'intégrité du scellé d'origine qu'il faut inspecter, pas un marquage sur la carte.
 
-Privilégiez SV1a en KR pour l'illustration rare des starters Paldea. Pour des reveals propres après ouverture, [vérifier l'authenticité d'une carte importée](/2026/verifier-authenticite-carte-pokemon-sans-loupe-uv) reste l'étape obligatoire avant tout grading.
+Privilégiez SV1a en KR pour l'illustration rare des starters Paldea : en France, la boutique spécialisée [Poké Korean](https://poke-korean.fr/search?q=triplet+beat+sv1a&utm_source=rareradar&utm_medium=article&utm_campaign=affil) en propose boosters et display, ce qui évite l'import et ses frais. Pour des reveals propres après ouverture, [vérifier l'authenticité d'une carte importée](/2026/verifier-authenticite-carte-pokemon-sans-loupe-uv) reste l'étape obligatoire avant tout grading.
 
 ## Chine : prix bas mais vigilance
 
