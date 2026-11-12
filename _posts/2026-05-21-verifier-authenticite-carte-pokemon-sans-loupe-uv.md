@@ -13,7 +13,7 @@ cover_image: /assets/images/posts/verifier-authenticite-carte-pokemon-sans-loupe
 cover_image_portrait: /assets/images/posts/portrait/verifier-authenticite-carte-pokemon-sans-loupe-uv.png
 theme_image: /assets/images/posts/verifier-authenticite-carte-pokemon-sans-loupe-uv/01-test-pli-toucher.png
 last_modified_at: 2026-06-17
-byline_kind: tested
+byline_kind: data
 _cfds:
   generated_by: rareradar-editorial
   generated_at: "2026-05-21T11:00:00+02:00"
