@@ -1,0 +1,56 @@
+{%- comment -%}
+  « À lire ensuite » — placé juste après le texte de l'article (2026-11-12).
+  Sélection : articles partageant un tag avec l'article courant d'abord, puis les
+  plus récents ; jamais l'article courant ; 3 au plus. `site.posts` ne contient
+  que les articles publiés (les articles datés dans le futur ne sont pas générés).
+  Titre et accroche en HTML : la couverture n'est qu'une vignette décorative.
+{%- endcomment -%}
+{%- assign rn_tags = page.tags | default: '' -%}
+{%- assign rn_same = "" | split: "," -%}
+{%- assign rn_other = "" | split: "," -%}
+{%- for post in site.posts -%}
+  {%- if post.url == page.url -%}{%- continue -%}{%- endif -%}
+  {%- assign rn_match = false -%}
+  {%- for tag in rn_tags -%}
+    {%- comment -%} Tags génériques portés par presque tous les articles : non discriminants. {%- endcomment -%}
+    {%- assign rn_tag_dc = tag | downcase -%}
+    {%- if rn_tag_dc == "pokemon" or rn_tag_dc == "pokémon" or rn_tag_dc == "pokemon tcg" or rn_tag_dc == "tcg" -%}{%- continue -%}{%- endif -%}
+    {%- if post.tags contains tag -%}{%- assign rn_match = true -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if rn_match -%}
+    {%- assign rn_same = rn_same | push: post -%}
+  {%- else -%}
+    {%- assign rn_other = rn_other | push: post -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign rn_posts = rn_same | concat: rn_other | slice: 0, 3 -%}
+{%- assign rn_cb = site.time | date: '%s' -%}
+{% if rn_posts.size > 0 %}
+<nav class="read-next" aria-labelledby="read-next-title">
+  <h2 class="read-next__head" id="read-next-title">À lire ensuite</h2>
+  <ul class="read-next__list">
+    {%- for post in rn_posts %}
+    <li class="read-next__item">
+      {%- if post.cover_image_portrait -%}
+        {%- assign rn_png = post.cover_image_portrait | relative_url -%}
+        {%- assign rn_webp = rn_png | replace: "/portrait/", "/portrait/webp/" | replace: ".png", ".webp" %}
+      <a class="read-next__thumb" href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true">
+        <picture>
+          <source srcset="{{ rn_webp }}?v={{ rn_cb }}" type="image/webp">
+          <img src="{{ rn_png }}?v={{ rn_cb }}" alt="" width="720" height="1008" loading="lazy">
+        </picture>
+      </a>
+      {%- endif %}
+      <div class="read-next__text">
+        <span class="read-next__meta">{% if post.n %}N° {{ post.n | prepend: '00' | slice: -3, 3 }} · {% endif %}{% include date-fr.html date=post.date style="court" %}</span>
+        <h3 class="read-next__title"><a href="{{ post.url | relative_url }}">{{ post.title | replace: " :", "&nbsp;:" | replace: " ?", "&nbsp;?" }}</a></h3>
+        {%- if post.description %}
+        <p class="read-next__desc">{{ post.description }}</p>
+        {%- endif %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ul>
+  <p class="read-next__all"><a href="{{ '/articles/' | relative_url }}">Tous les articles <span aria-hidden="true">→</span></a></p>
+</nav>
+{% endif %}

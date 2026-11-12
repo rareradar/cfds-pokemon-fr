@@ -101,8 +101,6 @@ layout: default
       </header>
     </section>
 
-    {% include share-buttons.html compact=true %}
-
     {%- comment -%}
       Chapô source pour articles DATA (panel affiliate 2026-06-09) :
       compliance Amazon §5 — pas de claim test implicite sur articles compilation.
@@ -126,7 +124,9 @@ layout: default
       Sources&nbsp;: Cardmarket (médiane 30&nbsp;j) · TCGPlayer · PSA pop report{% unless page.byline_kind == "data" %} · achats personnels testés{% endunless %} · <a href="{{ '/methode/' | relative_url }}">méthode complète</a>
     </p>
 
-    <p class="article-back"><a href="{{ '/articles/' | relative_url }}">← Tous les articles</a></p>
+    {%- comment -%} Suite de lecture avant la newsletter et le partage : c'est ici que le lecteur
+        décide de rester (2026-11-12). Le lien « Tous les articles » vit dans ce bloc. {%- endcomment -%}
+    {% include read-next.html %}
 
     {% include newsletter-cta.html %}
 
@@ -134,45 +134,3 @@ layout: default
 
   </div>
 </article>
-
-{% assign common_tags = page.tags | default: '' %}
-{% assign related_by_tag = "" | split: "," %}
-
-{%- for post in site.posts -%}
-  {%- if post.url != page.url -%}
-    {%- for tag in common_tags -%}
-      {%- if post.tags contains tag -%}
-        {%- assign related_by_tag = related_by_tag | push: post -%}
-        {%- break -%}
-      {%- endif -%}
-    {%- endfor -%}
-  {%- endif -%}
-{%- endfor -%}
-
-{% assign related_count = related_by_tag.size %}
-{% assign remaining_needed = 2 | minus: related_count %}
-{% if remaining_needed < 0 %}{% assign remaining_needed = 0 %}{% endif %}
-
-{% assign remaining_posts = "" | split: "," %}
-{%- for post in site.posts -%}
-  {%- assign is_related = false -%}
-  {%- for rp in related_by_tag -%}
-    {%- if post.url == rp.url -%}{%- assign is_related = true -%}{%- endif -%}
-  {%- endfor -%}
-  {%- if post.url != page.url and is_related == false -%}
-    {%- assign remaining_posts = remaining_posts | push: post -%}
-  {%- endif -%}
-{%- endfor -%}
-
-{% assign final_related = related_by_tag | concat: remaining_posts | slice: 0, 2 %}
-
-<section class="shell" style="margin-top: 4rem;">
-  <header class="section-head">
-    <h2 class="section-head__title h-2">À lire aussi</h2>
-  </header>
-  <div class="card-grid">
-    {% for post in final_related %}
-      {% include article-card.html post=post %}
-    {% endfor %}
-  </div>
-</section>

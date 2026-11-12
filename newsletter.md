@@ -10,8 +10,8 @@ permalink: /newsletter/
     <p class="eyebrow">Newsletter</p>
     <h1>Les nouveaux articles RareRadar, directement par email</h1>
     <p class="lede">
-      Quand je publie un dossier qui mérite — authenticité, conservation, sorties
-      ère Méga, repérage de fakes — je l'envoie aussi par email à ceux qui ne
+      Chaque nouveau dossier — authenticité, conservation, sorties
+      ère Méga, repérage de fakes — part aussi par email à ceux qui ne
       suivent pas le site au quotidien. Pas de cadence fixe, pas de cotes
       bidon, pas de spam. Juste les publis utiles, à la fréquence où elles
       sortent.
@@ -27,7 +27,7 @@ permalink: /newsletter/
     <ul>
       <li><strong>1 email à chaque publi marquante</strong> — fréquence variable, dépend du calendrier de publication.</li>
       <li><strong>Sujets traités</strong> — authenticité, conservation, repérage de fakes, sorties de set ère Méga, dossiers collectionneur.</li>
-      <li><strong>Pas de cotes</strong> — je ne suis pas un service de pricing, je publie ce que je vérifie ou ce que je teste.</li>
+      <li><strong>Pas de cotes</strong> — RareRadar n'est pas un service de pricing : seul ce qui est vérifié est publié.</li>
       <li><strong>Pas d'affiliation forcée</strong> — les liens Amazon ou eBay apparaissent uniquement si l'article en parle, jamais en bandeau publicitaire.</li>
       <li><strong>Désinscription en 1 clic</strong> — RGPD-compliant, lien dans chaque email.</li>
     </ul>

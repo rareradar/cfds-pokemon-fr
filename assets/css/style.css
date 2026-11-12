@@ -3533,8 +3533,6 @@ a {
     text-align: left;
   }
   .article-hero--split .article__meta { margin-top: 0.9rem; }
-  /* Le partage reste en fin d'article ; en tête il repoussait le texte de 130 px. */
-  .article .share--compact { display: none; }
   .article .article-source-chip { margin-top: 1.1rem; }
 }
 
@@ -3611,4 +3609,121 @@ a {
   }
   .card-tile__title a { color: var(--ink); text-decoration: none; }
   .articles-page .article-controls { margin-bottom: 0.4rem; }
+}
+
+/* ============================================================================
+   24. FIN D'ARTICLE — « À lire ensuite » — 2026-11-12
+   Avant : le premier lien vers un autre article arrivait après les sources, la
+   newsletter et le partage (≈1 500 px en mobile), sous forme de deux couvertures
+   sans titre HTML. Désormais : trois articles juste sous le texte, titre et
+   accroche lisibles ; lignes en mobile, trois colonnes en desktop.
+   ============================================================================ */
+.read-next {
+  max-width: 46rem;
+  margin: 2.6rem auto 0;
+  padding-top: 1.4rem;
+  border-top: 2px solid var(--rule);
+}
+.read-next__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.read-next__head::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.read-next__list { list-style: none; margin: 0; padding: 0; }
+.read-next__item {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.read-next__thumb { display: block; }
+.read-next__thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.8);
+  transition: transform var(--dur-base, 200ms) var(--ease-out, ease-out);
+}
+.read-next__item:hover .read-next__thumb img { transform: translateY(-3px); }
+.read-next__text { min-width: 0; }
+.read-next__meta {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.read-next__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+.read-next__title a { color: var(--ink); text-decoration: none; }
+.read-next__title a:hover,
+.read-next__item:hover .read-next__title a { color: var(--accent); }
+.read-next__desc {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--ink-2);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+.read-next__all {
+  margin: 1.1rem 0 2.4rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono-s);
+  letter-spacing: var(--tracking-mono);
+}
+.read-next__all a { color: var(--fire); display: inline-block; padding-block: 0.4rem; }
+.read-next__all a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+@media (min-width: 900px) {
+  /* Desktop : trois colonnes plus larges que la colonne de lecture, la couverture
+     en carte au-dessus du titre. */
+  .read-next { max-width: 60rem; }
+  .read-next__head { margin-bottom: 1.4rem; }
+  .read-next__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+  }
+  .read-next__item {
+    grid-template-columns: 1fr;
+    align-items: start;
+    align-content: start;
+    gap: 1.1rem;
+    padding: 0;
+    border-bottom: 0;
+  }
+  .read-next__thumb { max-width: 200px; }
+  .read-next__thumb img { border-radius: 9px; box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.85); }
+  .read-next__title { font-size: 1.25rem; }
+  .read-next__desc { -webkit-line-clamp: 3; line-clamp: 3; }
+  .read-next__all { margin-top: 1.8rem; }
 }
