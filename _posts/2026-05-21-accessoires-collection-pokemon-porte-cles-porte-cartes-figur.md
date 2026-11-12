@@ -175,14 +175,14 @@ Si tu envisages un jour de faire grader une carte (PSA, CGC, BGS) ou simplement 
 
 Les penny sleeves se vendent par lots de 100 pour quelques euros. C'est la première chose à faire dès l'ouverture d'un booster, surtout pour les cartes rares (Ultra rare, Illustration rare, Illustration spéciale rare). Sans sleeve, chaque manipulation expose la surface aux rayures, ce qui pèse sur la note en cas de grading.
 
-Le **toploader 35pt** est l'épaisseur de référence pour une carte standard sleevée. Pour les cartes plus épaisses (relic), il existe des toploaders 55pt ou 75pt.
+Le **toploader 35pt** est le format standard : il est prévu pour une carte de taille classique jusqu'à 35 points d'épaisseur, typiquement une carte en penny sleeve. Pour les cartes plus épaisses, il existe des toploaders 55pt ou 75pt.
 
 Pour le stockage collectif, deux écoles :
 
 - La **deck box** : petite boîte rigide qui contient un deck sleevé, parfaite pour le transport.
 - Le **binder zip** type Ultra Pro PRO-Binder : classeur fermé à zip : aucune carte ne s'échappe en transport.
 
-> **Conseil pro :** si tu vises le grading, soigne l'emballage d'envoi : penny sleeve, puis [Card Saver 1](https://www.amazon.fr/s?k=card+saver+1+psa+grading&tag=rareradar-21) (porte-carte semi-rigide plutôt que toploader pour PSA), puis enveloppe rigide. Pour la stratégie 2-sleeves des Mega ex, voir notre [guide double-sleeving Pokémon Mega ex](/2026/pourquoi-utiliser-2-sleeves-pokemon-pour-cartes-rare-mega-ex).
+> **Conseil pro :** si tu vises le grading, soigne l'emballage d'envoi : penny sleeve, puis [Card Saver 1](https://www.amazon.fr/s?k=card+saver+1+psa+grading&tag=rareradar-21) (porte-carte semi-rigide plutôt que toploader pour PSA), puis enveloppe rigide. Pour la double sleeve des Méga ex, voir notre [guide double sleeve Pokémon Méga ex](/2026/pourquoi-utiliser-2-sleeves-pokemon-pour-cartes-rare-mega-ex).
 
 [**penny sleeves Ultra Pro 100** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=penny+sleeves+ultra+pro&tag=rareradar-21)
 
@@ -325,7 +325,7 @@ Méfie-toi des sleeves bas de gamme génériques AliExpress non marquées : la q
 
 ### **Faut-il absolument utiliser des sleeves pour protéger ses cartes ?**
 
-Oui, dès la sortie du booster pour les cartes rares (Ultra rare, Illustration rare, Illustration spéciale rare). Une carte non sleevée manipulée plusieurs fois risque de perdre un grade, et l'écart de valeur entre PSA 10 et PSA 9 est de ×1,5 à ×3 sur les SAR récentes.
+Oui, dès la sortie du booster pour les cartes rares (Ultra rare, Illustration rare, Illustration spéciale rare). Une carte non sleevée manipulée plusieurs fois risque de perdre un grade, et un grade d'écart pèse directement sur la cote.
 
 ### **Comment organiser ses cartes Pokémon sans tout mélanger ?**
 

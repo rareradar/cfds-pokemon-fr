@@ -23,7 +23,7 @@ _cfds:
   images_generated_at: "2026-05-21"
 ---
 
-Une Méga-Dracaufeu ex sortie d'un booster de l'ère Méga, glissée à la va-vite dans la première sleeve souple qui traîne puis posée à plat sur le bureau : c'est le réflexe de la plupart des collectionneurs qui débutent. Le problème apparaît quelques jours plus tard, à la première manipulation : une micro-éraflure sur la bordure.
+Une Méga-Dracaufeu X-ex sortie d'un booster de l'ère Méga, glissée à la va-vite dans la première sleeve souple qui traîne puis posée à plat sur le bureau : c'est le réflexe de la plupart des collectionneurs qui débutent. Le problème apparaît quelques jours plus tard, à la première manipulation : une micro-éraflure sur la bordure.
 
 Sur une Méga ex rare que tu veux garder intacte, ce type de défaut fait mécaniquement basculer la carte en NM/EX aux yeux d'un acheteur sérieux : la cote peut chuter fortement. Une carte sortie d'un booster peut ainsi perdre une grande partie de sa valeur sur un simple mauvais réflexe de stockage.
 
@@ -176,7 +176,7 @@ La double sleeve (une sleeve intérieure ajustée, puis une outer par-dessus) r�
 
 Le principe est simple : la carte ne touche jamais directement l'extérieur. Elle est dans une première sleeve ajustée (Perfect Fit), elle-même dans une seconde sleeve plus épaisse (outer), et l'ensemble ne bouge plus.
 
-**Sleeve intérieure Perfect Fit**. Très fine et taillée au plus près de la carte. On y glisse la carte **tête en bas** : la Perfect Fit est ensuite insérée dans l'outer avec son **ouverture vers le bas**. Une penny sleeve ne convient pas pour ce rôle : elle a la taille d'une sleeve standard et ne rentre pas dans une outer. Dispo sur [**sleeves Perfect Fit** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=sleeves+perfect+fit+inner&tag=rareradar-21).
+**Sleeve intérieure Perfect Fit**. Très fine et taillée au plus près de la carte. On y glisse la carte **tête en bas** : la Perfect Fit est ensuite insérée dans l'outer avec son **ouverture vers le bas**. Une penny sleeve ne convient pas pour ce rôle : elle n'est pas ajustée à la carte, alors que la Perfect Fit est conçue pour entrer dans une outer. Dispo sur [**sleeves Perfect Fit** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=sleeves+perfect+fit+inner&tag=rareradar-21).
 
 **Outer sleeve extérieure**. Au format standard, plus épaisse, souvent mate pour éviter les reflets et les rayures de surface. Elle se pose **ouverture vers le haut**, à l'opposé de l'ouverture de la sleeve intérieure : c'est ce croisement qui empêche la carte de glisser et la poussière d'entrer. Les Ultra Pro Pro-Matte sont un exemple d'outer, dispo sur [**Ultra Pro outer sleeves Pro Matte** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+pro+matte+sleeves&tag=rareradar-21).
 
@@ -188,7 +188,7 @@ Sur une carte que tu veux protéger au maximum, typiquement les Illustrations sp
 
 1. **Sleeve Perfect Fit** intérieure.
 2. **Outer sleeve** extérieure.
-3. **Toploader 35pt** Ultra Pro rigide. Le toploader bloque la torsion physique de la carte : impossible de la plier accidentellement en la manipulant. Le 35 points (35pt) est le format standard pour cartes non épaisses. Dispo chez [**Ultra Pro Toploader 35pt** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+toploader+35pt&tag=rareradar-21).
+3. **Toploader 35pt** Ultra Pro rigide. Le toploader bloque la torsion physique de la carte : impossible de la plier accidentellement en la manipulant. Le 35 points (35pt) est le format standard, prévu pour une carte de taille classique jusqu'à 35 points d'épaisseur. Une carte en double sleeve est plus épaisse et plus large qu'une carte en penny sleeve : si elle n'entre pas sans forcer, prends l'épaisseur au-dessus. Dispo chez [**Ultra Pro Toploader 35pt** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+toploader+35pt&tag=rareradar-21).
 4. **Team bag** Ultra Pro. C'est le détail que les nouveaux oublient. Un toploader, c'est ouvert en haut : la poussière entre. La team bag est une pochette refermable qui scelle le toploader. Sans elle, la poussière s'accumule entre la carte sleevée et la paroi intérieure du toploader. Dispo chez [**Team bags Ultra Pro** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+team+bag&tag=rareradar-21).
 
 Pour une carte que tu prévois d'envoyer en grading, utilise une Card Saver I (étui semi-rigide, marque Cardboard Gold) à la place du toploader rigide pour l'envoi. C'est dispo en [**Card Saver I** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=cardboard+gold+card+saver+1&tag=rareradar-21).
@@ -344,7 +344,7 @@ Trois marques courantes. Elles font toutes le boulot, mais elles ne se valent pa
 
 Pièges fréquents dans les groupes FR de collectionneurs Pokémon, et qui font partie des [erreurs des nouveaux collectionneurs](/2026/top-5-erreurs-nouveaux-collectionneurs-pokemon-2026) :
 
-- **Une penny à la place de la Perfect Fit**. Une penny sleeve a la taille d'une outer standard : la forcer dans une outer la plisse. Pour la double sleeve, la sleeve intérieure est une Perfect Fit, l'outer une sleeve standard.
+- **Une penny à la place de la Perfect Fit**. Une penny sleeve n'est pas ajustée à la carte. Pour la double sleeve, la sleeve intérieure est une Perfect Fit, l'outer une sleeve standard.
 - **Toploader sans team bag**. Le toploader protège des chocs, pas de la poussière. Toujours team bag.
 - **Sleever sans vérifier la carte d'abord**. Sleever une fausse carte, ça reste une fausse carte avec une sleeve dessus. Toujours [vérifier l'authenticité avant d'investir dans une sleeve premium](/2026/verifier-authenticite-carte-pokemon-sans-loupe-uv) sur les achats marketplace.
 

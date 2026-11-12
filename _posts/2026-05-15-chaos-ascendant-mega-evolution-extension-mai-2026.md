@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Chaos Ascendant : extension Pokémon TCG Méga (mai 2026)"
-description: "Chaos Ascendant (Mega Evolution) sort le 22 mai 2026 : 122 cartes, 5 nouveaux Méga ex, produits annoncés et que faire avant la sortie."
+description: "Chaos Ascendant (Méga-Évolution) sort le 22 mai 2026 : 122 cartes, 5 nouveaux Méga ex, produits annoncés et que faire avant la sortie."
 date: 2026-05-15 09:00:00 +0200
 n: 4
 slug: chaos-ascendant-mega-evolution-extension-mai-2026
@@ -27,34 +27,36 @@ _cfds:
     - "https://www.pokemon.com/us/pokemon-news/the-pokemon-tcg-mega-evolution-chaos-rising-expansion-arrives-on-may-22-2026"
     - "https://bulbapedia.bulbagarden.net/wiki/Chaos_Rising_(TCG)"
     - "https://www.pokebeach.com/2026/03/chaos-rising-set-and-product-lineup-revealed-yet-another-small-english-set"
+    - "https://www.pokecardex.com/forums/viewtopic.php?t=49894"
+    - "https://api.tcgdex.net/v2/fr/sets/me04"
 byline_kind: data
 ---
 
-L'ère Méga Évolution continue de se déployer. Le 22 mai 2026, **Mega Evolution — Chaos Ascendant** (titre VO : *Chaos Rising*) débarque dans toutes les boutiques, et c'est la quatrième extension du bloc. Cinq nouveaux Méga Pokémon ex, 122 cartes au total, et une carte d'illustration signature par carte. Voici le résumé factuel — sans hype, sans pull à 5 000 €, juste ce qu'il faut savoir avant d'aller acheter (ou pas).
+Le 22 mai 2026 sort **Méga-Évolution – Chaos Ascendant** (titre anglais : *Chaos Rising*), quatrième extension de la série Méga-Évolution. Cinq nouveaux Méga Pokémon ex, 122 cartes au total. Voici ce qu'il faut savoir avant d'acheter.
 
 <figure class="illustration">
   <img src="{{ '/assets/images/posts/chaos-ascendant/announce.png' | relative_url }}"
-       alt="Illustration officielle annonçant l'extension Pokémon TCG Mega Evolution — Chaos Ascendant"
+       alt="Illustration officielle annonçant l'extension Pokémon TCG Méga-Évolution – Chaos Ascendant"
        loading="lazy" decoding="async"
        style="width:100%; height:auto; border-radius:6px;">
   <figcaption class="illustration__caption">
-    <strong>Mega Evolution — Chaos Ascendant</strong> · visuel d'annonce officiel
+    <strong>Méga-Évolution – Chaos Ascendant</strong> · visuel d'annonce officiel
     <small style="display:block; margin-top:0.3rem; color:var(--ink-soft);">© The Pokémon Company International</small>
   </figcaption>
 </figure>
 
 ## Date de sortie et pré-release
 
-- **Pré-release** : du 9 au 17 mai 2026 (déjà en cours dans les boutiques participantes)
+- **Avant-premières** : à partir du 9 mai 2026 dans les boutiques participantes
 - **Sortie mondiale** : 22 mai 2026
-- **Sortie FR** : alignée sur la sortie mondiale chez les distributeurs habituels (Cardmarket, boutiques spécialisées, grande distribution sous quelques jours)
+- **Sortie FR** : 22 mai 2026 également
 
-Le set est basé sur l'extension japonaise *Ninja Spinner* et s'inscrit dans le bloc thématique *Pokémon Légendes : Z-A*, qui structure toute l'année 2026 côté TCG.
+Le set est basé sur l'extension japonaise *Ninja Spinner* (M4, sortie au Japon le 13 mars 2026) et fait partie de la série Méga-Évolution, dont il porte le code ME04.
 
 ## L'extension en chiffres
 
 <figure class="illustration">
-  <svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mega Evolution Chaos Ascendant en chiffres : 122 cartes au total, 86 standard et 36 secret, 5 Méga Pokémon ex, 5 Pokémon ex, 11 illustration rares, 18 ultra rares, 6 special illustration rares.">
+  <svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Méga-Évolution Chaos Ascendant en chiffres : 122 cartes au total, 86 standard et 36 secret, 5 Méga Pokémon ex, 5 Pokémon ex, 11 illustration rares, 18 ultra rares, 6 special illustration rares.">
     <defs>
       <linearGradient id="ca-bg" x1="0" y1="0" x2="0" y2="1">
         <stop offset="0%"  stop-color="#1c2030"/>
@@ -107,92 +109,92 @@ Le set est basé sur l'extension japonaise *Ninja Spinner* et s'inscrit dans le 
     </g>
   </svg>
   <figcaption class="illustration__caption">
-    <strong>Composition Chaos Ascendant</strong> · 122 cartes au total, dont 36 secrètes — ratio art-rare élevé pour un set de cette taille
+    <strong>Composition Chaos Ascendant</strong> · 122 cartes au total, dont 36 secrètes
   </figcaption>
 </figure>
 
-C'est un set anglais de taille réduite (l'équivalent du *Ninja Spinner* japonais, environ deux tiers d'un set principal classique). Bonne nouvelle pour qui veut compléter : moins de cartes, moins de chasse. Moins bonne pour qui cherche une display "tout le set" — la rareté des six *Special Illustration Rares* va peser sur le secondaire dès le mois suivant la sortie.
+Les 36 cartes secrètes se répartissent en 11 Illustrations rares, 18 Ultra rares, 6 Illustrations spéciales rares et 1 Méga hyper rare. La version japonaise, *Ninja Spinner*, compte 120 cartes.
 
 ## Les Méga Pokémon ex à surveiller
 
-Cinq Méga Évolution font leur entrée. C'est la signature du set, et la principale raison de cracker des boosters.
+Cinq Méga Pokémon ex font leur entrée.
 
 <figure class="illustration">
   <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.75rem; justify-items:center; align-items:start; padding:1rem 0;">
     <div style="text-align:center;">
       <img src="{{ '/assets/images/posts/chaos-ascendant/mega-greninja-ex.png' | relative_url }}"
-           alt="Carte Méga Amphinobi ex de l'extension Chaos Ascendant"
+           alt="Carte Méga-Amphinobi ex de l'extension Chaos Ascendant"
            loading="lazy" decoding="async"
            style="width:100%; max-width:180px; height:auto; border-radius:6px;">
-      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">MÉGA AMPHINOBI ex · #22</p>
+      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">MÉGA-AMPHINOBI ex · #22</p>
     </div>
     <div style="text-align:center;">
       <img src="{{ '/assets/images/posts/chaos-ascendant/mega-pyroar-ex.png' | relative_url }}"
-           alt="Carte Méga Némélios ex de l'extension Chaos Ascendant"
+           alt="Carte Méga-Némélios ex de l'extension Chaos Ascendant"
            loading="lazy" decoding="async"
            style="width:100%; max-width:180px; height:auto; border-radius:6px;">
-      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">MÉGA NÉMÉLIOS ex · #15</p>
+      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">MÉGA-NÉMÉLIOS ex · #15</p>
     </div>
     <div style="text-align:center;">
       <img src="{{ '/assets/images/posts/chaos-ascendant/mega-floette-ex.png' | relative_url }}"
-           alt="Carte Méga Floette ex de l'extension Chaos Ascendant"
+           alt="Carte Méga-Floette ex de l'extension Chaos Ascendant"
            loading="lazy" decoding="async"
            style="width:100%; max-width:180px; height:auto; border-radius:6px;">
-      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">MÉGA FLOETTE ex · #35</p>
+      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">MÉGA-FLOETTE ex · #35</p>
     </div>
     <div style="text-align:center;">
       <img src="{{ '/assets/images/posts/chaos-ascendant/mega-dragalge-ex.png' | relative_url }}"
-           alt="Carte Méga Kravarech ex de l'extension Chaos Ascendant"
+           alt="Carte Méga-Kravarech ex de l'extension Chaos Ascendant"
            loading="lazy" decoding="async"
            style="width:100%; max-width:180px; height:auto; border-radius:6px;">
-      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">MÉGA KINGDRALGUE ex · #65</p>
+      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">MÉGA-KRAVARECH ex · #65</p>
     </div>
   </div>
   <figcaption class="illustration__caption">
-    <strong>4 des 5 Méga Pokémon ex du set</strong> · le cinquième, Méga Gallame ex (#48), complète la liste
+    <strong>4 des 5 Méga Pokémon ex du set</strong> · le cinquième, Méga-Gallame ex (#48), complète la liste
     <small style="display:block; margin-top:0.3rem; color:var(--ink-soft);">Visuels © The Pokémon Company International</small>
   </figcaption>
 </figure>
 
-**Méga Amphinobi ex** (Greninja en VO) ouvre clairement le bal côté hype — Amphinobi reste l'un des starters Kalos les plus demandés sur Cardmarket depuis 2023, et chaque réimpression en version Méga crée un événement. Les illustrations alternatives (cartes 100, 116, 122) sont déjà annoncées comme les chase cards les plus convoitées du set.
+**Méga-Amphinobi ex** (*Mega Greninja ex* en anglais) est la carte la plus déclinée du set : en plus de la n°22, elle existe en Ultra rare (n°100), en Illustration spéciale rare (n°116) et en Méga hyper rare (n°122, dernière carte du set).
 
-**Méga Floette ex** est la surprise éditoriale : Floette n'a jamais eu de Méga Évolution officielle en jeu vidéo, c'est une exclusivité TCG. Ce détail à lui seul rendra les versions Special Illustration intéressantes sur le marché secondaire.
+**Méga-Floette ex** (n°35) existe aussi en Ultra rare (n°101) et en Illustration spéciale rare (n°117).
 
-**Méga Némélios ex**, **Méga Kravarech ex** et **Méga Gallame ex** complètent la sélection, moins iconiques que les têtes d'affiche.
+**Méga-Némélios ex**, **Méga-Kravarech ex** et **Méga-Gallame ex** complètent la sélection.
 
-Côté Pokémon ex réguliers (sans Méga) : Dardargnan, Banshitrouye, Crocorible, Cobaltium, Pashmilla. Pas de star, mais Dardargnan ex et Pashmilla ex sont les deux qui pourraient s'imposer compétitivement.
+Côté Pokémon ex sans Méga : Dardargnan, Banshitrouye, Crocorible, Cobaltium, Pashmilla.
 
 ## Produits annoncés (calendrier de sortie)
 
-| Produit | Sortie | Format | Repère prix FR |
+| Produit | Sortie | Contenu | Prix conseillé FR |
 |---|---|---|---|
-| **Build & Battle Box** | **9 → 17 mai 2026** (pré-release uniquement) | 4 boosters + deck 40 cartes pré-construit + 1 promo foil (parmi 4) | ~25 € |
-| Booster individuel | 22 mai 2026 | 10 cartes, ≥1 rare garantie | 5,95–6,99 € |
-| Booster Bundle | 22 mai 2026 | 6 boosters scellés | ~30 € |
-| Elite Trainer Box (ETB) | 22 mai 2026 | 9 boosters + 1 promo Feunnec full-art + 65 sleeves + 40 énergies + dés de dégâts | 55–65 € |
-| Collector's Tin | 22 mai 2026 | 4 boosters + 1 carte promo | ~25 € |
-| Pokémon Center ETB (version exclu) | 22 mai 2026 | 11 boosters (+2 vs standard) + 2 promos Feunnec dont 1 sigle Pokémon Center | non-distribué hors US |
+| **Boîtier Stratégies et Combats** (kit d'avant-première) | à partir du 9 mai 2026 | 4 boosters + deck de 40 cartes + 1 carte promo (parmi 4) | 30,00 € (participation à l'avant-première) |
+| Booster | 22 mai 2026 | 4 illustrations différentes | 5,99 € |
+| Display (36 boosters) | 22 mai 2026 | 36 boosters | 215,64 € |
+| Tripack | 22 mai 2026 | 3 boosters + 1 carte promo Reptinciel | 17,99 € |
+| Lot de boosters (Bundle) | 22 mai 2026 | 6 boosters | 35,99 € |
+| Coffret Dresseur d'Élite (ETB) | 22 mai 2026 | 9 boosters + 1 carte promo Feunnec + 65 sleeves + 40 cartes Énergie + dés | 55,99 € |
 
-La **Build & Battle Box est l'unique produit accessible avant la sortie générale** : disponible chez les boutiques participantes pendant la fenêtre pré-release (9-17 mai), puis plus largement à partir du 22 mai. Le reste de la gamme arrive en bloc le 22 mai 2026. Les prix FR boutique spécialisée vont s'aligner sur ces fourchettes dans les premières semaines. Comme à chaque sortie, attendre 4 à 6 semaines stabilise généralement le prix display de 5 à 15 % à la baisse — sauf rupture distributeur.
+Le kit d'avant-première est le seul produit accessible avant le 22 mai. Les prix ci-dessus sont les prix conseillés relevés dans le [calendrier des sorties de Pokécardex](https://www.pokecardex.com/forums/viewtopic.php?t=49894) ; les prix en boutique peuvent s'en écarter.
 
 [**Voir les boosters Pokémon TCG sur Amazon** (lien partenaire)](https://www.amazon.fr/s?k=pokemon+chaos+ascendant+ETB+display&tag=rareradar-21&ascsubtag=rr-chaos)
 
 ## En attendant la sortie
 
-Sept jours, c'est court. Mais si vous voulez rester actif côté collection sans cracker pour rien, voici les séries actuellement disponibles qui valent le coup d'œil — toutes vérifiées contre les sets fantômes et les contrefaçons.
+En attendant le 22 mai, voici les séries déjà disponibles.
 
 **Les derniers sets Écarlate & Violet**
-Les dernières extensions du bloc E&V — notamment *Étincelles Déferlantes*, *Couronne Zénith*, *Black Bolt* et *White Flare* (les deux derniers à clôturer le bloc) — restent largement disponibles en boosters, ETB et displays. Bon ratio cartes intéressantes / prix, et idéal pour découvrir la mécanique Téracristal (qui disparaît avec l'arrivée de Méga). À privilégier pour qui débute une collection moderne.
+Parmi les extensions de la série Écarlate et Violet : *Étincelles Déferlantes*, *Foudre Noire* et *Flamme Blanche*.
 
 [**Boosters Écarlate & Violet** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=pokemon+ecarlate+violet+display+booster&tag=rareradar-21&ascsubtag=rr-chaos)
 
 **Les premiers sets de la série Méga (avant Chaos Ascendant)**
-La série Méga compte déjà trois extensions principales en 2026 avant l'arrivée de *Chaos Ascendant* (ME04) : **Méga Évolution** (ME01, set d'ouverture), **Phantasmal Flames** (ME02), et **Perfect Order** (ME03) — plus un set spécial intermédiaire **Ascended Heroes** (ME2.5). Les noms FR officiels suivent au fur et à mesure des sorties France. Si vous suivez la mécanique Méga depuis le début de l'année, ces trois sets sont la base à compléter avant Chaos Ascendant : c'est là qu'on trouve les premiers Méga Pokémon ex qui tournent déjà en méta compétitive.
+La série compte trois extensions principales avant *Chaos Ascendant* (ME04) : **Méga-Évolution** (ME01), **Flammes Fantasmagoriques** (ME02) et **Équilibre Parfait** (ME03), plus l'extension spéciale **Héros Transcendants** (ME02.5).
 
-[**Boosters Mega Evolution** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=pokemon+evolution+mega+display+booster+fr&tag=rareradar-21&ascsubtag=rr-chaos)
+[**Boosters Méga-Évolution** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=pokemon+evolution+mega+display+booster+fr&tag=rareradar-21&ascsubtag=rr-chaos)
 
 **Accessoires de conservation**
-Si vous prévoyez de pull du Special Illustration Rare le 22 mai, le combo *penny sleeve + outer Ultra Pro + classeur ou toploader* reste la base. C'est l'investissement qui rend tout le reste durable.
+Pour protéger les cartes dès l'ouverture : penny sleeves, puis classeur ou top-loader.
 
 [**Sleeves Ultra Pro + protections** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+penny+sleeves+standard+100&tag=rareradar-21&ascsubtag=rr-chaos)
 
@@ -200,20 +202,12 @@ Si vous prévoyez de pull du Special Illustration Rare le 22 mai, le combo *penn
 
 **Q : Quel est le nom français officiel de l'extension ?**
 
-R : *Mega Evolution — Chaos Ascendant*. La VO anglaise est *Chaos Rising*. Le nom japonais source est *Ninja Spinner*.
-
-**Q : Combien de cartes par booster ?**
-
-R : 10 cartes par booster anglais, avec garantie d'au moins une rare. Les boosters Chaos Ascendant respectent ce standard. Les ratios pulls exacts (Méga ex, Illustration Rare, Special Illustration Rare) n'ont pas encore été stabilisés par les premiers retours pré-release au moment de la rédaction.
+R : *Méga-Évolution – Chaos Ascendant* (ME04). Le titre anglais est *Chaos Rising*, le set japonais d'origine *Ninja Spinner*.
 
 **Q : Vaut-il mieux acheter une display ou des boosters individuels ?**
 
-R : Pour ce set, la display (36 boosters) est rentable si vous voulez compléter les Méga ex de base. Pour les six *Special Illustration Rares*, statistiquement il faudrait ouvrir 4 à 6 displays pour avoir une chance solide d'en pull une — l'achat à l'unité sur Cardmarket reste généralement moins cher si vous chassez une carte précise.
-
-**Q : Est-ce qu'il y a une Elite Trainer Box "spéciale" ?**
-
-R : Pas annoncée à date. Une ETB Premium / ETB collectionneur arrive parfois 4 à 8 semaines après la sortie standard sur les blocs Méga — à surveiller pour fin juin 2026.
+R : Au prix conseillé, une display de 36 boosters coûte exactement 36 boosters à l'unité (215,64 €) : elle n'a d'intérêt que si vous comptez ouvrir ce volume. Pour une carte précise, l'achat à l'unité évite de dépendre du hasard des boosters.
 
 ---
 
-*Article mis à jour à mesure des spoilers officiels. Les illustrations utilisées sont des visuels promotionnels publiés par The Pokémon Company International. Sources : Pokemon.com, Bulbapedia, PokéBeach.*
+*Article mis à jour à mesure des spoilers officiels. Les illustrations utilisées sont des visuels promotionnels publiés par The Pokémon Company International. Sources : Pokemon.com, Bulbapedia, PokéBeach, Pokécardex, TCGdex.*

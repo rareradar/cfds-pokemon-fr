@@ -27,7 +27,7 @@ Trop de collectionneurs FR commandent une display japonaise à petit prix sur un
 
 ## Pourquoi acheter en Asie en 2026
 
-Deux raisons concrètes. **Les exclusivités** d'abord : les starters Paldea (Poussacha, Coiffeton, Chochodile) sont sortis en illustration rare notamment dans **SV1a Triplet Beat**, un set japonais (sorti au Japon en mars 2023, aussi édité en coréen) jamais traduit tel quel en EN ou FR. Côté chinois, Cs3bc (bloc BE) n'a pas d'équivalent occidental. **Le prix** ensuite, à condition de faire le calcul complet avec la TVA et la douane, détaillé plus bas.
+Deux raisons concrètes. **Les sets tels qu'ils sont sortis en Asie** d'abord : **SV1a Triplet Beat**, set japonais sorti le 10 mars 2023 et aussi édité en coréen, contient les illustrations rares des starters de Paldea (Poussacha, Chochodile, Coiffeton). Ce set n'existe pas tel quel en français : ses cartes ont été intégrées à *Évolutions à Paldea* (juin 2023), où ces trois illustrations rares existent donc aussi en français. L'import vaut pour la langue et le format du set d'origine, pas pour des cartes introuvables ailleurs. **Le prix** ensuite, à condition de faire le calcul complet avec la TVA et la douane, détaillé plus bas.
 
 <figure class="illustration">
   <svg viewBox="0 0 600 352" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma de trois boosters scellés génériques, japonais, coréen et chinois. Japon : un booster d'extension principale contient 5 cartes, une display 30 boosters. Corée : display de 30 boosters, set SV1a Triplet Beat édité en coréen. Chine : booster officiel sous scellé d'origine, par exemple le Set 151C.">
@@ -117,15 +117,15 @@ Pour transporter vos imports en sécurité dès réception, prévoyez des sleeve
 
 ## Corée : montée en gamme et exclu hardcore
 
-La Corée du Sud est une niche à part. Le set phare estampillé KR, **SV1a Triplet Beat** (starters Paldea en illustration rare, set japonais d'origine aussi édité en coréen), n'a jamais été traduit en EN ni en FR. Pour un collectionneur qui veut ces starters Paldea en illustration rare sans passer par le japonais, le coréen est une porte d'entrée. Les displays coréens contiennent **30 boosters** (pas 36 comme les US/EU).
+La Corée du Sud est une niche à part. Exemple de set édité en coréen : **SV1a Triplet Beat** (starters de Paldea en illustration rare), repris du set japonais du même nom. Les displays coréennes contiennent **30 boosters** (pas 36 comme les US/EU).
 
 Le marché KR est plus tendu côté offre, avec moins de revendeurs. Là encore, codes-barres et scellés figurent sur les emballages (boosters, displays), pas au dos des cartes : c'est l'intégrité du scellé d'origine qu'il faut inspecter, pas un marquage sur la carte.
 
-Privilégiez SV1a en KR pour l'illustration rare des starters Paldea. Avant de commander en Asie, regardez aussi les boutiques spécialisées dans les éditions coréennes, comme [Poké Korean](https://poke-korean.fr/?utm_source=rareradar&utm_medium=article&utm_campaign=affil). Pour des reveals propres après ouverture, [vérifier l'authenticité d'une carte importée](/2026/verifier-authenticite-carte-pokemon-sans-loupe-uv) reste l'étape obligatoire avant tout grading.
+Avant de commander en Asie, regardez aussi les boutiques spécialisées dans les éditions coréennes, comme [Poké Korean](https://poke-korean.fr/?utm_source=rareradar&utm_medium=article&utm_campaign=affil). Pour des reveals propres après ouverture, [vérifier l'authenticité d'une carte importée](/2026/verifier-authenticite-carte-pokemon-sans-loupe-uv) reste l'étape obligatoire avant tout grading.
 
 ## Chine : prix bas mais vigilance
 
-La Chine, c'est le cas le plus délicat. Il y a deux marchés totalement distincts. D'un côté, les **boosters officiels CN** : le **Set 151C** (déclinaison chinoise du SV2a Set 151 sorti en JP en 2023) est un produit officiel, sous licence The Pokémon Company. Méfiance si le prix est anormalement bas. Vous pouvez aussi le trouver dans certaines [peluches mystères chinoises avec booster 151C](/2026/peluches-pokemon-mystere-chinoises-guide-collection).
+La Chine, c'est le cas le plus délicat. Il y a deux marchés totalement distincts. D'un côté, les **boosters officiels CN** : le **Set 151C** (déclinaison chinoise du SV2a Set 151 sorti en JP en 2023) est un produit officiel, sous licence The Pokémon Company. Méfiance si le prix est anormalement bas.
 
 De l'autre côté, le terrain miné : **AliExpress et Temu sont saturés de cartes "proxy" / "custom" / "fan art"**, c'est-à-dire des reprints non officiels. Visuellement c'est bluffant, à prix dérisoire, mais c'est juridiquement de la contrefaçon. La règle simple : un vendeur chinois qui ne montre pas de boîte scellée d'origine, c'est rouge.
 
@@ -133,14 +133,14 @@ Pour stocker proprement displays CN et JP côte à côte sans déformer le carto
 
 ## Calcul du vrai prix : TVA + douane + envoi
 
-L'arithmétique est simple si on l'applique. La TVA de 20 % est due sur tout achat expédié depuis l'extérieur de l'UE. Le seuil à retenir, c'est **150 € par colis** : en dessous, l'UE applique depuis le 1er juillet 2026 un droit forfaitaire de **3 € par catégorie d'article** (règlement (UE) 2026/382) ; au-dessus, ce sont les droits de douane classiques, au taux du code TARIC du produit. Depuis le 1er novembre 2026, des **frais de traitement de 2 € par catégorie d'article** s'ajoutent en plus sur les petits colis venus hors de l'UE ([economie.gouv.fr](https://www.economie.gouv.fr/particuliers/mes-droits-conso/bien-consommer/taxes-sur-les-petits-colis-comment-ca-marche)). Le transporteur peut ajouter ses propres frais de dédouanement.
+L'arithmétique est simple si on l'applique. La TVA de 20 % est due sur tout achat expédié depuis l'extérieur de l'UE. Le seuil à retenir, c'est **150 € par colis** : en dessous, l'UE applique depuis le 1er juillet 2026 un droit forfaitaire de **3 € par catégorie d'article** (règlement (UE) 2026/382) ; au-dessus, ce sont les droits de douane classiques, au taux du code TARIC du produit. Depuis le 1er novembre 2026, des **frais de traitement de 2 € par catégorie d'article** s'ajoutent sur les ventes à distance venues hors de l'UE, sans seuil de valeur : ils se cumulent avec le forfait de 3 € sous 150 € et s'appliquent aussi au-dessus ([douane.gouv.fr](https://www.douane.gouv.fr/petits-colis-ce-qui-change-pour-vos-achats-en-ligne)). Le transporteur peut ajouter ses propres frais de dédouanement.
 
-Le calcul complet se fait donc ainsi : prix hors taxes + TVA 20 % + droit forfaitaire ou droits de douane + frais de traitement de 2 € par catégorie d'article pour un petit colis + frais du transporteur. C'est ce total qu'il faut comparer au prix d'une display achetée en France.
+Le calcul complet se fait donc ainsi : prix hors taxes + TVA 20 % + droit forfaitaire ou droits de douane + frais de traitement de 2 € par catégorie d'article + frais du transporteur. C'est ce total qu'il faut comparer au prix d'une display achetée en France.
 
 La TVA peut être prélevée à la commande si le vendeur asiatique est enregistré **IOSS** (régime guichet unique UE pour colis <150€). Sinon, elle est perçue à la livraison + frais. Toujours demander au vendeur "IOSS registered ?" avant de payer.
 
 <figure class="illustration">
-  <svg viewBox="0 0 600 345" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ce qui s'ajoute au prix d'un colis venu d'Asie. Colis de 150 euros ou moins : prix hors taxes, TVA de 20 % (payée à la commande si le vendeur est enregistré IOSS), droit forfaitaire de 3 euros par catégorie d'article depuis le 1er juillet 2026, frais de traitement de 2 euros par catégorie d'article depuis le 1er novembre 2026, frais de dédouanement du transporteur. Colis de plus de 150 euros : prix hors taxes, TVA de 20 %, droits de douane selon le code TARIC, frais de dédouanement du transporteur.">
+  <svg viewBox="0 0 600 345" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ce qui s'ajoute au prix d'un colis venu d'Asie. Colis de 150 euros ou moins : prix hors taxes, TVA de 20 % (payée à la commande si le vendeur est enregistré IOSS), droit forfaitaire de 3 euros par catégorie d'article depuis le 1er juillet 2026, frais de traitement de 2 euros par catégorie d'article depuis le 1er novembre 2026, frais de dédouanement du transporteur. Colis de plus de 150 euros : prix hors taxes, TVA de 20 %, droits de douane selon le code TARIC, frais de traitement de 2 euros par catégorie d'article, frais de dédouanement du transporteur.">
     <defs>
       <linearGradient id="asie2-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#161a26"/><stop offset="1" stop-color="#0d1018"/></linearGradient>
       <linearGradient id="asie2-front" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b98a55"/><stop offset="1" stop-color="#8a6236"/></linearGradient>
@@ -244,15 +244,20 @@ La TVA peut être prélevée à la commande si le vendeur asiatique est enregist
         <text x="10" y="191" font-size="12" font-weight="700" fill="#0d1018">Droits de douane</text>
         <text x="10" y="204" font-family="'JetBrains Mono',monospace" font-size="9" fill="#2a1408">selon code TARIC</text>
         <text x="66" y="217" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10" fill="#9b9789">+</text>
-        <rect x="0" y="220" width="132" height="34" rx="4" fill="#2c3144"/>
-        <rect x="0" y="220" width="132" height="34" rx="4" fill="url(#asie2-hatch)" opacity=".5"/>
+        <rect x="0" y="220" width="132" height="34" rx="4" fill="url(#asie2-bar)"/>
         <rect x="0" y="220" width="132" height="10" rx="4" fill="#fff" fill-opacity=".06"/>
-        <text x="10" y="235" font-size="12" font-weight="700" fill="#f2eee2">Frais transporteur</text>
-        <text x="10" y="248" font-family="'JetBrains Mono',monospace" font-size="9" fill="#c8c0ad">dédouanement</text>
+        <text x="10" y="235" font-size="12" font-weight="700" fill="#0d1018">Traitement 2 €</text>
+        <text x="10" y="248" font-family="'JetBrains Mono',monospace" font-size="9" fill="#2a1408">par type d'article</text>
+        <text x="66" y="261" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10" fill="#9b9789">+</text>
+        <rect x="0" y="264" width="132" height="34" rx="4" fill="#2c3144"/>
+        <rect x="0" y="264" width="132" height="34" rx="4" fill="url(#asie2-hatch)" opacity=".5"/>
+        <rect x="0" y="264" width="132" height="10" rx="4" fill="#fff" fill-opacity=".06"/>
+        <text x="10" y="279" font-size="12" font-weight="700" fill="#f2eee2">Frais transporteur</text>
+        <text x="10" y="292" font-family="'JetBrains Mono',monospace" font-size="9" fill="#c8c0ad">dédouanement</text>
       </g>
     </g>
     <text x="300" y="322" text-anchor="middle" font-family="'Space Grotesk','Helvetica Neue',sans-serif" font-size="11" fill="#9b9789">Forfait 3 € : depuis le 1er juillet 2026 (règlement (UE) 2026/382).</text>
-    <text x="300" y="337" text-anchor="middle" font-family="'Space Grotesk','Helvetica Neue',sans-serif" font-size="11" fill="#9b9789">Frais de traitement 2 € : depuis le 1er novembre 2026.</text>
+    <text x="300" y="337" text-anchor="middle" font-family="'Space Grotesk','Helvetica Neue',sans-serif" font-size="11" fill="#9b9789">Frais de traitement 2 € : depuis le 1er novembre 2026, sans seuil de valeur.</text>
   </svg>
   <figcaption class="illustration__caption">Ce qui s'ajoute au prix affiché, selon que le colis vaut plus ou moins de 150 €.</figcaption>
 </figure>
@@ -270,7 +275,7 @@ C'est le cœur du sujet et trop d'acheteurs FR l'ignorent.
 
 ## Comment vérifier un vendeur sérieux
 
-Quatre signaux à recouper avant de payer. **Premièrement**, le vendeur doit avoir un historique d'avis fourni et une bonne note sur sa plateforme principale (Yahoo Auctions JP, Coupang KR, Taobao CN, ou eBay International). **Deuxièmement**, exigez des **photos clients récentes** des displays scellés, idéalement avec le code-barres de l'emballage lisible (le marquage figure sur la boîte/le booster, pas au dos des cartes). **Troisièmement**, le vendeur sérieux affiche un **retour gratuit ou partiel** en cas de litige scellé endommagé. **Quatrièmement**, le **packaging tracé** (DHL, EMS, Japan Post EMS) avec numéro de suivi obligatoire. Sans suivi, vous n'avez aucune preuve en cas de perte.
+Quatre signaux à recouper avant de payer. **Premièrement**, le vendeur doit avoir un historique d'avis fourni et une bonne note sur sa plateforme principale (Yahoo Auctions JP, Coupang KR, Taobao CN, ou eBay International). **Deuxièmement**, exigez des **photos clients récentes** des displays scellées, idéalement avec le code-barres de l'emballage lisible (le marquage figure sur la boîte/le booster, pas au dos des cartes). **Troisièmement**, le vendeur sérieux affiche un **retour gratuit ou partiel** en cas de litige scellé endommagé. **Quatrièmement**, le **packaging tracé** (DHL, EMS, Japan Post EMS) avec numéro de suivi obligatoire. Sans suivi, vous n'avez aucune preuve en cas de perte.
 
 Bonus pour les imports japonais : Buyee vous évite de traiter directement avec un vendeur particulier. Et si la carte importée vous semble exceptionnelle, grader une carte JP ou KR en France reste l'étape qui sécurise la valeur long terme.
 
@@ -291,4 +296,4 @@ Pour les lots de boosters coréens groupés, [eBay (lien partenaire)](https://ww
 
 ## Conclusion
 
-L'import d'Asie se justifie d'abord pour les exclusivités, comme les illustrations rares des starters Paldea de **SV1a Triplet Beat** en coréen. Pour le prix, faites toujours le calcul complet : TVA 20 %, forfait de 3 € ou droits de douane selon le seuil de 150 €, frais de traitement de 2 € par catégorie d'article sur les petits colis, frais du transporteur. Sur le CN, restez sur des produits officiels scellés (Set 151C, Cs3bc) et évitez le "proxy". Vérifiez l'IOSS du vendeur avant de payer : le reste, c'est du tri de vendeurs et de la patience douane.
+L'import d'Asie se justifie d'abord pour les sets dans leur édition d'origine, comme **SV1a Triplet Beat** en japonais ou en coréen. Pour le prix, faites toujours le calcul complet : TVA 20 %, forfait de 3 € ou droits de douane selon le seuil de 150 €, frais de traitement de 2 € par catégorie d'article, frais du transporteur. Sur le CN, restez sur des produits officiels scellés (Set 151C, Cs3bc) et évitez le "proxy". Vérifiez l'IOSS du vendeur avant de payer : le reste, c'est du tri de vendeurs et de la patience douane.

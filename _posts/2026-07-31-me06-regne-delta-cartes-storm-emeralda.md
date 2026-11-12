@@ -28,19 +28,21 @@ _cfds:
     - "https://www.serebii.net/card/stormemeralda/"
     - "https://bulbapedia.bulbagarden.net/wiki/Storm_Emeralda_(TCG)"
     - "https://www.pokepedia.fr/Méga-Évolution_Règne_Delta"
+    - "https://www.pokecardex.com/series/DLR"
+    - "https://www.pokecardex.com/forums/viewtopic.php?t=50298"
 byline_kind: data
 ---
 
 **M6 ストームエメラルダ** (*Storm Emeralda*) est sorti au Japon le 31 juillet 2026. Sa version internationale, **ME06 « Règne Delta »**, est sortie en France le **6 novembre 2026**.
 
-Trois mois d'écart entre les deux. Voici les cartes de la version japonaise en images.
+Un peu plus de trois mois d'écart entre les deux. Voici les cartes de la version japonaise en images.
 
 ## ME6, ME06, M6, Storm Emeralda : on parle bien du même set
 
 Les appellations se croisent, autant les poser une bonne fois.
 
 - **M6 / Storm Emeralda** (ストームエメラルダ) : la version **japonaise**, sortie le 31 juillet 2026. C'est elle que montrent toutes les images de cet article.
-- **ME06 / Règne Delta** : la version **française et internationale**, sortie le 6 novembre 2026. « ME » pour le bloc Méga Évolution, « 06 » pour la sixième extension.
+- **ME06 / Règne Delta** : la version **française et internationale**, sortie le 6 novembre 2026. « ME » pour le bloc Méga-Évolution, « 06 » pour la sixième extension.
 - **ME6** : simple raccourci de ME06, qu'on croise beaucoup en ligne. Même set.
 
 La graphie japonaise officielle est **Storm Emeralda**.
@@ -160,25 +162,25 @@ La curiosité du set. Trois cartes Stade se présentent **en deux moitiés qui s
            alt="Carte Stade en deux parties du set Storm Emeralda, fosse marine"
            loading="lazy" decoding="async"
            style="width:100%; height:auto; border-radius:6px;">
-      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">伝説の海溝</p>
+      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">伝説の海溝 · FOSSE LÉGENDAIRE</p>
     </div>
     <div style="text-align:center;">
       <img src="{{ '/assets/images/posts/me06-regne-delta/stade-legendary-summit.webp' | relative_url }}"
            alt="Carte Stade en deux parties du set Storm Emeralda, sommet montagneux"
            loading="lazy" decoding="async"
            style="width:100%; height:auto; border-radius:6px;">
-      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">伝説の山頂</p>
+      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">伝説の山頂 · SOMMET LÉGENDAIRE</p>
     </div>
     <div style="text-align:center;">
       <img src="{{ '/assets/images/posts/me06-regne-delta/stade-legendary-lava.webp' | relative_url }}"
            alt="Carte Stade en deux parties du set Storm Emeralda, grotte de lave"
            loading="lazy" decoding="async"
            style="width:100%; height:auto; border-radius:6px;">
-      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">伝説の溶岩洞</p>
+      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">伝説の溶岩洞 · PYROCONDUIT LÉGENDAIRE</p>
     </div>
   </div>
   <figcaption>
-    Les trois Stades scindés, version japonaise. © The Pokémon Company / Creatures / Nintendo
+    Les trois Stades scindés, version japonaise. En français : Fosse Légendaire, Sommet Légendaire et Pyroconduit Légendaire. © The Pokémon Company / Creatures / Nintendo
   </figcaption>
 </figure>
 
@@ -416,9 +418,9 @@ Les Dresseurs et les Énergies spéciales ont droit eux aussi à leurs versions 
 
 ## Et pour la France ?
 
-**ME06 Règne Delta** est sorti le **6 novembre 2026**. La liste française compte 141 cartes : 103 cartes principales et 38 cartes secrètes.
+**ME06 Règne Delta** est sorti le **6 novembre 2026**. La liste française compte 141 cartes : 103 cartes principales et 38 cartes secrètes ([Pokécardex](https://www.pokecardex.com/series/DLR)).
 
-Un set international ne reprend pas forcément son homologue japonais à l'identique : **ME01 avait fusionné deux sets japonais**. Les cartes ci-dessus sont donc celles de *Storm Emeralda* : la numérotation et la composition de *Règne Delta* peuvent différer.
+Les deux listes ne se recouvrent pas carte pour carte : les cartes japonaises montrées ici sont numérotées sur 076, les françaises sur 103. Les cartes ci-dessus sont donc celles de *Storm Emeralda* : la numérotation et la composition de *Règne Delta* diffèrent.
 
 Un set antérieur du bloc, [Chaos Ascendant (ME04)]({% post_url 2026-05-15-chaos-ascendant-mega-evolution-extension-mai-2026 %}), donne une bonne idée de ce à quoi ressemble une extension Méga Évolution une fois traduite.
 
@@ -430,13 +432,13 @@ Un set antérieur du bloc, [Chaos Ascendant (ME04)]({% post_url 2026-05-15-chaos
 R : Il est sorti le 6 novembre 2026. La version japonaise, Storm Emeralda, est sortie le 31 juillet 2026.
 
 **Q : Storm Emeralda et Règne Delta, est-ce le même set ?**
-R : Ce sont les versions japonaise et internationale d'une même vague. La version française compte 141 cartes, et un set international peut différer de son équivalent japonais.
+R : Ce sont les versions japonaise et internationale d'une même vague, annoncées en même temps. La version française compte 141 cartes et sa numérotation n'est pas celle du set japonais.
 
 **Q : Quelle est la carte vedette ?**
 R : Méga-Rayquaza ex, autour de laquelle le set est construit. Elle apparaît en plusieurs versions, dont une version dorée numérotée 113 dans la version japonaise.
 
 **Q : Ce set appartient-il au même bloc que Chaos Ascendant ?**
-R : Oui, tous deux font partie du bloc Méga Évolution. Chaos Ascendant est le ME04, sorti en France le 22 mai 2026.
+R : Oui, tous deux font partie du bloc Méga-Évolution. Chaos Ascendant est le ME04, sorti en France le 22 mai 2026.
 
 ---
 

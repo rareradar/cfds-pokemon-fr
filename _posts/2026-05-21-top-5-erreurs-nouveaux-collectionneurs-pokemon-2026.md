@@ -21,17 +21,17 @@ _cfds:
   amazon_tag: rareradar-21
   review_status: "ready_for_promote"
   images_generated_at: "2026-05-21"
-  last_pass: "2026-07-21 audit veracite prix FR 2026 : booster 5,95 EUR plancher, display 220-240 EUR, Set 151 remplace par Evolutions Celestes (non-FR), grading 30-65 EUR, purge pourcentages non sources, 2 SVG refaits"
+  last_pass: "2026-07-21 audit veracite prix FR 2026 : booster 5,99 EUR prix conseille (Pokecardex, releve 2026-11-12), display 220-240 EUR, Set 151 remplace par Evolutions Celestes (non-FR), grading 30-65 EUR, purge pourcentages non sources, 2 SVG refaits"
 ---
 
 L'ère **Méga** a relancé une vague d'entrants dans le TCG Pokémon. Voici cinq erreurs de débutant : sur 24 mois, elles peuvent coûter **plusieurs centaines d'euros** sans qu'on s'en rende compte. Ce guide les chiffre une par une et donne l'action correctrice à appliquer dès le premier mois de collection.
 
 ## Erreur n°1 : Acheter en boosters individuels plutôt qu'en display
 
-Le réflexe le plus fréquent : trois boosters chez le buraliste, rebelote la semaine d'après. Un booster à l'unité démarre à **5,95 € au tabac** (prix de sortie) et grimpe à **6,90–7,50 € chez un revendeur spécialisé ou en blister**. Une display, c'est 36 boosters : son prix plancher est donc mécaniquement **36 × 5,95 ≈ 215 €**, et **220–240 €** pour un set ère Méga récent en boutique. Le vrai calcul : acheter tes 36 boosters à l'unité **en blister ou chez un revendeur** revient à **250–270 €**, contre **~220 €** en display, soit **30 à 50 € de trop**. Au tabac (5,95 €), en revanche, l'unité coûte à peu près le prix de la display : le piège n'est alors plus l'écart de prix, c'est l'**achat compulsif** trois par trois qui vide le porte-monnaie sans jamais construire de **patrimoine scellé** (voir erreur n°3).
+Le réflexe le plus fréquent : trois boosters chez le buraliste, rebelote la semaine d'après. Un booster à l'unité est à **5,99 € au prix conseillé** et grimpe à **6,90–7,50 € chez un revendeur spécialisé ou en blister**. Une display, c'est 36 boosters : son prix conseillé est donc **36 × 5,99 = 215,64 €, soit environ 216 €** ([calendrier Pokécardex](https://www.pokecardex.com/forums/viewtopic.php?t=49894)), et **220–240 €** pour un set ère Méga récent en boutique. Le vrai calcul : acheter tes 36 boosters à l'unité **en blister ou chez un revendeur** revient à **250–270 €**, contre **~220 €** en display, soit **30 à 50 € de trop**. Au prix conseillé (5,99 €), en revanche, l'unité coûte à peu près le prix de la display : le piège n'est alors plus l'écart de prix, c'est l'**achat compulsif** trois par trois qui vide le porte-monnaie sans jamais construire de **patrimoine scellé** (voir erreur n°3).
 
 <figure class="illustration">
-<svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Coût de 36 boosters d'un même set. À gauche, 36 boosters achetés un par un chez un revendeur ou en blister, 36 fois 7,50 euros, environ 270 euros. À droite, une display de 36 boosters, environ 220 euros. La display revient environ 50 euros moins cher. Au tabac, à 5,95 euros le booster, l'unité coûte à peu près le prix de la display, environ 215 euros.">
+<svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Coût de 36 boosters d'un même set. À gauche, 36 boosters achetés un par un chez un revendeur ou en blister, 36 fois 7,50 euros, environ 270 euros. À droite, une display de 36 boosters, environ 220 euros. La display revient environ 50 euros moins cher. Au prix conseillé, 5,99 euros le booster, l'unité coûte à peu près le prix de la display, environ 216 euros.">
   <defs>
     <linearGradient id="top5b-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#161a26"/><stop offset="1" stop-color="#0d1018"/></linearGradient>
     <linearGradient id="top5b-foil" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b69dff"/><stop offset=".5" stop-color="#6ee7f9"/><stop offset="1" stop-color="#ff6ec7"/></linearGradient>
@@ -87,7 +87,7 @@ Le réflexe le plus fréquent : trois boosters chez le buraliste, rebelote la se
     <path d="M236 150 H248 M352 150 H364" stroke="#9c8454" stroke-dasharray="2 3"/>
   </g>
   <line x1="60" y1="306" x2="540" y2="306" stroke="#2c3144"/>
-  <text x="300" y="326" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-size="12" fill="#9b9789">Au tabac (5,95 €), l'unité ≈ la display (~215 €) : l'écart ne se creuse qu'au-dessus.</text>
+  <text x="300" y="326" text-anchor="middle" font-family="'Space Grotesk',sans-serif" font-size="12" fill="#9b9789">Au prix conseillé (5,99 €), l'unité ≈ la display (~216 €) : l'écart ne se creuse qu'au-dessus.</text>
 </svg>
   <figcaption class="illustration__caption">36 boosters d'un même set : à l'unité chez un revendeur ou en display.</figcaption>
 </figure>
@@ -98,7 +98,7 @@ Le réflexe le plus fréquent : trois boosters chez le buraliste, rebelote la se
 
 ## Erreur n°2 : Stocker à plat sans sleeve ni top-loader
 
-Carte posée sur le bureau "le temps de finir l'ouverture", retrouvée six mois plus tard avec micro-rayures, coin corné, courbure légère. C'est mort pour le grading : une SAR récente qui aurait pu finir **PSA 10 Gem Mint** termine **PSA 9, voire abîmée**. Sur une SAR moderne, ce saut de grade se traduit par un facteur **×1,5 à ×3** sur la cote. Une carte moderne combine plusieurs couches de carton avec un film holo sensible : humidité, lumière directe, manipulation mains nues et pression sont ses ennemis directs.
+Carte posée sur le bureau "le temps de finir l'ouverture", retrouvée six mois plus tard avec micro-rayures, coin corné, courbure légère. C'est mort pour le grading : une SAR récente qui aurait pu finir **PSA 10 Gem Mint** termine **PSA 9, voire abîmée**. Ce grade d'écart pèse directement sur la cote. Une carte moderne combine plusieurs couches de carton avec un film holo sensible : humidité, lumière directe, manipulation mains nues et pression sont ses ennemis directs.
 
 La protection de base coûte **~6,35 €** : 100 penny sleeves Ultra Pro (~2,50 €) + 25 top-loaders 35 pt (~3,85 €). Un petit poste comparé au reste de la collection. Tu protèges toutes tes cartes rares (Ultra rare, Illustration rare, Illustration spéciale rare) **dès la sortie du booster**, top-loader 35 pt pour tout ce que tu juges revendable un jour, et le reste va dans un **Ultra Pro PRO-Binder** à pochettes à chargement latéral (les cartes ne glissent pas par le haut). Pour le détail conservation longue durée et le combo deux-sleeves utilisé sur les hits, voir [pourquoi utiliser deux sleeves](/2026/pourquoi-utiliser-2-sleeves-pokemon-pour-cartes-rare-mega-ex) et [conserver ses cartes long terme](/2026/conserver-cartes-pokemon-long-terme-humidite-lumiere-tempera).
 
@@ -287,13 +287,11 @@ Sur trois ans de hypes éparpillées, un débutant peut engloutir beaucoup d'arg
 
 Le piège classique 2024-2026 : les "mystery boxes" chinoises bon marché promettant une carte holo dans chaque. Le taux de faux n'est pas mesurable : sur ces box bon marché, traite chaque "hit" comme faux par défaut. Pour les **singles**, privilégie des vendeurs établis (Cardmarket, eBay avec un historique solide).
 
-Pour le détail des dérivés chinois et leurs pièges, voir [peluches Pokémon mystère chinoises](/2026/peluches-pokemon-mystere-chinoises-guide-collection).
-
-**Correctif** en trois règles dures : (1) Cardmarket pour les singles, jamais AliExpress sauf produits dérivés (peluches, porte-clés). (2) Pour les displays/boosters scellés : Magic Bazar, Philibert, Carta Magica, Cardmarket sellers vérifiés, grande surface FR. (3) Méfie-toi des prix très en dessous du marché : sur une display, ce n'est pas une affaire, c'est un signal d'alerte (fake ou reconditionné).
+**Correctif** en trois règles dures : (1) Cardmarket pour les singles, jamais AliExpress. (2) Pour les displays/boosters scellés : Magic Bazar, Philibert, Carta Magica, Cardmarket sellers vérifiés, grande surface FR. (3) Méfie-toi des prix très en dessous du marché : sur une display, ce n'est pas une affaire, c'est un signal d'alerte (fake ou reconditionné).
 
 ## Le starter pack du collectionneur sérieux 2026
 
-Deux budgets à séparer : la **protection** (indispensable, ~40 €) et le **patrimoine** (un display scellé, optionnel).
+Deux budgets à séparer : la **protection** (indispensable, ~40 €) et le **patrimoine** (une display scellée, optionnelle).
 
 **Kit protection : l'indispensable, ~40 €**
 
@@ -311,7 +309,7 @@ Deux budgets à séparer : la **protection** (indispensable, ~40 €) et le **pa
 |---|---|---|
 | Display set ère Méga récent (FR) | 1 | 220–240 € |
 
-Avec le kit protection à ~40 € : 360 cartes en binder, 50 hits sleevés + top-loadés. Le display scellé, lui, est un choix "patrimoine" à part : c'est lui qui pèse dans le budget, pas la protection.
+Avec le kit protection à ~40 € : 360 cartes en binder, 50 hits sleevés + top-loadés. La display scellée, elle, est un choix "patrimoine" à part : c'est elle qui pèse dans le budget, pas la protection.
 
 ## FAQ
 

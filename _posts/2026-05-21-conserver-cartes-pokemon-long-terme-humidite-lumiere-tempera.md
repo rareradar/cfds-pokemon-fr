@@ -32,9 +32,9 @@ byline_kind: data
 
 ## Pourquoi la conservation long terme des cartes Pokémon compte vraiment en 2026
 
-Avec l'ère active **Méga** qui domine le marché Pokémon TCG en 2026, les collectionneurs francophones adultes doivent redoubler de vigilance. Les **Illustrations rares**, les **Ultra rares** et les **Illustrations spéciales rares** sont souvent les cartes les plus recherchées d'un set.
+Sur l'ère **Méga**, les **Illustrations rares**, les **Ultra rares** et les **Illustrations spéciales rares** sont souvent les cartes les plus recherchées d'un set.
 
-Une dégradation due à une mauvaise conservation peut coûter un grade, et l'écart de valeur entre PSA 10 et PSA 9 est de ×1,5 à ×3 sur les Illustrations spéciales rares récentes.
+Une dégradation due à une mauvaise conservation peut coûter un grade, et un grade d'écart pèse directement sur la cote d'une Illustration spéciale rare.
 
 Les trois ennemis silencieux sont l'humidité, la lumière (en particulier les UV) et les variations brutales de température. Aucun d'eux ne fait de bruit, mais ils travaillent en continu sur tes cartes posées au mauvais endroit. Le [frosting des cartes Pokémon]({% post_url 2026-05-05-frosting-cartes-pokemon-phenomene-et-solutions %}), ce voile blanc granuleux qui ternit la carte, est le symptôme le plus courant d'un stockage humide mal contrôlé.
 
@@ -420,7 +420,7 @@ Les **sleeves** (pochettes plastique) protègent du contact direct, des rayures 
 
 ### Toploaders : l'épaisseur compte
 
-Pour une carte standard (en penny sleeve, ou en Perfect Fit + outer), le **toploader 35pt** est l'épaisseur de référence. Pour les cartes plus épaisses, **toploader 55pt** ou **75pt**. Les cartes jumbo demandent un top-loader grand format.
+Le **toploader 35pt** est le format standard : il est prévu pour une carte de taille classique jusqu'à 35 points d'épaisseur, typiquement une carte en penny sleeve. Pour les cartes plus épaisses, **toploader 55pt** ou **75pt**. Les cartes jumbo demandent un top-loader grand format.
 
 [**toploader 35pt** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=toploader+35pt&tag=rareradar-21)
 
