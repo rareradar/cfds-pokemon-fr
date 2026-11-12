@@ -1,0 +1,10 @@
+{%- comment -%}
+  Titre HTML d'une tuile d'article, affiché en mobile seulement (≤ 700 px), où la
+  couverture devient une vignette trop petite pour que son titre gravé se lise.
+  Masqué au-delà : la couverture porte déjà le titre. Param : post.
+{%- endcomment -%}
+{%- assign ct_post = include.post -%}
+<div class="card-tile__text">
+  <span class="card-tile__meta">{% if ct_post.n %}N° {{ ct_post.n | prepend: '00' | slice: -3, 3 }} · {% endif %}{% include date-fr.html date=ct_post.date style="court" %}</span>
+  <h3 class="card-tile__title"><a href="{{ ct_post.url | relative_url }}">{{ ct_post.title | replace: " :", "&nbsp;:" | replace: " ?", "&nbsp;?" }}</a></h3>
+</div>

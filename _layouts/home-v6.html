@@ -30,7 +30,7 @@ layout: default
     <p class="site-intro__line">
       <strong class="site-intro__brand">RareRadar</strong>
       <span class="site-intro__sep">—</span>
-      <span class="site-intro__text">guides et reviews indépendants sur les cartes Pokémon&nbsp;TCG&nbsp;: sorties, raretés, cotes de revente, accessoires, conservation, grading.</span>
+      <span class="site-intro__text">guides et dossiers indépendants sur les cartes Pokémon&nbsp;TCG<span class="site-intro__detail">&nbsp;: sorties, raretés, cotes de revente, accessoires, conservation, grading</span>.</span>
     </p>
   </section>
 
@@ -70,7 +70,7 @@ layout: default
           {%- comment -%} H1 statique keyword-rich (SEO sprint 0 — entité thématique stable indexable) {%- endcomment -%}
           <h1 class="site-h1 sr-only">Cartes Pokémon : guides, cotes et raretés FR</h1>
           <span class="hero__kicker">À la une · {{ featured.date | date: "%d.%m.%Y" }}</span>
-          <h2 class="hero__title">{{ featured.title | replace: " :", "&nbsp;:" | replace: " ?", "&nbsp;?" }}</h2>
+          <h2 class="hero__title"><a href="{{ featured.url | relative_url }}">{{ featured.title | replace: " :", "&nbsp;:" | replace: " ?", "&nbsp;?" }}</a></h2>
           {% if featured.description %}
             <p class="hero__lede">{{ featured.description }}</p>
           {% endif %}
@@ -85,13 +85,15 @@ layout: default
   {% if drops.size > 0 %}
   <section id="drops" class="home-v6__section">
     <header class="s-head">
-      <h2 class="s-head__title">Cette semaine</h2>
-      <span class="s-head__count">{{ drops.size }} sorties · {% include date-fr.html date=site.time style="mois" %}</span>
+      {%- comment -%} « Cette semaine · 3 sorties · mois courant » était faux dès qu'aucun article
+          n'était paru dans la semaine (2026-11-12) : libellé neutre. {%- endcomment -%}
+      <h2 class="s-head__title">Dossiers récents</h2>
     </header>
     <div class="cards-grid cards-grid--week">
       {% for post in drops %}
         <article class="card-tile">
           {% include card-portrait.html post=post index=forloop.index size="mini" %}
+          {% include card-tile-text.html post=post %}
         </article>
       {% endfor %}
     </div>

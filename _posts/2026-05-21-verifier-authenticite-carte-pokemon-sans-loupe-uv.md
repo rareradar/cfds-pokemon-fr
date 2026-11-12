@@ -24,7 +24,7 @@ _cfds:
   last_pass: "2026-06-17 condensation -33% (1426 → ~960 mots), PNG test-pli retirée (SVG suffit)"
 ---
 
-90 % des fakes 2026 se repèrent en moins de cinq minutes, sans loupe ni lampe UV. Six tests, du moins invasif au plus décisif — applicable à toute carte reçue de Vinted, AliExpress ou lot Leboncoin.
+Sans loupe ni lampe UV, six tests, du moins invasif au plus décisif — applicable à toute carte reçue de Vinted, AliExpress ou lot Leboncoin.
 
 ## Test 1 : Le toucher et le carton
 

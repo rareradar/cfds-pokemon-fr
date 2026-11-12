@@ -2,7 +2,7 @@
 layout: default
 permalink: /articles/
 title: Tous les articles — RareRadar
-description: La bibliothèque complète des guides et reviews RareRadar sur les cartes Pokémon TCG. Recherche par mot-clé, tri éditorial et filtres par thème.
+description: La bibliothèque complète des guides et dossiers RareRadar sur les cartes Pokémon TCG. Recherche par mot-clé, tri éditorial et filtres par thème.
 ---
 
 {%- comment -%}
@@ -113,6 +113,7 @@ description: La bibliothèque complète des guides et reviews RareRadar sur les 
                  data-n="{{ card_n }}"
                  data-date="{{ post.date | date: '%s' }}">
           {% include card-portrait.html post=post index=forloop.index size="mini" %}
+          {% include card-tile-text.html post=post %}
         </article>
       {% endfor %}
     </div>

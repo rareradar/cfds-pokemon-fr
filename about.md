@@ -1,7 +1,7 @@
 ---
 layout: default
 title: À propos
-description: RareRadar — reviews et guides éditoriaux indépendants sur les cartes Pokémon TCG, pour collectionneurs francophones adultes.
+description: RareRadar — guides et dossiers éditoriaux indépendants sur les cartes Pokémon TCG, pour collectionneurs francophones adultes.
 permalink: /about/
 ---
 
@@ -21,7 +21,7 @@ permalink: /about/
       </div>
       <h1 class="article__title h-1">À propos.</h1>
       <p class="article__dek lede">
-        Reviews longues, comparatifs honnêtes et méthodes de conservation pour
+        Dossiers longs, comparatifs honnêtes et méthodes de conservation pour
         les collectionneurs adultes qui veulent autre chose que des unboxings
         criards et des affiliations déguisées.
       </p>
@@ -31,7 +31,7 @@ permalink: /about/
 
 <h2>La ligne éditoriale</h2>
 
-<p>RareRadar publie des reviews et des guides éditoriaux sur les cartes
+<p>RareRadar publie des guides et des dossiers éditoriaux sur les cartes
 Pokémon TCG&nbsp;: accessoires de conservation, classeurs, sleeves,
 toploaders, méthodes de grading, analyse des sets de l'ère Méga et
 au-delà. Le ton est posé, factuel, et destiné aux collectionneurs adultes
@@ -126,7 +126,7 @@ la profondeur et l'effort investis&nbsp;:</p>
 
 <ul>
 <li><strong>Common</strong>&nbsp;: note rapide, ≤&nbsp;600&nbsp;mots, sujet ponctuel ou mémo.</li>
-<li><strong>Uncommon</strong>&nbsp;: review ou comparatif limité, 600–1200&nbsp;mots.</li>
+<li><strong>Uncommon</strong>&nbsp;: guide court ou comparatif limité, 600–1200&nbsp;mots.</li>
 <li><strong>Holo Rare</strong>&nbsp;: dossier, 1200–2000&nbsp;mots, recoupement de plusieurs sources.</li>
 <li><strong>Secret Rare</strong>&nbsp;: article exceptionnel signé «&nbsp;lab&nbsp;», recoupement renforcé et test long terme.</li>
 </ul>

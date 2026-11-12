@@ -3471,3 +3471,144 @@ a {
 @media (max-width: 700px) {
   .card-grid .article-card { max-width: 300px; margin-inline: auto; }
 }
+
+/* ============================================================================
+   23. PREMIER ÉCRAN MOBILE — 2026-11-12
+   Mesuré en 390×844 avant correctif : sur un article, le H1 commençait à 823 px
+   et la première phrase à ~1 600 px (barre de statut, carte de 392 px, partage) ;
+   sur l'accueil, un seul article par écran. Le desktop n'est pas concerné.
+   ============================================================================ */
+
+/* Titre de tuile en HTML : réservé au mobile (voir _includes/card-tile-text.html). */
+.card-tile__text { display: none; }
+.home-v6 .hero__title a { color: inherit; text-decoration: none; }
+.home-v6 .hero__title a:hover { color: var(--accent); }
+
+@media (max-width: 800px) {
+  /* 23.1 — La barre « Live · Sources vérifiées » prenait 105 px sur deux lignes
+     sans rien apprendre au lecteur. Conservée en desktop (une ligne). */
+  .statusbar { display: none; }
+
+  /* 23.2 — Article : la carte devient une vignette à côté des métadonnées, le
+     titre et le chapô remontent dans le premier écran, alignés à gauche. */
+  .article { padding-top: 0.9rem; }
+  .article .breadcrumb { margin-top: 0; }
+  .article .article-hero.article-hero--split {
+    display: block;
+    text-align: left;
+    padding: 1rem 0 0;
+    margin-bottom: 0;
+  }
+  .article .article-hero--split .article-hero__card {
+    float: left;
+    width: 68px;
+    max-width: 68px;
+    margin: 0 1rem 0 0;
+  }
+  .article-hero--split .article-hero__card .holo-card.cardp.cardp--native {
+    max-width: 68px !important;
+    border-radius: 5px;
+    animation: none;
+    box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.8);
+  }
+  .article .article-hero--split .article__head {
+    padding-bottom: 1.1rem;
+    margin-bottom: 0;
+  }
+  .article .article-hero--split .article__eyebrow {
+    min-height: 95px; /* hauteur de la vignette (68 × 7/5) */
+    align-content: center;
+    gap: 0.35rem 0.8rem;
+    margin-bottom: 0.9rem;
+  }
+  .article .article-hero--split .article__title {
+    clear: both;
+    max-width: none;
+    font-size: clamp(1.75rem, 7.6vw, 2.2rem);
+  }
+  .article .article-hero--split .article__dek {
+    margin-top: 0.8rem;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .article-hero--split .article__meta { margin-top: 0.9rem; }
+  /* Le partage reste en fin d'article ; en tête il repoussait le texte de 130 px. */
+  .article .share--compact { display: none; }
+  .article .article-source-chip { margin-top: 1.1rem; }
+}
+
+@media (max-width: 700px) {
+  /* 23.3 — Accueil : présentation sur deux lignes, sans cadre. */
+  .home-v6 .site-intro {
+    margin-top: 0.9rem;
+    padding: 0 0 0 0.7rem;
+    border: 0;
+    border-left: 2px solid var(--copper);
+    border-radius: 0;
+  }
+  .home-v6 .site-intro__line { font-size: 0.86rem; line-height: 1.45; }
+  .site-intro__detail { display: none; }
+
+  /* 23.4 — Article à la une : carte en vignette, texte à côté. Le titre et la
+     carte sont des liens, le bouton « Ouvrir le dossier » devient redondant. */
+  .home-v6 .hero.hero--featured { padding: 1.1rem 0 0; margin: 0; min-height: 0; }
+  .home-v6 .hero--featured .hero__grid {
+    grid-template-columns: 124px 1fr !important;
+    align-items: start !important;
+    gap: 1rem;
+  }
+  .home-v6 .hero__card.holo-card.cardp.cardp--native { max-width: 124px !important; border-radius: 6px; }
+  .home-v6 .hero__kicker { margin-bottom: 0.45rem; font-size: 10px; letter-spacing: 0.14em; }
+  .home-v6 .hero__title { font-size: 1.28rem; line-height: 1.14; margin-bottom: 0.5rem; }
+  .home-v6 .hero__lede {
+    font-size: 0.88rem;
+    line-height: 1.45;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+  }
+  .home-v6 a.hero__cta { display: none; }
+
+  /* 23.5 — Listes d'articles (accueil et /articles/) : une ligne par article,
+     vignette + titre lisible, au lieu d'une carte pleine largeur par écran. */
+  .home-v6 .s-head { margin: 1.6rem 0 0.2rem; }
+  .home-v6 .cards-grid--week,
+  .home-v6 .cards-grid--bottom { grid-template-columns: 1fr; gap: 0 !important; }
+  .home-v6 .cards-grid .card-tile {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    align-items: center;
+    gap: 0.9rem;
+    max-width: none;
+    height: auto;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .home-v6 .cards-grid .card-tile .holo-card.cardp.cardp--native { border-radius: 5px; max-width: 72px; }
+  /* Le halo de rareté entourait toute la ligne au lieu de la seule carte. */
+  .home-v6 .cards-grid .card-tile.article-card { box-shadow: none; background: none; }
+  .card-tile__text { display: block; min-width: 0; }
+  .card-tile__meta {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 0.3rem;
+  }
+  .card-tile__title {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1.06rem;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .card-tile__title a { color: var(--ink); text-decoration: none; }
+  .articles-page .article-controls { margin-bottom: 0.4rem; }
+}
