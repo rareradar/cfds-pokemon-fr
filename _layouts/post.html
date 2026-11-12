@@ -25,10 +25,18 @@ layout: default
     {%- if rar == 'holo_rare' or rar == 'art_rare' or rar == 'full_art' or rar == 'fa' %}{% assign tier = 4 %}{% endif -%}
     {%- if rar == 'alternative' or rar == 'alt' or rar == 'secret_rare' or rar == 'gold' %}{% assign tier = 5 %}{% endif -%}
 
+    {%- comment -%} Fil d'Ariane visible (le BreadcrumbList JSON-LD existait sans équivalent à l'écran) {%- endcomment -%}
+    <nav class="breadcrumb" aria-label="Fil d'Ariane">
+      <a href="{{ '/' | relative_url }}">Accueil</a>
+      <span class="breadcrumb__sep" aria-hidden="true">›</span>
+      <a href="{{ '/articles/' | relative_url }}">Articles</a>
+      <span class="breadcrumb__sep" aria-hidden="true">›</span>
+      <span aria-current="page">N° {{ article_number_padded }}</span>
+    </nav>
+
     <section class="article-hero article-hero--split">
       <div class="article-hero__card">
-        <a class="holo-card cardp cardp--native r-{{ rar }} tier-{{ tier }}" data-holo
-           aria-label="{{ page.title | escape }}">
+        <div class="holo-card cardp cardp--native r-{{ rar }} tier-{{ tier }}" data-holo>
           {% if page.cover_image_portrait %}
             {%- assign post_portrait = page.cover_image_portrait | relative_url -%}
             {%- assign post_webp = post_portrait | replace: "/portrait/", "/portrait/webp/" | replace: ".png", ".webp" -%}
@@ -39,28 +47,29 @@ layout: default
                    src="{{ post_portrait }}?v={{ cb }}"
                    alt="{{ page.title | escape }}"
                    width="720" height="1008"
-                   loading="eager" decoding="async" fetchpriority="high">
+                   loading="eager" fetchpriority="high">
             </picture>
           {% elsif page.cover_image %}
             <img class="cardp__native-img"
                  src="{{ page.cover_image | relative_url }}"
                  alt="{{ page.title | escape }}"
-                 loading="eager" decoding="async" fetchpriority="high">
+                 width="1200" height="675"
+                 loading="eager" fetchpriority="high">
           {% endif %}
-        </a>
+        </div>
       </div>
 
       <header class="article-hero__copy article__head">
         <div class="article__eyebrow">
           <span class="eyebrow" style="font-family:'JetBrains Mono', monospace; letter-spacing:1.5px;">N° {{ article_number_padded }}</span>
           {% include rarity-badge.html rarity=page.rarity %}
-          <span class="eyebrow">{{ page.date | date: "%d %B %Y" }}</span>
+          <time class="eyebrow" datetime="{{ page.date | date_to_xmlschema }}">{% include date-fr.html date=page.date %}</time>
           {% if page.read_time %}
             <span class="eyebrow">{{ page.read_time }} min de lecture</span>
           {% endif %}
         </div>
 
-        <h1 class="article__title h-1">{{ page.title }}</h1>
+        <h1 class="article__title h-1">{{ page.title | replace: " :", "&nbsp;:" | replace: " ?", "&nbsp;?" }}</h1>
 
         {% if page.dek or page.description %}
           <p class="article__dek lede">{{ page.dek | default: page.description }}</p>
@@ -111,9 +120,13 @@ layout: default
       Recommandation panel SEO : sources visibles + lien /methode/ pour le détail.
       Schema author Organization déjà présent dans default.html (l.62).
     {%- endcomment -%}
+    {%- comment -%} « achats personnels testés » réservé aux articles byline_kind=tested : sur un article
+        "data", la mention contredisait le chapô « sans manipulation produit » (2026-11-12). {%- endcomment -%}
     <p class="article-byline">
-      Sources&nbsp;: Cardmarket (médiane 30&nbsp;j) · TCGPlayer · PSA pop report · achats personnels testés · <a href="{{ '/methode/' | relative_url }}">méthode complète</a>
+      Sources&nbsp;: Cardmarket (médiane 30&nbsp;j) · TCGPlayer · PSA pop report{% unless page.byline_kind == "data" %} · achats personnels testés{% endunless %} · <a href="{{ '/methode/' | relative_url }}">méthode complète</a>
     </p>
+
+    <p class="article-back"><a href="{{ '/articles/' | relative_url }}">← Tous les articles</a></p>
 
     {% include newsletter-cta.html %}
 

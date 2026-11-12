@@ -29,15 +29,24 @@
 
   <a href="{{ post.url | relative_url }}" class="holo-card cardp cardp--native r-{{ rarity_key }} tier-{{ tier }}" data-holo>
     {% if post.cover_image_portrait %}
-      <img class="cardp__native-img"
-           src="{{ post.cover_image_portrait | relative_url }}?v={{ site.time | date: '%s' }}"
-           alt="{{ post.title | escape }}"
-           loading="lazy" decoding="async">
+      {%- comment -%} WebP d'abord (≈45 Ko contre ≈500 Ko en PNG), comme card-portrait.html {%- endcomment -%}
+      {%- assign ac_portrait = post.cover_image_portrait | relative_url -%}
+      {%- assign ac_webp = ac_portrait | replace: "/portrait/", "/portrait/webp/" | replace: ".png", ".webp" -%}
+      {%- assign ac_cb = site.time | date: '%s' -%}
+      <picture>
+        <source srcset="{{ ac_webp }}?v={{ ac_cb }}" type="image/webp">
+        <img class="cardp__native-img"
+             src="{{ ac_portrait }}?v={{ ac_cb }}"
+             alt="{{ post.title | escape }}"
+             width="720" height="1008"
+             loading="lazy">
+      </picture>
     {% elsif post.cover_image %}
       <img class="cardp__native-img"
            src="{{ post.cover_image | relative_url }}?v={{ site.time | date: '%s' }}"
            alt="{{ post.title | escape }}"
-           loading="lazy" decoding="async">
+           width="1200" height="675"
+           loading="lazy">
     {% else %}
       <span class="cardp__illu-fallback" aria-hidden="true"></span>
     {% endif %}

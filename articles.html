@@ -76,7 +76,7 @@ description: La bibliothèque complète des guides et reviews RareRadar sur les 
           {%- assign cnt_num = parts[0] | plus: 0 -%}
           {%- assign tag = parts[1] -%}
           {% if cnt_num >= 2 %}
-            <button type="button" class="chip" data-tag-filter="{{ tag | downcase }}">#{{ tag }}<small style="opacity:.45; margin-left:0.35em;">{{ cnt_num }}</small></button>
+            <button type="button" class="chip" data-tag-filter="{{ tag | downcase }}">#{{ tag }}<small style="opacity:.75; margin-left:0.35em;">{{ cnt_num }}</small></button>
           {% else %}
             <button type="button" class="chip chip--solo" data-tag-filter="{{ tag | downcase }}" hidden>#{{ tag }}</button>
           {% endif %}

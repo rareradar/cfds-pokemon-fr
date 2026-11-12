@@ -3309,3 +3309,165 @@ a {
 
 /* Garantir que .cardp / .holo-card sont positionnés (utile pour effets pseudo) */
 .holo-card, .cardp { position: relative; }
+
+/* ============================================================================
+   22. CORRECTIFS AUDIT UX — 2026-11-12
+   Défauts constatés sur captures (390 px / 1440 px). Identité visuelle inchangée.
+   ============================================================================ */
+
+/* 22.1 — Largeur de lecture. Le corps d'article courait sur toute la largeur du
+   shell (≈1190 px, ~150 caractères par ligne en desktop). Colonne centrée ≈80 car. */
+.prose,
+.article .article-source-chip,
+.article .article-byline,
+.article .article-back,
+.article .breadcrumb {
+  max-width: 46rem;
+  margin-inline: auto;
+}
+.article .breadcrumb { max-width: none; }
+
+/* 22.2 — Mobile : le justifié + césure creusait des « rivières » sur 350 px. */
+@media (max-width: 720px) {
+  .prose {
+    text-align: left;
+    hyphens: manual;
+    -webkit-hyphens: manual;
+  }
+}
+
+/* 22.3 — Tableaux. En-têtes : la règle « aération » (.prose th → fond --bg-pop)
+   écrasait le fond acier, laissant un texte --bg sur fond sombre (contraste 1,2:1,
+   en-têtes illisibles). Texte clair, fond conservé. */
+.prose table thead th {
+  color: var(--ink);
+  background: var(--bg-pop);
+}
+/* Enveloppe défilante posée par le script de default.html */
+.prose .table-wrap {
+  margin: 2rem 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 8px;
+}
+.prose .table-wrap > table { margin: 0; min-width: 100%; width: max-content; max-width: none; }
+@media (min-width: 721px) {
+  .prose .table-wrap > table { width: 100%; }
+}
+@media (max-width: 720px) {
+  .prose table thead th { white-space: normal; }
+  .prose table thead th,
+  .prose table tbody td,
+  .prose table tbody th { padding: 0.7rem 0.8rem; }
+  .prose .table-wrap > table { max-width: 44rem; }
+}
+
+/* 22.4 — Schémas SVG en mobile : la marge intérieure du cadre réduisait le dessin à
+   ~300 px (textes ≈5 px). Cadre à fond perdu : +25 % de largeur utile. */
+@media (max-width: 600px) {
+  .prose .illustration {
+    width: calc(100% + 2 * var(--gutter));
+    max-width: none;
+    margin-inline: calc(var(--gutter) * -1);
+    padding: 0.9rem 0.35rem 1rem;
+    border-inline: 0;
+  }
+  .prose .illustration__caption { padding-inline: 0.9rem; }
+}
+
+/* 22.5 — Contrastes WCAG AA (mesurés sur le rendu) */
+.site-footer__legal { color: var(--ink-soft); }            /* 3,0 → 5,6:1 */
+.illustration__caption { color: #aaa290; }                 /* 4,4 → 6,3:1 */
+.prose code { background: var(--brass-soft); }             /* 3,0 → 5,0:1 */
+
+/* 22.6 — Focus clavier : `outline: none` sur les champs annulait le :focus-visible global */
+.article-controls__search input:focus-visible,
+.article-controls__sort select:focus-visible,
+.newsletter-cta__input:focus-visible {
+  outline: 3px solid var(--fire);
+  outline-offset: 2px;
+}
+
+/* 22.7 — En-tête mobile : la règle de base `.site-nav a` (déclarée après les media
+   queries) annulait les tailles mobiles → « À propos » passait sur deux lignes. */
+.site-nav a { white-space: nowrap; }
+@media (max-width: 700px) {
+  .site-nav { gap: 1rem; }
+  .site-nav a { font-size: 0.82rem; }
+}
+@media (max-width: 480px) {
+  .site-nav { gap: 0.75rem; }
+  .site-nav a { font-size: 0.8rem; }
+}
+
+/* 22.8 — Fil d'Ariane + retour liste */
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block: 1.4rem 0;
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono-xs);
+  letter-spacing: var(--tracking-mono);
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.breadcrumb a {
+  color: var(--ink-2);
+  text-decoration: underline;
+  text-decoration-color: var(--rule-soft);
+  text-underline-offset: 3px;
+  padding-block: 0.35rem;
+}
+.breadcrumb a:hover { color: var(--fire); text-decoration-color: currentColor; }
+.breadcrumb__sep { color: var(--fire); }
+.article-back {
+  margin-block: 1.6rem 2.4rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono-s);
+  letter-spacing: var(--tracking-mono);
+}
+.article-back a { color: var(--fire); padding-block: 0.4rem; display: inline-block; }
+.article-back a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* 22.9 — prefers-reduced-motion : le défilement animé restait actif */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* 22.10 — Page 404 (404.html) */
+.error-404__lede {
+  max-width: 40rem;
+  margin: 1.6rem 0 2rem;
+  font-size: var(--fs-lead);
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+.error-404__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.2rem 2rem;
+  margin: 0;
+}
+
+/* 22.11 — Newsletter mobile : en colonne, `flex: 1 1 220px` devenait une HAUTEUR de 220 px
+   (champ e-mail démesuré). */
+@media (max-width: 540px) {
+  .newsletter-cta__row .newsletter-cta__input { flex: 0 0 auto; width: 100%; }
+}
+
+/* 22.12 — Intertitres : dans la colonne de lecture, 3,4rem occupait trois lignes. */
+@media (min-width: 900px) {
+  .prose > h2 { font-size: clamp(2.1rem, 2vw + 1rem, 2.6rem); }
+}
+
+/* 22.13 — « À lire aussi » : la tuile (.article-card) était plus large que la carte
+   (max-width 360/260 px), d'où un cadre sombre qui dépassait à droite. La carte
+   remplit désormais sa tuile, centrée en mobile. */
+.card-grid .article-card { max-width: 360px; }
+.card-grid .article-card .holo-card.cardp.cardp--native { max-width: none; margin: 0; }
+@media (max-width: 700px) {
+  .card-grid .article-card { max-width: 300px; margin-inline: auto; }
+}

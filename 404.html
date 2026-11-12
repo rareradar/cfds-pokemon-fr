@@ -1,0 +1,37 @@
+---
+layout: default
+permalink: /404.html
+title: Page introuvable
+description: Cette page n'existe pas ou a été déplacée.
+sitemap: false
+---
+
+<main class="home-v6 edito">
+  <section class="home-v6__section error-404">
+    <header class="s-head">
+      <h1 class="s-head__title">Erreur 404</h1>
+      <span class="s-head__count">aucun signal</span>
+    </header>
+    <p class="error-404__lede">Le radar ne détecte rien à cette adresse&nbsp;: la page a été déplacée, ou le lien est incomplet.</p>
+    <p class="error-404__actions">
+      <a class="hero__cta" href="{{ '/articles/' | relative_url }}">Voir tous les articles <span class="hero__cta__arrow">→</span></a>
+      <a class="browse-all" href="{{ '/' | relative_url }}">Retour à l'accueil</a>
+    </p>
+  </section>
+
+  {%- assign recents = site.posts | sort: 'n' | reverse | slice: 0, 3 -%}
+  {% if recents.size > 0 %}
+  <section class="home-v6__section">
+    <header class="s-head">
+      <h2 class="s-head__title">Derniers dossiers</h2>
+    </header>
+    <div class="cards-grid cards-grid--week">
+      {% for post in recents %}
+        <article class="card-tile">
+          {% include card-portrait.html post=post size="mini" %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</main>

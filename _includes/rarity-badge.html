@@ -1,8 +1,25 @@
-{% comment %} Param : rarity (string clé dans _data/rarity.yml) {% endcomment %}
-{% assign rk = include.rarity | default: 'common' %}
-{% assign r  = site.data.rarity[rk] %}
-<span class="rarity" data-rarity="{{ rk }}" style="--rarity-hue: {{ r.hue }};"
-      title="{{ r.description }}">
-  <span class="rarity__symbol" aria-hidden="true">{{ r.symbol }}</span>
-  <span>{{ r.label }}</span>
+{% comment %}
+  Param : rarity (clé du front matter).
+  Les articles utilisent les clés canoniques 5 tiers (commun / unco / ar / fa / alt),
+  stylées dans style.css (.rarity[data-rarity=…]) ; _data/rarity.yml ne connaît que
+  l'ancienne nomenclature (common, uncommon…). Sans repli, le badge sortait vide
+  (pastille sans texte). On normalise donc la clé vers les 5 tiers et on fournit
+  symbole + libellé ici, identiques à ceux gravés sur les covers.
+{% endcomment %}
+{%- assign rk = include.rarity | default: 'commun' -%}
+{%- assign tier_key = 'commun' -%}
+{%- if rk == 'uncommon' or rk == 'reverse' or rk == 'unco' -%}{%- assign tier_key = 'unco' -%}{%- endif -%}
+{%- if rk == 'rare' or rk == 'ar' or rk == 'ir' or rk == 'holo' -%}{%- assign tier_key = 'ar' -%}{%- endif -%}
+{%- if rk == 'holo_rare' or rk == 'art_rare' or rk == 'full_art' or rk == 'fa' -%}{%- assign tier_key = 'fa' -%}{%- endif -%}
+{%- if rk == 'alternative' or rk == 'alt' or rk == 'secret_rare' or rk == 'gold' -%}{%- assign tier_key = 'alt' -%}{%- endif -%}
+{%- case tier_key -%}
+  {%- when 'unco' -%}{%- assign r_symbol = '◆' -%}{%- assign r_label = 'Unco' -%}{%- assign r_title = 'Peu commune' -%}
+  {%- when 'ar' -%}{%- assign r_symbol = '★' -%}{%- assign r_label = 'AR' -%}{%- assign r_title = 'Illustration rare' -%}
+  {%- when 'fa' -%}{%- assign r_symbol = '★★' -%}{%- assign r_label = 'FA' -%}{%- assign r_title = 'Full Art' -%}
+  {%- when 'alt' -%}{%- assign r_symbol = '★★' -%}{%- assign r_label = 'ALT' -%}{%- assign r_title = 'Alt Art' -%}
+  {%- else -%}{%- assign r_symbol = '●' -%}{%- assign r_label = 'Commun' -%}{%- assign r_title = 'Commune' -%}
+{%- endcase -%}
+<span class="rarity" data-rarity="{{ tier_key }}" title="Rareté éditoriale : {{ r_title }}">
+  <span class="rarity__symbol" aria-hidden="true">{{ r_symbol }}</span>
+  <span>{{ r_label }}</span>
 </span>

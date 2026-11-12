@@ -55,13 +55,14 @@ layout: default
                    src="{{ hero_portrait }}?v={{ cb }}"
                    alt="{{ featured.title | escape }}"
                    width="720" height="1008"
-                   loading="eager" decoding="async" fetchpriority="high">
+                   loading="eager" fetchpriority="high">
             </picture>
           {% elsif featured.cover_image %}
             <img class="cardp__native-img"
                  src="{{ featured.cover_image | relative_url }}"
                  alt="{{ featured.title | escape }}"
-                 loading="eager" decoding="async" fetchpriority="high">
+                 width="1200" height="675"
+                 loading="eager" fetchpriority="high">
           {% endif %}
         </a>
 
@@ -69,7 +70,7 @@ layout: default
           {%- comment -%} H1 statique keyword-rich (SEO sprint 0 — entité thématique stable indexable) {%- endcomment -%}
           <h1 class="site-h1 sr-only">Cartes Pokémon : guides, cotes et raretés FR</h1>
           <span class="hero__kicker">À la une · {{ featured.date | date: "%d.%m.%Y" }}</span>
-          <h2 class="hero__title">{{ featured.title }}</h2>
+          <h2 class="hero__title">{{ featured.title | replace: " :", "&nbsp;:" | replace: " ?", "&nbsp;?" }}</h2>
           {% if featured.description %}
             <p class="hero__lede">{{ featured.description }}</p>
           {% endif %}
@@ -85,7 +86,7 @@ layout: default
   <section id="drops" class="home-v6__section">
     <header class="s-head">
       <h2 class="s-head__title">Cette semaine</h2>
-      <span class="s-head__count">{{ drops.size }} sorties · {{ site.time | date: "%b %Y" }}</span>
+      <span class="s-head__count">{{ drops.size }} sorties · {% include date-fr.html date=site.time style="mois" %}</span>
     </header>
     <div class="cards-grid cards-grid--week">
       {% for post in drops %}
