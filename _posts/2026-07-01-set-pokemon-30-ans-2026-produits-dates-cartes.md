@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Set Pokémon 30 ans 2026 : produits, dates, cartes"
-description: "30th Celebration sort le 16/09/2026 : tous les produits officiels, le calendrier des 4 vagues, les nouveautés du set et où précommander en France."
+title: "Pokémon 30 ans : ETB, UPC, coffrets, dates et où les trouver"
+description: "Set Pokémon 30ᵉ Anniversaire : contenu de l'ETB, de l'UPC, du bundle et des coffrets, dates de sortie en France jusqu'au 27/11 et où les trouver."
 date: 2026-07-01 09:00:00 +0200
-last_modified_at: 2026-07-01 09:00:00 +0200
+last_modified_at: 2026-11-13 09:00:00 +0100
 n: 6
 slug: set-pokemon-30-ans-2026-produits-dates-cartes
 rarity: secret_rare
@@ -25,14 +25,21 @@ _cfds:
   amazon_tag: rareradar-21
   review_status: pending
   sources:
-    - "https://www.pokemon.com/us/news/pokemon-tcg-30th-celebration-product-showcase"
-    - "https://press.pokemon.com"
-    - "https://www.pokemon-france.com"
-    - "https://tcg.pokemon.com/en-us/expansions/30th-celebration/"
+    - "https://www.pokemon.com/fr/actualites/jcc-pokemon-produits-30-anniversaire"
+    - "https://www.pokemon.com/fr/actualites/lextension-30-anniversaire-du-jcc-pokemon-est-disponible"
+    - "https://www.pokemon.com/fr/actualites/decouvrez-tous-les-produits-du-jcc-pokemon-qui-sortiront-en-septembre-2026"
+    - "https://www.pokemon.com/fr/actualites/decouvrez-tous-les-produits-du-jcc-pokemon-qui-sortiront-en-octobre-2026"
+    - "https://www.pokemon.com/fr/actualites/decouvrez-tous-les-produits-du-jcc-pokemon-qui-sortiront-en-novembre-2026"
+    - "https://tcg.pokemon.com/fr-fr/expansions/30th-celebration/"
+    - "https://www.pokecardex.com/forums/viewtopic.php?t=49894"
+    - "https://www.philibertnet.com/fr/pokemon/184748-pokemon-30-ans-coffret-ultra-premium-noctali-descelle-196214155398.html"
+    - "https://www.philibertnet.com/fr/pokemon/184752-pokemon-30-ans-coffret-ultra-premium-mentali-descelle-2100001434595.html"
 byline_kind: data
 ---
 
-Le 16 septembre 2026, Pokémon TCG lance **30th Celebration** — premier set anniversaire mondial simultané de l'histoire du JCC. Toutes les cartes sont en foil, une nouvelle rareté apparaît, et chaque booster contient l'un des 30 Pikachu commandés à 30 artistes. Voici tout ce qu'il faut savoir avant le jour J, sans spéculation sur les prix ni hype investissement.
+Sortie le 16 septembre 2026, **30ᵉ Anniversaire** (*30th Celebration* en anglais) est l'extension du JCC Pokémon qui fête les 30 ans du jeu, lancée le même jour dans le monde entier. Toutes les cartes des boosters sont brillantes, une nouvelle rareté apparaît, et chaque booster contient l'un des 30 Pikachu rares.
+
+**Mise à jour du 13 novembre 2026** : contenu de l'ETB, de l'UPC et des coffrets, dates de sortie en France (les dernières tombent le 27 novembre) et [où trouver les produits](#ou-trouver).
 
 <figure class="illustration">
   <img src="/assets/images/posts/set-pokemon-30-ans/banner-produits-30th.webp" alt="Gamme complète des produits Pokémon 30th Celebration 2026 : coffrets, boosters et collections anniversaire" width="1200" height="675" loading="lazy" decoding="async">
@@ -41,32 +48,31 @@ Le 16 septembre 2026, Pokémon TCG lance **30th Celebration** — premier set an
 
 ## Ne pas confondre : le Coffret Journée Pokémon n'est PAS le set 30 ans
 
-Une confusion circule sur les forums et en boutique. Il existe **deux produits distincts** portant tous les deux le thème "30 ans" :
+Il existe **deux produits distincts** portant tous les deux le thème "30 ans" :
 
-| | **Coffret Journée Pokémon 30 ans 2026** | **Set 30th Celebration** |
+| | **Coffret Journée Pokémon 30 ans 2026** | **Extension 30ᵉ Anniversaire** |
 |---|---|---|
-| Sortie | Début 2026 (déjà en vente) | 16 septembre 2026 |
-| Contenu | 3 boosters d'extensions variées + promo Pikachu + pièce | Boosters exclusifs 30th Celebration |
-| Prix constaté | ~19,99 € (déjà en vente) | Prix officiels non encore communiqués |
+| Sortie | Début 2026 | 16 septembre 2026 |
+| Contenu | 3 boosters d'extensions variées + promo Pikachu + pièce | Boosters 30ᵉ Anniversaire |
 | Lien avec le set | Aucun | C'est le set lui-même |
 
-**Le Coffret Journée Pokémon** est un produit promotionnel indépendant, sorti en début d'année dans le cadre des 30 ans de la franchise. Il ne contient **aucun booster 30th Celebration**.
+**Le Coffret Journée Pokémon** est un produit promotionnel indépendant, sorti en début d'année dans le cadre des 30 ans de la franchise. Il ne contient **aucun booster 30ᵉ Anniversaire**.
 
 ---
 
-## En bref : ce qui sort le 16 septembre 2026
-
-Quatre éléments distinguent ce set de toute extension précédente :
+## En bref : le set 30 ans en un tableau
 
 | Élément | Détail |
 |---|---|
-| Sortie mondiale | **16 septembre 2026** |
-| Type de set | Spécial anniversaire (hors bloc principal) |
-| Cartes foil | 100 % des cartes, y compris les Énergies de base |
-| Nouvelle rareté | Futuristic Rare (FUR) |
-| Taille du set | **128 cartes numérotées, plus des cartes secrètes — environ 150 à 160 au total** |
-| Cartes par booster | **5 cartes brillantes + 1 énergie de base brillante** (dont 1 Pikachu parmi 30) |
-| Booster Collection Classique | 3 cartes — présent dans certains coffrets |
+| Sortie | **16 septembre 2026**, simultanée dans le monde entier |
+| Série | Méga-Évolution |
+| Cartes brillantes | Toutes les cartes des boosters, Énergie de base comprise |
+| Nouvelle rareté | « futuriste rare » (*Futuristic rare* en anglais) |
+| Taille du set | **Plus de 150 cartes** |
+| Cartes par booster | **5 cartes brillantes + 1 énergie de base brillante** (dont 1 Pikachu rare parmi 30) |
+| Booster Collection Classique | 3 cartes — dans la Collection Ultra-Premium |
+
+Sources : [annonce de sortie](https://www.pokemon.com/fr/actualites/lextension-30-anniversaire-du-jcc-pokemon-est-disponible) et [présentation des produits](https://www.pokemon.com/fr/actualites/jcc-pokemon-produits-30-anniversaire) sur pokemon.com.
 
 ---
 
@@ -77,20 +83,18 @@ Quatre éléments distinguent ce set de toute extension précédente :
   <figcaption class="illustration__caption">© The Pokémon Company International</figcaption>
 </figure>
 
-### 100 % holographique, Énergies incluses
+### Des boosters 100 % brillants, Énergie incluse
 
-Jusqu'ici, les Énergies de base n'ont jamais été proposées en foil dans un booster standard. Le set *30th Celebration* rompt avec cette règle : chaque carte, du plus commun au plus secret, reçoit un traitement brillant. TPCi l'a confirmé.
+Chaque carte d'un booster 30ᵉ Anniversaire est brillante, y compris la carte Énergie de base, illustrée par YOSHIROTTEN ([page officielle de l'extension](https://tcg.pokemon.com/fr-fr/expansions/30th-celebration/)).
 
-En contrepartie, le booster est **réduit** : 6 cartes (5 brillantes + 1 énergie) au lieu de la dizaine d'un booster classique. C'est le format des sets commémoratifs — *Celebrations*, en 2021, allait jusqu'à des mini-packs de 4 cartes. Tu paies pour du foil intégral, pas pour du volume : à garder en tête pour juger le rapport prix/carte.
+En contrepartie, le booster est **réduit** : 6 cartes (5 brillantes + 1 énergie) au lieu de la dizaine d'un booster classique. À garder en tête pour juger le rapport prix/carte.
 
-Sur le marché secondaire, ça nivelle vers le bas les valeurs des "communes" — chaque carte brille, donc aucune ne se distingue par sa rareté de surface. **Les différenciateurs de valeur restent les raretés Art Rare, la Futuristic Rare, et la Classic Collection.**
+### 30 Pikachu, 30 styles d'illustration
 
-### 30 Pikachu par 30 artistes
-
-Chaque booster contient un Pikachu rare parmi 30 illustrations différentes — chacune commandée à un artiste distinct. La liste complète des artistes n'est pas encore communiquée officiellement (voir encadré en fin d'article).
+Chaque booster contient une carte rare Pikachu parmi 30, chacune dans un style d'illustration différent. La page officielle ne nomme pas les artistes.
 
 <figure class="illustration">
-  <svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma : chaque booster 30th Celebration contient 1 Pikachu rare parmi 30 illustrations, 5 cartes brillantes au total, et potentiellement 1 Futuristic Rare ou Classic Collection.">
+  <svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma : chaque booster 30th Celebration contient 5 cartes brillantes, dont 1 Pikachu rare parmi 30 illustrations, plus 1 énergie de base brillante, et parfois une carte futuriste rare.">
     <defs>
       <linearGradient id="cel-bg" x1="0" y1="0" x2="0" y2="1">
         <stop offset="0%"  stop-color="#1c2030"/>
@@ -114,39 +118,39 @@ Chaque booster contient un Pikachu rare parmi 30 illustrations différentes — 
       <text x="85" y="48" font-family="Plus Jakarta Sans, sans-serif" font-size="28" fill="#f7c948" font-weight="700" text-anchor="middle">×1</text>
       <text x="85" y="70" font-family="JetBrains Mono, monospace" font-size="9" fill="#f2eee2" letter-spacing="1.2" text-anchor="middle">PIKACHU RARE</text>
       <text x="85" y="90" font-family="Plus Jakarta Sans, sans-serif" font-size="9" fill="#9b9789" text-anchor="middle">parmi 30 illustrations</text>
-      <text x="85" y="106" font-family="Plus Jakarta Sans, sans-serif" font-size="9" fill="#9b9789" text-anchor="middle">par 30 artistes</text>
+      <text x="85" y="106" font-family="Plus Jakarta Sans, sans-serif" font-size="9" fill="#9b9789" text-anchor="middle">30 styles différents</text>
     </g>
 
     <g transform="translate(400,44)">
       <rect x="0" y="0" width="170" height="130" rx="6" fill="#1c2030" stroke="#d97246" stroke-width="2"/>
       <text x="85" y="18" font-family="JetBrains Mono, monospace" font-size="8" fill="#9b9789" letter-spacing="2" text-anchor="middle">PARFOIS</text>
-      <text x="85" y="46" font-family="Plus Jakarta Sans, sans-serif" font-size="20" fill="#d97246" font-weight="700" text-anchor="middle">FUR</text>
-      <text x="85" y="68" font-family="JetBrains Mono, monospace" font-size="9" fill="#f2eee2" letter-spacing="1.2" text-anchor="middle">FUTURISTIC RARE</text>
-      <text x="85" y="88" font-family="Plus Jakarta Sans, sans-serif" font-size="9" fill="#9b9789" text-anchor="middle">rareté possible, pas garantie</text>
-      <text x="85" y="104" font-family="Plus Jakarta Sans, sans-serif" font-size="9" fill="#9b9789" text-anchor="middle">Mewtwo ex / Mew ex</text>
+      <text x="85" y="46" font-family="Plus Jakarta Sans, sans-serif" font-size="15" fill="#d97246" font-weight="700" text-anchor="middle">FUTURISTE RARE</text>
+      <text x="85" y="68" font-family="JetBrains Mono, monospace" font-size="9" fill="#f2eee2" letter-spacing="1.2" text-anchor="middle">NOUVELLE RARETÉ</text>
+      <text x="85" y="88" font-family="Plus Jakarta Sans, sans-serif" font-size="9" fill="#9b9789" text-anchor="middle">possible, pas garantie</text>
+      <text x="85" y="104" font-family="Plus Jakarta Sans, sans-serif" font-size="9" fill="#9b9789" text-anchor="middle">Mewtwo / Mew</text>
     </g>
   </svg>
   <figcaption class="illustration__caption">
-    <strong>Un booster = 5 cartes brillantes + 1 énergie de base brillante</strong> · le Pikachu garanti et la Futuristic Rare font partie de ces cartes, ils ne s'ajoutent pas · taux d'apparition de la FUR non communiqué par TPCi
+    <strong>Un booster = 5 cartes brillantes + 1 énergie de base brillante</strong> · le Pikachu rare fait partie des 5 cartes brillantes, il ne s'ajoute pas · taux d'apparition de la futuriste rare non communiqué
   </figcaption>
 </figure>
 
-### La Futuristic Rare : nouvelle rareté, visuels YOSHIROTTEN
+### La « futuriste rare » : nouvelle rareté signée YOSHIROTTEN
 
-La **Futuristic Rare (FUR)** est la nouveauté typologique du set. TPCi la présente comme distincte de l'Art Rare ou de la Special Illustration Rare, avec une direction artistique signée par **YOSHIROTTEN** (graphiste japonais connu pour ses travaux cyberpunk/néon). Les premières cartes annoncées dans ce type : **Mewtwo ex** et **Mew ex**.
-
-Le ratio de pull sera probablement comparable aux Special Illustration Rares des sets Écarlate & Violet — rare, pas ultra-rare.
+La **futuriste rare** (*Futuristic rare* en anglais) est la nouvelle rareté de l'extension. Ses cartes sont imaginées par l'artiste **YOSHIROTTEN**, et la page officielle montre **Mewtwo** et **Mew** dans ce traitement. Aucun taux d'apparition n'est publié.
 
 Pour comprendre la hiérarchie des raretés du JCC Pokémon, voir notre guide des raretés.
 
 ---
 
-## Le calendrier des 4 vagues
+## Le calendrier des sorties en France
 
-C'est l'organisation logistique clé de ce set : les produits ne sortent pas tous le même jour. TPCi a structuré la gamme en **4 vagues entre septembre et novembre 2026**.
+Les produits ne sont pas tous sortis le même jour. pokemon.com les répartit sur [septembre](https://www.pokemon.com/fr/actualites/decouvrez-tous-les-produits-du-jcc-pokemon-qui-sortiront-en-septembre-2026), [octobre](https://www.pokemon.com/fr/actualites/decouvrez-tous-les-produits-du-jcc-pokemon-qui-sortiront-en-octobre-2026) et [novembre](https://www.pokemon.com/fr/actualites/decouvrez-tous-les-produits-du-jcc-pokemon-qui-sortiront-en-novembre-2026) 2026, sans préciser le jour. Les dates au jour près ci-dessous viennent du [calendrier des sorties de Pokécardex](https://www.pokecardex.com/forums/viewtopic.php?t=49894), mis à jour le 7 novembre.
+
+Au 13 novembre, il reste une échéance : le **27 novembre**, avec la Collection Ultra-Premium Journée et la Collection avec figurine Mewtwo.
 
 <figure class="illustration">
-  <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Frise chronologique des 4 vagues 30th Celebration : vague 1 le 16 septembre, vague 2 le 2 octobre, vague 3 le 30 octobre, vague 4 le 6 novembre 2026.">
+  <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Frise des sorties en France du set Pokémon 30 ans : 16 septembre, octobre (2 et 23), 6 novembre, puis 13 et 27 novembre 2026.">
     <defs>
       <linearGradient id="wave-bg" x1="0" y1="0" x2="0" y2="1">
         <stop offset="0%"  stop-color="#1c2030"/>
@@ -154,106 +158,113 @@ C'est l'organisation logistique clé de ce set : les produits ne sortent pas tou
       </linearGradient>
     </defs>
     <rect x="0" y="0" width="600" height="320" fill="url(#wave-bg)"/>
-    <text x="300" y="26" font-family="JetBrains Mono, monospace" font-size="10" fill="#9b9789" letter-spacing="2" text-anchor="middle">CALENDRIER DES VAGUES · 30TH CELEBRATION</text>
+    <text x="300" y="26" font-family="JetBrains Mono, monospace" font-size="10" fill="#9b9789" letter-spacing="2" text-anchor="middle">CALENDRIER DES SORTIES · SET 30 ANS</text>
 
     <!-- Ligne verticale -->
     <line x1="90" y1="44" x2="90" y2="300" stroke="#3a3f52" stroke-width="1.5"/>
 
     <!-- V1 -->
     <circle cx="90" cy="66" r="7" fill="#f7c948"/>
-    <text x="110" y="62" font-family="JetBrains Mono, monospace" font-size="9" fill="#f7c948" letter-spacing="1">VAGUE 1 · 16 SEPT 2026</text>
-    <text x="110" y="78" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#f2eee2">Coffret Dresseur d'élite, Pokébox, Deck Combat, Blister, Tripack…</text>
+    <text x="110" y="62" font-family="JetBrains Mono, monospace" font-size="9" fill="#f7c948" letter-spacing="1">16 SEPT 2026</text>
+    <text x="110" y="78" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#f2eee2">Coffret Dresseur d'élite, coffrets Amphinobi-ex / Nymphali-ex, Collection poster, blister</text>
 
     <!-- V2 -->
     <circle cx="90" cy="128" r="7" fill="#7ed4c9"/>
-    <text x="110" y="124" font-family="JetBrains Mono, monospace" font-size="9" fill="#7ed4c9" letter-spacing="1">VAGUE 2 · 2 OCT 2026</text>
-    <text x="110" y="140" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#f2eee2">Mini-Tins (10 variantes jour/nuit), Coffret Collection Classeur, Lot de boosters</text>
+    <text x="110" y="124" font-family="JetBrains Mono, monospace" font-size="9" fill="#7ed4c9" letter-spacing="1">OCTOBRE 2026</text>
+    <text x="110" y="140" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#f2eee2">Lot de boosters et Mini-boîtes (2 oct.), Collection classeur (23 oct.)</text>
 
     <!-- V3 -->
     <circle cx="90" cy="192" r="7" fill="#9c8454"/>
-    <text x="110" y="188" font-family="JetBrains Mono, monospace" font-size="9" fill="#9c8454" letter-spacing="1">VAGUE 3 · 30 OCT 2026</text>
-    <text x="110" y="204" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#f2eee2">Deck Combat Mentali-ex / Noctali-ex</text>
+    <text x="110" y="188" font-family="JetBrains Mono, monospace" font-size="9" fill="#9c8454" letter-spacing="1">6 NOV 2026</text>
+    <text x="110" y="204" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#f2eee2">Decks Combat, Ultra-Premium Soirée, Premium Métamorph, figurine Mew</text>
 
     <!-- V4 -->
     <circle cx="90" cy="256" r="7" fill="#d97246"/>
-    <text x="110" y="252" font-family="JetBrains Mono, monospace" font-size="9" fill="#d97246" letter-spacing="1">VAGUE 4 · 6 NOV 2026</text>
-    <text x="110" y="268" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#f2eee2">Coffret Collection Ultra-Premium Journée/Soirée, Premium Métamorph, Figurines</text>
+    <text x="110" y="252" font-family="JetBrains Mono, monospace" font-size="9" fill="#d97246" letter-spacing="1">13 ET 27 NOV 2026</text>
+    <text x="110" y="268" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#f2eee2">Collection autocollant (13), Ultra-Premium Journée et figurine Mewtwo (27)</text>
   </svg>
   <figcaption class="illustration__caption">
-    <strong>4 vagues de sortie</strong> · les dates sont officielles ; les noms FR de certains produits peuvent varier à la localisation finale
+    <strong>Dates de sortie en France</strong> · jours d'après le calendrier Pokécardex, mois confirmés par pokemon.com
   </figcaption>
 </figure>
 
-### Vague 1 — 16 septembre 2026
+### Septembre 2026
 
-| Produit | Contenu clé |
-|---|---|
-| **Coffret Dresseur d'élite (ETB)** | 9 boosters + promo Nidorina full-art + 65 protège-cartes + 16 énergies brillantes + dés |
-| **Coffret / Pokébox Amphinobi-ex / Nymphali-ex** (Greninja ex / Sylveon ex EN) | 4 boosters + promo + jumbo |
-| **Pack Collection K.O.** (Knock Out Collection EN) | 2 boosters + promo Évoli + pièce |
-| **Blister 2 boosters** | 2 boosters + promo Évoli holo cosmo |
-| **Tripack Collection autocollant** (Tech Sticker Collection EN, ×2 designs) | 3 boosters + promo Noadkoko d'Alola ou Lucario |
-| **Coffret Collection Poster** (Poster Collection EN) | 3 boosters + 3 promos Artikodin / Électhor / Sulfura + poster |
+| Produit | Contenu clé | Sortie |
+|---|---|---|
+| **Coffret Dresseur d'élite (ETB)** | 9 boosters + promo Nidorina entièrement illustrée + 65 protège-cartes + 16 énergies brillantes + dés | 16 sept. |
+| **Coffret Amphinobi-ex / Nymphali-ex** | 4 boosters + promo + carte grand format | 16 sept. |
+| **Collection poster** | 3 boosters + 3 promos Artikodin / Électhor / Sulfura + poster | 16 sept. |
+| **Blister de 2 boosters** | 2 boosters + Évoli brillant + pièce | 16 sept. |
+| **Collection K.O.** | 2 boosters + Évoli brillant + pièce | 24 sept. |
 
-Le **Coffret Dresseur d'élite** est le produit central de cette vague. La fiche officielle indique 9 boosters ; certaines fiches revendeur affichent 10, vraisemblablement par erreur de saisie. Retenir 9.
+Le **Coffret Dresseur d'élite** est le produit central du lancement. Il contient 9 boosters.
 
 <figure class="illustration">
   <img src="/assets/images/posts/set-pokemon-30-ans/etb-30th.webp" alt="Coffret Dresseur d'élite 30th Celebration avec 9 boosters, protège-cartes et promo Nidorina full-art" width="1200" height="675" loading="lazy" decoding="async">
   <figcaption class="illustration__caption">© The Pokémon Company International</figcaption>
 </figure>
 
-### Vague 2 — 2 octobre 2026
+### Octobre 2026
 
-- **Mini-Tins** : 10 variantes jour/nuit — les motifs Zarbi forment le mot « ANNIVERSARY »
-- **Coffret Collection Classeur** (Binder Collection EN) : classeur 9 cases + 5 boosters
-- **Lot de boosters** (Booster Bundle EN) : 6 boosters
+| Produit | Contenu clé | Sortie |
+|---|---|---|
+| **Lot de boosters** (bundle) | 6 boosters | 2 oct. |
+| **Mini-boîtes** | 2 boosters + autocollants + carte artistique ; 10 illustrations qui s'assemblent en deux images, jour et nuit | 2 oct. |
+| **Collection classeur** | Classeur à 9 pochettes + 5 boosters | 23 oct. |
 
 <figure class="illustration">
   <img src="/assets/images/posts/set-pokemon-30-ans/booster-bundle.webp" alt="Lot de boosters 30th Celebration — 6 boosters scellés, vague 2 du 2 octobre 2026" width="1200" height="675" loading="lazy" decoding="async">
   <figcaption class="illustration__caption">© The Pokémon Company International</figcaption>
 </figure>
 
-### Vague 3 — 30 octobre 2026
+### Novembre 2026
 
-- **Deck Combat Mentali-ex / Noctali-ex** (Battle Decks EN) : deck 60 cartes brillantes + promo **Victini ou Zeraora** selon le deck + étui + pièce + tapis
+| Produit | Contenu clé | Sortie |
+|---|---|---|
+| **Decks Combat Mentali-ex / Noctali-ex** | 60 cartes brillantes + promo Victini ou Zeraora + étui, pièce, tapis | 6 nov.* |
+| **Collection Ultra-Premium Soirée (UPC)** — Pikachu-ex + Noctali-ex | 29 boosters + 1 booster Collection Classique de 3 cartes + accessoires | 6 nov. |
+| **Collection Premium Métamorph** | 8 boosters + promo Métamorph + porte-carte acrylique | 6 nov. |
+| **Collection avec figurine Mew** | 5 boosters + promo + carte grand format + figurine | 6 nov. |
+| **Collection autocollant réajustable** (tripack, Noadkoko d'Alola ou Lucario) | 3 boosters + promo + autocollants | 13 nov. |
+| **Collection Ultra-Premium Journée (UPC)** — Pikachu-ex + Mentali-ex | 29 boosters + 1 booster Collection Classique de 3 cartes + accessoires | 27 nov. |
+| **Collection avec figurine Mewtwo** | 5 boosters + promo + carte grand format + figurine | 27 nov. |
 
-### Vague 4 — 6 novembre 2026
+\* pokemon.com classe les Decks Combat dans les sorties d'octobre ; Pokécardex les date du 6 novembre.
 
-| Produit | Contenu clé |
-|---|---|
-| **Coffret Collection Ultra-Premium « Journée »** (Pikachu ex + Mentali ex) | 29 boosters 30th Celebration + 1 booster Collection Classique de 3 cartes |
-| **Coffret Collection Ultra-Premium « Soirée »** (Pikachu ex + Noctali ex) | 29 boosters 30th Celebration + 1 booster Collection Classique de 3 cartes |
-| **Coffret Collection Premium Métamorph** (Ditto Premium Collection EN) | 8 boosters + promo Métamorph |
-| **Coffret Collection avec figurine Mewtwo / Mew** (×2) | Figurine + 5 boosters |
-
-Le **Coffret Collection Ultra-Premium** est le produit "graal" de la gamme. Les UPC des sets anniversaire (référence : 25th Anniversary 2021) ont systématiquement été en rupture dès le jour J. La tension de stock sera forte.
+La **Collection Ultra-Premium** est le plus gros produit de la gamme : 30 boosters en tout, booster Collection Classique compris.
 
 <figure class="illustration">
   <img src="/assets/images/posts/set-pokemon-30-ans/ultra-premium-collection.webp" alt="Coffret Collection Ultra-Premium Journée/Soirée 30th Celebration — Pikachu ex, Mentali ex, Noctali ex, 29 boosters + booster Collection Classique" width="1200" height="675" loading="lazy" decoding="async">
   <figcaption class="illustration__caption">© The Pokémon Company International</figcaption>
 </figure>
 
-### La Classic Collection
+### La Collection Classique
 
-Certains produits incluent un **booster Collection Classique** (3 cartes) contenant des rééditions de cartes iconiques, avec un tampon commémoratif « 30 » et un traitement foil. **La Base Set Dracaufeu est confirmée officiellement**. Les 29 autres rééditions n'ont pas encore été annoncées (voir encadré en fin d'article).
+La Collection Ultra-Premium contient un **booster Collection Classique** de 3 cartes : des réimpressions de cartes emblématiques des 30 dernières années. La [page officielle de l'extension](https://tcg.pokemon.com/fr-fr/expansions/30th-celebration/) cite le **Dracaufeu du Set de Base** et **Pikachu et Zekrom-GX** (Soleil et Lune – Duo de Choc).
 
 ---
 
-## Où précommander le set 30 ans en France
+## Où trouver les produits 30 ans {#ou-trouver}
 
-La tension de stock sera forte sur les coffrets premium. Les sets spéciaux (Celebrations 25th Anniversary, Destinées de Paldéa) ont systématiquement vu ETB et UPC partir en quelques jours. La disponibilité variera fortement d'une enseigne à l'autre, et rien ne garantit un réapprovisionnement rapide après le lancement.
+pokemon.com indique seulement que la gamme se trouve « dans les points de vente habituels des produits du JCC Pokémon », sans citer d'enseigne ni de limite d'achat. En pratique :
 
-**Revendeurs FR à surveiller** : Cultura, Philibert, UltraJeux, Magic Bazar, Micromania, Fnac, Cdiscount, pokedrop.fr, Pyrokards, shop-tcg.fr.
+- **Grandes enseignes culturelles et boutiques spécialisées** : c'est le circuit habituel pour l'ETB, le Lot de boosters, les coffrets et l'UPC. Les modalités de vente (quantité par client, réservation) se décident enseigne par enseigne : seule la fiche produit de l'enseigne fait foi.
+- **Bureaux de tabac et presse** : la Collection K.O. leur est réservée, d'après le calendrier Pokécardex.
 
-Les **prix officiels en euros de la gamme 30th ne sont pas encore communiqués** au 1er juillet 2026 (ni par TPCi, ni par Asmodee). On les ajoutera dès leur publication. En attendant : méfiance envers les prix de précommande gonflés par certaines boutiques.
+### UPC : limite d'achat
 
-[**Précommander l'ETB 30th Celebration sur Amazon** (lien affilié)](https://www.amazon.fr/s?k=pokemon+30th+celebration+ETB&tag=rareradar-21&ascsubtag=rr-set30-produits)
+Les deux Collections Ultra-Premium sortent à trois semaines d'écart : Soirée le 6 novembre, Journée le 27 novembre. Sur les fiches Philibert consultées le 13/11/2026 ([Soirée](https://www.philibertnet.com/fr/pokemon/184748-pokemon-30-ans-coffret-ultra-premium-noctali-descelle-196214155398.html), [Journée](https://www.philibertnet.com/fr/pokemon/184752-pokemon-30-ans-coffret-ultra-premium-mentali-descelle-2100001434595.html)), l'achat est limité à **1 exemplaire par foyer** et la boîte est vendue « descellée » : le film plastique est incisé pour décourager la revente, le contenu restant inchangé.
 
-Pour les scellés complets et les vagues suivantes, eBay reste souvent compétitif sur les bundles importés :
+### Prix conseillés
 
-[**Voir le scellé 30th Celebration sur eBay** (lien affilié)](https://www.ebay.fr/sch/i.html?_nkw=pokemon+30th+celebration&campid=5339154295&customid=rr-set30-produits)
+pokemon.com ne publie aucun prix. Le calendrier Pokécardex indique **55,99 €** pour l'ETB, **35,99 €** pour le Lot de boosters et **229,99 €** pour chaque UPC.
 
-**Accessoires de protection** : avec 100 % de cartes foil, la moindre rayure est visible. Le combo *penny sleeve + outer sleeve rigide* s'impose dès l'ouverture.
+[**Voir l'ETB 30ᵉ Anniversaire sur Amazon** (lien affilié)](https://www.amazon.fr/s?k=pokemon+30th+celebration+ETB&tag=rareradar-21&ascsubtag=rr-set30-produits)
+
+[**Voir le scellé 30ᵉ Anniversaire sur eBay** (lien affilié)](https://www.ebay.fr/sch/i.html?_nkw=pokemon+30th+celebration&campid=5339154295&customid=rr-set30-produits)
+
+**Accessoires de protection** : sur des cartes toutes brillantes, la moindre rayure se voit. Le combo *penny sleeve + outer sleeve rigide* s'impose dès l'ouverture.
 
 [**Penny sleeves + protections cartes** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=penny+sleeves+standard+pokemon+100&tag=rareradar-21&ascsubtag=rr-set30-sleeves) · ou consultez notre guide double-sleeving Pokémon TCG pour le détail de la méthode.
 
@@ -261,43 +272,42 @@ Pour les scellés complets et les vagues suivantes, eBay reste souvent compétit
 
 ## FAQ
 
-**Q : Quand sort exactement le set Pokémon 30 ans ?**
+**Q : Quand est sorti le set Pokémon 30 ans ?**
 
-R : Le 16 septembre 2026. C'est la première sortie mondiale simultanée de l'histoire du JCC Pokémon — toutes les régions (Amérique du Nord, Europe, Japon, Océanie) reçoivent le set le même jour.
+R : Le 16 septembre 2026, simultanément dans le monde entier. Les produits de la gamme s'échelonnent ensuite jusqu'au 27 novembre 2026.
+
+**Q : Où trouver l'ETB et l'UPC 30 ans ?**
+
+R : Dans les points de vente habituels du JCC Pokémon : grandes enseignes culturelles et boutiques spécialisées. L'ETB est sorti le 16 septembre, l'UPC Soirée le 6 novembre, l'UPC Journée sort le 27 novembre. Détail dans la section [Où trouver les produits 30 ans](#ou-trouver).
 
 **Q : Est-ce que toutes les cartes sont vraiment brillantes ?**
 
-R : Oui. TPCi a confirmé que 100 % des cartes du set 30th Celebration ont un traitement foil, y compris les Énergies de base. C'est une première absolue pour un set Pokémon TCG.
+R : Oui pour les boosters : la page officielle indique que toutes les cartes des boosters 30ᵉ Anniversaire sont brillantes, carte Énergie de base comprise.
 
-**Q : C'est quoi la Futuristic Rare ?**
+**Q : C'est quoi la futuriste rare ?**
 
-R : Une nouvelle rareté introduite avec ce set. Abréviation : FUR. Direction artistique distincte des raretés existantes (Art Rare, Special Illustration Rare), avec des visuels confiés à l'artiste YOSHIROTTEN. Les premières cartes dans ce type sont Mewtwo ex et Mew ex.
+R : La nouvelle rareté introduite avec ce set (*Futuristic rare* en anglais). Ses cartes sont imaginées par l'artiste YOSHIROTTEN ; la page officielle montre Mewtwo et Mew.
 
 **Q : Le Coffret Journée Pokémon 30 ans, c'est le même set ?**
 
-R : Non. Le Coffret Journée Pokémon 30 ans est un produit promotionnel indépendant sorti en début 2026, qui contient des boosters d'extensions variées et une promo Pikachu. Il n'a aucun lien avec le set 30th Celebration de septembre.
+R : Non. Le Coffret Journée Pokémon 30 ans est un produit promotionnel indépendant sorti début 2026, qui contient des boosters d'extensions variées et une promo Pikachu. Il n'a aucun lien avec l'extension 30ᵉ Anniversaire de septembre.
 
 **Q : Combien de cartes y a-t-il dans le set ?**
 
-R : Le set de base est numéroté sur **128** (ex. : Mew ex = 158/128, ce chiffre dépasse 128 car il compte les cartes secrètes). En comptant toutes les cartes secrètes, le total devrait avoisiner 150 à 160 cartes.
+R : Plus de 150, d'après pokemon.com, qui ne donne pas de total exact.
 
-**Q : Y a-t-il une display ou booster box classique ?**
+**Q : Y a-t-il une display ?**
 
-R : Non. Comme pour le set Celebrations 25th Anniversary, il n'existe pas de display de 36 boosters standard. L'accès aux boosters passe par les bundles (Lot de boosters, vague 2), les ETB, et les coffrets produits.
-
-**Q : Où trouver la liste complète des cartes du set 30 ans ?**
-
-R : La liste officielle complète n'est pas encore publiée au 1er juillet 2026. Éléments confirmés : 128 cartes numérotées (plus les secrètes), le Dracaufeu Base Set en Classic Collection, Mewtwo ex et Mew ex en Futuristic Rare. Le reste circule en fuites non officielles, à confirmer d'ici la sortie.
+R : Aucune display ne figure dans la gamme présentée par pokemon.com ni au calendrier Pokécardex. Les boosters passent par le Lot de boosters (6), l'ETB (9), les coffrets et l'UPC.
 
 ---
 
-## Ce qui n'est pas encore confirmé (au 1er juillet 2026)
+## Ce que les sources ne précisent pas (au 13 novembre 2026)
 
-- Liste complète des 30 artistes Pikachu
-- Les 29 autres cartes de la Classic Collection (seule la Base Set Dracaufeu est officielle)
-- Taux d'apparition de la Futuristic Rare
-- Prix € officiels (MSRP) de la gamme
-- Contenu détaillé de certaines promos des vagues 2 à 4
+- Les prix conseillés officiels : pokemon.com n'en affiche pas
+- Le taux d'apparition de la futuriste rare
+- Les noms des artistes des 30 Pikachu
+- Le nombre de cartes de la Collection Classique
 
 ---
 
@@ -308,9 +318,13 @@ R : La liste officielle complète n'est pas encore publiée au 1er juillet 2026.
 
 ---
 
+---
+
 ## Sources
 
-- [Pokémon TCG 30th Celebration — Product Showcase (pokemon.com)](https://www.pokemon.com/us/news/pokemon-tcg-30th-celebration-product-showcase)
-- [Press.pokemon.com — Product lineup officiel](https://press.pokemon.com)
-- [Pokemon-france.com — Produits 30e Anniversaire](https://www.pokemon-france.com)
-- [TCG.pokemon.com — 30th Celebration expansion](https://tcg.pokemon.com/en-us/expansions/30th-celebration/)
+- [JCC Pokémon : produits 30ᵉ Anniversaire (pokemon.com)](https://www.pokemon.com/fr/actualites/jcc-pokemon-produits-30-anniversaire)
+- [L'extension 30ᵉ Anniversaire est disponible (pokemon.com)](https://www.pokemon.com/fr/actualites/lextension-30-anniversaire-du-jcc-pokemon-est-disponible)
+- Sorties du mois sur pokemon.com : [septembre](https://www.pokemon.com/fr/actualites/decouvrez-tous-les-produits-du-jcc-pokemon-qui-sortiront-en-septembre-2026), [octobre](https://www.pokemon.com/fr/actualites/decouvrez-tous-les-produits-du-jcc-pokemon-qui-sortiront-en-octobre-2026), [novembre](https://www.pokemon.com/fr/actualites/decouvrez-tous-les-produits-du-jcc-pokemon-qui-sortiront-en-novembre-2026) 2026
+- [Page de l'extension 30ᵉ Anniversaire (tcg.pokemon.com)](https://tcg.pokemon.com/fr-fr/expansions/30th-celebration/)
+- [Calendrier des sorties JCC Pokémon 2026 (Pokécardex)](https://www.pokecardex.com/forums/viewtopic.php?t=49894)
+- Fiches Philibert : [UPC Soirée](https://www.philibertnet.com/fr/pokemon/184748-pokemon-30-ans-coffret-ultra-premium-noctali-descelle-196214155398.html), [UPC Journée](https://www.philibertnet.com/fr/pokemon/184752-pokemon-30-ans-coffret-ultra-premium-mentali-descelle-2100001434595.html)
