@@ -295,13 +295,15 @@ Deux budgets à séparer : la **protection** (indispensable, ~40 €) et le **pa
 
 **Kit protection : l'indispensable, ~40 €**
 
-| Élément | Quantité | Prix indicatif |
+| Élément | Quantité | Budget à prévoir |
 |---|---|---|
-| Penny sleeves Ultra Pro | 200 unités | ~5 € |
-| Top-loaders 35 pt | 50 unités | ~7,50 € |
-| Ultra Pro PRO-Binder 9 pochettes | 360 cartes | ~20 € |
-| Deck box | 1 | ~7 € |
+| [Penny sleeves Ultra Pro](https://www.amazon.fr/s?k=penny+sleeves+ultra+pro&tag=rareradar-21) | 200 unités | ~5 € |
+| [Top-loaders 35 pt](https://www.amazon.fr/s?k=toploader+35pt+ultra+pro&tag=rareradar-21) | 50 unités | ~7,50 € |
+| [Ultra Pro PRO-Binder 9 pochettes](https://www.amazon.fr/s?k=ultra+pro+binder+pokemon&tag=rareradar-21) | 360 cartes | ~20 € |
+| [Deck box](https://www.amazon.fr/s?k=deck+box+ultra+pro+pokemon&tag=rareradar-21) | 1 | ~7 € |
 | **Sous-total protection** | | **~40 €** |
+
+*Ordres de grandeur relevés en boutique ; le prix Amazon du jour s'affiche sur la page produit. Les liens du tableau sont des liens affiliés.*
 
 **Patrimoine : optionnel**
 
