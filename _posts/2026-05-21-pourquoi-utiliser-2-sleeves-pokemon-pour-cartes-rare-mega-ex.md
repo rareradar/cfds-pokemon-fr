@@ -375,3 +375,5 @@ Pour équiper une collection entière à moindre coût, [eBay (lien partenaire)]
 ## Conclusion
 
 Doubler la sleeve, ce n'est pas du sur-équipement de collectionneur paranoïaque. Perfect Fit intérieure ouverture en bas, outer standard ouverture en haut, et tu as déjà éliminé la majorité des risques de perte de cote. Sur tes pièces les plus précieuses, ajoute top-loader 35pt + team bag : quelques centimes de plus par carte. Une seule carte de haute rareté sauvée d'une éraflure rentabilise tout l'équipement.
+
+*Photo de couverture : [Erik Mclean](https://unsplash.com/photos/Y_yI0s8ljBY) / Unsplash.*

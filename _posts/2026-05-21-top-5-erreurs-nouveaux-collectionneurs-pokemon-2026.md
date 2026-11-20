@@ -332,3 +332,5 @@ Pour tester sans casser le budget, [eBay (lien partenaire)](https://www.ebay.fr/
 ## Pour finir
 
 Aucune de ces cinq erreurs n'est mortelle isolément. C'est l'accumulation qui plombe une collection sur 24 mois : booster à l'unité + pas de sleeve + tout ouvert + hypes éparpillées + AliExpress, et **des centaines d'euros partis en fumée** pour un binder qui en vaut une fraction. Le starter pack ci-dessus, appliqué dès le premier mois, évite l'essentiel de ce gaspillage.
+
+*Photo de couverture : [Giorgio Trovato](https://unsplash.com/photos/5bnUnmmQlsc) / Unsplash.*

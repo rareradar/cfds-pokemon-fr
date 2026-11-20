@@ -469,3 +469,5 @@ Pour une collection de valeur en pièce humide, un déshumidificateur aide à re
 Pour aller plus loin sur la protection physique au quotidien, voir notre [guide double sleeve pour cartes rares Méga ex](/2026/pourquoi-utiliser-2-sleeves-pokemon-pour-cartes-rare-mega-ex).
 
 **Dernier conseil** : un hygromètre, des sachets de silica gel et une boîte hermétique correcte coûtent peu, et protègent toute la collection.
+
+*Photo de couverture : [Erik Mclean](https://www.pexels.com/photo/a-person-holding-pokemon-trading-cards-9661252/) / Pexels.*

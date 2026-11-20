@@ -297,3 +297,5 @@ Pour les lots de boosters coréens groupés, [eBay (lien partenaire)](https://ww
 ## Conclusion
 
 L'import d'Asie se justifie d'abord pour les sets dans leur édition d'origine, comme **SV1a Triplet Beat** en japonais ou en coréen. Pour le prix, faites toujours le calcul complet : TVA 20 %, forfait de 3 € ou droits de douane selon le seuil de 150 €, frais de traitement de 2 € par catégorie d'article, frais du transporteur. Sur le CN, restez sur des produits officiels scellés (Set 151C, Cs3bc) et évitez le "proxy". Vérifiez l'IOSS du vendeur avant de payer : le reste, c'est du tri de vendeurs et de la patience douane.
+
+*Photo de couverture : [Halfcut Pokemon](https://unsplash.com/photos/CnKur6pKECs) / Unsplash.*

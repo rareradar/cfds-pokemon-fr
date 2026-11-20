@@ -349,3 +349,5 @@ Pour démarrer ou consolider une collection sérieuse, le minimum syndical c'est
 4. **Deck box × 1** (~7 €) : transport des meilleures pièces
 
 Total ≈ 39 € (PRO-Binder standard) à ~58,50 € (version zip premium) pour protéger les premiers hits. Les accessoires plaisir (figurines, porte-clés, cadres) viennent ensuite selon ton budget et ton angle collection.
+
+*Photo de couverture : [Life Time Values](https://unsplash.com/photos/caF_z0aTPtQ) / Unsplash.*
