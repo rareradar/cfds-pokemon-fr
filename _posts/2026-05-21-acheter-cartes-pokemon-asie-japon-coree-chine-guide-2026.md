@@ -3,7 +3,7 @@ layout: post
 title: "Acheter ses cartes Pokémon en Asie : Japon vs Corée vs Chine (guide 2026)"
 slug: acheter-cartes-pokemon-asie-japon-coree-chine-guide-2026
 date: 2026-11-24 07:30:00 +0100
-n: 13
+n: 14
 author: RareRadar
 description: "Acheter des cartes Pokémon au Japon, Corée ou Chine en 2026 : sets, prix, douane FR, TVA, contrefaçon. Le guide compliance pour économiser sans se faire piéger."
 dek: "Tout ce qu'il faut savoir pour acheter en Asie sans se faire rattraper par la TVA, la douane, ou un proxy custom."

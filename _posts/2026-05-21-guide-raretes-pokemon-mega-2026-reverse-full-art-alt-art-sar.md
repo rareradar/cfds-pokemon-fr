@@ -3,7 +3,7 @@ layout: post
 title: "Raretés Pokémon 2026 : Reverse, Full Art, Alt Art, SAR"
 slug: guide-raretes-pokemon-mega-2026-reverse-full-art-alt-art-sar
 date: 2026-11-26 07:30:00 +0100
-n: 14
+n: 15
 author: RareRadar
 description: "Reverse, Holo, AR, FA, ALT, SAR, IR : décrypter les raretés Pokémon ère Méga 2026. Symboles, méthodes d'identification et pièges à éviter sur Cardmarket."
 dek: "Le vocabulaire des raretés Pokémon 2026, du Reverse Holo à la SAR Méga ex, avec les symboles et les méthodes d'identification."
@@ -189,3 +189,5 @@ Côté revente de versions gradées, [eBay (lien partenaire)](https://www.ebay.f
 La nomenclature des raretés Pokémon est devenue dense, parfois trop. Entre Reverse Holo qu'on confond avec Holo Rare, Illustration rare qu'on prend pour une Ultra rare, et sigles japonais et français qui ne coïncident pas, le marché secondaire FR pullule de mauvaises annonces, plus souvent par ignorance que par mauvaise foi. Le bon réflexe avant un achat important : vérifier le symbole, le numéro de carte (dans le set ou au-dessus du total) et le traitement holo. Cardmarket reste la référence neutre pour comparer.
 
 Et si vous débutez : commencez par maîtriser la distinction Holo Rare vs Reverse Holo. C'est la base pour éviter les mauvaises surprises en lot Vinted. Le reste vient avec le temps, les boosters ouverts, et quelques erreurs payantes en chemin.
+
+*En couverture : Kyogre (AR, 080), Raikou ex (illustration spéciale, 108) et Raikou ex (092), set japonais Storm Emeralda · © The Pokémon Company / Creatures / Nintendo.*
