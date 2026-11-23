@@ -33,7 +33,9 @@
     Les crawlers Twitter/X lisent la première occurrence : la nôtre (summary_large_image) prime.
     Fallback : rareradar-logo-2.png (835×212) en attendant un asset OG 1200×630 dédié.
   {%- endcomment -%}
-  {%- if page.cover_image -%}
+  {%- if page.og_image -%}
+    {%- assign _og_image = page.og_image | absolute_url -%}
+  {%- elsif page.cover_image -%}
     {%- assign _og_image = page.cover_image | absolute_url -%}
   {%- elsif site.logo -%}
     {%- assign _og_image = site.logo | absolute_url -%}
@@ -115,8 +117,8 @@
       "name": "RareRadar Lab",
       "url": {{ site.url | append: site.baseurl | jsonify }}
     }
-    {%- if page.cover_image -%}
-    ,"image": {{ page.cover_image | absolute_url | jsonify }}
+    {%- if page.og_image or page.cover_image -%}
+    ,"image": {{ page.og_image | default: page.cover_image | absolute_url | jsonify }}
     {%- endif -%}
     {%- if page.tags and page.tags.size > 0 -%}
     ,"keywords": {{ page.tags | join: ", " | jsonify }}

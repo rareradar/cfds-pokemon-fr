@@ -10,6 +10,7 @@ rarity: alt
 read_time: 4
 cover_image: /assets/images/posts/hadou-seeker-cartes-v2.png
 cover_image_portrait: /assets/images/posts/portrait/hadou-seeker-cartes.png
+og_image: /assets/images/posts/hadou-seeker-cartes-og.jpg
 tags:
   - pokemon
   - mega
