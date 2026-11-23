@@ -273,7 +273,7 @@ Deux cartes Supporter sont mises en avant. Elles n'ont pas de titre français ta
 
 La carte de Lovis renvoie dans le deck un Pokémon Eau en jeu, avec toutes les cartes qui lui sont attachées. Deux Pokémon du set s'appuient sur elle : montrée depuis la main, elle ajoute 100 dégâts par exemplaire à une attaque de Mustéflott-ex, et 120 dégâts à une attaque de Maraiste.
 
-Elle existe aussi en version **SAR**, numérotée **113/078** et dessinée par le mangaka **Tetsuo Hara** (原哲夫). La page officielle lui consacre une rubrique entière. La place d'une SAR parmi les raretés du bloc est expliquée dans le [guide des raretés Méga]({% post_url 2026-05-21-guide-raretes-pokemon-mega-2026-reverse-full-art-alt-art-sar %}).
+Elle existe aussi en version **SAR**, numérotée **113/078** et dessinée par le mangaka **Tetsuo Hara** (原哲夫). La page officielle lui consacre une rubrique entière. La place d'une SAR parmi les raretés du bloc est expliquée dans le [guide des raretés Méga](/2026/guide-raretes-pokemon-mega-2026-reverse-full-art-alt-art-sar/).
 
 ## Ce que le set ne contient pas
 
@@ -343,7 +343,7 @@ Ce sont les quatre Méga de Hadou Seeker. L'annonce, elle, ne mentionne ni le Ja
 
 Pour comparer, le set précédent : Storm Emeralda (M6), sorti au Japon le 31 juillet 2026, est arrivé en France le 6 novembre 2026 sous le nom [Règne Delta (ME06)]({% post_url 2026-07-31-me06-regne-delta-cartes-storm-emeralda %}), 98 jours plus tard.
 
-Jusqu'au 6 février, ces cartes n'existent qu'en japonais. Les précautions à prendre avant de commander sont détaillées dans le [guide d'achat de cartes en Asie]({% post_url 2026-05-21-acheter-cartes-pokemon-asie-japon-coree-chine-guide-2026 %}).
+Jusqu'au 6 février, ces cartes n'existent qu'en japonais. Les précautions à prendre avant de commander sont détaillées dans le [guide d'achat de cartes en Asie](/2026/acheter-cartes-pokemon-asie-japon-coree-chine-guide-2026/).
 
 ## FAQ
 
