@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Hadou Seeker (Aura Seeker, M7) : les cartes, et ce qu'on sait de Poings Fluides"
-description: "Hadou Seeker, aussi appelée Aura Seeker, sort au Japon le 27 novembre 2026 : Méga-Lucario Z-ex, booster à 200 ¥, et Poings Fluides annoncé en France pour février 2027."
+description: "Hadou Seeker, aussi appelée Aura Seeker, sort au Japon le 27 novembre 2026 : trois Méga « Z » ex menées par Méga-Lucario, une SAR signée Tetsuo Hara, et Poings Fluides annoncé en France pour février 2027."
 date: 2026-11-22 07:30:00 +0100
-last_modified_at: 2026-11-20 12:00:00 +0100
+last_modified_at: 2026-11-23 11:00:00 +0100
 n: 13
 slug: hadou-seeker-cartes
 rarity: alt
@@ -34,7 +34,7 @@ byline_kind: data
 
 **ポケモンカードゲーム MEGA 拡張パック「ハドウシーカー」** (*Hadou Seeker*, qu'on voit aussi traduite *Aura Seeker*) est la nouvelle extension japonaise de la gamme MEGA. Sa page officielle fixe la sortie au Japon au **vendredi 27 novembre 2026**.
 
-Booster de 5 cartes, 200 ¥, trois Méga « Z » ex en tête d'affiche. Voici ce que montre la page officielle, carte par carte, et ce qu'elle ne dit pas.
+Trois Méga « Z » ex en tête d'affiche, Méga-Lucario en vedette, une SAR dessinée par Tetsuo Hara. Voici ce que montre la page officielle, carte par carte, et ce qu'elle ne dit pas.
 
 Côté France, pokemon.com/fr a annoncé le 19 novembre 2026 l'extension **Méga-Évolution – Poings Fluides**, attendue le **6 février 2027**, avec les mêmes Méga en vedette. Ce qu'on en sait est détaillé [plus bas](#et-pour-la-france-).
 
@@ -48,53 +48,9 @@ Trois appellations circulent pour une seule extension.
 
 Aucun nom français n'a été donné à Hadou Seeker lui-même. L'extension française annoncée, Poings Fluides, est traitée dans la dernière partie.
 
-## Le booster : 5 cartes pour 200 ¥
+## Une extension classique
 
-<figure class="illustration">
-  <svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schéma du booster japonais Hadou Seeker : 5 cartes, 200 yens TTC, soit 40 yens par carte, aucune Énergie de base.">
-    <defs>
-      <linearGradient id="hs-booster-bg" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#1c2030"/>
-        <stop offset="100%" stop-color="#0d1018"/>
-      </linearGradient>
-    </defs>
-    <rect x="0" y="0" width="600" height="240" fill="url(#hs-booster-bg)"/>
-    <text x="300" y="28" font-family="JetBrains Mono, monospace" font-size="11" fill="#9b9789" letter-spacing="2" text-anchor="middle">HADOU SEEKER · LE BOOSTER JAPONAIS</text>
-
-    <g fill="#1c2030" stroke="#9c8454" stroke-width="1.5">
-      <rect x="40" y="62" width="56" height="78" rx="5"/>
-      <rect x="106" y="62" width="56" height="78" rx="5"/>
-      <rect x="172" y="62" width="56" height="78" rx="5"/>
-      <rect x="238" y="62" width="56" height="78" rx="5"/>
-      <rect x="304" y="62" width="56" height="78" rx="5"/>
-    </g>
-    <g font-family="Plus Jakarta Sans, sans-serif" font-size="22" font-weight="700" fill="#9c8454" text-anchor="middle">
-      <text x="68" y="109">1</text>
-      <text x="134" y="109">2</text>
-      <text x="200" y="109">3</text>
-      <text x="266" y="109">4</text>
-      <text x="332" y="109">5</text>
-    </g>
-    <text x="200" y="166" font-family="JetBrains Mono, monospace" font-size="10" fill="#f2eee2" letter-spacing="1.2" text-anchor="middle">5 CARTES, RÉPARTIES AU HASARD</text>
-
-    <g transform="translate(400,62)">
-      <rect x="0" y="0" width="160" height="78" rx="6" fill="#1c2030" stroke="#d97246" stroke-width="1.5"/>
-      <text x="80" y="38" font-family="Plus Jakarta Sans, sans-serif" font-size="30" font-weight="700" fill="#d97246" text-anchor="middle">200 ¥</text>
-      <text x="80" y="60" font-family="JetBrains Mono, monospace" font-size="10" fill="#f2eee2" letter-spacing="1.2" text-anchor="middle">PRIX CONSEILLÉ TTC</text>
-    </g>
-    <text x="480" y="166" font-family="JetBrains Mono, monospace" font-size="10" fill="#f2eee2" letter-spacing="1.2" text-anchor="middle">SOIT 40 ¥ PAR CARTE</text>
-
-    <line x1="40" y1="190" x2="560" y2="190" stroke="#2a3042" stroke-width="1"/>
-    <text x="300" y="215" font-family="Plus Jakarta Sans, sans-serif" font-size="12" fill="#9b9789" text-anchor="middle">Aucune carte Énergie de base dans l'extension</text>
-  </svg>
-  <figcaption>
-    Le booster tel que le décrit la page officielle japonaise, relevée le 20 novembre 2026.
-  </figcaption>
-</figure>
-
-La page donne trois informations sur le produit : **200 ¥ TTC** en prix conseillé, **5 cartes** par booster, réparties au hasard. Cela fait 40 ¥ la carte.
-
-Elle ne donne ni le prix d'une display, ni le nombre de boosters qu'elle contient.
+Hadou Seeker est une **extension classique** de la gamme MEGA (拡張パック, « booster d'extension »), pas un set spécial. Le format est donc le format habituel : des boosters de **5 cartes**, vendus en displays standards.
 
 ## Les trois Méga « Z » ex
 
@@ -142,7 +98,7 @@ La liste complète publiée sur la page compte une quatrième Méga, sans Z et s
 
 ## Les autres Pokémon montrés par la page
 
-Deux Pokémon-ex sans Méga-Évolution, **Cryptéro-ex** (シンボラーex, n° 031) et **Mustéflott-ex** (フローゼルex, n° 020), et quinze Pokémon sans le suffixe ex. En voici huit.
+Deux Pokémon-ex sans Méga-Évolution, **Cryptéro-ex** (シンボラーex, n° 031) et **Mustéflott-ex** (フローゼルex, n° 020), et quinze Pokémon sans le suffixe ex. Les voici tous.
 
 <figure class="illustration" style="max-width:none;">
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(135px,1fr)); gap:0.75rem; justify-items:center; align-items:start; padding:1rem 0;">
@@ -226,11 +182,71 @@ Deux Pokémon-ex sans Méga-Évolution, **Cryptéro-ex** (シンボラーex, n°
            style="width:100%; max-width:175px; height:auto; border-radius:6px;">
       <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">KAPOERA · 040</p>
     </div>
+    <div style="text-align:center;">
+      <img src="{{ '/assets/images/posts/hadou-seeker-cartes/feunard-013.webp' | relative_url }}"
+           alt="Carte japonaise Feunard, numéro 013, extension Hadou Seeker"
+           width="420" height="586"
+           loading="lazy" decoding="async"
+           style="width:100%; max-width:175px; height:auto; border-radius:6px;">
+      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">FEUNARD · 013</p>
+    </div>
+    <div style="text-align:center;">
+      <img src="{{ '/assets/images/posts/hadou-seeker-cartes/wushours-048.webp' | relative_url }}"
+           alt="Carte japonaise Wushours, numéro 048, extension Hadou Seeker"
+           width="420" height="586"
+           loading="lazy" decoding="async"
+           style="width:100%; max-width:175px; height:auto; border-radius:6px;">
+      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">WUSHOURS · 048</p>
+    </div>
+    <div style="text-align:center;">
+      <img src="{{ '/assets/images/posts/hadou-seeker-cartes/shifours-poing-final-049.webp' | relative_url }}"
+           alt="Carte japonaise Shifours Poing Final, numéro 049, extension Hadou Seeker"
+           width="420" height="586"
+           loading="lazy" decoding="async"
+           style="width:100%; max-width:175px; height:auto; border-radius:6px;">
+      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">SHIFOURS POING FINAL · 049</p>
+    </div>
+    <div style="text-align:center;">
+      <img src="{{ '/assets/images/posts/hadou-seeker-cartes/shifours-mille-poings-050.webp' | relative_url }}"
+           alt="Carte japonaise Shifours Mille Poings, numéro 050, extension Hadou Seeker"
+           width="420" height="586"
+           loading="lazy" decoding="async"
+           style="width:100%; max-width:175px; height:auto; border-radius:6px;">
+      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">SHIFOURS MILLE POINGS · 050</p>
+    </div>
+    <div style="text-align:center;">
+      <img src="{{ '/assets/images/posts/hadou-seeker-cartes/miaouss-069.webp' | relative_url }}"
+           alt="Carte japonaise Miaouss, numéro 069, extension Hadou Seeker"
+           width="420" height="586"
+           loading="lazy" decoding="async"
+           style="width:100%; max-width:175px; height:auto; border-radius:6px;">
+      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">MIAOUSS · 069</p>
+    </div>
+    <div style="text-align:center;">
+      <img src="{{ '/assets/images/posts/hadou-seeker-cartes/persian-070.webp' | relative_url }}"
+           alt="Carte japonaise Persian, numéro 070, extension Hadou Seeker"
+           width="420" height="586"
+           loading="lazy" decoding="async"
+           style="width:100%; max-width:175px; height:auto; border-radius:6px;">
+      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">PERSIAN · 070</p>
+    </div>
+    <div style="text-align:center;">
+      <img src="{{ '/assets/images/posts/hadou-seeker-cartes/kecleon-071.webp' | relative_url }}"
+           alt="Carte japonaise Kecleon, numéro 071, extension Hadou Seeker"
+           width="420" height="586"
+           loading="lazy" decoding="async"
+           style="width:100%; max-width:175px; height:auto; border-radius:6px;">
+      <p style="font-family:'JetBrains Mono', monospace; font-size:9px; color:#9b9789; letter-spacing:1.2px; margin-top:0.4rem;">KECLEON · 071</p>
+    </div>
   </div>
   <figcaption>
-    Dix des Pokémon présentés sur la page officielle · © The Pokémon Company / Creatures / Nintendo
+    Les dix-sept Pokémon présentés sur la page officielle, hors Méga · © The Pokémon Company / Creatures / Nintendo
   </figcaption>
 </figure>
+
+La page les regroupe autour de quelques idées de deck. La plus visible : **Wushours** (n° 048) et ses deux évolutions. **Shifours Poing Final** (n° 049) frappe à 120, et passe à 260 en défaussant une Énergie Obscurité qui lui est attachée. **Shifours Mille Poings** (n° 050) frappe à 120 et, en défaussant une Énergie Eau, inflige aussi 40 dégâts à chaque Pokémon de Banc adverse.
+
+Autre duo mis en avant : **Miaouss** (n° 069) et **Persian** (n° 070). Le talent de Persian pioche 2 cartes une fois par tour si au moins deux Pokémon en jeu ont l'attaque « ネコにこばん » de Miaouss. Son attaque frappe ensuite 20 fois le nombre de cartes en main. **Kecleon** (n° 071) ajoute à son propre type ceux de tous les Pokémon de son Banc, de quoi viser la faiblesse adverse.
 
 ## Les Supporters et la SAR de Tetsuo Hara
 
@@ -353,8 +369,8 @@ R : La page officielle japonaise indique le vendredi 27 novembre 2026, au Japon.
 **Q : Hadou Seeker et Aura Seeker, c'est la même extension ?**
 R : Oui. Hadou Seeker transcrit le nom japonais officiel, ハドウシーカー ; Aura Seeker en est une traduction qui circule en ligne. Les deux désignent le set M7.
 
-**Q : Combien de cartes dans un booster, et à quel prix ?**
-R : 5 cartes, pour un prix conseillé de 200 ¥ TTC.
+**Q : Hadou Seeker est-il un set spécial ?**
+R : Non, c'est une extension classique de la gamme MEGA : boosters de 5 cartes, displays au format standard.
 
 **Q : Y a-t-il des Énergies de base dans les boosters ?**
 R : Non. La page précise que l'extension ne contient aucune carte Énergie de base.
