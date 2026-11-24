@@ -21,7 +21,6 @@ _cfds:
   generated_by: rareradar-editorial
   reviewed_by: RareRadar (claude-edit pass)
   generated_at: "2026-05-15T09:00:00+02:00"
-  amazon_tag: rareradar-21
   review_status: pending
   sources:
     - "https://www.pokemon.com/us/pokemon-news/the-pokemon-tcg-mega-evolution-chaos-rising-expansion-arrives-on-may-22-2026"
@@ -177,7 +176,7 @@ Côté Pokémon ex sans Méga : Dardargnan, Banshitrouye, Crocorible, Cobaltium,
 
 Le kit d'avant-première est le seul produit accessible avant le 22 mai. Les prix ci-dessus sont les prix conseillés relevés dans le [calendrier des sorties de Pokécardex](https://www.pokecardex.com/forums/viewtopic.php?t=49894) ; les prix en boutique peuvent s'en écarter.
 
-[**Voir les boosters Pokémon TCG sur Amazon** (lien partenaire)](https://www.amazon.fr/s?k=pokemon+chaos+ascendant+ETB+display&tag=rareradar-21&ascsubtag=rr-chaos)
+[**Voir les boosters Pokémon TCG sur Amazon**](https://www.amazon.fr/s?k=pokemon+chaos+ascendant+ETB+display&ascsubtag=rr-chaos)
 
 ## En attendant la sortie
 
@@ -186,17 +185,17 @@ En attendant le 22 mai, voici les séries déjà disponibles.
 **Les derniers sets Écarlate & Violet**
 Parmi les extensions de la série Écarlate et Violet : *Étincelles Déferlantes*, *Foudre Noire* et *Flamme Blanche*.
 
-[**Boosters Écarlate & Violet** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=pokemon+ecarlate+violet+display+booster&tag=rareradar-21&ascsubtag=rr-chaos)
+[**Boosters Écarlate & Violet** sur Amazon](https://www.amazon.fr/s?k=pokemon+ecarlate+violet+display+booster&ascsubtag=rr-chaos)
 
 **Les premiers sets de la série Méga (avant Chaos Ascendant)**
 La série compte trois extensions principales avant *Chaos Ascendant* (ME04) : **Méga-Évolution** (ME01), **Flammes Fantasmagoriques** (ME02) et **Équilibre Parfait** (ME03), plus l'extension spéciale **Héros Transcendants** (ME02.5).
 
-[**Boosters Méga-Évolution** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=pokemon+evolution+mega+display+booster+fr&tag=rareradar-21&ascsubtag=rr-chaos)
+[**Boosters Méga-Évolution** sur Amazon](https://www.amazon.fr/s?k=pokemon+evolution+mega+display+booster+fr&ascsubtag=rr-chaos)
 
 **Accessoires de conservation**
 Pour protéger les cartes dès l'ouverture : penny sleeves, puis classeur ou top-loader.
 
-[**Sleeves Ultra Pro + protections** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+penny+sleeves+standard+100&tag=rareradar-21&ascsubtag=rr-chaos)
+[**Sleeves Ultra Pro + protections** sur Amazon](https://www.amazon.fr/s?k=ultra+pro+penny+sleeves+standard+100&ascsubtag=rr-chaos)
 
 ## FAQ
 

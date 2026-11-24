@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Transparence — programmes d'affiliation
-description: Transparence affiliate RareRadar.fr — Amazon Partenaires France, eBay Partner Network, indépendance éditoriale.
+description: Transparence affiliate RareRadar.fr — eBay Partner Network, indépendance éditoriale.
 permalink: /disclosure/
 ---
 
@@ -11,7 +11,7 @@ permalink: /disclosure/
       <h1 class="article__title h-1">Transparence.</h1>
       <p class="article__dek lede">
         RareRadar utilise des liens partenaires pour financer la production éditoriale.
-        Tu paies le même prix que sans le lien&nbsp;; nous percevons une commission du
+        Tu paies le même prix que sans le lien&nbsp;; nous pouvons percevoir une commission du
         marchand. Ce qui suit détaille les programmes utilisés et nos garde-fous éditoriaux.
       </p>
     </header>
@@ -20,18 +20,18 @@ permalink: /disclosure/
 
       <h2>Programmes utilisés</h2>
 
-      <h3>Amazon Partenaires France</h3>
+      <h3>Amazon</h3>
       <p>
-        Identifiant partenaire&nbsp;: <code>rareradar-21</code>. Lorsqu'un lien Amazon présent
-        dans un article aboutit à une commande, RareRadar perçoit un pourcentage de commission
-        défini par le programme Amazon. Le prix payé par l'acheteur reste identique.
+        RareRadar ne participe plus au programme Amazon Partenaires. Les liens Amazon encore
+        présents dans les articles ne sont pas rémunérés&nbsp;: ils restent parce qu'ils sont
+        utiles au lecteur.
       </p>
 
       <h3>eBay Partner Network (EPN)</h3>
       <p>
-        Programme en cours d'activation. Une fois validé, des liens eBay seront introduits
-        contextuellement dans les articles (singles gradés, sealed product de seconde main).
-        Même principe&nbsp;: commission marchand, prix acheteur inchangé.
+        Campagne <code>5339154295</code>. Certains liens eBay (singles gradés, scellé de seconde
+        main) sont des liens partenaires&nbsp;: un achat via ces liens peut rapporter une
+        commission au site, sans surcoût pour l'acheteur.
       </p>
 
       <h2>Ce que nous ne faisons pas</h2>
@@ -67,8 +67,7 @@ permalink: /disclosure/
       <p>
         Tu peux vérifier la présence du tag affilié dans n'importe quel lien sortant en
         survolant le lien (l'URL apparaît en bas du navigateur). Les liens contenant
-        <code>tag=rareradar-21</code> (Amazon) ou <code>campid=</code> (eBay) sont des liens
-        partenaires.
+        <code>campid=</code> (eBay) sont des liens partenaires.
       </p>
 
       <h2>Question, doute, signalement&nbsp;?</h2>

@@ -22,7 +22,6 @@ _cfds:
   generated_by: rareradar-editorial
   reviewed_by: "RareRadar (claude-edit pass)"
   generated_at: "2026-07-01T09:00:00+02:00"
-  amazon_tag: rareradar-21
   review_status: pending
   sources:
     - "https://www.pokemon.com/fr/actualites/jcc-pokemon-produits-30-anniversaire"
@@ -260,13 +259,13 @@ Les deux Collections Ultra-Premium sortent à trois semaines d'écart : Soirée 
 
 pokemon.com ne publie aucun prix. Le calendrier Pokécardex indique **55,99 €** pour l'ETB, **35,99 €** pour le Lot de boosters et **229,99 €** pour chaque UPC.
 
-[**Voir l'ETB 30ᵉ Anniversaire sur Amazon** (lien affilié)](https://www.amazon.fr/s?k=pokemon+30th+celebration+ETB&tag=rareradar-21&ascsubtag=rr-set30-produits)
+[**Voir l'ETB 30ᵉ Anniversaire sur Amazon**](https://www.amazon.fr/s?k=pokemon+30th+celebration+ETB&ascsubtag=rr-set30-produits)
 
 [**Voir le scellé 30ᵉ Anniversaire sur eBay** (lien affilié)](https://www.ebay.fr/sch/i.html?_nkw=pokemon+30th+celebration&campid=5339154295&customid=rr-set30-produits)
 
 **Accessoires de protection** : sur des cartes toutes brillantes, la moindre rayure se voit. Le combo *penny sleeve + outer sleeve rigide* s'impose dès l'ouverture.
 
-[**Penny sleeves + protections cartes** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=penny+sleeves+standard+pokemon+100&tag=rareradar-21&ascsubtag=rr-set30-sleeves) · ou consultez notre guide double-sleeving Pokémon TCG pour le détail de la méthode.
+[**Penny sleeves + protections cartes** sur Amazon](https://www.amazon.fr/s?k=penny+sleeves+standard+pokemon+100&ascsubtag=rr-set30-sleeves) · ou consultez notre guide double-sleeving Pokémon TCG pour le détail de la méthode.
 
 ---
 

@@ -923,8 +923,8 @@ a {
   color: var(--accent);
   background: transparent;
 }
-.prose table a.product-link[href*="tag=rareradar-21"]::before,
-.prose table a.product-link[href*="tag=rareradar-21"]::after { content: none; }
+.prose table a.product-link[href*="amazon.fr"]::before,
+.prose table a.product-link[href*="amazon.fr"]::after { content: none; }
 
 /* ============================================================================
    21. SHARE BUTTONS (Reddit + X + Threads + WhatsApp + Email + Copy + native)
@@ -1141,7 +1141,7 @@ a {
 }
 
 /* ─── Liens affiliés Amazon : CTA visible inline ─── */
-.prose a[href*="tag=rareradar-21"] {
+.prose a[href*="amazon.fr"] {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
@@ -1160,13 +1160,13 @@ a {
               color var(--dur-fast) var(--ease-out),
               transform var(--dur-fast) var(--ease-out);
 }
-.prose a[href*="tag=rareradar-21"]:hover {
+.prose a[href*="amazon.fr"]:hover {
   background: var(--accent);
   color: var(--bg);
   border-bottom-color: var(--accent);
   transform: translateY(-1px);
 }
-.prose a[href*="tag=rareradar-21"]::before {
+.prose a[href*="amazon.fr"]::before {
   content: "▸";
   font-weight: 800;
   color: var(--accent);
@@ -1175,11 +1175,11 @@ a {
   transition: color var(--dur-fast) var(--ease-out),
               transform var(--dur-fast) var(--ease-out);
 }
-.prose a[href*="tag=rareradar-21"]:hover::before {
+.prose a[href*="amazon.fr"]:hover::before {
   color: var(--bg);
   transform: translateX(3px);
 }
-.prose a[href*="tag=rareradar-21"]::after {
+.prose a[href*="amazon.fr"]::after {
   content: "AMAZON · AFFILIÉ";
   margin-left: auto;
   padding-left: 0.85rem;
@@ -1193,20 +1193,20 @@ a {
   text-transform: uppercase;
   white-space: nowrap;
 }
-.prose a[href*="tag=rareradar-21"]:hover::after {
+.prose a[href*="amazon.fr"]:hover::after {
   color: var(--bg);
   border-left-color: var(--bg);
 }
-.prose a[href*="tag=rareradar-21"] strong {
+.prose a[href*="amazon.fr"] strong {
   color: inherit;
   font-weight: 700;
 }
 @media (max-width: 600px) {
-  .prose a[href*="tag=rareradar-21"]::after { display: none; }
+  .prose a[href*="amazon.fr"]::after { display: none; }
 }
 
 /* Liens dans cellules de tableau : pas de transformation CTA, garder inline */
-.prose table a[href*="tag=rareradar-21"] {
+.prose table a[href*="amazon.fr"] {
   display: inline;
   background: transparent;
   border: 0;
@@ -1217,9 +1217,9 @@ a {
   transform: none !important;
   font-size: inherit;
 }
-.prose table a[href*="tag=rareradar-21"]::before,
-.prose table a[href*="tag=rareradar-21"]::after { content: none; }
-.prose table a[href*="tag=rareradar-21"]:hover { background: transparent; color: var(--accent); }
+.prose table a[href*="amazon.fr"]::before,
+.prose table a[href*="amazon.fr"]::after { content: none; }
+.prose table a[href*="amazon.fr"]:hover { background: transparent; color: var(--accent); }
 .prose ul, .prose ol { padding-left: 1.4em; margin-block: 1.1em; }
 .prose li { margin-block: 0.45em; }
 .prose ul li::marker { color: var(--fire); content: "▸ "; }

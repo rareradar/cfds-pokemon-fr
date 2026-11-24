@@ -121,9 +121,9 @@ sitemap: false
         <h3 class="pl-setup__title">Protection</h3>
         <p class="pl-setup__sub">Sleeves &amp; toploaders</p>
         <ul class="pl-setup__list">
-          <li><strong>Sleeves Ultra Pro standard</strong><span class="pl-setup__hint">format standard cartes</span><a href="https://www.amazon.fr/dp/B085DSTKWG?tag=rareradar-21&amp;ascsubtag=pokelatic-hub-sleeves-up-std" rel="noopener noreferrer nofollow sponsored" target="_blank" aria-label="Lien sponsorisé vers Amazon France"><span aria-hidden="true">🛒</span> Amazon →</a></li>
-          <li><strong>Sleeves Perfect Fit</strong><span class="pl-setup__hint">inner sleeves 64×89</span><a href="https://www.amazon.fr/dp/B0G8JQP2KD?tag=rareradar-21&amp;ascsubtag=pokelatic-hub-sleeves-perfect-fit" rel="noopener noreferrer nofollow sponsored" target="_blank" aria-label="Lien sponsorisé vers Amazon France"><span aria-hidden="true">🛒</span> Amazon →</a></li>
-          <li><strong>Toploaders rigides</strong><span class="pl-setup__hint">Ultra Pro · long terme</span><a href="https://www.amazon.fr/dp/B0812Z3RPY?tag=rareradar-21&amp;ascsubtag=pokelatic-hub-toploaders" rel="noopener noreferrer nofollow sponsored" target="_blank" aria-label="Lien sponsorisé vers Amazon France"><span aria-hidden="true">🛒</span> Amazon →</a></li>
+          <li><strong>Sleeves Ultra Pro standard</strong><span class="pl-setup__hint">format standard cartes</span><a href="https://www.amazon.fr/dp/B085DSTKWG?ascsubtag=pokelatic-hub-sleeves-up-std" rel="noopener noreferrer nofollow" target="_blank" aria-label="Lien vers Amazon France"><span aria-hidden="true">🛒</span> Amazon →</a></li>
+          <li><strong>Sleeves Perfect Fit</strong><span class="pl-setup__hint">inner sleeves 64×89</span><a href="https://www.amazon.fr/dp/B0G8JQP2KD?ascsubtag=pokelatic-hub-sleeves-perfect-fit" rel="noopener noreferrer nofollow" target="_blank" aria-label="Lien vers Amazon France"><span aria-hidden="true">🛒</span> Amazon →</a></li>
+          <li><strong>Toploaders rigides</strong><span class="pl-setup__hint">Ultra Pro · long terme</span><a href="https://www.amazon.fr/dp/B0812Z3RPY?ascsubtag=pokelatic-hub-toploaders" rel="noopener noreferrer nofollow" target="_blank" aria-label="Lien vers Amazon France"><span aria-hidden="true">🛒</span> Amazon →</a></li>
         </ul>
       </div>
 
@@ -135,8 +135,8 @@ sitemap: false
         <h3 class="pl-setup__title">Rangement</h3>
         <p class="pl-setup__sub">Classeurs Ultimate Guard</p>
         <ul class="pl-setup__list">
-          <li><strong>Ultimate Guard FlexXfolio</strong><span class="pl-setup__hint">9-pocket · 360 cartes</span><a href="https://www.amazon.fr/dp/B009VEI2T2?tag=rareradar-21&amp;ascsubtag=pokelatic-hub-classeur-ug-std" rel="noopener noreferrer nofollow sponsored" target="_blank" aria-label="Lien sponsorisé vers Amazon France"><span aria-hidden="true">🛒</span> Amazon →</a></li>
-          <li><strong>Classeur zippé</strong><span class="pl-setup__hint">Deoyibu · fermeture éclair</span><a href="https://www.amazon.fr/dp/B0DXPVXNQQ?tag=rareradar-21&amp;ascsubtag=pokelatic-hub-classeur-zip" rel="noopener noreferrer nofollow sponsored" target="_blank" aria-label="Lien sponsorisé vers Amazon France"><span aria-hidden="true">🛒</span> Amazon →</a></li>
+          <li><strong>Ultimate Guard FlexXfolio</strong><span class="pl-setup__hint">9-pocket · 360 cartes</span><a href="https://www.amazon.fr/dp/B009VEI2T2?ascsubtag=pokelatic-hub-classeur-ug-std" rel="noopener noreferrer nofollow" target="_blank" aria-label="Lien vers Amazon France"><span aria-hidden="true">🛒</span> Amazon →</a></li>
+          <li><strong>Classeur zippé</strong><span class="pl-setup__hint">Deoyibu · fermeture éclair</span><a href="https://www.amazon.fr/dp/B0DXPVXNQQ?ascsubtag=pokelatic-hub-classeur-zip" rel="noopener noreferrer nofollow" target="_blank" aria-label="Lien vers Amazon France"><span aria-hidden="true">🛒</span> Amazon →</a></li>
         </ul>
         <p class="pl-setup__more">📰 <a href="{{ '/2026/top-5-classeurs-pokemon-2026-comparatif-ultra-pro-uni-keep-v/' | relative_url }}">Comparatif classeurs 2026</a></p>
       </div>
@@ -149,7 +149,7 @@ sitemap: false
         <h3 class="pl-setup__title">Tournage</h3>
         <p class="pl-setup__sub">Micro Lavalier iPhone</p>
         <ul class="pl-setup__list">
-          <li><strong>Micro Lavalier LED</strong><span class="pl-setup__hint">iPhone / Android sans-fil</span><a href="https://www.amazon.fr/dp/B0FWKBSHGB?tag=rareradar-21&amp;ascsubtag=pokelatic-hub-micro-lavalier" rel="noopener noreferrer nofollow sponsored" target="_blank" aria-label="Lien sponsorisé vers Amazon France"><span aria-hidden="true">🛒</span> Amazon →</a></li>
+          <li><strong>Micro Lavalier LED</strong><span class="pl-setup__hint">iPhone / Android sans-fil</span><a href="https://www.amazon.fr/dp/B0FWKBSHGB?ascsubtag=pokelatic-hub-micro-lavalier" rel="noopener noreferrer nofollow" target="_blank" aria-label="Lien vers Amazon France"><span aria-hidden="true">🛒</span> Amazon →</a></li>
         </ul>
       </div>
     </div>

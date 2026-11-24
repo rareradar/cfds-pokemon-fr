@@ -100,24 +100,11 @@ boutiques spécialisées), on dirige vers ces sources sans bénéfice pour
 le site. C'est la condition pour que les recommandations restent
 utiles.</p>
 
-<p>rareradar.fr participe au programme <strong>Amazon Partenaires</strong>
-(identifiant de suivi <code>rareradar-21</code>) et au programme
-<strong>eBay Partner Network</strong> (campagne <code>5339154295</code>).
-Les boutons «&nbsp;Voir sur Amazon&nbsp;» et «&nbsp;Voir sur eBay&nbsp;»
-présents dans les articles sont des liens partenaires qui génèrent une
-commission sans surcoût pour vous.</p>
-
-<h2>Mention Amazon Partenaires</h2>
-
-<blockquote>
-<p><em>En tant que Partenaire Amazon, je réalise un bénéfice sur les
-achats remplissant les conditions applicables.</em></p>
-</blockquote>
-
-<p>Cette mention est requise par les conditions du programme Amazon
-Partenaires (Operating Agreement, clause de divulgation des liens
-d'affiliation) et s'applique à l'intégralité des liens Amazon publiés
-sur rareradar.fr.</p>
+<p>rareradar.fr participe au programme <strong>eBay Partner Network</strong>
+(campagne <code>5339154295</code>). Les liens «&nbsp;Voir sur eBay&nbsp;»
+présents dans les articles sont des liens partenaires qui peuvent générer
+une commission sans surcoût pour vous. Les liens Amazon ne sont pas
+rémunérés.</p>
 
 <h2>Système de «&nbsp;rareté&nbsp;» éditoriale</h2>
 

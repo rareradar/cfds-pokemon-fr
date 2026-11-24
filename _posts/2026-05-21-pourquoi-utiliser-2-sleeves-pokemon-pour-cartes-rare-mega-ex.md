@@ -18,7 +18,6 @@ _cfds:
   generated_by: rareradar-editorial
   generated_at: "2026-05-21T15:15:00+02:00"
   conseil_20260521: "fresh_rewrite_correct_mega_ex_era"
-  amazon_tag: rareradar-21
   review_status: "ready_for_promote"
   images_generated_at: "2026-05-21"
 ---
@@ -176,9 +175,9 @@ La double sleeve (une sleeve intérieure ajustée, puis une outer par-dessus) r�
 
 Le principe est simple : la carte ne touche jamais directement l'extérieur. Elle est dans une première sleeve ajustée (Perfect Fit), elle-même dans une seconde sleeve plus épaisse (outer), et l'ensemble ne bouge plus.
 
-**Sleeve intérieure Perfect Fit**. Très fine et taillée au plus près de la carte. On y glisse la carte **tête en bas** : la Perfect Fit est ensuite insérée dans l'outer avec son **ouverture vers le bas**. Une penny sleeve ne convient pas pour ce rôle : elle n'est pas ajustée à la carte, alors que la Perfect Fit est conçue pour entrer dans une outer. Dispo sur [**sleeves Perfect Fit** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=sleeves+perfect+fit+inner&tag=rareradar-21).
+**Sleeve intérieure Perfect Fit**. Très fine et taillée au plus près de la carte. On y glisse la carte **tête en bas** : la Perfect Fit est ensuite insérée dans l'outer avec son **ouverture vers le bas**. Une penny sleeve ne convient pas pour ce rôle : elle n'est pas ajustée à la carte, alors que la Perfect Fit est conçue pour entrer dans une outer. Dispo sur [**sleeves Perfect Fit** sur Amazon](https://www.amazon.fr/s?k=sleeves+perfect+fit+inner).
 
-**Outer sleeve extérieure**. Au format standard, plus épaisse, souvent mate pour éviter les reflets et les rayures de surface. Elle se pose **ouverture vers le haut**, à l'opposé de l'ouverture de la sleeve intérieure : c'est ce croisement qui empêche la carte de glisser et la poussière d'entrer. Les Ultra Pro Pro-Matte sont un exemple d'outer, dispo sur [**Ultra Pro outer sleeves Pro Matte** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+pro+matte+sleeves&tag=rareradar-21).
+**Outer sleeve extérieure**. Au format standard, plus épaisse, souvent mate pour éviter les reflets et les rayures de surface. Elle se pose **ouverture vers le haut**, à l'opposé de l'ouverture de la sleeve intérieure : c'est ce croisement qui empêche la carte de glisser et la poussière d'entrer. Les Ultra Pro Pro-Matte sont un exemple d'outer, dispo sur [**Ultra Pro outer sleeves Pro Matte** sur Amazon](https://www.amazon.fr/s?k=ultra+pro+pro+matte+sleeves).
 
 Bilan : quelques centimes par carte pour une protection qui réduit fortement les risques de dégradation lors du stockage.
 
@@ -188,10 +187,10 @@ Sur une carte que tu veux protéger au maximum, typiquement les Illustrations sp
 
 1. **Sleeve Perfect Fit** intérieure.
 2. **Outer sleeve** extérieure.
-3. **Toploader 35pt** Ultra Pro rigide. Le toploader bloque la torsion physique de la carte : impossible de la plier accidentellement en la manipulant. Le 35 points (35pt) est le format standard, prévu pour une carte de taille classique jusqu'à 35 points d'épaisseur. Une carte en double sleeve est plus épaisse et plus large qu'une carte en penny sleeve : si elle n'entre pas sans forcer, prends l'épaisseur au-dessus. Dispo chez [**Ultra Pro Toploader 35pt** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+toploader+35pt&tag=rareradar-21).
-4. **Team bag** Ultra Pro. C'est le détail que les nouveaux oublient. Un toploader, c'est ouvert en haut : la poussière entre. La team bag est une pochette refermable qui scelle le toploader. Sans elle, la poussière s'accumule entre la carte sleevée et la paroi intérieure du toploader. Dispo chez [**Team bags Ultra Pro** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+team+bag&tag=rareradar-21).
+3. **Toploader 35pt** Ultra Pro rigide. Le toploader bloque la torsion physique de la carte : impossible de la plier accidentellement en la manipulant. Le 35 points (35pt) est le format standard, prévu pour une carte de taille classique jusqu'à 35 points d'épaisseur. Une carte en double sleeve est plus épaisse et plus large qu'une carte en penny sleeve : si elle n'entre pas sans forcer, prends l'épaisseur au-dessus. Dispo chez [**Ultra Pro Toploader 35pt** sur Amazon](https://www.amazon.fr/s?k=ultra+pro+toploader+35pt).
+4. **Team bag** Ultra Pro. C'est le détail que les nouveaux oublient. Un toploader, c'est ouvert en haut : la poussière entre. La team bag est une pochette refermable qui scelle le toploader. Sans elle, la poussière s'accumule entre la carte sleevée et la paroi intérieure du toploader. Dispo chez [**Team bags Ultra Pro** sur Amazon](https://www.amazon.fr/s?k=ultra+pro+team+bag).
 
-Pour une carte que tu prévois d'envoyer en grading, utilise une Card Saver I (étui semi-rigide, marque Cardboard Gold) à la place du toploader rigide pour l'envoi. C'est dispo en [**Card Saver I** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=cardboard+gold+card+saver+1&tag=rareradar-21).
+Pour une carte que tu prévois d'envoyer en grading, utilise une Card Saver I (étui semi-rigide, marque Cardboard Gold) à la place du toploader rigide pour l'envoi. C'est dispo en [**Card Saver I** sur Amazon](https://www.amazon.fr/s?k=cardboard+gold+card+saver+1).
 
 <figure class="illustration">
   <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Vue éclatée de la protection en quatre couches pour une carte précieuse : la carte, puis 1, une sleeve intérieure Perfect Fit, ouverture en bas ; 2, une outer sleeve, ouverture en haut ; 3, un top-loader 35 points rigide qui empêche la carte de se tordre ; 4, une team bag refermable qui scelle le top-loader contre la poussière.">
@@ -334,7 +333,7 @@ Trois marques courantes. Elles font toutes le boulot, mais elles ne se valent pa
 
 **Ultra Pro** : la marque américaine, très distribuée en France. Avantage : facile à trouver, packs de 100 à prix bas (penny sleeves ~2,50 € les 100). Choix raisonnable pour l'essentiel d'une collection.
 
-**Dragon Shield Matte** : la marque danoise haut de gamme, plus rigide, finition soignée. Inconvénient : nettement plus chère qu'Ultra Pro. À privilégier pour les cartes les plus chères. Dispo chez [**Dragon Shield Matte** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=dragon+shield+matte+sleeves&tag=rareradar-21).
+**Dragon Shield Matte** : la marque danoise haut de gamme, plus rigide, finition soignée. Inconvénient : nettement plus chère qu'Ultra Pro. À privilégier pour les cartes les plus chères. Dispo chez [**Dragon Shield Matte** sur Amazon](https://www.amazon.fr/s?k=dragon+shield+matte+sleeves).
 
 **KMC Hyper Matte** : sleeves fabriquées au Japon, appréciées des joueurs en tournoi. Texture mate, bonne glisse, idéales pour un deck de jeu en plus de la protection. Inconvénient : prix plus élevé. Bon choix si tu protèges des cartes que tu joues aussi.
 

@@ -21,7 +21,6 @@ _cfds:
   generated_by: rareradar-editorial
   reviewed_by: "RareRadar (vérification multi-sources 2026-07-31)"
   generated_at: "2026-07-31T16:00:00+02:00"
-  amazon_tag: rareradar-21
   review_status: pending
   sources:
     - "https://www.pokemon-card.com/ex/m6/"
@@ -424,7 +423,7 @@ Les deux listes ne se recouvrent pas carte pour carte : les cartes japonaises mo
 
 Un set antérieur du bloc, [Chaos Ascendant (ME04)]({% post_url 2026-05-15-chaos-ascendant-mega-evolution-extension-mai-2026 %}), donne une bonne idée de ce à quoi ressemble une extension Méga Évolution une fois traduite.
 
-**Storm Emeralda étant déjà sorti**, la version japonaise s'achète à l'import : boosters et displays circulent sur [eBay (lien partenaire)](https://www.ebay.fr/sch/i.html?_nkw=storm+emeralda+pokemon&campid=5339154295&toolid=10001&customid=me06-jp). La version française se trouve en boutique et [sur Amazon (lien affilié)](https://www.amazon.fr/s?k=pokemon+me06+regne+delta&tag=rareradar-21&ascsubtag=rr-me06).
+**Storm Emeralda étant déjà sorti**, la version japonaise s'achète à l'import : boosters et displays circulent sur [eBay (lien partenaire)](https://www.ebay.fr/sch/i.html?_nkw=storm+emeralda+pokemon&campid=5339154295&toolid=10001&customid=me06-jp). La version française se trouve en boutique et [sur Amazon](https://www.amazon.fr/s?k=pokemon+me06+regne+delta&ascsubtag=rr-me06).
 
 ## FAQ
 

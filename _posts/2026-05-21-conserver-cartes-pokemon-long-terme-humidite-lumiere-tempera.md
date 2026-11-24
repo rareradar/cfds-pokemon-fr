@@ -23,7 +23,6 @@ _cfds:
   revised_by: "claude_main_eeat_prix_2026-07-21"
   revised_at: "2026-07-21T00:00:00+02:00"
   conseil_20260521: "approved_after_fixes"
-  amazon_tag: "rareradar-21"
   ebay_campid: "5339154295"
   review_status: "ready_for_promote"
   images_generated_at: "2026-05-21"
@@ -50,15 +49,15 @@ L'humidité ambiante au-delà de 60 % cause :
 
 **Sleeves de qualité standard.** Les sleeves Ultra Pro Eclipse Matte ou Dragon Shield Matte protègent du contact direct, mais une sleeve ne protège pas de l'humidité ambiante. La vraie barrière, c'est l'environnement de stockage.
 
-[**Ultra Pro Eclipse Matte 100 sleeves** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+eclipse+matte+sleeves&tag=rareradar-21)
+[**Ultra Pro Eclipse Matte 100 sleeves** sur Amazon](https://www.amazon.fr/s?k=ultra+pro+eclipse+matte+sleeves)
 
 **Sachets dessicants silica gel.** À glisser dans chaque boîte de rangement, et à régénérer selon la notice du fabricant.
 
-[**sachets silica gel rechargeables** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=sachets+silica+gel+rechargeables&tag=rareradar-21)
+[**sachets silica gel rechargeables** sur Amazon](https://www.amazon.fr/s?k=sachets+silica+gel+rechargeables)
 
 **Hygromètre digital basique.** Un modèle d'entrée de gamme (type Inkbird ou ThermoPro) suffit pour vérifier que la pièce reste entre 30 et 50 % HR (idéal 35-45 %). Pas besoin de modèle "spécial cartes" : un hygromètre standard fait le job.
 
-[**hygromètre digital ThermoPro** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=thermopro+hygrometre+digital&tag=rareradar-21)
+[**hygromètre digital ThermoPro** sur Amazon](https://www.amazon.fr/s?k=thermopro+hygrometre+digital)
 
 **Boîte de rangement avec joint.** Une boîte hermétique alimentaire de qualité (Lock&Lock par exemple) fait l'affaire. Le joint silicone est ce qui isole de l'humidité ambiante.
 
@@ -233,7 +232,7 @@ Une sleeve transparente classique ne protège pas des UV. La protection vient su
 - **Tiroir ou armoire fermée** : le plus simple et le plus efficace. Si tes cartes ne voient jamais la lumière du jour, problème UV réglé.
 - **Exposition** : pour les cartes que tu veux exposer, utilise un cadre à verre anti-UV, pas une display plastique transparente.
 
-[**boîte de rangement opaque cartes** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=boite+rangement+opaque+cartes+pokemon&tag=rareradar-21)
+[**boîte de rangement opaque cartes** sur Amazon](https://www.amazon.fr/s?k=boite+rangement+opaque+cartes+pokemon)
 
 **À retenir** : une fois la carte rangée à l'abri de la lumière (boîte métal opaque, tiroir fermé), elle n'évolue plus, mais la décoloration déjà survenue reste définitive.
 
@@ -250,7 +249,7 @@ Les écarts de température causent :
 - **Évitez** : grenier (chaud l'été, froid l'hiver), cave (humide), garage (alternances), véhicule (extrêmes des deux côtés).
 - **Valise étanche** : pour les pièces de grande valeur, une valise à joint type Pelican ou Nanuk ajoute l'étanchéité et la protection contre les chocs.
 
-[**boîte rangement type Pelican** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=pelican+case+small&tag=rareradar-21)
+[**boîte rangement type Pelican** sur Amazon](https://www.amazon.fr/s?k=pelican+case+small)
 
 **Attention chaleur** : un grenier sous les toits devient très chaud en été, et la chaleur fait gondoler les cartes. D'où la règle : jamais de stockage hors de l'espace habité (grenier, garage, véhicule).
 
@@ -414,7 +413,7 @@ Les **sleeves** (pochettes plastique) protègent du contact direct, des rayures 
 - **Dragon Shield Matte** : marque danoise, sleeve plus épaisse.
 - **BCW** : gamme simple pour le stockage.
 
-[**penny sleeves Ultra Pro 100** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=penny+sleeves+ultra+pro&tag=rareradar-21)
+[**penny sleeves Ultra Pro 100** sur Amazon](https://www.amazon.fr/s?k=penny+sleeves+ultra+pro)
 
 **Astuce volume** : pour les gros volumes (1000+ sleeves), [eBay (lien partenaire)](https://www.ebay.fr/sch/i.html?_nkw=ultra+pro+eclipse+sleeves+lot&campid=5339154295&toolid=10001&customid=conserver-sleeves) propose aussi des lots de vendeurs pro européens.
 
@@ -422,7 +421,7 @@ Les **sleeves** (pochettes plastique) protègent du contact direct, des rayures 
 
 Le **toploader 35pt** est le format standard : il est prévu pour une carte de taille classique jusqu'à 35 points d'épaisseur, typiquement une carte en penny sleeve. Pour les cartes plus épaisses, **toploader 55pt** ou **75pt**. Les cartes jumbo demandent un top-loader grand format.
 
-[**toploader 35pt** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=toploader+35pt&tag=rareradar-21)
+[**toploader 35pt** sur Amazon](https://www.amazon.fr/s?k=toploader+35pt)
 
 **À éviter** : les toploaders premier prix mal ébavurés.
 

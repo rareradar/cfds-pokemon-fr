@@ -24,7 +24,6 @@ _cfds:
   revised_by: "claude_main_eeat_prix_fix_2026-07-21"
   revised_at: "2026-07-21T00:00:00+02:00"
   conseil_20260521: "approved_after_fixes"
-  amazon_tag: "rareradar-21"
   ebay_campid: "5339154295"
   review_status: "ready_for_promote"
   images_generated_at: "2026-05-21"
@@ -169,9 +168,9 @@ Les **étuis rigides** et **protecteurs** sont les accessoires de base pour tout
 
 Si tu envisages un jour de faire grader une carte (PSA, CGC, BGS) ou simplement de la conserver dix ans sans perte de valeur, l'étui basique ne suffit plus. La protection classique repose sur trois couches :
 
-1. Une **[penny sleeve](https://www.amazon.fr/s?k=penny+sleeves+ultra+pro+pokemon&tag=rareradar-21)** (sleeve fine et souple, type Ultra Pro, glissée directement sur la carte dès la sortie du booster).
-2. Un **[toploader 35pt](https://www.amazon.fr/s?k=toploader+35pt+pokemon&tag=rareradar-21)** par-dessus (porte-carte rigide qui protège des plis et des chocs).
-3. Un rangement collectif **[deck box](https://www.amazon.fr/s?k=deck+box+pokemon+ultra+pro&tag=rareradar-21)** ou **[binder zip](https://www.amazon.fr/s?k=ultra+pro+pro+binder+zip&tag=rareradar-21)** type Ultra Pro PRO-Binder.
+1. Une **[penny sleeve](https://www.amazon.fr/s?k=penny+sleeves+ultra+pro+pokemon)** (sleeve fine et souple, type Ultra Pro, glissée directement sur la carte dès la sortie du booster).
+2. Un **[toploader 35pt](https://www.amazon.fr/s?k=toploader+35pt+pokemon)** par-dessus (porte-carte rigide qui protège des plis et des chocs).
+3. Un rangement collectif **[deck box](https://www.amazon.fr/s?k=deck+box+pokemon+ultra+pro)** ou **[binder zip](https://www.amazon.fr/s?k=ultra+pro+pro+binder+zip)** type Ultra Pro PRO-Binder.
 
 Les penny sleeves se vendent par lots de 100 pour quelques euros. C'est la première chose à faire dès l'ouverture d'un booster, surtout pour les cartes rares (Ultra rare, Illustration rare, Illustration spéciale rare). Sans sleeve, chaque manipulation expose la surface aux rayures, ce qui pèse sur la note en cas de grading.
 
@@ -182,15 +181,15 @@ Pour le stockage collectif, deux écoles :
 - La **deck box** : petite boîte rigide qui contient un deck sleevé, parfaite pour le transport.
 - Le **binder zip** type Ultra Pro PRO-Binder : classeur fermé à zip : aucune carte ne s'échappe en transport.
 
-> **Conseil pro :** si tu vises le grading, soigne l'emballage d'envoi : penny sleeve, puis [Card Saver 1](https://www.amazon.fr/s?k=card+saver+1+psa+grading&tag=rareradar-21) (porte-carte semi-rigide plutôt que toploader pour PSA), puis enveloppe rigide. Pour la double sleeve des Méga ex, voir notre [guide double sleeve Pokémon Méga ex](/2026/pourquoi-utiliser-2-sleeves-pokemon-pour-cartes-rare-mega-ex).
+> **Conseil pro :** si tu vises le grading, soigne l'emballage d'envoi : penny sleeve, puis [Card Saver 1](https://www.amazon.fr/s?k=card+saver+1+psa+grading) (porte-carte semi-rigide plutôt que toploader pour PSA), puis enveloppe rigide. Pour la double sleeve des Méga ex, voir notre [guide double sleeve Pokémon Méga ex](/2026/pourquoi-utiliser-2-sleeves-pokemon-pour-cartes-rare-mega-ex).
 
-[**penny sleeves Ultra Pro 100** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=penny+sleeves+ultra+pro&tag=rareradar-21)
+[**penny sleeves Ultra Pro 100** sur Amazon](https://www.amazon.fr/s?k=penny+sleeves+ultra+pro)
 
-[**toploader 35pt Pokémon** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=toploader+35pt+pokemon&tag=rareradar-21)
+[**toploader 35pt Pokémon** sur Amazon](https://www.amazon.fr/s?k=toploader+35pt+pokemon)
 
-[**deck box Pokémon Ultra Pro** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=deck+box+pokemon+ultra+pro&tag=rareradar-21)
+[**deck box Pokémon Ultra Pro** sur Amazon](https://www.amazon.fr/s?k=deck+box+pokemon+ultra+pro)
 
-[**Ultra Pro PRO-Binder zip** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+pro+binder+zip&tag=rareradar-21)
+[**Ultra Pro PRO-Binder zip** sur Amazon](https://www.amazon.fr/s?k=ultra+pro+pro+binder+zip)
 
 Sur les **gros volumes** (lots 1000+ sleeves, plusieurs toploaders, classeurs revendeur), [eBay (lien partenaire)](https://www.ebay.fr/sch/i.html?_nkw=pokemon+sleeves+toploader+lot&campid=5339154295&toolid=10001&customid=accessoires-lot) propose aussi des lots de vendeurs pro européens.
 
@@ -315,11 +314,11 @@ Les figurines articulées ou en édition limitée se protègent dans des boîtes
 
 ## Officiels vs accessoires tiers : ce qui compte vraiment
 
-Dans la pratique, les standards industriels du hobby ne sont pas les accessoires "officiels Pokémon Company" mais deux marques tierces reconnues mondialement : **Ultra Pro** (sleeves, toploaders, binders) et **[Dragon Shield](https://www.amazon.fr/s?k=dragon+shield+matte+sleeves+pokemon&tag=rareradar-21)** (sleeves matte premium). Le critère technique à vérifier en priorité reste la mention **sans acide et sans PVC** sur l'emballage des sleeves.
+Dans la pratique, les standards industriels du hobby ne sont pas les accessoires "officiels Pokémon Company" mais deux marques tierces reconnues mondialement : **Ultra Pro** (sleeves, toploaders, binders) et **[Dragon Shield](https://www.amazon.fr/s?k=dragon+shield+matte+sleeves+pokemon)** (sleeves matte premium). Le critère technique à vérifier en priorité reste la mention **sans acide et sans PVC** sur l'emballage des sleeves.
 
 Méfie-toi des sleeves bas de gamme génériques AliExpress non marquées : la qualité d'usinage varie d'un lot à l'autre. Pour ces produits importés, applique les mêmes réflexes que pour vérifier une carte : tester rigidité, transparence, absence de bavures, à comparer avec une référence connue. Notre [méthode de vérification d'authenticité](/2026/verifier-authenticite-carte-pokemon-sans-loupe-uv) s'applique aussi aux accessoires douteux.
 
-[**Dragon Shield Matte 100 sleeves** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=dragon+shield+matte+sleeves&tag=rareradar-21)
+[**Dragon Shield Matte 100 sleeves** sur Amazon](https://www.amazon.fr/s?k=dragon+shield+matte+sleeves)
 
 ## FAQ : accessoires collection Pokémon
 

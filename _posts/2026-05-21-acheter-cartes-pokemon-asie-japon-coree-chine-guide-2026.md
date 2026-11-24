@@ -18,7 +18,6 @@ _cfds:
   generated_by: rareradar-editorial
   generated_at: "2026-05-21T13:00:00+02:00"
   conseil_20260521: "fresh_generation"
-  amazon_tag: rareradar-21
   review_status: "ready_for_promote"
   images_generated_at: "2026-05-21"
 ---
@@ -113,7 +112,7 @@ Côté logistique, deux services dominent : **Buyee** (intermédiaire qui achèt
 
 Bon point pratique pour les FR : le numéro et le sigle de rareté sont imprimés en alphabet latin sur la carte (C, U, R, RR, AR, SR, SAR, UR), même si le texte d'attaque est en japonais. Côté authentification, ce sont les emballages (boosters, displays) qui portent codes-barres et scellés d'origine, pas la carte elle-même, dont le dos est un motif standard. Méfiez-vous d'un vendeur qui ne montre pas l'emballage scellé intact.
 
-Pour transporter vos imports en sécurité dès réception, prévoyez des sleeves importateurs et des toploaders rigides : [pochettes de protection pour cartes JP/KR sur Amazon (lien affilié)](https://www.amazon.fr/s?k=penny+sleeves+pokemon+import&tag=rareradar-21).
+Pour transporter vos imports en sécurité dès réception, prévoyez des sleeves importateurs et des toploaders rigides : [pochettes de protection pour cartes JP/KR sur Amazon](https://www.amazon.fr/s?k=penny+sleeves+pokemon+import).
 
 ## Corée : montée en gamme et exclu hardcore
 
@@ -129,7 +128,7 @@ La Chine, c'est le cas le plus délicat. Il y a deux marchés totalement distinc
 
 De l'autre côté, le terrain miné : **AliExpress et Temu sont saturés de cartes "proxy" / "custom" / "fan art"**, c'est-à-dire des reprints non officiels. Visuellement c'est bluffant, à prix dérisoire, mais c'est juridiquement de la contrefaçon. La règle simple : un vendeur chinois qui ne montre pas de boîte scellée d'origine, c'est rouge.
 
-Pour stocker proprement displays CN et JP côte à côte sans déformer le carton, une [boîte de stockage rigide pour displays Pokémon sur Amazon (lien affilié)](https://www.amazon.fr/s?k=boite+stockage+display+pokemon&tag=rareradar-21) évite d'écraser les cartons.
+Pour stocker proprement displays CN et JP côte à côte sans déformer le carton, une [boîte de stockage rigide pour displays Pokémon sur Amazon](https://www.amazon.fr/s?k=boite+stockage+display+pokemon) évite d'écraser les cartons.
 
 ## Calcul du vrai prix : TVA + douane + envoi
 

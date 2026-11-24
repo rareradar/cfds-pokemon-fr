@@ -22,7 +22,6 @@ _cfds:
   generated_by: rareradar-editorial
   reviewed_by: "RareRadar (claude-edit pass)"
   generated_at: "2026-07-02T09:00:00+02:00"
-  amazon_tag: rareradar-21
   review_status: pending
   sources:
     - "https://www.pokemon.com/us/news/pokemon-tcg-30th-celebration-product-showcase"
@@ -39,7 +38,7 @@ Trois profils, trois réponses directes :
 
 - **Collectionneur pur** : ouvrir pour les cartes, sans attente financière — ce set est fait pour ça.
 - **Investisseur scellé** : les UPC Journée et Soirée (6 nov.) sont le hold prioritaire — tirage plus limité, vague 4, prix d'entrée plus élevé. Une ETB scellée sur un set anniversaire reste un pari raisonnable (précédent : l'ETB Celebrations 25 ans, une cinquantaine d'euros à la sortie, se revend **650 € scellée aujourd'hui en France**), mais le 30th sort en release mondial massif — ne pas empiler sans surveiller le print run.
-- **Grader** : attendre les cotes raw post-sortie (après le 16/09), viser uniquement les Futuristic Rare en NM/Mint. En dessous de ~50 € raw, la marge ne couvre pas les frais.
+- **Grader** : attendre les cotes raw post-sortie (après le 16/09), viser uniquement les Futuristic Rare en NM/Mint. Une carte dont l'écart brut/gradé ne couvre pas les frais ne vaut pas l'envoi.
 
 *Ceci n'est pas un conseil financier.*
 
@@ -114,7 +113,7 @@ Ce qui compte ici : TPCi a imprimé 10,2 milliards de cartes en 2025 (+30 % vs 2
     <text x="455" y="231" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#f2eee2">Frais fixes élevés ;</text>
     <text x="455" y="246" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#9b9789">cotes inconnues avant</text>
     <text x="455" y="261" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#9b9789">le 16/09/2026</text>
-    <text x="610" y="231" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#9b9789">Si ≥ 50 € raw</text>
+    <text x="610" y="231" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#9b9789">Si carte de valeur</text>
     <text x="610" y="246" font-family="Plus Jakarta Sans, sans-serif" font-size="9" fill="#9b9789">état NM/Mint</text>
     <!-- Séparateurs colonnes -->
     <line x1="165" y1="38" x2="165" y2="300" stroke="#f2eee2" stroke-width="0.5" opacity="0.08"/>
@@ -131,7 +130,7 @@ Ce qui compte ici : TPCi a imprimé 10,2 milliards de cartes en 2025 (+30 % vs 2
 
 Deux conditions doivent être réunies avant d'envoyer une carte au grading :
 
-- **Valeur raw estimée ≥ 50 €** : en dessous, les frais de grading (plusieurs dizaines d'euros par carte selon le service et le délai) rendent l'opération non rentable.
+- **Un écart brut/gradé supérieur aux frais** : les frais de grading se paient carte par carte, selon le service et le délai. Si la carte gradée ne vaut pas nettement plus que la carte brute, l'opération n'est pas rentable.
 - **État NM/Mint à la sortie du booster** : la surface foil de ce set est particulièrement exigeante. Un centering défectueux ou une micro-éraflure descend immédiatement à PSA 9.
 
 Pour le coût exact PSA 2026 : consulter directement [PSAcard.com](https://www.psacard.com) — les grilles bougent régulièrement.
@@ -161,7 +160,7 @@ Les cotes raw ne seront disponibles qu'après le 16/09/2026. Ce qui suit est str
 
 **Pikachu illustrations** : 30 illustrations, une par booster. Certaines pourraient se distinguer — sans données par illustration, impossible de prédire lesquelles.
 
-**Règle pratique** : dès la sortie, surveiller les ventes eBay "sold listings" sur les cartes raw pour calibrer si le seuil des 50 € raw est atteint avant d'envoyer.
+**Règle pratique** : dès la sortie, surveiller les ventes eBay "sold listings" sur les cartes raw pour vérifier que l'écart brut/gradé couvre les frais avant d'envoyer.
 
 ## Garder scellé : quel produit protéger ?
 
@@ -186,7 +185,7 @@ Pas de display classique — le scellé se joue sur deux produits :
 
 **Pour le scellé** : une seule UPC Journée ou Soirée, stockée correctement, horizon minimum 3-5 ans. Pas dix ETB.
 
-**Pour le grading** : attendre les cotes post-sortie. Envoyer uniquement ce qui dépasse 50 € raw en état impeccable. Acheter sur le secondaire une carte déjà en état Mint est souvent plus efficace qu'ouvrir des boosters pour l'obtenir — {% post_url 2026-05-21-verifier-authenticite-carte-pokemon-sans-loupe-uv %} pour les achats raw.
+**Pour le grading** : attendre les cotes post-sortie. Envoyer uniquement les cartes de valeur en état impeccable, dont l'écart brut/gradé couvre les frais. Acheter sur le secondaire une carte déjà en état Mint est souvent plus efficace qu'ouvrir des boosters pour l'obtenir — {% post_url 2026-05-21-verifier-authenticite-carte-pokemon-sans-loupe-uv %} pour les achats raw.
 
 **Rappel** : ceci n'est pas un conseil d'investissement. La valeur d'un produit Pokémon scellé peut baisser comme monter. Les performances de Celebrations 2021 ne garantissent rien sur un set aux volumes de production différents.
 
@@ -219,7 +218,7 @@ PSA reste la référence de liquidité sur le secondaire FR et international. BG
 - Comprendre les Futuristic Rare : guide raretés Pokémon 2026
 
 **Protéger ses cartes avant grading :**
-[**Top-loaders rigides + sleeves penny** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=toploader+35pt+penny+sleeve+pokemon&tag=rareradar-21&ascsubtag=rr-set30-decision)
+[**Top-loaders rigides + sleeves penny** sur Amazon](https://www.amazon.fr/s?k=toploader+35pt+penny+sleeve+pokemon&ascsubtag=rr-set30-decision)
 
 ---
 

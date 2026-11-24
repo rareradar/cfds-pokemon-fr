@@ -18,7 +18,6 @@ _cfds:
   generated_by: rareradar-editorial
   generated_at: "2026-05-21T14:00:00+02:00"
   conseil_20260521: "fresh_generation_after_mistral_reject"
-  amazon_tag: rareradar-21
   review_status: "ready_for_promote"
   images_generated_at: "2026-05-21"
 ---
@@ -40,7 +39,7 @@ Toutes les ères Pokémon partagent le même socle de raretés basiques. Si vous
 
 La distinction Holo Rare vs Reverse Holo est la plus souvent mal comprise sur le marché secondaire (Vinted en tête). **Holo Rare** = illustration qui brille, le reste mat. **Reverse Holo** = le reste qui brille, l'illustration mate. Si vous inversez les deux, vous achetez (ou vendez) au mauvais prix.
 
-Pour stocker proprement ces raretés basiques sans casser le budget, le plus simple est de ranger la totalité dans des [**penny sleeves Ultra Pro** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=penny+sleeves+ultra+pro&tag=rareradar-21) dès la sortie du booster. À ~2,50 € les 100 sleeves, c'est l'investissement le moins cher du hobby.
+Pour stocker proprement ces raretés basiques sans casser le budget, le plus simple est de ranger la totalité dans des [**penny sleeves Ultra Pro** sur Amazon](https://www.amazon.fr/s?k=penny+sleeves+ultra+pro) dès la sortie du booster. À ~2,50 € les 100 sleeves, c'est l'investissement le moins cher du hobby.
 
 ## Les raretés modernes ère Méga 2026 : IR, Ultra rare, SIR, Hyper rare
 
@@ -64,11 +63,11 @@ C'est ici que ça se complique. Au-dessus de la Rare, Écarlate & Violet puis M�
 
 **"ALT" ou "Alt Art"** : ce n'est pas une rareté officielle mais un terme de collectionneurs. Sur Épée & Bouclier, il désignait les versions à illustration alternative des V et VMAX. Sur Écarlate & Violet et Méga, on l'emploie surtout pour parler des Illustrations spéciales rares.
 
-**Illustration spéciale rare (SIR, SAR au Japon)** : deux étoiles dorées. Une scène complète illustrée sur toute la carte, souvent avec un décor ou un dresseur. C'est la rareté que la plupart des collectionneurs traquent. C'est aussi celle qu'on envisage d'envoyer au grading PSA, mais seulement si elle a un fort potentiel Gem Mint et une valeur raw d'au moins ~100 €, le coût du grading (~40 €/carte via concessionnaire FR) ne se justifiant pas en dessous.
+**Illustration spéciale rare (SIR, SAR au Japon)** : deux étoiles dorées. Une scène complète illustrée sur toute la carte, souvent avec un décor ou un dresseur. C'est la rareté que la plupart des collectionneurs traquent. C'est aussi celle qu'on envoie le plus volontiers au grading, à condition qu'elle soit en parfait état.
 
 **Hyper rare (UR au Japon)** : trois étoiles dorées. La version dorée d'une carte, numérotée en fin de set, sur les sets Écarlate & Violet. Sur l'ère Méga, elle laisse la place à la **Méga hyper rare** (MUR au Japon) : une Méga ex dorée, dernière carte du set, présente dès le premier set Méga.
 
-Pour ranger tout ce beau monde sans rayer les holos, le [**binder Ultra Pro PRO-Binder** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+pro-binder&tag=rareradar-21) en 9 cases fait l'affaire, avec ses pochettes à chargement latéral qui empêchent les cartes de glisser.
+Pour ranger tout ce beau monde sans rayer les holos, le [**binder Ultra Pro PRO-Binder** sur Amazon](https://www.amazon.fr/s?k=ultra+pro+pro-binder) en 9 cases fait l'affaire, avec ses pochettes à chargement latéral qui empêchent les cartes de glisser.
 
 <figure class="illustration">
   <svg viewBox="0 0 600 305" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Quatre cartes génériques comparées. Standard : illustration cadrée, finition mate. Holo rare : effet holographique sur l&#x27;illustration seule. Reverse : effet holographique partout sauf sur l&#x27;illustration. Illustration pleine carte : le dessin couvre toute la carte, comme sur les raretés Illustration rare (AR au Japon, IR en français et en anglais), Ultra rare et Illustration spéciale rare (SAR, SIR)."><defs>
@@ -120,7 +119,7 @@ La règle à retenir : l'argent signale l'Ultra rare, l'or les illustrations rar
 
 **Zone 3 : le verso et le traitement holographique**. Tournez la carte : le dos doit montrer le logo Pokémon classique sur fond bleu (hors cartes japonaises, dont le dos est différent). Inclinez ensuite le recto sous une lumière douce pour voir où se trouve l'effet holographique.
 
-Si vous achetez beaucoup d'occasion (Vinted, Leboncoin, brocantes), il vaut le coup d'investir dans une [**loupe horlogerie 10x** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=loupe+horlogerie+10x&tag=rareradar-21) pour examiner le pattern holo et le tramage d'impression. C'est aussi un excellent réflexe avant de [vérifier l'authenticité d'une carte rare](/2026/verifier-authenticite-carte-pokemon-sans-loupe-uv) quand vous suspectez un fake chinois.
+Si vous achetez beaucoup d'occasion (Vinted, Leboncoin, brocantes), il vaut le coup d'investir dans une [**loupe horlogerie 10x** sur Amazon](https://www.amazon.fr/s?k=loupe+horlogerie+10x) pour examiner le pattern holo et le tramage d'impression. C'est aussi un excellent réflexe avant de [vérifier l'authenticité d'une carte rare](/2026/verifier-authenticite-carte-pokemon-sans-loupe-uv) quand vous suspectez un fake chinois.
 
 ## Les pièges : IR vs Ultra rare, "ALT", et AR/IR (la même carte)
 
@@ -156,11 +155,11 @@ Le marché chinois Pokémon TCG a sa propre nomenclature de raretés. Vous crois
 
 Hiérarchie de rareté sur les séries chinoises du « bloc BE » (Cs3bc et apparentés, ère Épée & Bouclier) : **V < VSTAR < VMAX < CHR < CSR**. Ces sets chinois relèvent de l'ère Épée & Bouclier, d'où le format V/VMAX/VSTAR alors que le marché occidental est passé à ex/Méga ex. C'est un décalage normal d'ère, pas une erreur de set.
 
-Si vous comptez vous mettre au sourcing asiatique, le guide [acheter ses cartes Pokémon en Asie](/2026/acheter-cartes-pokemon-asie-japon-coree-chine-guide-2026) couvre les pièges spécifiques (frais de douane, contrefaçons, vendeurs). Et pour le rangement de gros lots multi-langues, une [**deck box 100 cartes** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=deck+box+100+cartes&tag=rareradar-21) résistante est plus pratique qu'un binder.
+Si vous comptez vous mettre au sourcing asiatique, le guide [acheter ses cartes Pokémon en Asie](/2026/acheter-cartes-pokemon-asie-japon-coree-chine-guide-2026) couvre les pièges spécifiques (frais de douane, contrefaçons, vendeurs). Et pour le rangement de gros lots multi-langues, une [**deck box 100 cartes** sur Amazon](https://www.amazon.fr/s?k=deck+box+100+cartes) résistante est plus pratique qu'un binder.
 
 ## Protéger et grader les raretés de valeur
 
-Les cotes individuelles dépendent du Pokémon, du set, de l'état et de la demande du moment : vérifiez-les carte par carte sur Cardmarket. Pour les pièces de valeur, le double sleeve + [**toploader 35pt** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=toploader+35pt&tag=rareradar-21) s'impose avant rangement binder. Et dès qu'on dépasse ~100 € raw, le grading PSA devient pertinent pour les SAR : un grade d'écart pèse directement sur la cote.
+Les cotes individuelles dépendent du Pokémon, du set, de l'état et de la demande du moment : vérifiez-les carte par carte sur Cardmarket. Pour les pièces de valeur, le double sleeve + [**toploader 35pt** sur Amazon](https://www.amazon.fr/s?k=toploader+35pt) s'impose avant rangement binder.
 
 ## FAQ
 

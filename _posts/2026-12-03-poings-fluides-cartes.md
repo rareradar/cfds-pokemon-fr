@@ -22,7 +22,6 @@ _cfds:
   generated_by: rareradar-editorial
   reviewed_by: "RareRadar (relevé des pages officielles, 2026-11-24)"
   generated_at: "2026-11-24T12:00:00+01:00"
-  amazon_tag: rareradar-21
   review_status: pending
   sources:
     - "https://www.pokemon.com/fr/jcc-pokemon/mega-evolution-poings-fluides"

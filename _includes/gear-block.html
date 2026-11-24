@@ -1,5 +1,5 @@
 {%- comment -%}
-  Bloc GEAR home — 3 picks affiliés Amazon FR (tag rareradar-21).
+  Bloc GEAR home — 3 picks Amazon FR, sans tag (compte Partenaires fermé le 24/11/2026).
   Data : _data/gear.yml
   Image : si fichier JPG existe dans assets/images/gear/ → photo réelle,
           sinon SVG placeholder cuivre cohérent design.
@@ -17,13 +17,13 @@
   <div class="gear">
     {% for pick in picks %}
       {%- assign ascsub = pick.ascsubtag | default: "gear-home" -%}
-      {%- assign href = "https://www.amazon.fr/dp/" | append: pick.asin | append: "?tag=rareradar-21&linkCode=ll1&ascsubtag=" | append: ascsub -%}
+      {%- assign href = "https://www.amazon.fr/dp/" | append: pick.asin | append: "?ascsubtag=" | append: ascsub -%}
 
       <a class="gear-item{% unless pick.image_ready %} gear-item--nocover{% endunless %}"
          href="{{ href }}"
          target="_blank"
-         rel="noopener noreferrer nofollow sponsored"
-         aria-label="Voir {{ pick.title | escape }} sur Amazon France (lien affilié)">
+         rel="noopener noreferrer nofollow"
+         aria-label="Voir {{ pick.title | escape }} sur Amazon France">
         <span class="gear-item__badge">{{ pick.badge }}</span>
         {%- comment -%}
           Zone image affichée UNIQUEMENT si une vraie photo produit est prête
@@ -51,8 +51,6 @@
   </div>
 
   <p class="gear-disclosure">
-    <strong>Publicité.</strong>
-    En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions applicables — <strong>sans surcoût pour vous</strong>.
-    Les verdicts restent éditorialement indépendants des produits référencés.
+    Liens non rémunérés&nbsp;: RareRadar ne touche rien sur ces achats.
   </p>
 </section>

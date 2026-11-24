@@ -22,7 +22,6 @@ _cfds:
   generated_by: rareradar-editorial
   reviewed_by: RareRadar (claude-edit pass)
   generated_at: "2026-05-05T17:55:13.675721+00:00"
-  amazon_tag: rareradar-21
   review_status: pending
 ---
 
@@ -122,7 +121,7 @@ sont vulnérables, pas un plastique de fond. Ce qui contient du PVC dans
 l'écosystème collection, ce sont **les sleeves** d'entrée de gamme — et c'est là
 que se joue une grande partie du problème.
 
-[**classeur polypropylène cartes Pokémon** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+pro-binder+pokemon+9+cases&tag=rareradar-21&ascsubtag=rr-frosting)
+[**classeur polypropylène cartes Pokémon** sur Amazon](https://www.amazon.fr/s?k=ultra+pro+pro-binder+pokemon+9+cases&ascsubtag=rr-frosting)
 
 J'ai commencé à voir ce phénomène apparaître sur une partie de mes Reverse Holo
 de la série Soleil & Lune, après huit mois passés dans un classeur basique de
@@ -174,7 +173,7 @@ quelques mois. Beaucoup d'appartements français en hiver chauffé tournent auto
 de 55-65 %. Stocker un classeur dans une cave non ventilée ou une chambre
 ensoleillée mal aérée, c'est garantir l'apparition du frosting à terme.
 
-[**hygromètre numérique pièce** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=hygrometre+numerique+thermometre+interieur&tag=rareradar-21&ascsubtag=rr-frosting)
+[**hygromètre numérique pièce** sur Amazon](https://www.amazon.fr/s?k=hygrometre+numerique+thermometre+interieur&ascsubtag=rr-frosting)
 
 ### Les sleeves PVC d'entrée de gamme
 
@@ -251,7 +250,7 @@ sleeves dans ces matériaux ; c'est indiqué sur le packaging.
   </figcaption>
 </figure>
 
-[**ultra pro penny sleeves** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+penny+sleeves+standard+100&tag=rareradar-21&ascsubtag=rr-frosting)
+[**ultra pro penny sleeves** sur Amazon](https://www.amazon.fr/s?k=ultra+pro+penny+sleeves+standard+100&ascsubtag=rr-frosting)
 
 ### Les variations brusques de température
 
@@ -383,9 +382,9 @@ collectionneurs adultes pour les cartes au-delà de 30-50 €. Pour les Mega ex 
   </figcaption>
 </figure>
 
-[**dragon shield perfect fit** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=dragon+shield+perfect+fit+sealable+standard&tag=rareradar-21&ascsubtag=rr-frosting)
+[**dragon shield perfect fit** sur Amazon](https://www.amazon.fr/s?k=dragon+shield+perfect+fit+sealable+standard&ascsubtag=rr-frosting)
 
-[**ultra pro toploader 35pt** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+toploader+35pt+3x4&tag=rareradar-21&ascsubtag=rr-frosting)
+[**ultra pro toploader 35pt** sur Amazon](https://www.amazon.fr/s?k=ultra+pro+toploader+35pt+3x4&ascsubtag=rr-frosting)
 
 Pour les cartes "communes" / la masse de la collection, une seule penny
 sleeve en polypropylène suffit. Le combo trois couches est une dépense qui
@@ -400,7 +399,7 @@ de papeterie générique sont à proscrire : les anneaux exercent une pression
 sur les bords des cartes proches de la reliure, et les pages plastiques sont
 souvent en PVC.
 
-[**vault x binder** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=vault+x+classeur+zip+360+cartes&tag=rareradar-21&ascsubtag=rr-frosting)
+[**vault x binder** sur Amazon](https://www.amazon.fr/s?k=vault+x+classeur+zip+360+cartes&ascsubtag=rr-frosting)
 
 ### L'environnement de stockage
 
@@ -411,7 +410,7 @@ souvent en PVC.
 - Éviter les pièces avec diffuseur d'huiles essentielles, fumée de tabac, ou
   travaux de peinture récents (les COV accélèrent le vieillissement du vernis)
 
-[**boîte étanche stockage cartes** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=boite+etanche+stockage+cartes+silica+gel&tag=rareradar-21&ascsubtag=rr-frosting)
+[**boîte étanche stockage cartes** sur Amazon](https://www.amazon.fr/s?k=boite+etanche+stockage+cartes+silica+gel&ascsubtag=rr-frosting)
 
 ### Le contrôle visuel mensuel
 
@@ -443,14 +442,14 @@ en boîte étanche compartimentée dès qu'ils détectent un début.
   <td>5–15 €</td>
 </tr>
 <tr>
-  <td><span class="mark mark--top"></span><a class="product-link" href="https://www.amazon.fr/s?k=vault+x+classeur+zip+360+cartes&tag=rareradar-21&ascsubtag=rr-frosting">Classeur Vault X / UniKeep</a></td>
+  <td><span class="mark mark--top"></span><a class="product-link" href="https://www.amazon.fr/s?k=vault+x+classeur+zip+360+cartes&ascsubtag=rr-frosting">Classeur Vault X / UniKeep</a></td>
   <td>Polypropylène</td>
   <td>Bonne</td>
   <td>Élevée</td>
   <td>25–45 €</td>
 </tr>
 <tr>
-  <td><a class="product-link" href="https://www.amazon.fr/s?k=ultra+pro+pro-binder+pokemon+9+cases&tag=rareradar-21&ascsubtag=rr-frosting">Classeur Ultra Pro PRO-Binder</a></td>
+  <td><a class="product-link" href="https://www.amazon.fr/s?k=ultra+pro+pro-binder+pokemon+9+cases&ascsubtag=rr-frosting">Classeur Ultra Pro PRO-Binder</a></td>
   <td>Polypropylène</td>
   <td>Bonne</td>
   <td>Élevée</td>
@@ -464,21 +463,21 @@ en boîte étanche compartimentée dès qu'ils détectent un début.
   <td>0,01 €/u</td>
 </tr>
 <tr>
-  <td><span class="mark mark--top"></span><a class="product-link" href="https://www.amazon.fr/s?k=ultra+pro+penny+sleeves+standard+100&tag=rareradar-21&ascsubtag=rr-frosting">Penny sleeve Ultra Pro / KMC</a></td>
+  <td><span class="mark mark--top"></span><a class="product-link" href="https://www.amazon.fr/s?k=ultra+pro+penny+sleeves+standard+100&ascsubtag=rr-frosting">Penny sleeve Ultra Pro / KMC</a></td>
   <td>Polypropylène</td>
   <td>Bonne</td>
   <td>Bonne</td>
   <td>0,03 €/u</td>
 </tr>
 <tr>
-  <td><span class="mark mark--top"></span><a class="product-link" href="https://www.amazon.fr/s?k=dragon+shield+matte+sleeves+standard&tag=rareradar-21&ascsubtag=rr-frosting">Outer sleeve Dragon Shield</a></td>
+  <td><span class="mark mark--top"></span><a class="product-link" href="https://www.amazon.fr/s?k=dragon+shield+matte+sleeves+standard&ascsubtag=rr-frosting">Outer sleeve Dragon Shield</a></td>
   <td>Polyéthylène</td>
   <td>Très bonne</td>
   <td>Élevée</td>
   <td>0,08 €/u</td>
 </tr>
 <tr>
-  <td><span class="mark mark--top"></span><a class="product-link" href="https://www.amazon.fr/s?k=ultra+pro+toploader+35pt+3x4&tag=rareradar-21&ascsubtag=rr-frosting">Toploader 35pt</a></td>
+  <td><span class="mark mark--top"></span><a class="product-link" href="https://www.amazon.fr/s?k=ultra+pro+toploader+35pt+3x4&ascsubtag=rr-frosting">Toploader 35pt</a></td>
   <td>Polystyrène / PET</td>
   <td>Très bonne</td>
   <td>Très élevée</td>

@@ -18,7 +18,6 @@ _cfds:
   generated_by: rareradar-editorial
   generated_at: "2026-05-21T12:00:00+02:00"
   conseil_20260521: "fresh_generation"
-  amazon_tag: rareradar-21
   review_status: "ready_for_promote"
   images_generated_at: "2026-05-21"
   last_pass: "2026-07-21 audit veracite prix FR 2026 : booster 5,99 EUR prix conseille (Pokecardex, releve 2026-11-12), display 220-240 EUR, Set 151 remplace par Evolutions Celestes (non-FR), grading 30-65 EUR, purge pourcentages non sources, 2 SVG refaits"
@@ -94,7 +93,7 @@ Le réflexe le plus fréquent : trois boosters chez le buraliste, rebelote la se
 
 **Correctif :** display dès le départ, ouverture étalée sur plusieurs semaines si tu veux préserver le plaisir du déballage. Bonus : une display **scellée** peut conserver, voire prendre de la valeur selon le set (voir erreur n°3).
 
-[**display Méga ex Pokémon** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=display+pokemon+mega+ex&tag=rareradar-21)
+[**display Méga ex Pokémon** sur Amazon](https://www.amazon.fr/s?k=display+pokemon+mega+ex)
 
 ## Erreur n°2 : Stocker à plat sans sleeve ni top-loader
 
@@ -102,9 +101,9 @@ Carte posée sur le bureau "le temps de finir l'ouverture", retrouvée six mois 
 
 La protection de base coûte **~6,35 €** : 100 penny sleeves Ultra Pro (~2,50 €) + 25 top-loaders 35 pt (~3,85 €). Un petit poste comparé au reste de la collection. Tu protèges toutes tes cartes rares (Ultra rare, Illustration rare, Illustration spéciale rare) **dès la sortie du booster**, top-loader 35 pt pour tout ce que tu juges revendable un jour, et le reste va dans un **Ultra Pro PRO-Binder** à pochettes à chargement latéral (les cartes ne glissent pas par le haut). Pour le détail conservation longue durée et le combo deux-sleeves utilisé sur les hits, voir [pourquoi utiliser deux sleeves](/2026/pourquoi-utiliser-2-sleeves-pokemon-pour-cartes-rare-mega-ex) et [conserver ses cartes long terme](/2026/conserver-cartes-pokemon-long-terme-humidite-lumiere-tempera).
 
-[**penny sleeves Ultra Pro 100** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=penny+sleeves+ultra+pro&tag=rareradar-21)
+[**penny sleeves Ultra Pro 100** sur Amazon](https://www.amazon.fr/s?k=penny+sleeves+ultra+pro)
 
-[**top-loader 35 pt Ultra Pro** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=toploader+35pt+ultra+pro&tag=rareradar-21)
+[**top-loader 35 pt Ultra Pro** sur Amazon](https://www.amazon.fr/s?k=toploader+35pt+ultra+pro)
 
 ## Erreur n°3 : Ouvrir tous les coffrets pour "collectionner les cartes"
 
@@ -167,7 +166,7 @@ Une display scellée d'un set populaire, une fois la production officielle arrê
 
 **Correctif :** règle "une display ouverte, une display scellée" pour chaque set qui vraiment vaut le coup. Budget limité ? Garde au moins un **booster scellé** d'origine non manipulé par set (l'authentification d'un booster isolé est devenue compliquée, voir [vérifier l'authenticité d'une carte](/2026/verifier-authenticite-carte-pokemon-sans-loupe-uv) pour les points de contrôle).
 
-[**Ultra Pro PRO-Binder 9 pochettes** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=ultra+pro+binder+pokemon&tag=rareradar-21)
+[**Ultra Pro PRO-Binder 9 pochettes** sur Amazon](https://www.amazon.fr/s?k=ultra+pro+binder+pokemon)
 
 <figure class="illustration">
 <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="La règle une display ouverte, une display scellée. À gauche, une display encore sous film plastique, gardée intacte : sa valeur d'archive est préservée. À droite, une seconde display du même set, ouverte, avec des boosters déchirés et des cartes sorties : c'est elle qui sert au plaisir du déballage.">
@@ -281,7 +280,7 @@ Pikachu Promo McDo, exclusive Pokémon Center Japon, Dracaufeu Black Star limit�
 
 Sur trois ans de hypes éparpillées, un débutant peut engloutir beaucoup d'argent sans rien construire. La même somme orientée sur **deux axes maximum** (par exemple : tous les Dracaufeu modernes ère Méga + une SAR par set sorti) constitue un patrimoine identifiable, exposable, revendable. Le plaisir de chasse augmente quand le périmètre est défini. Côté équipement, un binder organisé par thématique est plus satisfaisant qu'un fourre-tout (voir [accessoires de collection](/2026/accessoires-collection-pokemon-porte-cles-porte-cartes-figur)).
 
-[**deck box Ultra Pro Pokémon** sur Amazon (lien affilié)](https://www.amazon.fr/s?k=deck+box+ultra+pro+pokemon&tag=rareradar-21)
+[**deck box Ultra Pro Pokémon** sur Amazon](https://www.amazon.fr/s?k=deck+box+ultra+pro+pokemon)
 
 ## Erreur n°5 : Acheter sur AliExpress ou Temu sans vérifier l'authenticité
 
@@ -297,13 +296,13 @@ Deux budgets à séparer : la **protection** (indispensable, ~40 €) et le **pa
 
 | Élément | Quantité | Budget à prévoir |
 |---|---|---|
-| [Penny sleeves Ultra Pro](https://www.amazon.fr/s?k=penny+sleeves+ultra+pro&tag=rareradar-21) | 200 unités | ~5 € |
-| [Top-loaders 35 pt](https://www.amazon.fr/s?k=toploader+35pt+ultra+pro&tag=rareradar-21) | 50 unités | ~7,50 € |
-| [Ultra Pro PRO-Binder 9 pochettes](https://www.amazon.fr/s?k=ultra+pro+binder+pokemon&tag=rareradar-21) | 360 cartes | ~20 € |
-| [Deck box](https://www.amazon.fr/s?k=deck+box+ultra+pro+pokemon&tag=rareradar-21) | 1 | ~7 € |
+| [Penny sleeves Ultra Pro](https://www.amazon.fr/s?k=penny+sleeves+ultra+pro) | 200 unités | ~5 € |
+| [Top-loaders 35 pt](https://www.amazon.fr/s?k=toploader+35pt+ultra+pro) | 50 unités | ~7,50 € |
+| [Ultra Pro PRO-Binder 9 pochettes](https://www.amazon.fr/s?k=ultra+pro+binder+pokemon) | 360 cartes | ~20 € |
+| [Deck box](https://www.amazon.fr/s?k=deck+box+ultra+pro+pokemon) | 1 | ~7 € |
 | **Sous-total protection** | | **~40 €** |
 
-*Ordres de grandeur relevés en boutique ; le prix Amazon du jour s'affiche sur la page produit. Les liens du tableau sont des liens affiliés.*
+*Ordres de grandeur relevés en boutique ; le prix Amazon du jour s'affiche sur la page produit.*
 
 **Patrimoine : optionnel**
 
@@ -325,7 +324,7 @@ Les deux, mais sépare-les mentalement. Budget annuel "plaisir" (boosters ouvert
 
 ### Carte gradée ou pas gradée ?
 
-Grade seulement les cartes **valant plus de ~100 € raw** ou ayant une forte valeur sentimentale. Via un concessionnaire FR (envoi groupé), PSA coûte **~30 à 65 € par carte** selon la valeur déclarée (≈40 € tout compris pour une carte courante). En dessous de ~100 € raw et sans fort potentiel Gem Mint, le ratio coût/plus-value n'est pas rentable.
+Grade seulement les cartes de valeur en parfait état, ou celles qui comptent pour vous. Les frais se paient carte par carte et les grilles changent souvent : vérifiez celle du service le jour de l'envoi, et comparez-la à l'écart réel entre la cote brute et la cote gradée.
 
 Pour tester sans casser le budget, [eBay (lien partenaire)](https://www.ebay.fr/sch/i.html?_nkw=carte+pokemon+lot+occasion&campid=5339154295&toolid=10001&customid=erreurs) reste plus calibré que Vinted pour les lots occasion vérifiables : les vendeurs y affichent toujours leurs notes, ce qui filtre une bonne partie des mauvaises surprises.
 
