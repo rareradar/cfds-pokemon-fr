@@ -3,7 +3,7 @@ layout: post
 title: "Hadou Seeker (Aura Seeker, M7) : les cartes, et ce qu'on sait de Poings Fluides"
 description: "Hadou Seeker, aussi appelée Aura Seeker, sort au Japon le 27 novembre 2026 : trois Méga « Z » ex menées par Méga-Lucario, une SAR signée Tetsuo Hara, et Poings Fluides annoncé en France pour février 2027."
 date: 2026-11-22 07:30:00 +0100
-last_modified_at: 2026-11-23 11:00:00 +0100
+last_modified_at: 2026-11-24 12:30:00 +0100
 n: 13
 slug: hadou-seeker-cartes
 rarity: alt
@@ -22,7 +22,6 @@ _cfds:
   generated_by: rareradar-editorial
   reviewed_by: "RareRadar (relevé de la page officielle, 2026-11-20)"
   generated_at: "2026-11-12T16:00:00+01:00"
-  amazon_tag: rareradar-21
   review_status: pending
   sources:
     - "https://www.pokemon-card.com/ex/m7/"
@@ -305,60 +304,7 @@ Elle écrit aussi que quatre cartes n'y figurent pas :
 
 ## Et pour la France ?
 
-Le 19 novembre 2026, pokemon.com/fr a annoncé **Méga-Évolution – Poings Fluides**, disponible le **6 février 2027**. L'annonce parle de plus de 110 cartes et cite quatre Pokémon : Méga-Lucario Z-ex en vedette, Méga-Absol Z-ex, Méga-Carchacrok Z-ex et Méga-Floréclat-ex.
-
-Ce sont les quatre Méga de Hadou Seeker. L'annonce, elle, ne mentionne ni le Japon ni Hadou Seeker : le lien entre les deux sets n'est pas écrit officiellement, il se lit dans les cartes communes. Elle précise seulement que d'autres informations suivront.
-
-<figure class="illustration">
-  <svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Frise : Storm Emeralda (M6) est sorti au Japon le 31 juillet 2026 et sa version française Règne Delta (ME06) le 6 novembre 2026, soit 98 jours plus tard. Hadou Seeker (M7) est daté du 27 novembre 2026 au Japon ; Poings Fluides, annoncé en France pour le 6 février 2027, met en avant les mêmes Méga.">
-    <defs>
-      <linearGradient id="hs-frise-bg" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#1c2030"/>
-        <stop offset="100%" stop-color="#0d1018"/>
-      </linearGradient>
-    </defs>
-    <rect x="0" y="0" width="600" height="250" fill="url(#hs-frise-bg)"/>
-    <text x="130" y="30" font-family="JetBrains Mono, monospace" font-size="11" fill="#9b9789" letter-spacing="2" text-anchor="middle">JAPON</text>
-    <text x="470" y="30" font-family="JetBrains Mono, monospace" font-size="11" fill="#9b9789" letter-spacing="2" text-anchor="middle">FRANCE</text>
-
-    <g transform="translate(30,48)">
-      <rect x="0" y="0" width="200" height="74" rx="6" fill="#1c2030" stroke="#9c8454" stroke-width="1.5"/>
-      <text x="100" y="24" font-family="JetBrains Mono, monospace" font-size="10" fill="#9c8454" letter-spacing="1.5" text-anchor="middle">M6</text>
-      <text x="100" y="45" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700" fill="#f2eee2" text-anchor="middle">Storm Emeralda</text>
-      <text x="100" y="63" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#9b9789" text-anchor="middle">31 juillet 2026</text>
-    </g>
-    <line x1="238" y1="85" x2="352" y2="85" stroke="#9c8454" stroke-width="1.5"/>
-    <path d="M352 79 L362 85 L352 91 Z" fill="#9c8454"/>
-    <text x="300" y="76" font-family="JetBrains Mono, monospace" font-size="10" fill="#f2eee2" letter-spacing="1" text-anchor="middle">98 JOURS</text>
-    <g transform="translate(370,48)">
-      <rect x="0" y="0" width="200" height="74" rx="6" fill="#1c2030" stroke="#9c8454" stroke-width="1.5"/>
-      <text x="100" y="24" font-family="JetBrains Mono, monospace" font-size="10" fill="#9c8454" letter-spacing="1.5" text-anchor="middle">ME06</text>
-      <text x="100" y="45" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700" fill="#f2eee2" text-anchor="middle">Règne Delta</text>
-      <text x="100" y="63" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#9b9789" text-anchor="middle">6 novembre 2026</text>
-    </g>
-
-    <g transform="translate(30,148)">
-      <rect x="0" y="0" width="200" height="74" rx="6" fill="#1c2030" stroke="#d97246" stroke-width="1.5"/>
-      <text x="100" y="24" font-family="JetBrains Mono, monospace" font-size="10" fill="#d97246" letter-spacing="1.5" text-anchor="middle">M7</text>
-      <text x="100" y="45" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700" fill="#f2eee2" text-anchor="middle">Hadou Seeker</text>
-      <text x="100" y="63" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#9b9789" text-anchor="middle">27 novembre 2026</text>
-    </g>
-    <line x1="238" y1="185" x2="352" y2="185" stroke="#d97246" stroke-width="1.5" stroke-dasharray="5 5"/>
-    <path d="M352 179 L362 185 L352 191 Z" fill="#d97246"/>
-    <text x="300" y="176" font-family="JetBrains Mono, monospace" font-size="10" fill="#f2eee2" letter-spacing="1" text-anchor="middle">MÊMES MÉGA</text>
-    <g transform="translate(370,148)">
-      <rect x="0" y="0" width="200" height="74" rx="6" fill="#1c2030" stroke="#d97246" stroke-width="1.5" stroke-dasharray="5 5"/>
-      <text x="100" y="24" font-family="JetBrains Mono, monospace" font-size="10" fill="#d97246" letter-spacing="1.5" text-anchor="middle">ANNONCÉ LE 19/11</text>
-      <text x="100" y="45" font-family="Plus Jakarta Sans, sans-serif" font-size="15" font-weight="700" fill="#f2eee2" text-anchor="middle">Poings Fluides</text>
-      <text x="100" y="63" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#9b9789" text-anchor="middle">6 février 2027</text>
-    </g>
-  </svg>
-  <figcaption>
-    Le précédent Storm Emeralda → Règne Delta, et Hadou Seeker face à Poings Fluides. Le pointillé signale un lien que l'annonce n'écrit pas. État au 20 novembre 2026.
-  </figcaption>
-</figure>
-
-Pour comparer, le set précédent : Storm Emeralda (M6), sorti au Japon le 31 juillet 2026, est arrivé en France le 6 novembre 2026 sous le nom [Règne Delta (ME06)]({% post_url 2026-07-31-me06-regne-delta-cartes-storm-emeralda %}), 98 jours plus tard.
+Le 19 novembre 2026, pokemon.com/fr a annoncé **Méga-Évolution – Poings Fluides**, disponible le **6 février 2027**, avec les quatre mêmes Méga en vedette. L'annonce ne mentionne ni le Japon ni Hadou Seeker.{% assign pf = site.posts | where: "slug", "poings-fluides-cartes" | first %}{% if pf %} Dates, cartes françaises déjà montrées et ce qui reste à annoncer : [tout ce qu'on sait de Poings Fluides]({{ pf.url | relative_url }}).{% endif %}
 
 Jusqu'au 6 février, ces cartes n'existent qu'en japonais. Les précautions à prendre avant de commander sont détaillées dans le [guide d'achat de cartes en Asie](/2026/acheter-cartes-pokemon-asie-japon-coree-chine-guide-2026/).
 
