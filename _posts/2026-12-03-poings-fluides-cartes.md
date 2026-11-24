@@ -225,9 +225,13 @@ Chaque carte française est décalée d'un numéro, et la série numérotée com
 
 Le constat s'arrête là. Ni la page produit, ni l'annonce, ni le communiqué ne citent Hadou Seeker ou le Japon. Et les deux listes ne se recouvrent pas tout à fait : l'éditeur annonce **5 Pokémon-ex Méga-Évolution** pour Poings Fluides, quand la liste japonaise de 78 cartes n'en contient que 4. La cinquième n'est pas nommée.
 
-### Les illustrations rares vues au Japon
+### Les illustrations rares : ce que laisse prévoir Hadou Seeker
 
-Depuis le 22 novembre, des visuels de cartes japonaises numérotées au-delà de 078 sont relayés par [Pokécardex](https://www.pokecardex.com/forums/viewtopic.php?t=50543) et par des sites japonais : trois AR, Tortank (081/078, Nurikabe), Sorcilence (084/078, mashu) et Brutalibré (086/078, GOSSAN), et une SAR de Méga-Lucario Z-ex (110/078, REND). Au 24 novembre, la page japonaise du set ne les affiche pas. Ce sont des cartes de Hadou Seeker. Aucune illustration rare française n'a été montrée, et rien ne dit lesquelles seront dans Poings Fluides.
+Depuis le 22 novembre, des visuels de cartes japonaises de Hadou Seeker numérotées au-delà de 078 sont relayés par [Pokécardex](https://www.pokecardex.com/forums/viewtopic.php?t=50543) et par des sites japonais : trois AR, Tortank (081/078, Nurikabe), Sorcilence (084/078, mashu) et Brutalibré (086/078, GOSSAN), et une SAR de Méga-Lucario Z-ex (110/078, REND). Au 24 novembre, la page japonaise du set ne les affiche pas encore.
+
+Ce sont les candidates les plus probables pour les 11 « illustration rare » annoncées en français. Le précédent va dans ce sens : [Règne Delta](/2026/me06-regne-delta-cartes-storm-emeralda/) a repris **11 des 12 AR** de sa version japonaise, Storm Emeralda, avec la même illustration et le même illustrateur. La douzième, Kyogre, est devenue la carte promo du Coffret Dresseur d'élite. Les trois autres illustrations rares de Règne Delta (Poussacha, Zorua, Évoli) venaient de trois Starter Sets japonais sortis le même jour.
+
+La reprise n'est donc pas carte pour carte. Tant que l'éditeur n'a pas montré les illustrations rares françaises, rien ne dit lesquelles de ces AR seront dans Poings Fluides, ni à quel numéro.
 
 ## Les produits annoncés
 
@@ -264,6 +268,9 @@ R : L'éditeur annonce « plus de 110 cartes », sans total exact. Les quatre ca
 
 **Q : Quel est le code de l'extension Poings Fluides ?**
 R : FLO. Il est imprimé en bas à gauche des quatre cartes françaises publiées sur pokemon.com/fr.
+
+**Q : Quelles seront les illustrations rares de Poings Fluides ?**
+R : L'éditeur en annonce 11, sans les montrer. Les AR japonaises de Hadou Seeker (Tortank, Sorcilence, Brutalibré, déjà relayées) sont les plus probables : Règne Delta avait repris 11 des 12 AR de Storm Emeralda. Mais la liste française peut différer.
 
 **Q : Poings Fluides est-il la version française de Hadou Seeker ?**
 R : L'éditeur ne l'écrit pas. Les quatre Méga-ex montrées en français portent la même illustration que leurs équivalents japonais de Hadou Seeker, avec un numéro décalé d'un cran. Poings Fluides annonce en revanche cinq Méga-ex, contre quatre dans la liste japonaise.
